@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEPS 단어 반복 연습장</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">5청크 압축 회전</p>
+          <h1>TEPS 단어 반복 연습장</h1>
+        </div>
+        <div class="top-actions">
+          <button type="button" class="ghost-button" id="exportBtn">진도 내보내기</button>
+          <label class="ghost-button file-button">
+            진도 불러오기
+            <input type="file" id="importFile" accept="application/json">
+          </label>
+          <button type="button" class="danger-button" id="resetBtn">초기화</button>
+        </div>
+      </header>
+
+      <section class="dashboard" aria-label="학습 현황">
+        <div class="day-panel">
+          <span class="field-label">오늘 Day</span>
+          <div class="day-control">
+            <button type="button" id="dayDown" aria-label="이전 날짜">-</button>
+            <input type="number" id="dayInput" min="1" value="1">
+            <button type="button" id="dayUp" aria-label="다음 날짜">+</button>
+          </div>
+        </div>
+        <div class="metric">
+          <span>전체 단어</span>
+          <strong id="totalWords">0</strong>
+        </div>
+        <div class="metric">
+          <span>오늘 회전</span>
+          <strong id="activeWords">0</strong>
+        </div>
+        <div class="metric">
+          <span>오늘 확인</span>
+          <strong id="seenToday">0</strong>
+        </div>
+        <div class="metric">
+          <span>Hard/Critical</span>
+          <strong id="hardWords">0</strong>
+        </div>
+      </section>
+
+      <section class="chunk-plan" aria-label="오늘 청크 순서">
+        <div>
+          <span class="field-label">오늘 순서</span>
+          <div class="chunk-strip" id="chunkStrip"></div>
+        </div>
+        <p id="planSummary"></p>
+      </section>
+
+      <section class="controls" aria-label="학습 설정">
+        <label>
+          <span class="field-label">모드</span>
+          <select id="modeSelect">
+            <option value="cards">카드 훑기</option>
+            <option value="meaning">뜻 가리기</option>
+            <option value="cloze">예문 빈칸</option>
+            <option value="typing">한글 뜻 → 영어</option>
+            <option value="hard">Hard 압축</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">파트</span>
+          <select id="sourceSelect">
+            <option value="all">전체</option>
+            <option value="vocab">어휘</option>
+            <option value="reading">독해</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">청크</span>
+          <select id="chunkSelect">
+            <option value="today">오늘 회전</option>
+            <option value="focus">오늘 첫 청크</option>
+            <option value="1">Chunk 1</option>
+            <option value="2">Chunk 2</option>
+            <option value="3">Chunk 3</option>
+            <option value="4">Chunk 4</option>
+            <option value="5">Chunk 5</option>
+            <option value="all">전체</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">상태</span>
+          <select id="statusSelect">
+            <option value="all">전체</option>
+            <option value="New">미학습</option>
+            <option value="Easy">Easy</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Hard">Hard</option>
+            <option value="Critical">Critical</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">정렬</span>
+          <select id="orderSelect">
+            <option value="schedule">청크 순서</option>
+            <option value="rank">원본 순서</option>
+            <option value="hard">어려운 단어 먼저</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">세션</span>
+          <select id="limitSelect">
+            <option value="30">30개</option>
+            <option value="50">50개</option>
+            <option value="100">100개</option>
+            <option value="all">전체</option>
+          </select>
+        </label>
+        <label class="search-field">
+          <span class="field-label">검색</span>
+          <input type="search" id="searchInput" placeholder="단어, 뜻, 예문">
+        </label>
+      </section>
+
+      <main class="workspace">
+        <article class="trainer" aria-label="단어 연습 카드">
+          <div class="trainer-head">
+            <div>
+              <p class="eyebrow" id="sessionMode">카드 훑기</p>
+              <h2 id="positionText">0 / 0</h2>
+            </div>
+            <div class="sound-actions">
+              <button type="button" class="ghost-button" id="speakWordBtn">단어 듣기</button>
+              <button type="button" class="ghost-button" id="speakExampleBtn">예문 듣기</button>
+            </div>
+          </div>
+
+          <div class="card-meta" id="cardMeta"></div>
+          <div class="card-body" id="cardBody"></div>
+
+          <div class="status-buttons" aria-label="단어 상태 표시">
+            <button type="button" data-status="Easy">Easy</button>
+            <button type="button" data-status="Familiar">Familiar</button>
+            <button type="button" data-status="Hard">Hard</button>
+            <button type="button" data-status="Critical">Critical</button>
+          </div>
+
+          <div class="nav-row">
+            <button type="button" class="ghost-button" id="prevBtn">이전</button>
+            <button type="button" class="primary-button" id="nextBtn">다음</button>
+          </div>
+        </article>
+
+        <aside class="queue-panel" aria-label="세션 단어 목록">
+          <div class="queue-head">
+            <div>
+              <span class="field-label">세션 목록</span>
+              <strong id="queueCount">0개</strong>
+            </div>
+            <button type="button" class="ghost-button" id="restartBtn">처음으로</button>
+          </div>
+          <div class="queue-list" id="queueList"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="src/words-data.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
