@@ -345,6 +345,30 @@ button:disabled {
   line-height: 1.05;
 }
 
+.word-heading,
+.answer-word {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.word-text {
+  overflow-wrap: anywhere;
+}
+
+.pronunciation {
+  color: var(--muted);
+  font-size: 0.34em;
+  font-weight: 800;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.answer-word .pronunciation {
+  font-size: 0.68em;
+}
+
 .word-line.large {
   min-height: 170px;
   align-content: center;

@@ -1,0 +1,6 @@
+src/__pycache__/
+*.pyc
+src/naver_meaning_cache.json
+src/translate_meaning_cache.json
+src/example_translation_cache.json
+src/meaning_overrides_sample.json

@@ -22,6 +22,8 @@
     hard: "Hard 압축",
   };
 
+  const routineChunkCount = 7;
+
   const defaultSettings = {
     day: 1,
     mode: "cards",
@@ -34,7 +36,7 @@
   };
 
   let progress = loadJson(progressKey, {});
-  let settings = { ...defaultSettings, ...loadJson(settingsKey, {}) };
+  let settings = normalizeSettings({ ...defaultSettings, ...loadJson(settingsKey, {}) });
   let queue = [];
   let currentIndex = 0;
   let revealed = false;
@@ -48,6 +50,15 @@
     } catch {
       return fallback;
     }
+  }
+
+  function normalizeSettings(value) {
+    const next = { ...defaultSettings, ...value };
+    const selectedChunk = Number(next.chunk);
+    if (/^\d+$/.test(String(next.chunk)) && (selectedChunk < 1 || selectedChunk > routineChunkCount)) {
+      next.chunk = "today";
+    }
+    return next;
   }
 
   function saveProgress() {
@@ -77,19 +88,15 @@
 
   function focusChunkForDay(day) {
     const safeDay = Math.max(1, Number(day) || 1);
-    if (safeDay <= 5) {
-      return safeDay;
-    }
-    return ((safeDay - 5) % 5) + 1;
+    return ((safeDay - 1) % routineChunkCount) + 1;
   }
 
   function chunkOrderForDay(day) {
     const safeDay = Math.max(1, Number(day) || 1);
-    if (safeDay <= 5) {
-      return Array.from({ length: safeDay }, (_, index) => index + 1);
-    }
-    const start = focusChunkForDay(safeDay);
-    return Array.from({ length: 5 }, (_, index) => ((start - 1 + index) % 5) + 1);
+    const reviewWindowSize = Math.min(3, safeDay);
+    return Array.from({ length: reviewWindowSize }, (_, index) =>
+      focusChunkForDay(safeDay - reviewWindowSize + index + 1),
+    );
   }
 
   function getProgress(word) {
@@ -137,13 +144,16 @@
       if (settings.chunk === "focus" && word.chunk !== focusChunk) {
         return false;
       }
-      if (/^[1-5]$/.test(settings.chunk) && word.chunk !== Number(settings.chunk)) {
+      if (/^\d+$/.test(settings.chunk) && word.chunk !== Number(settings.chunk)) {
         return false;
       }
       if (settings.source !== "all" && word.source !== settings.source) {
         return false;
       }
       if (settings.mode === "hard" && !isHardWord(word)) {
+        return false;
+      }
+      if (settings.mode === "typing" && !word.meaning) {
         return false;
       }
       if (settings.status !== "all" && getStatus(word) !== settings.status) {
@@ -188,13 +198,39 @@
     });
 
     if (settings.limit !== "all") {
-      result = result.slice(0, Number(settings.limit));
+      result = limitQueueAroundFirstUnconfirmed(result, Number(settings.limit));
     }
     return result;
   }
 
   function sourceOrder(word) {
-    return word.source === "vocab" ? 0 : 1;
+    const order = { vocab: 0, reading: 1, frequent: 2 };
+    return order[word.source] ?? 99;
+  }
+
+  function isConfirmedWord(word) {
+    const itemProgress = getProgress(word);
+    return getStatus(word) !== "New" || Number(itemProgress.seen || 0) > 0 || itemProgress.viewed;
+  }
+
+  function firstUnconfirmedItemIndex(items) {
+    return items.findIndex((word) => !isConfirmedWord(word));
+  }
+
+  function limitQueueAroundFirstUnconfirmed(items, limit) {
+    const safeLimit = Math.max(1, Number(limit) || items.length);
+    if (items.length <= safeLimit) {
+      return items;
+    }
+
+    const anchor = firstUnconfirmedItemIndex(items);
+    if (anchor < 0) {
+      return items.slice(0, safeLimit);
+    }
+
+    const contextCount = Math.min(5, Math.floor(safeLimit / 4));
+    const start = Math.max(0, Math.min(anchor - contextCount, items.length - safeLimit));
+    return items.slice(start, start + safeLimit);
   }
 
   function statusWeight(word) {
@@ -207,7 +243,7 @@
       const found = queue.findIndex((word) => word.id === targetId);
       currentIndex = found >= 0 ? found : Math.min(currentIndex, Math.max(queue.length - 1, 0));
     } else {
-      currentIndex = Math.min(currentIndex, Math.max(queue.length - 1, 0));
+      currentIndex = firstUnconfirmedIndex(queue);
     }
     renderDashboard();
     renderTrainer();
@@ -215,11 +251,20 @@
     syncControls();
   }
 
+  function firstUnconfirmedIndex(items) {
+    const found = firstUnconfirmedItemIndex(items);
+    return found >= 0 ? found : Math.min(currentIndex, Math.max(items.length - 1, 0));
+  }
+
   function renderDashboard() {
     const dayOrder = chunkOrderForDay(settings.day);
     const focusChunk = focusChunkForDay(settings.day);
     const activeWords = words.filter((word) => dayOrder.includes(word.chunk)).length;
-    const seenToday = words.filter((word) => getProgress(word).lastSeen === todayKey()).length;
+    const today = todayKey();
+    const seenToday = words.filter((word) => {
+      const itemProgress = getProgress(word);
+      return itemProgress.lastSeen === today || itemProgress.lastViewed === today;
+    }).length;
     const hardWords = words.filter((word) => ["Hard", "Critical"].includes(getStatus(word))).length;
 
     $("#totalWords").textContent = meta.total || words.length;
@@ -230,7 +275,7 @@
     $("#chunkStrip").innerHTML = dayOrder
       .map((chunk, index) => {
         const count = words.filter((word) => word.chunk === chunk).length;
-        const label = chunk === focusChunk ? "오늘 우선" : index === 0 ? "첫 회전" : "복습";
+        const label = chunk === focusChunk ? "오늘 추가" : "3일 복습";
         return `
           <span class="chunk-chip ${chunk === focusChunk ? "is-focus" : ""}">
             Chunk ${chunk}
@@ -240,12 +285,8 @@
       })
       .join("");
 
-    const firstChunk = dayOrder[0];
     const orderText = dayOrder.map((chunk) => `Chunk ${chunk}`).join(" → ");
-    $("#planSummary").textContent =
-      settings.day <= 5
-        ? `Day ${settings.day}: ${orderText}. 새 청크를 더하면서 누적 노출을 늘립니다.`
-        : `Day ${settings.day}: ${orderText}. Chunk ${firstChunk}부터 다시 앞에 세워 5개 청크를 계속 회전합니다.`;
+    $("#planSummary").textContent = `Day ${settings.day}: ${orderText}. 최근 3개 Chunk까지만 묶어서 반복 학습합니다.`;
   }
 
   function renderTrainer() {
@@ -300,8 +341,8 @@
   function renderCardsMode(word) {
     return `
       <div class="word-line">
-        <h3>${escapeHtml(word.word)}</h3>
-        <p>${escapeHtml(word.meaning)}</p>
+        ${renderWordHeading(word)}
+        <p>${renderMeaningText(word)}</p>
       </div>
       ${renderExample(word, true)}
       ${renderExpression(word)}
@@ -311,11 +352,11 @@
   function renderMeaningMode(word) {
     return `
       <div class="word-line large">
-        <h3>${escapeHtml(word.word)}</h3>
+        ${renderWordHeading(word)}
       </div>
       ${
         revealed
-          ? `<div class="answer-panel"><strong>${escapeHtml(word.meaning)}</strong></div>${renderExample(
+          ? `<div class="answer-panel"><strong>${renderMeaningText(word)}</strong></div>${renderExample(
               word,
               true,
             )}${renderExpression(word)}`
@@ -338,8 +379,8 @@
       </div>
       ${
         revealed
-          ? `<div class="answer-panel"><strong>${escapeHtml(word.word)}</strong><span>${escapeHtml(
-              word.meaning,
+          ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong><span>${escapeHtml(
+              word.meaning || "뜻 정보 없음",
             )}</span></div>${renderExample(word, true)}`
           : ""
       }
@@ -359,7 +400,7 @@
       </div>
       ${
         revealed
-          ? `<div class="answer-panel"><strong>${escapeHtml(word.word)}</strong></div>${renderExample(
+          ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong></div>${renderExample(
               word,
               true,
             )}${renderExpression(word)}`
@@ -388,6 +429,25 @@
     return `<div class="expression-box"><span>함께 외울 표현</span><strong>${escapeHtml(
       word.expression,
     )}</strong></div>`;
+  }
+
+  function renderMeaningText(word) {
+    return word.meaning ? escapeHtml(word.meaning) : "뜻 정보 없음";
+  }
+
+  function renderWordHeading(word) {
+    return `<h3 class="word-heading">${renderWordText(word)}</h3>`;
+  }
+
+  function renderWordText(word) {
+    return `
+      <span class="word-text">${escapeHtml(word.word)}</span>
+      ${
+        word.pronunciation
+          ? `<span class="pronunciation" aria-label="발음기호">[${escapeHtml(word.pronunciation)}]</span>`
+          : ""
+      }
+    `;
   }
 
   function renderFeedback() {
@@ -438,10 +498,16 @@
       return;
     }
 
-    const visible = queue.slice(0, 160);
+    const visibleLimit = 160;
+    const visibleStart =
+      queue.length <= visibleLimit
+        ? 0
+        : Math.max(0, Math.min(currentIndex - 20, queue.length - visibleLimit));
+    const visible = queue.slice(visibleStart, visibleStart + visibleLimit);
     $("#queueList").innerHTML =
       visible
-        .map((word, index) => {
+        .map((word, visibleIndex) => {
+          const index = visibleStart + visibleIndex;
           const status = getStatus(word);
           const active = index === currentIndex ? "is-active" : "";
           return `
@@ -456,11 +522,12 @@
         })
         .join("") +
       (queue.length > visible.length
-        ? `<p class="muted queue-more">앞 ${visible.length}개만 표시 중입니다.</p>`
+        ? `<p class="muted queue-more">${visibleStart + 1}-${visibleStart + visible.length}번 표시 중입니다.</p>`
         : "");
 
     document.querySelectorAll(".queue-item").forEach((item) => {
       item.addEventListener("click", () => {
+        recordViewed(queue[currentIndex]);
         currentIndex = Number(item.dataset.index);
         revealed = false;
         feedback = null;
@@ -501,6 +568,8 @@
       return;
     }
     const itemProgress = ensureProgress(word);
+    itemProgress.viewed = true;
+    itemProgress.lastViewed = todayKey();
     itemProgress.status = status;
     itemProgress.seen = Number(itemProgress.seen || 0) + 1;
     itemProgress.lastSeen = todayKey();
@@ -525,6 +594,8 @@
       settings.mode === "cloze" ? [word.word, word.clozeAnswer].filter(Boolean) : [word.word];
     const correct = targets.some((target) => answersMatch(answer, target));
     const itemProgress = ensureProgress(word);
+    itemProgress.viewed = true;
+    itemProgress.lastViewed = todayKey();
     itemProgress.seen = Number(itemProgress.seen || 0) + 1;
     itemProgress.lastSeen = todayKey();
     itemProgress.updatedAt = new Date().toISOString();
@@ -534,7 +605,7 @@
       if (!itemProgress.status || itemProgress.status === "New" || itemProgress.status === "Hard") {
         itemProgress.status = "Familiar";
       }
-      feedback = { correct: true, message: `${word.word} · ${word.meaning}` };
+      feedback = { correct: true, message: `${word.word} · ${word.meaning || "뜻 정보 없음"}` };
     } else {
       itemProgress.wrong = Number(itemProgress.wrong || 0) + 1;
       itemProgress.status = itemProgress.wrong >= 3 ? "Critical" : "Hard";
@@ -574,6 +645,7 @@
 
   function goNext() {
     if (currentIndex < queue.length - 1) {
+      recordViewed(queue[currentIndex]);
       currentIndex += 1;
       revealed = false;
       feedback = null;
@@ -584,12 +656,24 @@
 
   function goPrev() {
     if (currentIndex > 0) {
+      recordViewed(queue[currentIndex]);
       currentIndex -= 1;
       revealed = false;
       feedback = null;
       renderTrainer();
       renderQueue();
     }
+  }
+
+  function recordViewed(word) {
+    if (!word) {
+      return;
+    }
+    const itemProgress = ensureProgress(word);
+    itemProgress.viewed = true;
+    itemProgress.lastViewed = todayKey();
+    itemProgress.updatedAt = new Date().toISOString();
+    saveProgress();
   }
 
   function updateSetting(key, value) {
@@ -655,7 +739,7 @@
           return;
         }
         progress = payload.progress;
-        settings = { ...settings, ...(payload.settings || {}) };
+        settings = normalizeSettings({ ...settings, ...(payload.settings || {}) });
         saveProgress();
         saveSettings();
         currentIndex = 0;
@@ -697,6 +781,7 @@
     $("#prevBtn").addEventListener("click", goPrev);
     $("#nextBtn").addEventListener("click", goNext);
     $("#restartBtn").addEventListener("click", () => {
+      recordViewed(queue[currentIndex]);
       currentIndex = 0;
       revealed = false;
       feedback = null;
