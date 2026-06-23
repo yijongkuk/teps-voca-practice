@@ -23,6 +23,7 @@
   };
 
   const routineChunkCount = 7;
+  const autoPlayPauseMs = 450;
 
   const defaultSettings = {
     day: 1,
@@ -41,6 +42,11 @@
   let currentIndex = 0;
   let revealed = false;
   let feedback = null;
+  let autoPlay = {
+    active: false,
+    token: 0,
+    pauseTimer: null,
+  };
 
   const $ = (selector) => document.querySelector(selector);
 
@@ -476,6 +482,11 @@
     const checkButton = $("#checkBtn");
     const answerInput = $("#answerInput");
     if (checkButton && answerInput) {
+      if (autoPlay.active) {
+        checkButton.disabled = true;
+        answerInput.disabled = true;
+        return;
+      }
       checkButton.addEventListener("click", () => checkAnswer(word, answerInput.value));
       answerInput.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
@@ -527,6 +538,7 @@
 
     document.querySelectorAll(".queue-item").forEach((item) => {
       item.addEventListener("click", () => {
+        stopAutoPlay();
         recordViewed(queue[currentIndex]);
         currentIndex = Number(item.dataset.index);
         revealed = false;
@@ -538,15 +550,14 @@
   }
 
   function setNavigationDisabled(disabled) {
-    $("#prevBtn").disabled = disabled || currentIndex <= 0;
-    $("#nextBtn").disabled = disabled || currentIndex >= queue.length - 1;
-    $("#speakWordBtn").disabled = disabled;
-    $("#speakExampleBtn").disabled = disabled;
+    $("#prevBtn").disabled = disabled || autoPlay.active || currentIndex <= 0;
+    $("#nextBtn").disabled = disabled || autoPlay.active || currentIndex >= queue.length - 1;
+    syncPlaybackControls();
   }
 
   function setStatusButtonState(word) {
     document.querySelectorAll(".status-buttons button").forEach((button) => {
-      button.disabled = !word;
+      button.disabled = !word || autoPlay.active;
       button.classList.toggle("is-active", Boolean(word) && button.dataset.status === getStatus(word));
     });
   }
@@ -563,6 +574,7 @@
   }
 
   function markStatus(status) {
+    stopAutoPlay();
     const word = queue[currentIndex];
     if (!word) {
       return;
@@ -583,6 +595,7 @@
   }
 
   function checkAnswer(word, rawAnswer) {
+    stopAutoPlay();
     const answer = rawAnswer.trim();
     if (!answer) {
       feedback = { correct: false, message: "입력값이 비어 있습니다." };
@@ -644,6 +657,7 @@
   }
 
   function goNext() {
+    stopAutoPlay();
     if (currentIndex < queue.length - 1) {
       recordViewed(queue[currentIndex]);
       currentIndex += 1;
@@ -655,6 +669,7 @@
   }
 
   function goPrev() {
+    stopAutoPlay();
     if (currentIndex > 0) {
       recordViewed(queue[currentIndex]);
       currentIndex -= 1;
@@ -677,6 +692,7 @@
   }
 
   function updateSetting(key, value) {
+    stopAutoPlay();
     settings[key] = value;
     if (key === "day") {
       settings.day = Math.max(1, Number(value) || 1);
@@ -688,20 +704,137 @@
     rebuildAndRender();
   }
 
-  function speak(text) {
-    if (!text) {
-      return;
-    }
+  function supportsSpeech() {
     if (!("speechSynthesis" in window)) {
       alert("이 브라우저에서는 음성 합성을 사용할 수 없습니다.");
-      return;
+      return false;
     }
+    return true;
+  }
+
+  function createEnglishUtterance(text) {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
     utterance.rate = 0.88;
     utterance.pitch = 1;
+    return utterance;
+  }
+
+  function speak(text) {
+    stopAutoPlay();
+    if (!text || !supportsSpeech()) {
+      return;
+    }
     window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(createEnglishUtterance(text));
+  }
+
+  function syncPlaybackControls() {
+    const hasWord = Boolean(queue[currentIndex]);
+    $("#speakWordBtn").disabled = !hasWord || autoPlay.active;
+    $("#speakExampleBtn").disabled = !hasWord || autoPlay.active;
+    $("#autoPlayBtn").disabled = !hasWord || autoPlay.active;
+    $("#stopAutoPlayBtn").disabled = !autoPlay.active;
+  }
+
+  function clearAutoPlayPause() {
+    if (autoPlay.pauseTimer) {
+      window.clearTimeout(autoPlay.pauseTimer);
+      autoPlay.pauseTimer = null;
+    }
+  }
+
+  function stopAutoPlay() {
+    if (!autoPlay.active && !autoPlay.pauseTimer) {
+      return;
+    }
+    autoPlay.active = false;
+    autoPlay.token += 1;
+    clearAutoPlayPause();
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    renderTrainer();
+    renderQueue();
+  }
+
+  function isAutoPlayCurrent(token) {
+    return autoPlay.active && autoPlay.token === token;
+  }
+
+  function waitForAutoPlayPause(token) {
+    return new Promise((resolve) => {
+      if (!isAutoPlayCurrent(token)) {
+        resolve();
+        return;
+      }
+      autoPlay.pauseTimer = window.setTimeout(() => {
+        autoPlay.pauseTimer = null;
+        resolve();
+      }, autoPlayPauseMs);
+    });
+  }
+
+  function speakAutoPlayText(text, token) {
+    return new Promise((resolve) => {
+      if (!text || !isAutoPlayCurrent(token)) {
+        resolve();
+        return;
+      }
+      const utterance = createEnglishUtterance(text);
+      utterance.onend = resolve;
+      utterance.onerror = resolve;
+      window.speechSynthesis.speak(utterance);
+    });
+  }
+
+  function moveToAutoPlayIndex(index) {
+    currentIndex = index;
+    revealed = true;
+    feedback = null;
+    renderTrainer();
+    renderQueue();
+  }
+
+  async function runAutoPlay(token) {
+    while (isAutoPlayCurrent(token) && queue[currentIndex]) {
+      const word = queue[currentIndex];
+      recordViewed(word);
+      revealed = true;
+      feedback = null;
+      renderDashboard();
+      renderTrainer();
+      renderQueue();
+
+      await speakAutoPlayText(word.word, token);
+      await waitForAutoPlayPause(token);
+      await speakAutoPlayText(word.exampleEn, token);
+      await waitForAutoPlayPause(token);
+
+      if (!isAutoPlayCurrent(token)) {
+        return;
+      }
+      if (currentIndex >= queue.length - 1) {
+        stopAutoPlay();
+        return;
+      }
+      moveToAutoPlayIndex(currentIndex + 1);
+    }
+    stopAutoPlay();
+  }
+
+  function startAutoPlay() {
+    if (!queue[currentIndex] || !supportsSpeech()) {
+      return;
+    }
+    stopAutoPlay();
+    autoPlay.active = true;
+    autoPlay.token += 1;
+    const token = autoPlay.token;
+    window.speechSynthesis.cancel();
+    syncPlaybackControls();
+    setStatusButtonState(queue[currentIndex]);
+    runAutoPlay(token);
   }
 
   function exportProgress() {
@@ -724,6 +857,7 @@
   }
 
   function importProgress(file) {
+    stopAutoPlay();
     if (!file) {
       return;
     }
@@ -754,6 +888,7 @@
   }
 
   function resetProgress() {
+    stopAutoPlay();
     const confirmed = confirm("저장된 상태, 정답/오답 기록을 모두 지울까요?");
     if (!confirmed) {
       return;
@@ -781,6 +916,7 @@
     $("#prevBtn").addEventListener("click", goPrev);
     $("#nextBtn").addEventListener("click", goNext);
     $("#restartBtn").addEventListener("click", () => {
+      stopAutoPlay();
       recordViewed(queue[currentIndex]);
       currentIndex = 0;
       revealed = false;
@@ -791,6 +927,8 @@
 
     $("#speakWordBtn").addEventListener("click", () => speak(queue[currentIndex]?.word));
     $("#speakExampleBtn").addEventListener("click", () => speak(queue[currentIndex]?.exampleEn));
+    $("#autoPlayBtn").addEventListener("click", startAutoPlay);
+    $("#stopAutoPlayBtn").addEventListener("click", stopAutoPlay);
     $("#exportBtn").addEventListener("click", exportProgress);
     $("#importFile").addEventListener("change", (event) => importProgress(event.target.files[0]));
     $("#resetBtn").addEventListener("click", resetProgress);
@@ -801,6 +939,12 @@
 
     document.addEventListener("keydown", (event) => {
       if (event.target.matches("input, select, textarea")) {
+        return;
+      }
+      if (autoPlay.active) {
+        if (event.key === "Escape") {
+          stopAutoPlay();
+        }
         return;
       }
       if (event.key === "ArrowRight") {
