@@ -214,6 +214,13 @@
     return order[word.source] ?? 99;
   }
 
+  function wordsForSelectedSource() {
+    if (settings.source === "all") {
+      return words;
+    }
+    return words.filter((word) => word.source === settings.source);
+  }
+
   function isConfirmedWord(word) {
     const itemProgress = getProgress(word);
     return getStatus(word) !== "New" || Number(itemProgress.seen || 0) > 0 || itemProgress.viewed;
@@ -265,22 +272,25 @@
   function renderDashboard() {
     const dayOrder = chunkOrderForDay(settings.day);
     const focusChunk = focusChunkForDay(settings.day);
-    const activeWords = words.filter((word) => dayOrder.includes(word.chunk)).length;
+    const dashboardWords = wordsForSelectedSource();
+    const activeWords = dashboardWords.filter((word) => dayOrder.includes(word.chunk)).length;
     const today = todayKey();
-    const seenToday = words.filter((word) => {
+    const seenToday = dashboardWords.filter((word) => {
       const itemProgress = getProgress(word);
       return itemProgress.lastSeen === today || itemProgress.lastViewed === today;
     }).length;
-    const hardWords = words.filter((word) => ["Hard", "Critical"].includes(getStatus(word))).length;
+    const hardWords = dashboardWords.filter((word) =>
+      ["Hard", "Critical"].includes(getStatus(word)),
+    ).length;
 
-    $("#totalWords").textContent = meta.total || words.length;
+    $("#totalWords").textContent = dashboardWords.length.toLocaleString("ko-KR");
     $("#activeWords").textContent = activeWords.toLocaleString("ko-KR");
     $("#seenToday").textContent = seenToday.toLocaleString("ko-KR");
     $("#hardWords").textContent = hardWords.toLocaleString("ko-KR");
 
     $("#chunkStrip").innerHTML = dayOrder
       .map((chunk, index) => {
-        const count = words.filter((word) => word.chunk === chunk).length;
+        const count = dashboardWords.filter((word) => word.chunk === chunk).length;
         const label = chunk === focusChunk ? "오늘 추가" : "3일 복습";
         return `
           <span class="chunk-chip ${chunk === focusChunk ? "is-focus" : ""}">

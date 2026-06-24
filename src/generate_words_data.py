@@ -21,6 +21,14 @@ VOCAB_SHEET = "어휘단어장(통합)"
 READING_SHEET = "독해단어장(통합)"
 FREQUENT_SHEET = "빈출단어"
 ROUTINE_CHUNK_COUNT = 7
+CLOZE_TOKEN_OVERRIDES = {
+    "cloak a in the guise of b": "cloak",
+    "give ~ a shot": "give",
+    "jump the gun": "the",
+    "keep one's fingers crossed": "fingers",
+    "take ~for a ride": "take",
+    "throw one's weight behind": "weight",
+}
 
 
 def clean(value) -> str:
@@ -117,17 +125,30 @@ def find_cloze_target(term: str, sentence: str) -> tuple[str, int, int] | None:
     if not term or not sentence:
         return None
 
+    override_token = CLOZE_TOKEN_OVERRIDES.get(normalize_key(term))
+    if override_token:
+        override = re.search(rf"\b{re.escape(override_token)}\b", sentence, flags=re.IGNORECASE)
+        if override:
+            return override.group(0), override.start(), override.end()
+
     exact_pattern = re.escape(term).replace(r"\ ", r"\s+")
     exact = re.search(exact_pattern, sentence, flags=re.IGNORECASE)
     if exact:
         return exact.group(0), exact.start(), exact.end()
 
     tokens = re.findall(r"[A-Za-z][A-Za-z'-]{2,}", term)
-    tokens = sorted(set(tokens), key=len, reverse=True)
-    for token in tokens:
+    matches = []
+    for token in dict.fromkeys(tokens):
         match = re.search(rf"\b{re.escape(token)}\b", sentence, flags=re.IGNORECASE)
         if match:
-            return match.group(0), match.start(), match.end()
+            matches.append((token, match))
+    if matches:
+        max_length = max(len(token) for token, _ in matches)
+        _, match = max(
+            ((token, match) for token, match in matches if len(token) == max_length),
+            key=lambda item: item[1].start(),
+        )
+        return match.group(0), match.start(), match.end()
 
     return None
 
@@ -264,10 +285,15 @@ def build_frequent_words(
 
 
 def assign_routine_chunks(words: list[dict]) -> None:
-    chunk_size = max(1, math.ceil(len(words) / ROUTINE_CHUNK_COUNT))
-    for index, word in enumerate(words):
-        chunk = (index // chunk_size) + 1
-        word["chunk"] = min(ROUTINE_CHUNK_COUNT, chunk)
+    grouped_words: dict[str, list[dict]] = {}
+    for word in words:
+        grouped_words.setdefault(word["source"], []).append(word)
+
+    for source_words in grouped_words.values():
+        chunk_size = max(1, math.ceil(len(source_words) / ROUTINE_CHUNK_COUNT))
+        for index, word in enumerate(source_words):
+            chunk = (index // chunk_size) + 1
+            word["chunk"] = min(ROUTINE_CHUNK_COUNT, chunk)
 
 
 def build_words() -> list[dict]:
@@ -369,6 +395,15 @@ def main() -> None:
         str(chunk): sum(1 for word in words if word["chunk"] == chunk)
         for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
     }
+    chunk_counts_by_source = {
+        source: {
+            str(chunk): sum(
+                1 for word in words if word["source"] == source and word["chunk"] == chunk
+            )
+            for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
+        }
+        for source in ("vocab", "reading", "frequent")
+    }
     meta = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
         "sourceFile": "src/TEPS_VOCA.xlsx + src/TEPS_VOCA(O).xlsx",
@@ -380,8 +415,9 @@ def main() -> None:
             "frequent": sum(1 for word in words if word["source"] == "frequent"),
         },
         "chunkCounts": chunk_counts,
+        "chunkCountsBySource": chunk_counts_by_source,
         "chunkRule": {
-            "routine": "split all sources evenly across a 7-day cycle",
+            "routine": "split each source evenly across a 7-day cycle",
         },
     }
 
