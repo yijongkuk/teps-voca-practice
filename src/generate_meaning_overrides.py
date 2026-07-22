@@ -244,7 +244,19 @@ def has_direct_entry(term: str, data: dict | None) -> bool:
     return False
 
 
-def collect_naver_meanings(term: str, data: dict, limit: int = 5, per_pos: int = 3) -> list[str]:
+def collect_naver_meanings(
+    term: str,
+    data: dict,
+    limit: int = 5,
+    senses_per_pos: int = 2,
+    per_sense: int = 1,
+) -> list[str]:
+    # Each POS group is a numbered list of dictionary senses ("means"), and each
+    # sense's own value is often itself a comma list of near-synonyms (e.g. sense
+    # 1 = "공급, 제공", sense 2 = "대비, 준비"). Capping on raw synonym count let a
+    # single sense's synonym cluster eat the whole budget and crowd out a later,
+    # genuinely different sense. Cap on distinct senses instead, taking only the
+    # top synonym from each, so breadth of meaning wins over depth of synonymy.
     items = iter_search_items(data)
     items = selected_items(term, items)
 
@@ -252,18 +264,20 @@ def collect_naver_meanings(term: str, data: dict, limit: int = 5, per_pos: int =
     seen: set[str] = set()
     for item in items:
         for collector in item.get("meansCollector", []) or []:
-            added = 0
+            senses_used = 0
             for meaning in collector.get("means", []) or []:
+                added_this_sense = 0
                 for part in split_meaning(meaning.get("value", "")):
                     normalized = re.sub(r"\s+", "", part)
                     if normalized in seen:
                         continue
                     seen.add(normalized)
                     meanings.append(part)
-                    added += 1
-                    if added >= per_pos or len(meanings) >= limit:
+                    added_this_sense += 1
+                    if added_this_sense >= per_sense or len(meanings) >= limit:
                         break
-                if added >= per_pos or len(meanings) >= limit:
+                senses_used += 1
+                if senses_used >= senses_per_pos or len(meanings) >= limit:
                     break
             if len(meanings) >= limit:
                 return meanings
