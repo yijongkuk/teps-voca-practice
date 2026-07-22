@@ -244,7 +244,7 @@ def has_direct_entry(term: str, data: dict | None) -> bool:
     return False
 
 
-def collect_naver_meanings(term: str, data: dict, limit: int = 3) -> list[str]:
+def collect_naver_meanings(term: str, data: dict, limit: int = 5, per_pos: int = 3) -> list[str]:
     items = iter_search_items(data)
     items = selected_items(term, items)
 
@@ -252,6 +252,7 @@ def collect_naver_meanings(term: str, data: dict, limit: int = 3) -> list[str]:
     seen: set[str] = set()
     for item in items:
         for collector in item.get("meansCollector", []) or []:
+            added = 0
             for meaning in collector.get("means", []) or []:
                 for part in split_meaning(meaning.get("value", "")):
                     normalized = re.sub(r"\s+", "", part)
@@ -259,8 +260,13 @@ def collect_naver_meanings(term: str, data: dict, limit: int = 3) -> list[str]:
                         continue
                     seen.add(normalized)
                     meanings.append(part)
-                    if len(meanings) >= limit:
-                        return meanings
+                    added += 1
+                    if added >= per_pos or len(meanings) >= limit:
+                        break
+                if added >= per_pos or len(meanings) >= limit:
+                    break
+            if len(meanings) >= limit:
+                return meanings
     return meanings
 
 
@@ -297,7 +303,7 @@ def collect_meanings(
     search_data: dict | None,
     google_data: dict | None,
     papago_data: dict | None,
-    limit: int = 3,
+    limit: int = 5,
 ) -> list[str]:
     meanings: list[str] = []
     seen: set[str] = set()
@@ -369,7 +375,7 @@ def build_overrides(
         )
         meanings = collect_meanings(term, search_data, google_data, papago_data)
         if meanings:
-            entries[generate_words_data.normalize_key(term)] = ", ".join(meanings[:3])
+            entries[generate_words_data.normalize_key(term)] = ", ".join(meanings[:5])
         else:
             missing.append(term)
 
