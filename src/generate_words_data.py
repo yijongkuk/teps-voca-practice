@@ -16,7 +16,7 @@ MEANING_OVERRIDE_PATH = ROOT / "meaning_overrides.json"
 EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
-FREQUENT_SHEET = "빈출단어_통합"
+FREQUENT_SHEET = "어휘단어장(통합)"
 ROUTINE_CHUNK_COUNT = 10
 CLOZE_TOKEN_OVERRIDES = {
     "cloak a in the guise of b": "cloak",
@@ -158,10 +158,14 @@ def build_words() -> list[dict]:
         override = get_example_override(example_overrides, word_id, word)
         word = override.get("word", word)
 
-        meaning = meaning_overrides.get(normalize_key(word), "")
+        sheet_meaning = clean(row[3] if len(row) > 3 else None)
+        meaning = meaning_overrides.get(normalize_key(word)) or sheet_meaning
 
-        example_en = override.get("exampleEn", "")
-        example_ko = override.get("exampleKo", "")
+        example_cell = row[4] if len(row) > 4 else None
+        example_raw = "" if example_cell is None else str(example_cell)
+        sheet_example_en, _, sheet_example_ko = example_raw.partition("\n")
+        example_en = override.get("exampleEn") or clean(sheet_example_en)
+        example_ko = override.get("exampleKo") or clean(sheet_example_ko)
         if example_en:
             cloze, cloze_answer = make_cloze(word, example_en)
         else:
@@ -183,8 +187,8 @@ def build_words() -> list[dict]:
                 "clozeExample": cloze,
                 "clozeAnswer": cloze_answer,
                 "expression": "",
-                "duplicateFileCount": (row[3] if len(row) > 3 else 0) or 0,
-                "appearanceCount": (row[4] if len(row) > 4 else 0) or 0,
+                "duplicateFileCount": (row[5] if len(row) > 5 else 0) or 0,
+                "appearanceCount": (row[6] if len(row) > 6 else 0) or 0,
             }
         )
 
