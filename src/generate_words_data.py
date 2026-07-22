@@ -10,17 +10,14 @@ from openpyxl import load_workbook
 
 
 ROOT = Path(__file__).resolve().parent
-WORKBOOK_PATH = ROOT / "TEPS_VOCA.xlsx"
-FREQUENT_WORKBOOK_PATH = ROOT / "TEPS_VOCA(O).xlsx"
+WORKBOOK_PATH = ROOT / "TEPS_Voca(통합).xlsx"
 PRONUNCIATION_PATH = ROOT / "pronunciations.json"
 MEANING_OVERRIDE_PATH = ROOT / "meaning_overrides.json"
 EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
-VOCAB_SHEET = "어휘단어장(통합)"
-READING_SHEET = "독해단어장(통합)"
-FREQUENT_SHEET = "빈출단어"
-ROUTINE_CHUNK_COUNT = 7
+FREQUENT_SHEET = "빈출단어_통합"
+ROUTINE_CHUNK_COUNT = 10
 CLOZE_TOKEN_OVERRIDES = {
     "cloak a in the guise of b": "cloak",
     "give ~ a shot": "give",
@@ -94,33 +91,6 @@ def get_example_override(
     return overrides.get(normalize_key(word_id)) or overrides.get(normalize_key(word)) or {}
 
 
-def split_example(value) -> tuple[str, str]:
-    text = str(value or "").strip()
-    if not text:
-        return "", ""
-
-    lines = [line.strip() for line in text.splitlines() if line.strip()]
-    if not lines:
-        return "", ""
-
-    english_lines: list[str] = []
-    korean_lines: list[str] = []
-    seen_korean = False
-
-    for line in lines:
-        if re.search(r"[가-힣]", line):
-            seen_korean = True
-            korean_lines.append(line)
-        elif seen_korean:
-            korean_lines.append(line)
-        else:
-            english_lines.append(line)
-
-    english = " ".join(english_lines).strip() or lines[0]
-    korean = " ".join(korean_lines).strip()
-    return english, korean
-
-
 def find_cloze_target(term: str, sentence: str) -> tuple[str, int, int] | None:
     if not term or not sentence:
         return None
@@ -162,229 +132,62 @@ def make_cloze(term: str, sentence: str) -> tuple[str, str]:
     return f"{sentence[:start]}____{sentence[end:]}", answer
 
 
-def split_lines(value) -> list[str]:
-    return [clean(line) for line in str(value or "").splitlines() if clean(line)]
-
-
-def pair_related_words(words_value, meanings_value) -> str:
-    related_words = split_lines(words_value)
-    related_meanings = split_lines(meanings_value)
-    if not related_words:
-        return ""
-
-    if len(related_words) == 1 and len(related_meanings) > 1:
-        return f"연관: {related_words[0]}: {' / '.join(related_meanings)}"
-
-    pairs: list[str] = []
-    for index, related_word in enumerate(related_words):
-        related_meaning = related_meanings[index] if index < len(related_meanings) else ""
-        pairs.append(f"{related_word}: {related_meaning}" if related_meaning else related_word)
-    if len(related_meanings) > len(related_words):
-        pairs.append(" / ".join(related_meanings[len(related_words) :]))
-    return "연관: " + "; ".join(pairs)
-
-
-def build_expression(related_words, related_meanings, point) -> str:
-    parts = [part for part in [pair_related_words(related_words, related_meanings), clean(point)] if part]
-    return " | ".join(parts)
-
-
-def extract_point_meaning(word: str, point) -> str:
-    if not word or point is None:
-        return ""
-
-    for line in split_lines(point):
-        match = re.match(rf"(?i)^{re.escape(word)}\s*:\s*(.+)$", line)
-        if not match:
-            continue
-
-        meaning = match.group(1).strip()
-        next_term = re.search(r"\s+[A-Za-z][A-Za-z\s\-\(\)]{0,35}\s*:", meaning)
-        if next_term:
-            meaning = meaning[: next_term.start()].strip()
-        meaning = re.sub(r"\s+:\s*$", "", meaning).strip(" ,;/")
-        if re.search(r"[가-힣]", meaning):
-            return meaning
-
-    return ""
-
-
-def build_frequent_words(
-    meaning_lookup: dict[str, str],
-    pronunciation_lookup: dict[str, str],
-    meaning_overrides: dict[str, str],
-    example_overrides: dict[str, dict[str, str]],
-) -> list[dict]:
-    if not FREQUENT_WORKBOOK_PATH.exists():
-        return []
-
-    workbook = load_workbook(FREQUENT_WORKBOOK_PATH, read_only=True, data_only=True)
-    sheet = workbook[FREQUENT_SHEET]
-    rows: list[dict] = []
-    current_day = ""
-
-    for row in sheet.iter_rows(min_row=2, values_only=True):
-        day_marker = clean(row[0] if len(row) > 0 else None)
-        if re.fullmatch(r"DAY\d+", day_marker, flags=re.IGNORECASE):
-            current_day = day_marker.upper()
-
-        word = clean(row[2] if len(row) > 2 else None)
-        if not word:
-            continue
-
-        rank = len(rows) + 1
-        word_id = f"F{rank:04d}"
-        override = get_example_override(example_overrides, word_id, word)
-        word = override.get("word", word)
-
-        meaning = clean(row[3] if len(row) > 3 else None)
-        meaning_source = "file" if meaning else ""
-        if not meaning:
-            meaning = meaning_lookup.get(normalize_key(word), "")
-            meaning_source = "existing" if meaning else ""
-        if not meaning:
-            meaning = extract_point_meaning(word, row[7] if len(row) > 7 else None)
-            meaning_source = "point" if meaning else ""
-        if meaning_overrides.get(normalize_key(word)):
-            meaning = meaning_overrides[normalize_key(word)]
-            meaning_source = "override"
-
-        example_en, example_ko = split_example(row[4] if len(row) > 4 else None)
-        example_en = override.get("exampleEn", example_en)
-        example_ko = override.get("exampleKo", example_ko)
-        cloze, cloze_answer = make_cloze(word, example_en)
-
-        rows.append(
-            {
-                "id": word_id,
-                "source": "frequent",
-                "sourceLabel": "빈출",
-                "rank": rank,
-                "chunk": 0,
-                "word": word,
-                "meaning": meaning,
-                "pronunciation": pronunciation_lookup.get(normalize_key(word), ""),
-                "group": current_day,
-                "exampleEn": example_en,
-                "exampleKo": example_ko,
-                "clozeExample": cloze,
-                "clozeAnswer": cloze_answer,
-                "expression": build_expression(
-                    row[5] if len(row) > 5 else None,
-                    row[6] if len(row) > 6 else None,
-                    row[7] if len(row) > 7 else None,
-                ),
-                "duplicateFileCount": 0,
-                "appearanceCount": 1,
-                "originalNo": row[1] if len(row) > 1 else "",
-                "meaningSource": meaning_source,
-            }
-        )
-
-    return rows
-
-
 def assign_routine_chunks(words: list[dict]) -> None:
-    grouped_words: dict[str, list[dict]] = {}
-    for word in words:
-        grouped_words.setdefault(word["source"], []).append(word)
-
-    for source_words in grouped_words.values():
-        chunk_size = max(1, math.ceil(len(source_words) / ROUTINE_CHUNK_COUNT))
-        for index, word in enumerate(source_words):
-            chunk = (index // chunk_size) + 1
-            word["chunk"] = min(ROUTINE_CHUNK_COUNT, chunk)
+    chunk_size = max(1, math.ceil(len(words) / ROUTINE_CHUNK_COUNT))
+    for index, word in enumerate(words):
+        chunk = (index // chunk_size) + 1
+        word["chunk"] = min(ROUTINE_CHUNK_COUNT, chunk)
 
 
 def build_words() -> list[dict]:
     workbook = load_workbook(WORKBOOK_PATH, read_only=True, data_only=True)
-    words: list[dict] = []
-    meaning_lookup: dict[str, str] = {}
+    sheet = workbook[FREQUENT_SHEET]
+
     pronunciation_lookup = load_pronunciations()
     meaning_overrides = load_meaning_overrides()
     example_overrides = load_example_overrides()
 
-    vocab_sheet = workbook[VOCAB_SHEET]
-    for row in vocab_sheet.iter_rows(min_row=2, values_only=True):
-        rank = row[0]
-        word = clean(row[2])
+    words: list[dict] = []
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+        rank = row[0] if len(row) > 0 else None
+        word = clean(row[2] if len(row) > 2 else None)
         if not rank or not word:
             continue
 
-        word_id = f"V{int(rank):04d}"
+        word_id = f"F{int(rank):04d}"
         override = get_example_override(example_overrides, word_id, word)
         word = override.get("word", word)
-        example_en, example_ko = split_example(row[4])
-        example_en = override.get("exampleEn", example_en)
-        example_ko = override.get("exampleKo", example_ko)
-        cloze, cloze_answer = make_cloze(word, example_en)
+
+        meaning = meaning_overrides.get(normalize_key(word), "")
+
+        example_en = override.get("exampleEn", "")
+        example_ko = override.get("exampleKo", "")
+        if example_en:
+            cloze, cloze_answer = make_cloze(word, example_en)
+        else:
+            cloze, cloze_answer = "", ""
+
         words.append(
             {
                 "id": word_id,
-                "source": "vocab",
-                "sourceLabel": "어휘",
+                "source": "frequent",
+                "sourceLabel": "빈출",
                 "rank": int(rank),
                 "chunk": 0,
                 "word": word,
-                "meaning": meaning_overrides.get(normalize_key(word), clean(row[3])),
+                "meaning": meaning,
                 "pronunciation": pronunciation_lookup.get(normalize_key(word), ""),
-                "group": clean(row[1]),
+                "group": clean(row[1] if len(row) > 1 else None),
                 "exampleEn": example_en,
                 "exampleKo": example_ko,
                 "clozeExample": cloze,
                 "clozeAnswer": cloze_answer,
                 "expression": "",
-                "duplicateFileCount": row[5] or 0,
-                "appearanceCount": row[6] or 0,
+                "duplicateFileCount": (row[3] if len(row) > 3 else 0) or 0,
+                "appearanceCount": (row[4] if len(row) > 4 else 0) or 0,
             }
         )
-        meaning_lookup.setdefault(normalize_key(word), clean(row[3]))
 
-    reading_sheet = workbook[READING_SHEET]
-    for row in reading_sheet.iter_rows(min_row=2, values_only=True):
-        rank = row[1]
-        word = clean(row[2])
-        if not rank or not word:
-            continue
-
-        word_id = f"R{int(rank):04d}"
-        override = get_example_override(example_overrides, word_id, word)
-        word = override.get("word", word)
-        example_en, example_ko = split_example(row[4])
-        example_en = override.get("exampleEn", example_en)
-        example_ko = override.get("exampleKo", example_ko)
-        cloze, cloze_answer = make_cloze(word, example_en)
-
-        words.append(
-            {
-                "id": word_id,
-                "source": "reading",
-                "sourceLabel": "독해",
-                "rank": int(rank),
-                "chunk": 0,
-                "word": word,
-                "meaning": meaning_overrides.get(normalize_key(word), clean(row[3])),
-                "pronunciation": pronunciation_lookup.get(normalize_key(word), ""),
-                "group": "",
-                "exampleEn": example_en,
-                "exampleKo": example_ko,
-                "clozeExample": cloze,
-                "clozeAnswer": cloze_answer,
-                "expression": clean(row[5]),
-                "duplicateFileCount": 0,
-                "appearanceCount": row[6] or 0,
-            }
-        )
-        meaning_lookup.setdefault(normalize_key(word), clean(row[3]))
-
-    words.extend(
-        build_frequent_words(
-            meaning_lookup,
-            pronunciation_lookup,
-            meaning_overrides,
-            example_overrides,
-        )
-    )
     assign_routine_chunks(words)
     return words
 
@@ -395,39 +198,36 @@ def main() -> None:
         str(chunk): sum(1 for word in words if word["chunk"] == chunk)
         for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
     }
-    chunk_counts_by_source = {
-        source: {
-            str(chunk): sum(
-                1 for word in words if word["source"] == source and word["chunk"] == chunk
-            )
-            for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
-        }
-        for source in ("vocab", "reading", "frequent")
-    }
+    meaning_coverage = sum(1 for word in words if word["meaning"])
+    pronunciation_coverage = sum(1 for word in words if word["pronunciation"])
+
     meta = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
-        "sourceFile": "src/TEPS_VOCA.xlsx + src/TEPS_VOCA(O).xlsx",
-        "sourceFiles": ["src/TEPS_VOCA.xlsx", "src/TEPS_VOCA(O).xlsx"],
+        "sourceFile": "src/TEPS_Voca(통합).xlsx",
+        "sourceFiles": ["src/TEPS_Voca(통합).xlsx"],
         "total": len(words),
         "counts": {
-            "vocab": sum(1 for word in words if word["source"] == "vocab"),
-            "reading": sum(1 for word in words if word["source"] == "reading"),
-            "frequent": sum(1 for word in words if word["source"] == "frequent"),
+            "frequent": len(words),
+        },
+        "coverage": {
+            "meaning": meaning_coverage,
+            "pronunciation": pronunciation_coverage,
         },
         "chunkCounts": chunk_counts,
-        "chunkCountsBySource": chunk_counts_by_source,
         "chunkRule": {
-            "routine": "split each source evenly across a 7-day cycle",
+            "routine": f"split the frequent-word list evenly across a {ROUTINE_CHUNK_COUNT}-day cycle",
         },
     }
 
     js = (
-        "// Generated from src/TEPS_VOCA.xlsx and src/TEPS_VOCA(O).xlsx by src/generate_words_data.py\n"
+        "// Generated from src/TEPS_Voca(통합).xlsx by src/generate_words_data.py\n"
         f"window.TEPS_META = {json.dumps(meta, ensure_ascii=False, indent=2)};\n"
         f"window.TEPS_WORDS = {json.dumps(words, ensure_ascii=False, indent=2)};\n"
     )
     OUTPUT_PATH.write_text(js, encoding="utf-8")
     print(f"Wrote {len(words)} words to {OUTPUT_PATH}")
+    print(f"Meaning coverage: {meaning_coverage}/{len(words)}")
+    print(f"Pronunciation coverage: {pronunciation_coverage}/{len(words)}")
 
 
 if __name__ == "__main__":

@@ -22,7 +22,8 @@
     hard: "Hard 압축",
   };
 
-  const routineChunkCount = 7;
+  const routineChunkCount = 10;
+  const reviewWindowDays = 5;
   const autoPlayPauseMs = 450;
 
   const defaultSettings = {
@@ -99,7 +100,7 @@
 
   function chunkOrderForDay(day) {
     const safeDay = Math.max(1, Number(day) || 1);
-    const reviewWindowSize = Math.min(3, safeDay);
+    const reviewWindowSize = Math.min(reviewWindowDays, safeDay);
     return Array.from({ length: reviewWindowSize }, (_, index) =>
       focusChunkForDay(safeDay - reviewWindowSize + index + 1),
     );
@@ -291,7 +292,7 @@
     $("#chunkStrip").innerHTML = dayOrder
       .map((chunk, index) => {
         const count = dashboardWords.filter((word) => word.chunk === chunk).length;
-        const label = chunk === focusChunk ? "오늘 추가" : "3일 복습";
+        const label = chunk === focusChunk ? "오늘 추가" : `${reviewWindowDays}일 복습`;
         return `
           <span class="chunk-chip ${chunk === focusChunk ? "is-focus" : ""}">
             Chunk ${chunk}
@@ -302,7 +303,7 @@
       .join("");
 
     const orderText = dayOrder.map((chunk) => `Chunk ${chunk}`).join(" → ");
-    $("#planSummary").textContent = `Day ${settings.day}: ${orderText}. 최근 3개 Chunk까지만 묶어서 반복 학습합니다.`;
+    $("#planSummary").textContent = `Day ${settings.day}: ${orderText}. 최근 ${reviewWindowDays}개 Chunk까지만 묶어서 반복 학습합니다.`;
   }
 
   function renderTrainer() {
