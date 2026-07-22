@@ -298,8 +298,20 @@ def add_candidates(results: list[str], seen: set[str], candidates: list[str], li
             return
 
 
+def guess_singular(term: str) -> str | None:
+    lower = term.lower()
+    if len(lower) < 4 or not lower.endswith("s") or lower.endswith("ss"):
+        return None
+    if lower.endswith("ies"):
+        return lower[:-3] + "y"
+    if lower.endswith(("ches", "shes", "xes", "zes")):
+        return lower[:-2]
+    return lower[:-1]
+
+
 def collect_meanings(
     term: str,
+    naver_meanings: list[str],
     search_data: dict | None,
     google_data: dict | None,
     papago_data: dict | None,
@@ -314,11 +326,9 @@ def collect_meanings(
             add_candidates(meanings, seen, collect_google_translation(google_data), limit)
         if papago_data and not papago_data.get("_error"):
             add_candidates(meanings, seen, collect_papago_translation(papago_data), limit)
-        if search_data and not search_data.get("_error"):
-            add_candidates(meanings, seen, collect_naver_meanings(term, search_data, limit), limit)
+        add_candidates(meanings, seen, naver_meanings, limit)
     else:
-        if search_data and not search_data.get("_error"):
-            add_candidates(meanings, seen, collect_naver_meanings(term, search_data, limit), limit)
+        add_candidates(meanings, seen, naver_meanings, limit)
         if google_data and not google_data.get("_error"):
             add_candidates(meanings, seen, collect_google_translation(google_data), limit)
         if papago_data and not papago_data.get("_error"):
@@ -363,6 +373,27 @@ def build_overrides(
         )
         direct_entry = has_direct_entry(term, search_data)
         needs_translation = not direct_entry or not naver_meanings
+
+        # Plural entries (e.g. "provisions") sometimes carry only a narrow,
+        # idiomatic sense in the dictionary while the singular lemma has the
+        # fuller set of common meanings. Top up from the singular when thin,
+        # but only as an addition -- it must not change whether translation
+        # fallback runs, or it can bump a better Google/Papago sense for a
+        # weaker singular-lemma one (e.g. "embodiments" losing "실시예").
+        if use_naver and len(naver_meanings) <= 2:
+            singular = guess_singular(term)
+            if singular:
+                singular_data = get_search_data(singular, cache, delay)
+                if singular_data and not singular_data.get("_error"):
+                    extra = collect_naver_meanings(singular, singular_data)
+                    seen_norm = {re.sub(r"\s+", "", m) for m in naver_meanings}
+                    for candidate in extra:
+                        normalized = re.sub(r"\s+", "", candidate)
+                        if normalized in seen_norm:
+                            continue
+                        seen_norm.add(normalized)
+                        naver_meanings.append(candidate)
+
         google_data = (
             get_translate_data("google", GOOGLE_TRANSLATE_URL, term, translation_cache, delay)
             if use_google and needs_translation
@@ -373,7 +404,7 @@ def build_overrides(
             if use_papago and needs_translation
             else None
         )
-        meanings = collect_meanings(term, search_data, google_data, papago_data)
+        meanings = collect_meanings(term, naver_meanings, search_data, google_data, papago_data)
         if meanings:
             entries[generate_words_data.normalize_key(term)] = ", ".join(meanings[:5])
         else:
