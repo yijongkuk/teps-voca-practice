@@ -860,10 +860,9 @@
     itemProgress.updatedAt = new Date().toISOString();
     saveProgress();
 
-    const nextId = queue[currentIndex + 1]?.id;
-    revealed = false;
-    feedback = null;
-    rebuildAndRender(nextId);
+    renderDashboard();
+    setStatusButtonState(word);
+    renderQueue();
   }
 
   function checkAnswer(word, rawAnswer) {
