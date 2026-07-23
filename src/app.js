@@ -25,7 +25,7 @@
   const routineChunkCount = 10;
   const reviewWindowDays = 5;
   const autoPlayPauseMs = 450;
-  const wordSpeechDelayMs = 2000;
+  const wordSpeechDelayMs = 1000;
 
   const defaultSettings = {
     day: 1,
