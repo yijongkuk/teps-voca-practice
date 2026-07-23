@@ -11,6 +11,7 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parent
 WORKBOOK_PATH = ROOT / "TEPS_Voca(통합).xlsx"
+CONNECTOR_WORKBOOK_PATH = ROOT / "TEPS_Reading_9-10_Connectors.xlsx"
 PRONUNCIATION_PATH = ROOT / "pronunciations.json"
 MEANING_OVERRIDE_PATH = ROOT / "meaning_overrides.json"
 EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
@@ -19,6 +20,7 @@ EXTERNAL_DETAIL_PATH = ROOT / "external_word_details.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
 FREQUENT_SHEET = "어휘단어장(통합)"
+CONNECTOR_SHEET = "접속사 통합"
 ROUTINE_CHUNK_COUNT = 10
 CLOZE_TOKEN_OVERRIDES = {
     "cloak a in the guise of b": "cloak",
@@ -318,13 +320,78 @@ def build_external_words() -> list[dict]:
     return [*oxford_words, *awl_words]
 
 
+def build_connector_words() -> list[dict]:
+    if not CONNECTOR_WORKBOOK_PATH.exists():
+        return []
+
+    workbook = load_workbook(
+        CONNECTOR_WORKBOOK_PATH,
+        read_only=True,
+        data_only=True,
+    )
+    sheet = workbook[CONNECTOR_SHEET]
+    pronunciation_lookup = load_pronunciations()
+
+    words: list[dict] = []
+    for rank, row in enumerate(
+        sheet.iter_rows(min_row=6, values_only=True),
+        start=1,
+    ):
+        word = clean(row[0] if len(row) > 0 else None)
+        if not word:
+            continue
+
+        logic = clean(row[1] if len(row) > 1 else None)
+        grammar = clean(row[2] if len(row) > 2 else None)
+        meaning = clean(row[3] if len(row) > 3 else None)
+        usage_note = clean(row[4] if len(row) > 4 else None)
+        example_en = clean(row[5] if len(row) > 5 else None)
+        example_ko = clean(row[6] if len(row) > 6 else None)
+        cloze, cloze_answer = (
+            make_cloze(word, example_en) if example_en else ("", "")
+        )
+
+        words.append(
+            {
+                "id": f"C{rank:03d}",
+                "source": "connectors",
+                "sourceLabel": "TEPS 접속사",
+                "rank": rank,
+                "chunk": 0,
+                "word": word,
+                "meaning": meaning,
+                "pronunciation": pronunciation_lookup.get(normalize_key(word), ""),
+                "group": " · ".join(part for part in (logic, grammar) if part),
+                "exampleEn": example_en,
+                "exampleKo": example_ko,
+                "clozeExample": cloze,
+                "clozeAnswer": cloze_answer,
+                "expression": "",
+                "usageNote": usage_note,
+                "searchTerms": [value for value in (logic, grammar) if value],
+                "duplicateFileCount": 0,
+                "appearanceCount": (row[7] if len(row) > 7 else 0) or 0,
+                "correctCount": (row[8] if len(row) > 8 else 0) or 0,
+                "sourceLocation": clean(row[9] if len(row) > 9 else None),
+            }
+        )
+
+    workbook.close()
+    assign_routine_chunks(words)
+    return words
+
+
 def build_words() -> list[dict]:
-    return [*build_frequent_words(), *build_external_words()]
+    return [
+        *build_frequent_words(),
+        *build_connector_words(),
+        *build_external_words(),
+    ]
 
 
 def main() -> None:
     words = build_words()
-    sources = ("frequent", "oxford5000", "awl")
+    sources = ("frequent", "connectors", "oxford5000", "awl")
     chunk_counts = {
         source: {
             str(chunk): sum(
@@ -344,6 +411,7 @@ def main() -> None:
         "sourceFile": "src/TEPS_Voca(통합).xlsx",
         "sourceFiles": [
             "src/TEPS_Voca(통합).xlsx",
+            "src/TEPS_Reading_9-10_Connectors.xlsx",
             "src/external_word_lists.json",
             "src/external_word_details.json",
         ],

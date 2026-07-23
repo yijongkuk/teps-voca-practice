@@ -204,6 +204,8 @@
           word.word,
           word.meaning,
           word.expression,
+          word.group,
+          word.usageNote,
           ...(Array.isArray(word.searchTerms) ? word.searchTerms : []),
           word.exampleEn,
           word.exampleKo,
@@ -264,7 +266,14 @@
   }
 
   function sourceOrder(word) {
-    const order = { frequent: 0, oxford5000: 1, awl: 2, vocab: 3, reading: 4 };
+    const order = {
+      frequent: 0,
+      connectors: 1,
+      oxford5000: 2,
+      awl: 3,
+      vocab: 4,
+      reading: 5,
+    };
     return order[word.source] ?? 99;
   }
 
@@ -416,6 +425,7 @@
         <p>${renderMeaningText(word)}</p>
       </div>
       ${renderExample(word, true)}
+      ${renderUsageNote(word)}
       ${renderExpression(word)}
     `;
   }
@@ -428,9 +438,9 @@
       ${
         revealed
           ? `<div class="answer-panel"><strong>${renderMeaningText(word)}</strong></div>${renderExample(
-              word,
+            word,
               true,
-            )}${renderExpression(word)}`
+            )}${renderUsageNote(word)}${renderExpression(word)}`
           : `<div class="hidden-panel">뜻 가림</div><button type="button" class="primary-button" id="revealBtn">뜻 보기</button>`
       }
       ${renderFeedback()}
@@ -452,7 +462,7 @@
         revealed
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong><span>${escapeHtml(
               word.meaning || "뜻 정보 없음",
-            )}</span></div>${renderExample(word, true)}`
+            )}</span></div>${renderExample(word, true)}${renderUsageNote(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -472,9 +482,9 @@
       ${
         revealed
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong></div>${renderExample(
-              word,
+            word,
               true,
-            )}${renderExpression(word)}`
+            )}${renderUsageNote(word)}${renderExpression(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -510,6 +520,15 @@
     }
     return `<div class="expression-box"><span>함께 외울 표현</span><strong>${escapeHtml(
       word.expression,
+    )}</strong></div>`;
+  }
+
+  function renderUsageNote(word) {
+    if (!word.usageNote) {
+      return "";
+    }
+    return `<div class="expression-box"><span>뉘앙스·사용법</span><strong>${escapeHtml(
+      word.usageNote,
     )}</strong></div>`;
   }
 

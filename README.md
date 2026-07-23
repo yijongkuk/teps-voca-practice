@@ -1,6 +1,6 @@
 # 단어 반복 연습장
 
-TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`(`어휘단어장(통합)` 시트), Oxford 5000 추가 목록, AWL570을 바탕으로 만든 웹용 단어 반복 학습장입니다.
+TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어장 `src/TEPS_Reading_9-10_Connectors.xlsx`, Oxford 5000 추가 목록, AWL570을 바탕으로 만든 웹용 단어 반복 학습장입니다.
 
 ## 기능
 
@@ -11,7 +11,7 @@ TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`(`어휘단어장(통합
 - 카드 훑기, 뜻 가리기, 예문 빈칸, 한글 뜻 -> 영어 타이핑
 - CMUdict 기반 발음기호 표시
 - Hard 단어 압축 복습
-- TEPS 어휘빈출 / Oxford 5000 / AWL570 단어장별 필터와 독립 청크
+- TEPS 어휘빈출 / TEPS 접속사 / Oxford 5000 / AWL570 단어장별 필터와 독립 청크
 - 표제어, 뜻, 예문, AWL 관련 어형 통합 검색
 - 브라우저 TTS 기반 단어/예문 듣기
 - 브라우저 localStorage 진도 저장
