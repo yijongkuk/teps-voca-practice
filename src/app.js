@@ -595,9 +595,10 @@
       return;
     }
     const itemProgress = ensureProgress(word);
+    const nextStatus = getStatus(word) === status ? "New" : status;
     itemProgress.viewed = true;
     itemProgress.lastViewed = todayKey();
-    itemProgress.status = status;
+    itemProgress.status = nextStatus;
     itemProgress.seen = Number(itemProgress.seen || 0) + 1;
     itemProgress.lastSeen = todayKey();
     itemProgress.updatedAt = new Date().toISOString();
