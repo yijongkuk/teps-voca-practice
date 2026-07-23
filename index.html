@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TEPS 단어 반복 연습장</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles.css?v=20260723-saved-example-words">
   </head>
   <body>
     <div class="shell">
@@ -124,7 +124,7 @@
         </label>
         <label class="search-field">
           <span class="field-label">검색</span>
-          <input type="search" id="searchInput" placeholder="단어, 뜻">
+          <input type="search" id="searchInput" placeholder="단어, 뜻, 예문">
         </label>
       </section>
 
@@ -159,10 +159,18 @@
           </div>
         </article>
 
-        <aside class="queue-panel" aria-label="세션 단어 목록">
+        <aside class="queue-panel" aria-label="세션 및 저장 단어 목록">
+          <div class="panel-tabs" role="tablist" aria-label="오른쪽 목록 선택">
+            <button type="button" id="panelQueueTab" role="tab" aria-selected="true">
+              세션 목록
+            </button>
+            <button type="button" id="panelSavedTab" role="tab" aria-selected="false">
+              저장 단어 <span id="savedWordCountBadge">0</span>
+            </button>
+          </div>
           <div class="queue-head">
             <div>
-              <span class="field-label">세션 목록</span>
+              <span class="field-label" id="panelTitle">세션 목록</span>
               <strong id="queueCount">0개</strong>
             </div>
             <button type="button" class="ghost-button" id="restartBtn">처음으로</button>
@@ -172,7 +180,11 @@
       </main>
     </div>
 
-    <script src="src/words-data.js?v=20260723-status-toggle"></script>
-    <script src="src/app.js?v=20260723-status-toggle"></script>
+    <button type="button" class="selection-save-popover" id="selectionSavePopover" hidden>
+      선택 저장
+    </button>
+
+    <script src="src/words-data.js?v=20260723-saved-example-words"></script>
+    <script src="src/app.js?v=20260723-saved-example-words"></script>
   </body>
 </html>

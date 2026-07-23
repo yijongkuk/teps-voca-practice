@@ -5,6 +5,7 @@
   const meta = window.TEPS_META || {};
   const progressKey = "teps-voca-progress-v1";
   const settingsKey = "teps-voca-settings-v1";
+  const savedWordsKey = "teps-voca-saved-example-words-v1";
 
   const statusConfig = {
     New: { label: "미학습", className: "status-new", weight: 3 },
@@ -40,6 +41,9 @@
 
   let progress = loadJson(progressKey, {});
   let settings = normalizeSettings({ ...defaultSettings, ...loadJson(settingsKey, {}) });
+  let savedWords = normalizeSavedWords(loadJson(savedWordsKey, []));
+  let sidePanelView = "queue";
+  let pendingExampleSelection = null;
   let queue = [];
   let currentIndex = 0;
   let revealed = false;
@@ -70,12 +74,34 @@
     return next;
   }
 
+  function normalizeSavedWords(value) {
+    if (!Array.isArray(value)) {
+      return [];
+    }
+    return value
+      .filter((item) => item && typeof item === "object" && String(item.text || "").trim())
+      .map((item, index) => ({
+        id: String(item.id || `saved-${Date.now()}-${index}`),
+        text: String(item.text || "").trim(),
+        note: String(item.note || ""),
+        sourceWordId: String(item.sourceWordId || ""),
+        sourceWord: String(item.sourceWord || ""),
+        exampleEn: String(item.exampleEn || ""),
+        exampleKo: String(item.exampleKo || ""),
+        createdAt: String(item.createdAt || new Date().toISOString()),
+      }));
+  }
+
   function saveProgress() {
     localStorage.setItem(progressKey, JSON.stringify(progress));
   }
 
   function saveSettings() {
     localStorage.setItem(settingsKey, JSON.stringify(settings));
+  }
+
+  function saveSavedWords() {
+    localStorage.setItem(savedWordsKey, JSON.stringify(savedWords));
   }
 
   function todayKey() {
@@ -171,7 +197,15 @@
         return false;
       }
       if (query) {
-        const text = [word.word, word.meaning, word.expression].join(" ").toLowerCase();
+        const text = [
+          word.word,
+          word.meaning,
+          word.expression,
+          word.exampleEn,
+          word.exampleKo,
+        ]
+          .join(" ")
+          .toLowerCase();
         if (!text.includes(query)) {
           return false;
         }
@@ -181,10 +215,21 @@
 
     result.sort((a, b) => {
       if (query) {
-        const aWord = String(a.word || "").toLowerCase();
-        const bWord = String(b.word || "").toLowerCase();
-        const searchRank = (word) => (word === query ? 0 : word.startsWith(query) ? 1 : 2);
-        const rankDifference = searchRank(aWord) - searchRank(bWord);
+        const searchRank = (word) => {
+          const headword = String(word.word || "").toLowerCase();
+          if (headword === query) {
+            return 0;
+          }
+          if (headword.startsWith(query)) {
+            return 1;
+          }
+          if (headword.includes(query)) {
+            return 2;
+          }
+          const definition = [word.meaning, word.expression].join(" ").toLowerCase();
+          return definition.includes(query) ? 3 : 4;
+        };
+        const rankDifference = searchRank(a) - searchRank(b);
         if (rankDifference) {
           return rankDifference;
         }
@@ -311,6 +356,7 @@
   }
 
   function renderTrainer() {
+    hideSelectionPopover();
     $("#sessionMode").textContent = modeLabels[settings.mode] || "카드 훑기";
     $("#positionText").textContent = queue.length ? `${currentIndex + 1} / ${queue.length}` : "0 / 0";
 
@@ -437,8 +483,19 @@
     }
     return `
       <div class="example-box">
-        ${word.exampleEn ? `<p class="example-en">${escapeHtml(word.exampleEn)}</p>` : ""}
+        ${
+          word.exampleEn
+            ? `<p class="example-en save-source" data-word-id="${escapeHtml(
+                word.id,
+              )}" title="저장할 단어나 구문을 드래그하세요">${escapeHtml(word.exampleEn)}</p>`
+            : ""
+        }
         ${showKorean && word.exampleKo ? `<p class="example-ko">${escapeHtml(word.exampleKo)}</p>` : ""}
+        ${
+          word.exampleEn
+            ? `<p class="selection-hint">저장할 단어나 구문을 드래그하면 저장 버튼이 나타납니다.</p>`
+            : ""
+        }
       </div>
     `;
   }
@@ -517,8 +574,203 @@
     }
   }
 
+  function hideSelectionPopover(clearSelection = false) {
+    const popover = $("#selectionSavePopover");
+    popover.hidden = true;
+    pendingExampleSelection = null;
+    if (clearSelection) {
+      window.getSelection()?.removeAllRanges();
+    }
+  }
+
+  function captureExampleSelection() {
+    const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0 || selection.isCollapsed) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const anchorElement =
+      selection.anchorNode?.nodeType === Node.ELEMENT_NODE
+        ? selection.anchorNode
+        : selection.anchorNode?.parentElement;
+    const focusElement =
+      selection.focusNode?.nodeType === Node.ELEMENT_NODE
+        ? selection.focusNode
+        : selection.focusNode?.parentElement;
+    const source = anchorElement?.closest(".example-en.save-source");
+    if (!source || !source.contains(focusElement)) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const text = selection
+      .toString()
+      .replace(/\s+/g, " ")
+      .replace(/^[\s.,!?;:'"()[\]{}]+|[\s.,!?;:'"()[\]{}]+$/g, "")
+      .trim();
+    if (!text || text.length > 80) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const sourceWord = words.find((word) => word.id === source.dataset.wordId);
+    if (!sourceWord) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const rect = selection.getRangeAt(0).getBoundingClientRect();
+    const popover = $("#selectionSavePopover");
+    pendingExampleSelection = { text, sourceWord };
+    popover.style.left = `${Math.max(
+      8,
+      Math.min(window.innerWidth - 112, rect.left + rect.width / 2 - 48),
+    )}px`;
+    popover.style.top = `${Math.min(window.innerHeight - 52, rect.bottom + 8)}px`;
+    popover.hidden = false;
+  }
+
+  function savePendingExampleSelection() {
+    if (!pendingExampleSelection) {
+      return;
+    }
+    const { text, sourceWord } = pendingExampleSelection;
+    const duplicate = savedWords.find(
+      (item) =>
+        item.sourceWordId === sourceWord.id &&
+        item.text.toLocaleLowerCase() === text.toLocaleLowerCase(),
+    );
+    if (!duplicate) {
+      savedWords.unshift({
+        id: `saved-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        text,
+        note: "",
+        sourceWordId: sourceWord.id,
+        sourceWord: sourceWord.word,
+        exampleEn: sourceWord.exampleEn || "",
+        exampleKo: sourceWord.exampleKo || "",
+        createdAt: new Date().toISOString(),
+      });
+      saveSavedWords();
+    }
+    sidePanelView = "saved";
+    hideSelectionPopover(true);
+    renderQueue();
+  }
+
+  function updateSavedWordNote(id, note) {
+    const item = savedWords.find((saved) => saved.id === id);
+    if (!item) {
+      return;
+    }
+    item.note = note;
+    saveSavedWords();
+  }
+
+  function deleteSavedWord(id) {
+    savedWords = savedWords.filter((item) => item.id !== id);
+    saveSavedWords();
+    renderQueue();
+  }
+
+  function openSavedWordSource(id) {
+    const item = savedWords.find((saved) => saved.id === id);
+    if (!item) {
+      return;
+    }
+    sidePanelView = "queue";
+    settings.mode = "cards";
+    settings.source = "all";
+    settings.status = "all";
+    settings.search = item.sourceWord;
+    saveSettings();
+    revealed = false;
+    feedback = null;
+    rebuildAndRender(item.sourceWordId);
+  }
+
+  function setSidePanelView(view) {
+    sidePanelView = view === "saved" ? "saved" : "queue";
+    hideSelectionPopover(true);
+    renderQueue();
+  }
+
+  function renderSavedWords() {
+    if (!savedWords.length) {
+      $("#queueList").innerHTML = `
+        <div class="saved-empty">
+          <strong>저장한 단어가 없습니다.</strong>
+          <p>영어 예문에서 단어나 구문을 드래그해 저장해 보세요.</p>
+        </div>
+      `;
+      return;
+    }
+
+    $("#queueList").innerHTML = savedWords
+      .map(
+        (item) => `
+          <article class="saved-word-card">
+            <div class="saved-word-head">
+              <strong>${escapeHtml(item.text)}</strong>
+              <button type="button" class="saved-delete" data-saved-id="${escapeHtml(
+                item.id,
+              )}" aria-label="${escapeHtml(item.text)} 삭제">삭제</button>
+            </div>
+            <small>표제어: ${escapeHtml(item.sourceWord || "알 수 없음")}</small>
+            <p class="saved-example">${escapeHtml(item.exampleEn)}</p>
+            ${
+              item.exampleKo
+                ? `<p class="saved-example-ko">${escapeHtml(item.exampleKo)}</p>`
+                : ""
+            }
+            <textarea class="saved-note" data-saved-id="${escapeHtml(
+              item.id,
+            )}" rows="2" placeholder="뜻이나 메모를 입력하세요">${escapeHtml(item.note)}</textarea>
+            <div class="saved-word-actions">
+              <button type="button" class="ghost-button saved-speak" data-saved-id="${escapeHtml(
+                item.id,
+              )}">듣기</button>
+              <button type="button" class="ghost-button saved-source" data-saved-id="${escapeHtml(
+                item.id,
+              )}">원문 카드</button>
+            </div>
+          </article>
+        `,
+      )
+      .join("");
+
+    document.querySelectorAll(".saved-note").forEach((input) => {
+      input.addEventListener("input", () => updateSavedWordNote(input.dataset.savedId, input.value));
+    });
+    document.querySelectorAll(".saved-delete").forEach((button) => {
+      button.addEventListener("click", () => deleteSavedWord(button.dataset.savedId));
+    });
+    document.querySelectorAll(".saved-speak").forEach((button) => {
+      button.addEventListener("click", () => {
+        const item = savedWords.find((saved) => saved.id === button.dataset.savedId);
+        speak(item?.text, wordSpeechDelayMs);
+      });
+    });
+    document.querySelectorAll(".saved-source").forEach((button) => {
+      button.addEventListener("click", () => openSavedWordSource(button.dataset.savedId));
+    });
+  }
+
   function renderQueue() {
-    $("#queueCount").textContent = `${queue.length.toLocaleString("ko-KR")}개`;
+    $("#savedWordCountBadge").textContent = savedWords.length.toLocaleString("ko-KR");
+    $("#panelQueueTab").setAttribute("aria-selected", String(sidePanelView === "queue"));
+    $("#panelSavedTab").setAttribute("aria-selected", String(sidePanelView === "saved"));
+    $("#panelTitle").textContent = sidePanelView === "saved" ? "저장 단어" : "세션 목록";
+    const panelItemCount = sidePanelView === "saved" ? savedWords.length : queue.length;
+    $("#queueCount").textContent = `${panelItemCount.toLocaleString("ko-KR")}개`;
+    $("#restartBtn").hidden = sidePanelView === "saved";
+
+    if (sidePanelView === "saved") {
+      renderSavedWords();
+      return;
+    }
+
     if (!queue.length) {
       $("#queueList").innerHTML = `<p class="muted queue-empty">표시할 단어가 없습니다.</p>`;
       return;
@@ -874,11 +1126,12 @@
 
   function exportProgress() {
     const payload = {
-      version: 1,
+      version: 2,
       exportedAt: new Date().toISOString(),
       source: meta.sourceFile || "TEPS_VOCA.xlsx",
       settings,
       progress,
+      savedWords,
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
@@ -903,12 +1156,18 @@
         if (!payload.progress || typeof payload.progress !== "object") {
           throw new Error("No progress object");
         }
-        const confirmed = confirm("현재 브라우저의 진도를 불러온 파일로 교체할까요?");
+        const confirmed = confirm(
+          "현재 브라우저의 진도와 저장 단어를 불러온 파일의 내용으로 교체할까요?",
+        );
         if (!confirmed) {
           return;
         }
         progress = payload.progress;
         settings = normalizeSettings({ ...settings, ...(payload.settings || {}) });
+        if (Array.isArray(payload.savedWords)) {
+          savedWords = normalizeSavedWords(payload.savedWords);
+          saveSavedWords();
+        }
         saveProgress();
         saveSettings();
         currentIndex = 0;
@@ -924,12 +1183,15 @@
 
   function resetProgress() {
     stopAutoPlay();
-    const confirmed = confirm("저장된 상태, 정답/오답 기록을 모두 지울까요?");
+    const confirmed = confirm("저장된 상태, 정답/오답 기록, 저장 단어를 모두 지울까요?");
     if (!confirmed) {
       return;
     }
     progress = {};
+    savedWords = [];
     saveProgress();
+    saveSavedWords();
+    sidePanelView = "queue";
     currentIndex = 0;
     revealed = false;
     feedback = null;
@@ -947,6 +1209,17 @@
     $("#orderSelect").addEventListener("change", (event) => updateSetting("order", event.target.value));
     $("#limitSelect").addEventListener("change", (event) => updateSetting("limit", event.target.value));
     $("#searchInput").addEventListener("input", (event) => updateSetting("search", event.target.value));
+    $("#panelQueueTab").addEventListener("click", () => setSidePanelView("queue"));
+    $("#panelSavedTab").addEventListener("click", () => setSidePanelView("saved"));
+    $("#selectionSavePopover").addEventListener("mousedown", (event) => event.preventDefault());
+    $("#selectionSavePopover").addEventListener("click", savePendingExampleSelection);
+    document.addEventListener("mouseup", (event) => {
+      const clickedPopover =
+        event.target instanceof Element && event.target.closest("#selectionSavePopover");
+      if (!clickedPopover) {
+        window.setTimeout(captureExampleSelection, 0);
+      }
+    });
 
     $("#prevBtn").addEventListener("click", goPrev);
     $("#nextBtn").addEventListener("click", goNext);
