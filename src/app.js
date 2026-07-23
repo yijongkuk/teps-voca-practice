@@ -145,13 +145,15 @@
     const query = settings.search.trim().toLowerCase();
 
     let result = words.filter((word) => {
-      if (settings.chunk === "today" && !dayOrder.includes(word.chunk)) {
+      // A search is a global lookup. Applying the current study chunk first can
+      // hide the requested headword and leave an unrelated example-text match.
+      if (!query && settings.chunk === "today" && !dayOrder.includes(word.chunk)) {
         return false;
       }
-      if (settings.chunk === "focus" && word.chunk !== focusChunk) {
+      if (!query && settings.chunk === "focus" && word.chunk !== focusChunk) {
         return false;
       }
-      if (/^\d+$/.test(settings.chunk) && word.chunk !== Number(settings.chunk)) {
+      if (!query && /^\d+$/.test(settings.chunk) && word.chunk !== Number(settings.chunk)) {
         return false;
       }
       if (settings.source !== "all" && word.source !== settings.source) {
@@ -167,16 +169,7 @@
         return false;
       }
       if (query) {
-        const text = [
-          word.word,
-          word.meaning,
-          word.exampleEn,
-          word.exampleKo,
-          word.expression,
-          word.group,
-        ]
-          .join(" ")
-          .toLowerCase();
+        const text = [word.word, word.meaning, word.expression].join(" ").toLowerCase();
         if (!text.includes(query)) {
           return false;
         }
@@ -185,6 +178,15 @@
     });
 
     result.sort((a, b) => {
+      if (query) {
+        const aWord = String(a.word || "").toLowerCase();
+        const bWord = String(b.word || "").toLowerCase();
+        const searchRank = (word) => (word === query ? 0 : word.startsWith(query) ? 1 : 2);
+        const rankDifference = searchRank(aWord) - searchRank(bWord);
+        if (rankDifference) {
+          return rankDifference;
+        }
+      }
       if (settings.order === "rank") {
         return sourceOrder(a) - sourceOrder(b) || a.rank - b.rank;
       }
