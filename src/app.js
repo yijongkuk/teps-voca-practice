@@ -25,6 +25,7 @@
   const routineChunkCount = 10;
   const reviewWindowDays = 5;
   const autoPlayPauseMs = 450;
+  const wordSpeechDelayMs = 2000;
 
   const defaultSettings = {
     day: 1,
@@ -48,6 +49,7 @@
     token: 0,
     pauseTimer: null,
   };
+  let speechDelayTimer = null;
 
   const $ = (selector) => document.querySelector(selector);
 
@@ -733,13 +735,27 @@
     return utterance;
   }
 
-  function speak(text) {
+  function clearSpeechDelay() {
+    if (speechDelayTimer) {
+      window.clearTimeout(speechDelayTimer);
+      speechDelayTimer = null;
+    }
+  }
+
+  function speak(text, delayMs = 0) {
     stopAutoPlay();
     if (!text || !supportsSpeech()) {
       return;
     }
     window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(createEnglishUtterance(text));
+    if (delayMs <= 0) {
+      window.speechSynthesis.speak(createEnglishUtterance(text));
+      return;
+    }
+    speechDelayTimer = window.setTimeout(() => {
+      speechDelayTimer = null;
+      window.speechSynthesis.speak(createEnglishUtterance(text));
+    }, delayMs);
   }
 
   function syncPlaybackControls() {
@@ -758,24 +774,28 @@
   }
 
   function stopAutoPlay() {
-    if (!autoPlay.active && !autoPlay.pauseTimer) {
+    const wasAutoPlayActive = autoPlay.active || Boolean(autoPlay.pauseTimer);
+    if (!wasAutoPlayActive && !speechDelayTimer) {
       return;
     }
     autoPlay.active = false;
     autoPlay.token += 1;
     clearAutoPlayPause();
+    clearSpeechDelay();
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
-    renderTrainer();
-    renderQueue();
+    if (wasAutoPlayActive) {
+      renderTrainer();
+      renderQueue();
+    }
   }
 
   function isAutoPlayCurrent(token) {
     return autoPlay.active && autoPlay.token === token;
   }
 
-  function waitForAutoPlayPause(token) {
+  function waitForAutoPlayPause(token, delayMs = autoPlayPauseMs) {
     return new Promise((resolve) => {
       if (!isAutoPlayCurrent(token)) {
         resolve();
@@ -784,7 +804,7 @@
       autoPlay.pauseTimer = window.setTimeout(() => {
         autoPlay.pauseTimer = null;
         resolve();
-      }, autoPlayPauseMs);
+      }, delayMs);
     });
   }
 
@@ -819,6 +839,7 @@
       renderTrainer();
       renderQueue();
 
+      await waitForAutoPlayPause(token, wordSpeechDelayMs);
       await speakAutoPlayText(word.word, token);
       await waitForAutoPlayPause(token);
       await speakAutoPlayText(word.exampleEn, token);
@@ -938,7 +959,9 @@
       renderQueue();
     });
 
-    $("#speakWordBtn").addEventListener("click", () => speak(queue[currentIndex]?.word));
+    $("#speakWordBtn").addEventListener("click", () =>
+      speak(queue[currentIndex]?.word, wordSpeechDelayMs),
+    );
     $("#speakExampleBtn").addEventListener("click", () => speak(queue[currentIndex]?.exampleEn));
     $("#autoPlayBtn").addEventListener("click", startAutoPlay);
     $("#stopAutoPlayBtn").addEventListener("click", stopAutoPlay);
