@@ -198,7 +198,7 @@ def build_frequent_words() -> list[dict]:
             {
                 "id": word_id,
                 "source": "frequent",
-                "sourceLabel": "빈출",
+                "sourceLabel": "TEPS 어휘빈출",
                 "rank": int(rank),
                 "chunk": 0,
                 "word": word,
@@ -305,7 +305,7 @@ def build_external_words() -> list[dict]:
             make_card(
                 word_id=f"A{rank:03d}",
                 source="awl",
-                source_label="AWL 570",
+                source_label="AWL570",
                 rank=rank,
                 word=word,
                 group=f"Sublist {int(entry.get('sublist') or 0)}",

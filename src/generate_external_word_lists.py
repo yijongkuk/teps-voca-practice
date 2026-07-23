@@ -161,7 +161,7 @@ def parse_awl_html(path: Path) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Build normalized Oxford 5000 and AWL word-list data."
+        description="Build normalized Oxford 5000 and AWL570 word-list data."
     )
     parser.add_argument("--oxford-pdf", type=Path)
     parser.add_argument("--awl-html", type=Path)
@@ -203,7 +203,7 @@ def main() -> None:
                 "sourceEntryCount": oxford_source_entry_count,
             },
             "awl": {
-                "label": "AWL 570",
+                "label": "AWL570",
                 "description": "Academic Word List 570개 표제어",
                 "source": AWL_URL,
                 "count": len(awl_entries),

@@ -1,6 +1,6 @@
-# TEPS 단어 반복 연습장
+# 단어 반복 연습장
 
-빈출 단어장 `src/TEPS_Voca(통합).xlsx`(`어휘단어장(통합)` 시트), Oxford 5000 추가 목록, AWL 570을 바탕으로 만든 웹용 TEPS 단어 반복 학습장입니다.
+TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`(`어휘단어장(통합)` 시트), Oxford 5000 추가 목록, AWL570을 바탕으로 만든 웹용 단어 반복 학습장입니다.
 
 ## 기능
 
@@ -11,7 +11,7 @@
 - 카드 훑기, 뜻 가리기, 예문 빈칸, 한글 뜻 -> 영어 타이핑
 - CMUdict 기반 발음기호 표시
 - Hard 단어 압축 복습
-- 빈출 / Oxford 5000 / AWL 570 단어장별 필터와 독립 청크
+- TEPS 어휘빈출 / Oxford 5000 / AWL570 단어장별 필터와 독립 청크
 - 표제어, 뜻, 예문, AWL 관련 어형 통합 검색
 - 브라우저 TTS 기반 단어/예문 듣기
 - 브라우저 localStorage 진도 저장
@@ -53,7 +53,7 @@ python src\generate_pronunciations.py C:\tmp\cmudict.dict
 python src\generate_words_data.py
 ```
 
-## Oxford 5000 / AWL 원본 갱신
+## Oxford 5000 / AWL570 원본 갱신
 
 Oxford가 제공하는 PDF는 Oxford 3000에 더해지는 2,000개 항목입니다. 뜻별로 중복된 `counter`, `grave`, `strip`을 철자 기준으로 합쳐 앱에는 1,997개 고유 표제어가 들어갑니다. AWL은 10개 서브리스트의 570개 표제어와 관련 어형을 함께 저장합니다.
 

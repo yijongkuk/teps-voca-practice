@@ -1,6 +1,6 @@
 // Generated from the TEPS workbook and external word-list data by src/generate_words_data.py
 window.TEPS_META = {
-  "generatedAt": "2026-07-23T19:49:18",
+  "generatedAt": "2026-07-23T19:59:09",
   "sourceFile": "src/TEPS_Voca(통합).xlsx",
   "sourceFiles": [
     "src/TEPS_Voca(통합).xlsx",
@@ -63,7 +63,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0001",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1,
     "chunk": 1,
     "word": "feasible",
@@ -81,7 +81,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0002",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 2,
     "chunk": 1,
     "word": "ambiguous",
@@ -99,7 +99,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0003",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 3,
     "chunk": 1,
     "word": "arrange",
@@ -117,7 +117,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0004",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 4,
     "chunk": 1,
     "word": "innocuous",
@@ -135,7 +135,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0005",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 5,
     "chunk": 1,
     "word": "ominous",
@@ -153,7 +153,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0006",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 6,
     "chunk": 1,
     "word": "prudent",
@@ -171,7 +171,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0007",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 7,
     "chunk": 1,
     "word": "redundant",
@@ -189,7 +189,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0008",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 8,
     "chunk": 1,
     "word": "release",
@@ -207,7 +207,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0009",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 9,
     "chunk": 1,
     "word": "access",
@@ -225,7 +225,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0010",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 10,
     "chunk": 1,
     "word": "convoluted",
@@ -243,7 +243,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0011",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 11,
     "chunk": 1,
     "word": "deprivation",
@@ -261,7 +261,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0012",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 12,
     "chunk": 1,
     "word": "distribute",
@@ -279,7 +279,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0013",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 13,
     "chunk": 1,
     "word": "evade",
@@ -297,7 +297,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0014",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 14,
     "chunk": 1,
     "word": "indisputable",
@@ -315,7 +315,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0015",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 15,
     "chunk": 1,
     "word": "inspired",
@@ -333,7 +333,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0016",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 16,
     "chunk": 1,
     "word": "rehabilitate",
@@ -351,7 +351,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0017",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 17,
     "chunk": 1,
     "word": "repudiated",
@@ -369,7 +369,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0018",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 18,
     "chunk": 1,
     "word": "stock",
@@ -387,7 +387,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0019",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 19,
     "chunk": 1,
     "word": "pass",
@@ -405,7 +405,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0020",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 20,
     "chunk": 1,
     "word": "detach",
@@ -423,7 +423,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0021",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 21,
     "chunk": 1,
     "word": "abundance",
@@ -441,7 +441,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0022",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 22,
     "chunk": 1,
     "word": "barriers",
@@ -459,7 +459,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0023",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 23,
     "chunk": 1,
     "word": "book",
@@ -477,7 +477,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0024",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 24,
     "chunk": 1,
     "word": "confidential",
@@ -495,7 +495,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0025",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 25,
     "chunk": 1,
     "word": "discreet",
@@ -513,7 +513,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0026",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 26,
     "chunk": 1,
     "word": "divergent",
@@ -531,7 +531,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0027",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 27,
     "chunk": 1,
     "word": "entry",
@@ -549,7 +549,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0028",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 28,
     "chunk": 1,
     "word": "exhibited",
@@ -567,7 +567,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0029",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 29,
     "chunk": 1,
     "word": "give",
@@ -585,7 +585,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0030",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 30,
     "chunk": 1,
     "word": "granted",
@@ -603,7 +603,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0031",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 31,
     "chunk": 1,
     "word": "incipient",
@@ -621,7 +621,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0032",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 32,
     "chunk": 1,
     "word": "incisive",
@@ -639,7 +639,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0033",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 33,
     "chunk": 1,
     "word": "provisions",
@@ -657,7 +657,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0034",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 34,
     "chunk": 1,
     "word": "regulate",
@@ -675,7 +675,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0035",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 35,
     "chunk": 1,
     "word": "scarce",
@@ -693,7 +693,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0036",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 36,
     "chunk": 1,
     "word": "stand up for",
@@ -711,7 +711,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0037",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 37,
     "chunk": 1,
     "word": "stupendous",
@@ -729,7 +729,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0038",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 38,
     "chunk": 1,
     "word": "sufficiency",
@@ -747,7 +747,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0039",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 39,
     "chunk": 1,
     "word": "tolerant",
@@ -765,7 +765,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0040",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 40,
     "chunk": 1,
     "word": "acquitted",
@@ -783,7 +783,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0041",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 41,
     "chunk": 1,
     "word": "adhere",
@@ -801,7 +801,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0042",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 42,
     "chunk": 1,
     "word": "adjourned",
@@ -819,7 +819,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0043",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 43,
     "chunk": 1,
     "word": "adroit",
@@ -837,7 +837,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0044",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 44,
     "chunk": 1,
     "word": "affirmed",
@@ -855,7 +855,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0045",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 45,
     "chunk": 1,
     "word": "amenable",
@@ -873,7 +873,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0046",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 46,
     "chunk": 1,
     "word": "amicable",
@@ -891,7 +891,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0047",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 47,
     "chunk": 1,
     "word": "amplitude",
@@ -909,7 +909,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0048",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 48,
     "chunk": 1,
     "word": "anecdotal",
@@ -927,7 +927,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0049",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 49,
     "chunk": 1,
     "word": "appealed",
@@ -945,7 +945,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0050",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 50,
     "chunk": 1,
     "word": "archives",
@@ -963,7 +963,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0051",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 51,
     "chunk": 1,
     "word": "argued",
@@ -981,7 +981,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0052",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 52,
     "chunk": 1,
     "word": "assign",
@@ -999,7 +999,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0053",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 53,
     "chunk": 1,
     "word": "back out of",
@@ -1017,7 +1017,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0054",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 54,
     "chunk": 1,
     "word": "barren",
@@ -1035,7 +1035,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0055",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 55,
     "chunk": 1,
     "word": "benign",
@@ -1053,7 +1053,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0056",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 56,
     "chunk": 1,
     "word": "bind",
@@ -1071,7 +1071,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0057",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 57,
     "chunk": 1,
     "word": "bland",
@@ -1089,7 +1089,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0058",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 58,
     "chunk": 1,
     "word": "blatant",
@@ -1107,7 +1107,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0059",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 59,
     "chunk": 1,
     "word": "blight",
@@ -1125,7 +1125,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0060",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 60,
     "chunk": 1,
     "word": "bolster",
@@ -1143,7 +1143,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0061",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 61,
     "chunk": 1,
     "word": "bonding",
@@ -1161,7 +1161,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0062",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 62,
     "chunk": 1,
     "word": "boundaries",
@@ -1179,7 +1179,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0063",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 63,
     "chunk": 1,
     "word": "braced",
@@ -1197,7 +1197,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0064",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 64,
     "chunk": 1,
     "word": "call out",
@@ -1215,7 +1215,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0065",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 65,
     "chunk": 1,
     "word": "capable",
@@ -1233,7 +1233,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0066",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 66,
     "chunk": 1,
     "word": "captured",
@@ -1251,7 +1251,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0067",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 67,
     "chunk": 1,
     "word": "chances",
@@ -1269,7 +1269,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0068",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 68,
     "chunk": 1,
     "word": "clientele",
@@ -1287,7 +1287,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0069",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 69,
     "chunk": 1,
     "word": "clogged",
@@ -1305,7 +1305,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0070",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 70,
     "chunk": 1,
     "word": "coerced",
@@ -1323,7 +1323,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0071",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 71,
     "chunk": 1,
     "word": "cohesion",
@@ -1341,7 +1341,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0072",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 72,
     "chunk": 1,
     "word": "collided",
@@ -1359,7 +1359,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0073",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 73,
     "chunk": 1,
     "word": "collocations",
@@ -1377,7 +1377,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0074",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 74,
     "chunk": 1,
     "word": "commit",
@@ -1395,7 +1395,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0075",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 75,
     "chunk": 1,
     "word": "components",
@@ -1413,7 +1413,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0076",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 76,
     "chunk": 1,
     "word": "composed",
@@ -1431,7 +1431,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0077",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 77,
     "chunk": 1,
     "word": "concise",
@@ -1449,7 +1449,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0078",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 78,
     "chunk": 1,
     "word": "confront",
@@ -1467,7 +1467,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0079",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 79,
     "chunk": 1,
     "word": "congenial",
@@ -1485,7 +1485,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0080",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 80,
     "chunk": 1,
     "word": "congregated",
@@ -1503,7 +1503,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0081",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 81,
     "chunk": 1,
     "word": "consensus",
@@ -1521,7 +1521,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0082",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 82,
     "chunk": 1,
     "word": "consolation",
@@ -1539,7 +1539,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0083",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 83,
     "chunk": 1,
     "word": "consummate",
@@ -1557,7 +1557,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0084",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 84,
     "chunk": 1,
     "word": "contentious",
@@ -1575,7 +1575,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0085",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 85,
     "chunk": 1,
     "word": "contraction",
@@ -1593,7 +1593,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0086",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 86,
     "chunk": 1,
     "word": "contradict",
@@ -1611,7 +1611,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0087",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 87,
     "chunk": 1,
     "word": "contribute",
@@ -1629,7 +1629,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0088",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 88,
     "chunk": 1,
     "word": "conundrums",
@@ -1647,7 +1647,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0089",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 89,
     "chunk": 1,
     "word": "correlation",
@@ -1665,7 +1665,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0090",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 90,
     "chunk": 1,
     "word": "corroborate",
@@ -1683,7 +1683,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0091",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 91,
     "chunk": 1,
     "word": "cried",
@@ -1701,7 +1701,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0092",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 92,
     "chunk": 1,
     "word": "crux",
@@ -1719,7 +1719,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0093",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 93,
     "chunk": 1,
     "word": "debilitation",
@@ -1737,7 +1737,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0094",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 94,
     "chunk": 1,
     "word": "decorous",
@@ -1755,7 +1755,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0095",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 95,
     "chunk": 1,
     "word": "deflection",
@@ -1773,7 +1773,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0096",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 96,
     "chunk": 1,
     "word": "delineated",
@@ -1791,7 +1791,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0097",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 97,
     "chunk": 1,
     "word": "deluged",
@@ -1809,7 +1809,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0098",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 98,
     "chunk": 1,
     "word": "demolition",
@@ -1827,7 +1827,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0099",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 99,
     "chunk": 1,
     "word": "despondent",
@@ -1845,7 +1845,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0100",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 100,
     "chunk": 1,
     "word": "destitution",
@@ -1863,7 +1863,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0101",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 101,
     "chunk": 1,
     "word": "devious",
@@ -1881,7 +1881,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0102",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 102,
     "chunk": 1,
     "word": "devout",
@@ -1899,7 +1899,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0103",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 103,
     "chunk": 1,
     "word": "digesting",
@@ -1917,7 +1917,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0104",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 104,
     "chunk": 1,
     "word": "discharged",
@@ -1935,7 +1935,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0105",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 105,
     "chunk": 1,
     "word": "dismissed",
@@ -1953,7 +1953,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0106",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 106,
     "chunk": 1,
     "word": "disregard",
@@ -1971,7 +1971,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0107",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 107,
     "chunk": 1,
     "word": "dissipated",
@@ -1989,7 +1989,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0108",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 108,
     "chunk": 1,
     "word": "docile",
@@ -2007,7 +2007,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0109",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 109,
     "chunk": 1,
     "word": "donated",
@@ -2025,7 +2025,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0110",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 110,
     "chunk": 1,
     "word": "drowned",
@@ -2043,7 +2043,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0111",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 111,
     "chunk": 1,
     "word": "dwindling",
@@ -2061,7 +2061,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0112",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 112,
     "chunk": 1,
     "word": "elaborating",
@@ -2079,7 +2079,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0113",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 113,
     "chunk": 1,
     "word": "elasticity",
@@ -2097,7 +2097,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0114",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 114,
     "chunk": 1,
     "word": "embarking",
@@ -2115,7 +2115,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0115",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 115,
     "chunk": 1,
     "word": "emblazoned",
@@ -2133,7 +2133,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0116",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 116,
     "chunk": 1,
     "word": "establish",
@@ -2151,7 +2151,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0117",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 117,
     "chunk": 1,
     "word": "euphemisms",
@@ -2169,7 +2169,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0118",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 118,
     "chunk": 1,
     "word": "events",
@@ -2187,7 +2187,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0119",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 119,
     "chunk": 1,
     "word": "evident",
@@ -2205,7 +2205,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0120",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 120,
     "chunk": 1,
     "word": "exasperated",
@@ -2223,7 +2223,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0121",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 121,
     "chunk": 1,
     "word": "excuse",
@@ -2241,7 +2241,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0122",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 122,
     "chunk": 1,
     "word": "exemplified",
@@ -2259,7 +2259,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0123",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 123,
     "chunk": 1,
     "word": "exercise",
@@ -2277,7 +2277,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0124",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 124,
     "chunk": 1,
     "word": "exonerate",
@@ -2295,7 +2295,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0125",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 125,
     "chunk": 1,
     "word": "exposure",
@@ -2313,7 +2313,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0126",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 126,
     "chunk": 1,
     "word": "expounded",
@@ -2331,7 +2331,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0127",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 127,
     "chunk": 1,
     "word": "extraneous",
@@ -2349,7 +2349,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0128",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 128,
     "chunk": 1,
     "word": "extravagant",
@@ -2367,7 +2367,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0129",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 129,
     "chunk": 1,
     "word": "extruded",
@@ -2385,7 +2385,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0130",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 130,
     "chunk": 1,
     "word": "familiar",
@@ -2403,7 +2403,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0131",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 131,
     "chunk": 1,
     "word": "featuring",
@@ -2421,7 +2421,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0132",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 132,
     "chunk": 1,
     "word": "balance",
@@ -2439,7 +2439,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0133",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 133,
     "chunk": 1,
     "word": "fill",
@@ -2457,7 +2457,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0134",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 134,
     "chunk": 1,
     "word": "fluent",
@@ -2475,7 +2475,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0135",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 135,
     "chunk": 1,
     "word": "gather",
@@ -2493,7 +2493,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0136",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 136,
     "chunk": 1,
     "word": "generated",
@@ -2511,7 +2511,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0137",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 137,
     "chunk": 1,
     "word": "goods",
@@ -2529,7 +2529,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0138",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 138,
     "chunk": 1,
     "word": "gregarious",
@@ -2547,7 +2547,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0139",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 139,
     "chunk": 1,
     "word": "guessed",
@@ -2565,7 +2565,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0140",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 140,
     "chunk": 1,
     "word": "habits",
@@ -2583,7 +2583,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0141",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 141,
     "chunk": 1,
     "word": "halt",
@@ -2601,7 +2601,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0142",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 142,
     "chunk": 1,
     "word": "heresy",
@@ -2619,7 +2619,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0143",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 143,
     "chunk": 1,
     "word": "hiatus",
@@ -2637,7 +2637,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0144",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 144,
     "chunk": 1,
     "word": "hyperboles",
@@ -2655,7 +2655,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0145",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 145,
     "chunk": 1,
     "word": "imitate",
@@ -2673,7 +2673,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0146",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 146,
     "chunk": 1,
     "word": "immunity",
@@ -2691,7 +2691,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0147",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 147,
     "chunk": 1,
     "word": "impervious",
@@ -2709,7 +2709,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0148",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 148,
     "chunk": 1,
     "word": "implausible",
@@ -2727,7 +2727,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0149",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 149,
     "chunk": 1,
     "word": "inaugurated",
@@ -2745,7 +2745,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0150",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 150,
     "chunk": 1,
     "word": "included",
@@ -2763,7 +2763,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0151",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 151,
     "chunk": 1,
     "word": "incongruent",
@@ -2781,7 +2781,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0152",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 152,
     "chunk": 1,
     "word": "infringing",
@@ -2799,7 +2799,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0153",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 153,
     "chunk": 1,
     "word": "ingrained",
@@ -2817,7 +2817,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0154",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 154,
     "chunk": 1,
     "word": "innate",
@@ -2835,7 +2835,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0155",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 155,
     "chunk": 2,
     "word": "inscrutable",
@@ -2853,7 +2853,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0156",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 156,
     "chunk": 2,
     "word": "insidious",
@@ -2871,7 +2871,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0157",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 157,
     "chunk": 2,
     "word": "instigating",
@@ -2889,7 +2889,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0158",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 158,
     "chunk": 2,
     "word": "issuing",
@@ -2907,7 +2907,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0159",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 159,
     "chunk": 2,
     "word": "lavishness",
@@ -2925,7 +2925,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0160",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 160,
     "chunk": 2,
     "word": "liability",
@@ -2943,7 +2943,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0161",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 161,
     "chunk": 2,
     "word": "liable",
@@ -2961,7 +2961,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0162",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 162,
     "chunk": 2,
     "word": "limitations",
@@ -2979,7 +2979,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0163",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 163,
     "chunk": 2,
     "word": "magnitude",
@@ -2997,7 +2997,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0164",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 164,
     "chunk": 2,
     "word": "maniacal",
@@ -3015,7 +3015,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0165",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 165,
     "chunk": 2,
     "word": "manuscripts",
@@ -3033,7 +3033,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0166",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 166,
     "chunk": 2,
     "word": "margins",
@@ -3051,7 +3051,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0167",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 167,
     "chunk": 2,
     "word": "mend",
@@ -3069,7 +3069,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0168",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 168,
     "chunk": 2,
     "word": "merchandise",
@@ -3087,7 +3087,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0169",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 169,
     "chunk": 2,
     "word": "meticulous",
@@ -3105,7 +3105,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0170",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 170,
     "chunk": 2,
     "word": "monotonous",
@@ -3123,7 +3123,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0171",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 171,
     "chunk": 2,
     "word": "monuments",
@@ -3141,7 +3141,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0172",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 172,
     "chunk": 2,
     "word": "motions",
@@ -3159,7 +3159,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0173",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 173,
     "chunk": 2,
     "word": "mute",
@@ -3177,7 +3177,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0174",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 174,
     "chunk": 2,
     "word": "obliterate",
@@ -3195,7 +3195,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0175",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 175,
     "chunk": 2,
     "word": "obstructed",
@@ -3213,7 +3213,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0176",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 176,
     "chunk": 2,
     "word": "omission",
@@ -3231,7 +3231,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0177",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 177,
     "chunk": 2,
     "word": "opaque",
@@ -3249,7 +3249,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0178",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 178,
     "chunk": 2,
     "word": "open",
@@ -3267,7 +3267,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0179",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 179,
     "chunk": 2,
     "word": "ostracized",
@@ -3285,7 +3285,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0180",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 180,
     "chunk": 2,
     "word": "outwit",
@@ -3303,7 +3303,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0181",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 181,
     "chunk": 2,
     "word": "overlooked",
@@ -3321,7 +3321,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0182",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 182,
     "chunk": 2,
     "word": "overt",
@@ -3339,7 +3339,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0183",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 183,
     "chunk": 2,
     "word": "passage",
@@ -3357,7 +3357,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0184",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 184,
     "chunk": 2,
     "word": "pause",
@@ -3375,7 +3375,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0185",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 185,
     "chunk": 2,
     "word": "perplex",
@@ -3393,7 +3393,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0186",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 186,
     "chunk": 2,
     "word": "persistent",
@@ -3411,7 +3411,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0187",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 187,
     "chunk": 2,
     "word": "pertinent",
@@ -3429,7 +3429,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0188",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 188,
     "chunk": 2,
     "word": "pious",
@@ -3447,7 +3447,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0189",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 189,
     "chunk": 2,
     "word": "pique",
@@ -3465,7 +3465,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0190",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 190,
     "chunk": 2,
     "word": "predicated",
@@ -3483,7 +3483,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0191",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 191,
     "chunk": 2,
     "word": "prerequisite",
@@ -3501,7 +3501,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0192",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 192,
     "chunk": 2,
     "word": "presaged",
@@ -3519,7 +3519,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0193",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 193,
     "chunk": 2,
     "word": "prevent",
@@ -3537,7 +3537,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0194",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 194,
     "chunk": 2,
     "word": "pristine",
@@ -3555,7 +3555,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0195",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 195,
     "chunk": 2,
     "word": "privilege",
@@ -3573,7 +3573,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0196",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 196,
     "chunk": 2,
     "word": "professed",
@@ -3591,7 +3591,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0197",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 197,
     "chunk": 2,
     "word": "prosperous",
@@ -3609,7 +3609,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0198",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 198,
     "chunk": 2,
     "word": "proxy",
@@ -3627,7 +3627,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0199",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 199,
     "chunk": 2,
     "word": "reclusive",
@@ -3645,7 +3645,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0200",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 200,
     "chunk": 2,
     "word": "recompensed",
@@ -3663,7 +3663,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0201",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 201,
     "chunk": 2,
     "word": "reflexive",
@@ -3681,7 +3681,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0202",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 202,
     "chunk": 2,
     "word": "refute",
@@ -3699,7 +3699,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0203",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 203,
     "chunk": 2,
     "word": "regimen",
@@ -3717,7 +3717,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0204",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 204,
     "chunk": 2,
     "word": "reluctant",
@@ -3735,7 +3735,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0205",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 205,
     "chunk": 2,
     "word": "renounced",
@@ -3753,7 +3753,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0206",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 206,
     "chunk": 2,
     "word": "repercussions",
@@ -3771,7 +3771,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0207",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 207,
     "chunk": 2,
     "word": "resilient",
@@ -3789,7 +3789,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0208",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 208,
     "chunk": 2,
     "word": "resorted",
@@ -3807,7 +3807,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0209",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 209,
     "chunk": 2,
     "word": "retain",
@@ -3825,7 +3825,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0210",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 210,
     "chunk": 2,
     "word": "rigorous",
@@ -3843,7 +3843,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0211",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 211,
     "chunk": 2,
     "word": "salient",
@@ -3861,7 +3861,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0212",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 212,
     "chunk": 2,
     "word": "scrawny",
@@ -3879,7 +3879,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0213",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 213,
     "chunk": 2,
     "word": "scrupulous",
@@ -3897,7 +3897,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0214",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 214,
     "chunk": 2,
     "word": "secluded",
@@ -3915,7 +3915,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0215",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 215,
     "chunk": 2,
     "word": "segregated",
@@ -3933,7 +3933,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0216",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 216,
     "chunk": 2,
     "word": "served",
@@ -3951,7 +3951,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0217",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 217,
     "chunk": 2,
     "word": "set",
@@ -3969,7 +3969,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0218",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 218,
     "chunk": 2,
     "word": "spurious",
@@ -3987,7 +3987,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0219",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 219,
     "chunk": 2,
     "word": "squeezed",
@@ -4005,7 +4005,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0220",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 220,
     "chunk": 2,
     "word": "stigma",
@@ -4023,7 +4023,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0221",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 221,
     "chunk": 2,
     "word": "store",
@@ -4041,7 +4041,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0222",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 222,
     "chunk": 2,
     "word": "submissions",
@@ -4059,7 +4059,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0223",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 223,
     "chunk": 2,
     "word": "submit",
@@ -4077,7 +4077,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0224",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 224,
     "chunk": 2,
     "word": "subordinate",
@@ -4095,7 +4095,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0225",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 225,
     "chunk": 2,
     "word": "superstitions",
@@ -4113,7 +4113,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0226",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 226,
     "chunk": 2,
     "word": "supplied",
@@ -4131,7 +4131,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0227",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 227,
     "chunk": 2,
     "word": "suppression",
@@ -4149,7 +4149,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0228",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 228,
     "chunk": 2,
     "word": "surpass",
@@ -4167,7 +4167,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0229",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 229,
     "chunk": 2,
     "word": "surrogate",
@@ -4185,7 +4185,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0230",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 230,
     "chunk": 2,
     "word": "synthetic",
@@ -4203,7 +4203,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0231",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 231,
     "chunk": 2,
     "word": "tactful",
@@ -4221,7 +4221,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0232",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 232,
     "chunk": 2,
     "word": "tactless",
@@ -4239,7 +4239,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0233",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 233,
     "chunk": 2,
     "word": "tarnished",
@@ -4257,7 +4257,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0234",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 234,
     "chunk": 2,
     "word": "tempting",
@@ -4275,7 +4275,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0235",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 235,
     "chunk": 2,
     "word": "tenure",
@@ -4293,7 +4293,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0236",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 236,
     "chunk": 2,
     "word": "tone down",
@@ -4311,7 +4311,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0237",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 237,
     "chunk": 2,
     "word": "traction",
@@ -4329,7 +4329,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0238",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 238,
     "chunk": 2,
     "word": "transient",
@@ -4347,7 +4347,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0239",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 239,
     "chunk": 2,
     "word": "transmit",
@@ -4365,7 +4365,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0240",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 240,
     "chunk": 2,
     "word": "traversed",
@@ -4383,7 +4383,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0241",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 241,
     "chunk": 2,
     "word": "trek",
@@ -4401,7 +4401,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0242",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 242,
     "chunk": 2,
     "word": "undermined",
@@ -4419,7 +4419,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0243",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 243,
     "chunk": 2,
     "word": "unintuitive",
@@ -4437,7 +4437,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0244",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 244,
     "chunk": 2,
     "word": "unpersuasive",
@@ -4455,7 +4455,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0245",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 245,
     "chunk": 2,
     "word": "untenable",
@@ -4473,7 +4473,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0246",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 246,
     "chunk": 2,
     "word": "vacuous",
@@ -4491,7 +4491,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0247",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 247,
     "chunk": 2,
     "word": "versatile",
@@ -4509,7 +4509,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0248",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 248,
     "chunk": 2,
     "word": "void",
@@ -4527,7 +4527,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0249",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 249,
     "chunk": 2,
     "word": "weary",
@@ -4545,7 +4545,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0250",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 250,
     "chunk": 2,
     "word": "worried",
@@ -4563,7 +4563,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0251",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 251,
     "chunk": 2,
     "word": "accommodate",
@@ -4581,7 +4581,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0252",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 252,
     "chunk": 2,
     "word": "baffled",
@@ -4599,7 +4599,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0253",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 253,
     "chunk": 2,
     "word": "blunt",
@@ -4617,7 +4617,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0254",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 254,
     "chunk": 2,
     "word": "circuitous",
@@ -4635,7 +4635,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0255",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 255,
     "chunk": 2,
     "word": "contained",
@@ -4653,7 +4653,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0256",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 256,
     "chunk": 2,
     "word": "desires",
@@ -4671,7 +4671,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0257",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 257,
     "chunk": 2,
     "word": "deviant",
@@ -4689,7 +4689,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0258",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 258,
     "chunk": 2,
     "word": "dismiss",
@@ -4707,7 +4707,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0259",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 259,
     "chunk": 2,
     "word": "dubious",
@@ -4725,7 +4725,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0260",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 260,
     "chunk": 2,
     "word": "duped",
@@ -4743,7 +4743,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0261",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 261,
     "chunk": 2,
     "word": "estimated",
@@ -4761,7 +4761,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0262",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 262,
     "chunk": 2,
     "word": "extracted",
@@ -4779,7 +4779,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0263",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 263,
     "chunk": 2,
     "word": "garrulous",
@@ -4797,7 +4797,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0264",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 264,
     "chunk": 2,
     "word": "incarcerated",
@@ -4815,7 +4815,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0265",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 265,
     "chunk": 2,
     "word": "insert",
@@ -4833,7 +4833,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0266",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 266,
     "chunk": 2,
     "word": "instilling",
@@ -4851,7 +4851,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0267",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 267,
     "chunk": 2,
     "word": "lugged",
@@ -4869,7 +4869,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0268",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 268,
     "chunk": 2,
     "word": "merge",
@@ -4887,7 +4887,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0269",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 269,
     "chunk": 2,
     "word": "naughty",
@@ -4905,7 +4905,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0270",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 270,
     "chunk": 2,
     "word": "plunged",
@@ -4923,7 +4923,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0271",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 271,
     "chunk": 2,
     "word": "possible",
@@ -4941,7 +4941,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0272",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 272,
     "chunk": 2,
     "word": "postponed",
@@ -4959,7 +4959,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0273",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 273,
     "chunk": 2,
     "word": "refrain",
@@ -4977,7 +4977,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0274",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 274,
     "chunk": 2,
     "word": "remove",
@@ -4995,7 +4995,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0275",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 275,
     "chunk": 2,
     "word": "reverberant",
@@ -5013,7 +5013,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0276",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 276,
     "chunk": 2,
     "word": "skimpy",
@@ -5031,7 +5031,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0277",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 277,
     "chunk": 2,
     "word": "squandered",
@@ -5049,7 +5049,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0278",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 278,
     "chunk": 2,
     "word": "survey",
@@ -5067,7 +5067,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0279",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 279,
     "chunk": 2,
     "word": "tacky",
@@ -5085,7 +5085,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0280",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 280,
     "chunk": 2,
     "word": "tedious",
@@ -5103,7 +5103,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0281",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 281,
     "chunk": 2,
     "word": "a blessing in disguise",
@@ -5121,7 +5121,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0282",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 282,
     "chunk": 2,
     "word": "a dime a dozen",
@@ -5139,7 +5139,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0283",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 283,
     "chunk": 2,
     "word": "a drop in the bucket",
@@ -5157,7 +5157,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0284",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 284,
     "chunk": 2,
     "word": "abated",
@@ -5175,7 +5175,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0285",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 285,
     "chunk": 2,
     "word": "aberrant",
@@ -5193,7 +5193,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0286",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 286,
     "chunk": 2,
     "word": "abnegated",
@@ -5211,7 +5211,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0287",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 287,
     "chunk": 2,
     "word": "abolished",
@@ -5229,7 +5229,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0288",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 288,
     "chunk": 2,
     "word": "abolition",
@@ -5247,7 +5247,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0289",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 289,
     "chunk": 2,
     "word": "abominable",
@@ -5265,7 +5265,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0290",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 290,
     "chunk": 2,
     "word": "abomination",
@@ -5283,7 +5283,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0291",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 291,
     "chunk": 2,
     "word": "abrasive",
@@ -5301,7 +5301,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0292",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 292,
     "chunk": 2,
     "word": "abreast",
@@ -5319,7 +5319,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0293",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 293,
     "chunk": 2,
     "word": "absolute",
@@ -5337,7 +5337,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0294",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 294,
     "chunk": 2,
     "word": "overhead compartment",
@@ -5355,7 +5355,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0295",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 295,
     "chunk": 2,
     "word": "abstention",
@@ -5373,7 +5373,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0296",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 296,
     "chunk": 2,
     "word": "accept",
@@ -5391,7 +5391,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0297",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 297,
     "chunk": 2,
     "word": "accepts",
@@ -5409,7 +5409,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0298",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 298,
     "chunk": 2,
     "word": "acclaimed",
@@ -5427,7 +5427,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0299",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 299,
     "chunk": 2,
     "word": "accompanied",
@@ -5445,7 +5445,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0300",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 300,
     "chunk": 2,
     "word": "accorded",
@@ -5463,7 +5463,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0301",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 301,
     "chunk": 2,
     "word": "accredited",
@@ -5481,7 +5481,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0302",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 302,
     "chunk": 2,
     "word": "accretend",
@@ -5499,7 +5499,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0303",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 303,
     "chunk": 2,
     "word": "accrue",
@@ -5517,7 +5517,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0304",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 304,
     "chunk": 2,
     "word": "accumulate",
@@ -5535,7 +5535,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0305",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 305,
     "chunk": 2,
     "word": "accurate",
@@ -5553,7 +5553,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0306",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 306,
     "chunk": 2,
     "word": "accusing",
@@ -5571,7 +5571,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0307",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 307,
     "chunk": 2,
     "word": "achieved",
@@ -5589,7 +5589,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0308",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 308,
     "chunk": 2,
     "word": "acquired",
@@ -5607,7 +5607,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0309",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 309,
     "chunk": 3,
     "word": "acquiring",
@@ -5625,7 +5625,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0310",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 310,
     "chunk": 3,
     "word": "acrimonious",
@@ -5643,7 +5643,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0311",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 311,
     "chunk": 3,
     "word": "activated",
@@ -5661,7 +5661,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0312",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 312,
     "chunk": 3,
     "word": "activity",
@@ -5679,7 +5679,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0313",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 313,
     "chunk": 3,
     "word": "acute",
@@ -5697,7 +5697,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0314",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 314,
     "chunk": 3,
     "word": "adamant",
@@ -5715,7 +5715,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0315",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 315,
     "chunk": 3,
     "word": "additional",
@@ -5733,7 +5733,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0316",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 316,
     "chunk": 3,
     "word": "addressed",
@@ -5751,7 +5751,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0317",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 317,
     "chunk": 3,
     "word": "adequate",
@@ -5769,7 +5769,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0318",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 318,
     "chunk": 3,
     "word": "adjust",
@@ -5787,7 +5787,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0319",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 319,
     "chunk": 3,
     "word": "adjustable",
@@ -5805,7 +5805,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0320",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 320,
     "chunk": 3,
     "word": "adjusting",
@@ -5823,7 +5823,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0321",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 321,
     "chunk": 3,
     "word": "administers",
@@ -5841,7 +5841,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0322",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 322,
     "chunk": 3,
     "word": "admissible",
@@ -5859,7 +5859,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0323",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 323,
     "chunk": 3,
     "word": "admits",
@@ -5877,7 +5877,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0324",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 324,
     "chunk": 3,
     "word": "admonish",
@@ -5895,7 +5895,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0325",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 325,
     "chunk": 3,
     "word": "adorned",
@@ -5913,7 +5913,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0326",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 326,
     "chunk": 3,
     "word": "advance",
@@ -5931,7 +5931,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0327",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 327,
     "chunk": 3,
     "word": "adverse",
@@ -5949,7 +5949,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0328",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 328,
     "chunk": 3,
     "word": "adversity",
@@ -5967,7 +5967,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0329",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 329,
     "chunk": 3,
     "word": "advised",
@@ -5985,7 +5985,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0330",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 330,
     "chunk": 3,
     "word": "affable",
@@ -6003,7 +6003,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0331",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 331,
     "chunk": 3,
     "word": "affection",
@@ -6021,7 +6021,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0332",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 332,
     "chunk": 3,
     "word": "affiliated",
@@ -6039,7 +6039,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0333",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 333,
     "chunk": 3,
     "word": "affixed",
@@ -6057,7 +6057,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0334",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 334,
     "chunk": 3,
     "word": "afflicted",
@@ -6075,7 +6075,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0335",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 335,
     "chunk": 3,
     "word": "affliction",
@@ -6093,7 +6093,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0336",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 336,
     "chunk": 3,
     "word": "affluent",
@@ -6111,7 +6111,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0337",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 337,
     "chunk": 3,
     "word": "afford",
@@ -6129,7 +6129,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0338",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 338,
     "chunk": 3,
     "word": "affront",
@@ -6147,7 +6147,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0339",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 339,
     "chunk": 3,
     "word": "aggregate",
@@ -6165,7 +6165,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0340",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 340,
     "chunk": 3,
     "word": "agrees",
@@ -6183,7 +6183,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0341",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 341,
     "chunk": 3,
     "word": "alarming",
@@ -6201,7 +6201,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0342",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 342,
     "chunk": 3,
     "word": "alienate",
@@ -6219,7 +6219,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0343",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 343,
     "chunk": 3,
     "word": "alienated",
@@ -6237,7 +6237,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0344",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 344,
     "chunk": 3,
     "word": "alleviate",
@@ -6255,7 +6255,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0345",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 345,
     "chunk": 3,
     "word": "alleviated",
@@ -6273,7 +6273,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0346",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 346,
     "chunk": 3,
     "word": "allies",
@@ -6291,7 +6291,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0347",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 347,
     "chunk": 3,
     "word": "alterations",
@@ -6309,7 +6309,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0348",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 348,
     "chunk": 3,
     "word": "alternative",
@@ -6327,7 +6327,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0349",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 349,
     "chunk": 3,
     "word": "altitude",
@@ -6345,7 +6345,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0350",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 350,
     "chunk": 3,
     "word": "ambiance",
@@ -6363,7 +6363,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0351",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 351,
     "chunk": 3,
     "word": "ambient",
@@ -6381,7 +6381,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0352",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 352,
     "chunk": 3,
     "word": "ambiguities",
@@ -6399,7 +6399,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0353",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 353,
     "chunk": 3,
     "word": "ambiguity",
@@ -6417,7 +6417,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0354",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 354,
     "chunk": 3,
     "word": "amity",
@@ -6435,7 +6435,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0355",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 355,
     "chunk": 3,
     "word": "anecdote",
@@ -6453,7 +6453,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0356",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 356,
     "chunk": 3,
     "word": "anesthetic",
@@ -6471,7 +6471,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0357",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 357,
     "chunk": 3,
     "word": "annul",
@@ -6489,7 +6489,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0358",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 358,
     "chunk": 3,
     "word": "antagonize",
@@ -6507,7 +6507,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0359",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 359,
     "chunk": 3,
     "word": "antagonized",
@@ -6525,7 +6525,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0360",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 360,
     "chunk": 3,
     "word": "antecedents",
@@ -6543,7 +6543,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0361",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 361,
     "chunk": 3,
     "word": "antidote",
@@ -6561,7 +6561,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0362",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 362,
     "chunk": 3,
     "word": "apathy",
@@ -6579,7 +6579,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0363",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 363,
     "chunk": 3,
     "word": "aphorism",
@@ -6597,7 +6597,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0364",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 364,
     "chunk": 3,
     "word": "appear",
@@ -6615,7 +6615,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0365",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 365,
     "chunk": 3,
     "word": "appearance",
@@ -6633,7 +6633,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0366",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 366,
     "chunk": 3,
     "word": "appearing",
@@ -6651,7 +6651,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0367",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 367,
     "chunk": 3,
     "word": "appeased",
@@ -6669,7 +6669,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0368",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 368,
     "chunk": 3,
     "word": "appetizing",
@@ -6687,7 +6687,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0369",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 369,
     "chunk": 3,
     "word": "applied",
@@ -6705,7 +6705,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0370",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 370,
     "chunk": 3,
     "word": "appraised",
@@ -6723,7 +6723,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0371",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 371,
     "chunk": 3,
     "word": "appreciable",
@@ -6741,7 +6741,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0372",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 372,
     "chunk": 3,
     "word": "approach",
@@ -6759,7 +6759,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0373",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 373,
     "chunk": 3,
     "word": "approached",
@@ -6777,7 +6777,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0374",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 374,
     "chunk": 3,
     "word": "appropriations",
@@ -6795,7 +6795,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0375",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 375,
     "chunk": 3,
     "word": "approved",
@@ -6813,7 +6813,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0376",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 376,
     "chunk": 3,
     "word": "approves",
@@ -6831,7 +6831,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0377",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 377,
     "chunk": 3,
     "word": "arranged",
@@ -6849,7 +6849,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0378",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 378,
     "chunk": 3,
     "word": "arrested",
@@ -6867,7 +6867,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0379",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 379,
     "chunk": 3,
     "word": "ascend",
@@ -6885,7 +6885,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0380",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 380,
     "chunk": 3,
     "word": "ascendant",
@@ -6903,7 +6903,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0381",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 381,
     "chunk": 3,
     "word": "ascertains",
@@ -6921,7 +6921,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0382",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 382,
     "chunk": 3,
     "word": "ascetic",
@@ -6939,7 +6939,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0383",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 383,
     "chunk": 3,
     "word": "aspects",
@@ -6957,7 +6957,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0384",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 384,
     "chunk": 3,
     "word": "aspire",
@@ -6975,7 +6975,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0385",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 385,
     "chunk": 3,
     "word": "aspired",
@@ -6993,7 +6993,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0386",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 386,
     "chunk": 3,
     "word": "assaulted",
@@ -7011,7 +7011,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0387",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 387,
     "chunk": 3,
     "word": "assemble",
@@ -7029,7 +7029,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0388",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 388,
     "chunk": 3,
     "word": "assiduous",
@@ -7047,7 +7047,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0389",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 389,
     "chunk": 3,
     "word": "assistance",
@@ -7065,7 +7065,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0390",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 390,
     "chunk": 3,
     "word": "assuage",
@@ -7083,7 +7083,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0391",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 391,
     "chunk": 3,
     "word": "assured",
@@ -7101,7 +7101,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0392",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 392,
     "chunk": 3,
     "word": "atoned",
@@ -7119,7 +7119,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0393",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 393,
     "chunk": 3,
     "word": "attainability",
@@ -7137,7 +7137,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0394",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 394,
     "chunk": 3,
     "word": "attentive",
@@ -7155,7 +7155,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0395",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 395,
     "chunk": 3,
     "word": "audit",
@@ -7173,7 +7173,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0396",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 396,
     "chunk": 3,
     "word": "austere",
@@ -7191,7 +7191,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0397",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 397,
     "chunk": 3,
     "word": "austerity",
@@ -7209,7 +7209,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0398",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 398,
     "chunk": 3,
     "word": "authorizing",
@@ -7227,7 +7227,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0399",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 399,
     "chunk": 3,
     "word": "autopsy",
@@ -7245,7 +7245,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0400",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 400,
     "chunk": 3,
     "word": "available",
@@ -7263,7 +7263,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0401",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 401,
     "chunk": 3,
     "word": "averse",
@@ -7281,7 +7281,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0402",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 402,
     "chunk": 3,
     "word": "avert",
@@ -7299,7 +7299,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0403",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 403,
     "chunk": 3,
     "word": "avid",
@@ -7317,7 +7317,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0404",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 404,
     "chunk": 3,
     "word": "awed",
@@ -7335,7 +7335,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0405",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 405,
     "chunk": 3,
     "word": "awkward",
@@ -7353,7 +7353,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0406",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 406,
     "chunk": 3,
     "word": "axiom",
@@ -7371,7 +7371,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0407",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 407,
     "chunk": 3,
     "word": "back to square one",
@@ -7389,7 +7389,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0408",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 408,
     "chunk": 3,
     "word": "balance",
@@ -7407,7 +7407,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0409",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 409,
     "chunk": 3,
     "word": "balked",
@@ -7425,7 +7425,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0410",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 410,
     "chunk": 3,
     "word": "banned",
@@ -7443,7 +7443,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0411",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 411,
     "chunk": 3,
     "word": "banter",
@@ -7461,7 +7461,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0412",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 412,
     "chunk": 3,
     "word": "barbarous",
@@ -7479,7 +7479,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0413",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 413,
     "chunk": 3,
     "word": "bark up the wrong tree",
@@ -7497,7 +7497,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0414",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 414,
     "chunk": 3,
     "word": "beaten",
@@ -7515,7 +7515,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0415",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 415,
     "chunk": 3,
     "word": "beating around the bush",
@@ -7533,7 +7533,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0416",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 416,
     "chunk": 3,
     "word": "beckoning",
@@ -7551,7 +7551,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0417",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 417,
     "chunk": 3,
     "word": "bedrock",
@@ -7569,7 +7569,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0418",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 418,
     "chunk": 3,
     "word": "beguiling",
@@ -7587,7 +7587,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0419",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 419,
     "chunk": 3,
     "word": "belching",
@@ -7605,7 +7605,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0420",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 420,
     "chunk": 3,
     "word": "beleaguer",
@@ -7623,7 +7623,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0421",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 421,
     "chunk": 3,
     "word": "belong",
@@ -7641,7 +7641,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0422",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 422,
     "chunk": 3,
     "word": "besmirch",
@@ -7659,7 +7659,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0423",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 423,
     "chunk": 3,
     "word": "bigotry",
@@ -7677,7 +7677,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0424",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 424,
     "chunk": 3,
     "word": "bitter",
@@ -7695,7 +7695,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0425",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 425,
     "chunk": 3,
     "word": "blaming",
@@ -7713,7 +7713,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0426",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 426,
     "chunk": 3,
     "word": "blessing",
@@ -7731,7 +7731,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0427",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 427,
     "chunk": 3,
     "word": "blowouts",
@@ -7749,7 +7749,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0428",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 428,
     "chunk": 3,
     "word": "blunder",
@@ -7767,7 +7767,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0429",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 429,
     "chunk": 3,
     "word": "booked",
@@ -7785,7 +7785,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0430",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 430,
     "chunk": 3,
     "word": "boorish",
@@ -7803,7 +7803,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0431",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 431,
     "chunk": 3,
     "word": "boost",
@@ -7821,7 +7821,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0432",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 432,
     "chunk": 3,
     "word": "bound",
@@ -7839,7 +7839,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0433",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 433,
     "chunk": 3,
     "word": "boundlessly",
@@ -7857,7 +7857,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0434",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 434,
     "chunk": 3,
     "word": "brandishing",
@@ -7875,7 +7875,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0435",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 435,
     "chunk": 3,
     "word": "brawniest",
@@ -7893,7 +7893,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0436",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 436,
     "chunk": 3,
     "word": "brighter",
@@ -7911,7 +7911,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0437",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 437,
     "chunk": 3,
     "word": "brilliant",
@@ -7929,7 +7929,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0438",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 438,
     "chunk": 3,
     "word": "bring it up",
@@ -7947,7 +7947,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0439",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 439,
     "chunk": 3,
     "word": "broached",
@@ -7965,7 +7965,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0440",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 440,
     "chunk": 3,
     "word": "budget",
@@ -7983,7 +7983,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0441",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 441,
     "chunk": 3,
     "word": "buffed",
@@ -8001,7 +8001,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0442",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 442,
     "chunk": 3,
     "word": "bulging",
@@ -8019,7 +8019,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0443",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 443,
     "chunk": 3,
     "word": "bulkiest",
@@ -8037,7 +8037,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0444",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 444,
     "chunk": 3,
     "word": "burn",
@@ -8055,7 +8055,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0445",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 445,
     "chunk": 3,
     "word": "calamity",
@@ -8073,7 +8073,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0446",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 446,
     "chunk": 3,
     "word": "calibrating",
@@ -8091,7 +8091,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0447",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 447,
     "chunk": 3,
     "word": "call",
@@ -8109,7 +8109,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0448",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 448,
     "chunk": 3,
     "word": "call it out",
@@ -8127,7 +8127,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0449",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 449,
     "chunk": 3,
     "word": "callouts",
@@ -8145,7 +8145,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0450",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 450,
     "chunk": 3,
     "word": "candid",
@@ -8163,7 +8163,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0451",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 451,
     "chunk": 3,
     "word": "cantankerous",
@@ -8181,7 +8181,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0452",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 452,
     "chunk": 3,
     "word": "capped",
@@ -8199,7 +8199,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0453",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 453,
     "chunk": 3,
     "word": "capricious",
@@ -8217,7 +8217,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0454",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 454,
     "chunk": 3,
     "word": "careless",
@@ -8235,7 +8235,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0455",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 455,
     "chunk": 3,
     "word": "carry over",
@@ -8253,7 +8253,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0456",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 456,
     "chunk": 3,
     "word": "catches",
@@ -8271,7 +8271,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0457",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 457,
     "chunk": 3,
     "word": "caught",
@@ -8289,7 +8289,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0458",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 458,
     "chunk": 3,
     "word": "caustic",
@@ -8307,7 +8307,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0459",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 459,
     "chunk": 3,
     "word": "cautious",
@@ -8325,7 +8325,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0460",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 460,
     "chunk": 3,
     "word": "celestial",
@@ -8343,7 +8343,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0461",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 461,
     "chunk": 3,
     "word": "ceremonial",
@@ -8361,7 +8361,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0462",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 462,
     "chunk": 3,
     "word": "certified",
@@ -8379,7 +8379,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0463",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 463,
     "chunk": 4,
     "word": "certifying",
@@ -8397,7 +8397,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0464",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 464,
     "chunk": 4,
     "word": "challenge",
@@ -8415,7 +8415,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0465",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 465,
     "chunk": 4,
     "word": "charge",
@@ -8433,7 +8433,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0466",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 466,
     "chunk": 4,
     "word": "charters",
@@ -8451,7 +8451,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0467",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 467,
     "chunk": 4,
     "word": "chase",
@@ -8469,7 +8469,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0468",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 468,
     "chunk": 4,
     "word": "chastened",
@@ -8487,7 +8487,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0469",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 469,
     "chunk": 4,
     "word": "check",
@@ -8505,7 +8505,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0470",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 470,
     "chunk": 4,
     "word": "cherishes",
@@ -8523,7 +8523,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0471",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 471,
     "chunk": 4,
     "word": "chintzy",
@@ -8541,7 +8541,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0472",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 472,
     "chunk": 4,
     "word": "chronic",
@@ -8559,7 +8559,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0473",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 473,
     "chunk": 4,
     "word": "churn out",
@@ -8577,7 +8577,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0474",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 474,
     "chunk": 4,
     "word": "circumstances",
@@ -8595,7 +8595,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0475",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 475,
     "chunk": 4,
     "word": "cite",
@@ -8613,7 +8613,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0476",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 476,
     "chunk": 4,
     "word": "claim",
@@ -8631,7 +8631,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0477",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 477,
     "chunk": 4,
     "word": "clandestine",
@@ -8649,7 +8649,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0478",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 478,
     "chunk": 4,
     "word": "clashes",
@@ -8667,7 +8667,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0479",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 479,
     "chunk": 4,
     "word": "clattered",
@@ -8685,7 +8685,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0480",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 480,
     "chunk": 4,
     "word": "clearing",
@@ -8703,7 +8703,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0481",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 481,
     "chunk": 4,
     "word": "clerical",
@@ -8721,7 +8721,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0482",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 482,
     "chunk": 4,
     "word": "clumsy",
@@ -8739,7 +8739,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0483",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 483,
     "chunk": 4,
     "word": "clustered",
@@ -8757,7 +8757,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0484",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 484,
     "chunk": 4,
     "word": "coagulated",
@@ -8775,7 +8775,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0485",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 485,
     "chunk": 4,
     "word": "coalesce",
@@ -8793,7 +8793,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0486",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 486,
     "chunk": 4,
     "word": "coalitions",
@@ -8811,7 +8811,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0487",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 487,
     "chunk": 4,
     "word": "coarse",
@@ -8829,7 +8829,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0488",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 488,
     "chunk": 4,
     "word": "coax",
@@ -8847,7 +8847,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0489",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 489,
     "chunk": 4,
     "word": "coercive",
@@ -8865,7 +8865,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0490",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 490,
     "chunk": 4,
     "word": "cognitive",
@@ -8883,7 +8883,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0491",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 491,
     "chunk": 4,
     "word": "collapses",
@@ -8901,7 +8901,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0492",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 492,
     "chunk": 4,
     "word": "colloquium",
@@ -8919,7 +8919,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0493",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 493,
     "chunk": 4,
     "word": "come down with",
@@ -8937,7 +8937,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0494",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 494,
     "chunk": 4,
     "word": "comedowns",
@@ -8955,7 +8955,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0495",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 495,
     "chunk": 4,
     "word": "comforting",
@@ -8973,7 +8973,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0496",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 496,
     "chunk": 4,
     "word": "comment",
@@ -8991,7 +8991,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0497",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 497,
     "chunk": 4,
     "word": "commission",
@@ -9009,7 +9009,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0498",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 498,
     "chunk": 4,
     "word": "commissions",
@@ -9027,7 +9027,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0499",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 499,
     "chunk": 4,
     "word": "commits",
@@ -9045,7 +9045,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0500",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 500,
     "chunk": 4,
     "word": "committed",
@@ -9063,7 +9063,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0501",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 501,
     "chunk": 4,
     "word": "commodious",
@@ -9081,7 +9081,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0502",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 502,
     "chunk": 4,
     "word": "compares",
@@ -9099,7 +9099,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0503",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 503,
     "chunk": 4,
     "word": "compelled",
@@ -9117,7 +9117,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0504",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 504,
     "chunk": 4,
     "word": "compendium",
@@ -9135,7 +9135,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0505",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 505,
     "chunk": 4,
     "word": "compensate",
@@ -9153,7 +9153,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0506",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 506,
     "chunk": 4,
     "word": "compiled",
@@ -9171,7 +9171,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0507",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 507,
     "chunk": 4,
     "word": "complacent",
@@ -9189,7 +9189,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0508",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 508,
     "chunk": 4,
     "word": "completed",
@@ -9207,7 +9207,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0509",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 509,
     "chunk": 4,
     "word": "compliance",
@@ -9225,7 +9225,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0510",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 510,
     "chunk": 4,
     "word": "compliant",
@@ -9243,7 +9243,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0511",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 511,
     "chunk": 4,
     "word": "compromise",
@@ -9261,7 +9261,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0512",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 512,
     "chunk": 4,
     "word": "compulsions",
@@ -9279,7 +9279,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0513",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 513,
     "chunk": 4,
     "word": "conceal",
@@ -9297,7 +9297,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0514",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 514,
     "chunk": 4,
     "word": "conceived",
@@ -9315,7 +9315,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0515",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 515,
     "chunk": 4,
     "word": "concepts",
@@ -9333,7 +9333,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0516",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 516,
     "chunk": 4,
     "word": "concession",
@@ -9351,7 +9351,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0517",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 517,
     "chunk": 4,
     "word": "concluded",
@@ -9369,7 +9369,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0518",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 518,
     "chunk": 4,
     "word": "concocted",
@@ -9387,7 +9387,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0519",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 519,
     "chunk": 4,
     "word": "concord",
@@ -9405,7 +9405,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0520",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 520,
     "chunk": 4,
     "word": "condensed",
@@ -9423,7 +9423,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0521",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 521,
     "chunk": 4,
     "word": "condoned",
@@ -9441,7 +9441,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0522",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 522,
     "chunk": 4,
     "word": "conducive",
@@ -9459,7 +9459,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0523",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 523,
     "chunk": 4,
     "word": "conferred",
@@ -9477,7 +9477,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0524",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 524,
     "chunk": 4,
     "word": "confess",
@@ -9495,7 +9495,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0525",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 525,
     "chunk": 4,
     "word": "configurated",
@@ -9513,7 +9513,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0526",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 526,
     "chunk": 4,
     "word": "confine",
@@ -9531,7 +9531,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0527",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 527,
     "chunk": 4,
     "word": "confirmed",
@@ -9549,7 +9549,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0528",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 528,
     "chunk": 4,
     "word": "confirming",
@@ -9567,7 +9567,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0529",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 529,
     "chunk": 4,
     "word": "confronts",
@@ -9585,7 +9585,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0530",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 530,
     "chunk": 4,
     "word": "conglobated",
@@ -9603,7 +9603,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0531",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 531,
     "chunk": 4,
     "word": "congruent",
@@ -9621,7 +9621,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0532",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 532,
     "chunk": 4,
     "word": "conjectures",
@@ -9639,7 +9639,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0533",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 533,
     "chunk": 4,
     "word": "conjugal",
@@ -9657,7 +9657,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0534",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 534,
     "chunk": 4,
     "word": "conjugated",
@@ -9675,7 +9675,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0535",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 535,
     "chunk": 4,
     "word": "connect",
@@ -9693,7 +9693,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0536",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 536,
     "chunk": 4,
     "word": "connected",
@@ -9711,7 +9711,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0537",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 537,
     "chunk": 4,
     "word": "consistencies",
@@ -9729,7 +9729,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0538",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 538,
     "chunk": 4,
     "word": "consolidate",
@@ -9747,7 +9747,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0539",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 539,
     "chunk": 4,
     "word": "conspicuous",
@@ -9765,7 +9765,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0540",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 540,
     "chunk": 4,
     "word": "constitute",
@@ -9783,7 +9783,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0541",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 541,
     "chunk": 4,
     "word": "contaminate",
@@ -9801,7 +9801,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0542",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 542,
     "chunk": 4,
     "word": "contaminated",
@@ -9819,7 +9819,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0543",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 543,
     "chunk": 4,
     "word": "contemplated",
@@ -9837,7 +9837,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0544",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 544,
     "chunk": 4,
     "word": "contend",
@@ -9855,7 +9855,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0545",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 545,
     "chunk": 4,
     "word": "contexts",
@@ -9873,7 +9873,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0546",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 546,
     "chunk": 4,
     "word": "contract",
@@ -9891,7 +9891,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0547",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 547,
     "chunk": 4,
     "word": "contracting",
@@ -9909,7 +9909,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0548",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 548,
     "chunk": 4,
     "word": "contravene",
@@ -9927,7 +9927,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0549",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 549,
     "chunk": 4,
     "word": "contriving",
@@ -9945,7 +9945,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0550",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 550,
     "chunk": 4,
     "word": "control",
@@ -9963,7 +9963,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0551",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 551,
     "chunk": 4,
     "word": "convenient",
@@ -9981,7 +9981,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0552",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 552,
     "chunk": 4,
     "word": "conventions",
@@ -9999,7 +9999,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0553",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 553,
     "chunk": 4,
     "word": "converted",
@@ -10017,7 +10017,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0554",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 554,
     "chunk": 4,
     "word": "converting",
@@ -10035,7 +10035,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0555",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 555,
     "chunk": 4,
     "word": "convey",
@@ -10053,7 +10053,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0556",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 556,
     "chunk": 4,
     "word": "convicting",
@@ -10071,7 +10071,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0557",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 557,
     "chunk": 4,
     "word": "convivial",
@@ -10089,7 +10089,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0558",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 558,
     "chunk": 4,
     "word": "copy",
@@ -10107,7 +10107,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0559",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 559,
     "chunk": 4,
     "word": "cordial",
@@ -10125,7 +10125,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0560",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 560,
     "chunk": 4,
     "word": "coronation",
@@ -10143,7 +10143,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0561",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 561,
     "chunk": 4,
     "word": "corpulent",
@@ -10161,7 +10161,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0562",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 562,
     "chunk": 4,
     "word": "corrected",
@@ -10179,7 +10179,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0563",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 563,
     "chunk": 4,
     "word": "corroded",
@@ -10197,7 +10197,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0564",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 564,
     "chunk": 4,
     "word": "corrosive",
@@ -10215,7 +10215,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0565",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 565,
     "chunk": 4,
     "word": "counteract",
@@ -10233,7 +10233,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0566",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 566,
     "chunk": 4,
     "word": "court",
@@ -10251,7 +10251,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0567",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 567,
     "chunk": 4,
     "word": "covetous",
@@ -10269,7 +10269,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0568",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 568,
     "chunk": 4,
     "word": "cower",
@@ -10287,7 +10287,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0569",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 569,
     "chunk": 4,
     "word": "cracks",
@@ -10305,7 +10305,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0570",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 570,
     "chunk": 4,
     "word": "credit",
@@ -10323,7 +10323,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0571",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 571,
     "chunk": 4,
     "word": "credits",
@@ -10341,7 +10341,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0572",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 572,
     "chunk": 4,
     "word": "conflict",
@@ -10359,7 +10359,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0573",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 573,
     "chunk": 4,
     "word": "criticizing",
@@ -10377,7 +10377,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0574",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 574,
     "chunk": 4,
     "word": "crooned",
@@ -10395,7 +10395,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0575",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 575,
     "chunk": 4,
     "word": "crude",
@@ -10413,7 +10413,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0576",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 576,
     "chunk": 4,
     "word": "current",
@@ -10431,7 +10431,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0577",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 577,
     "chunk": 4,
     "word": "curriculum",
@@ -10449,7 +10449,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0578",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 578,
     "chunk": 4,
     "word": "cursory",
@@ -10467,7 +10467,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0579",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 579,
     "chunk": 4,
     "word": "cut down on",
@@ -10485,7 +10485,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0580",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 580,
     "chunk": 4,
     "word": "cuts to the chase",
@@ -10503,7 +10503,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0581",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 581,
     "chunk": 4,
     "word": "dabbed",
@@ -10521,7 +10521,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0582",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 582,
     "chunk": 4,
     "word": "deal",
@@ -10539,7 +10539,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0583",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 583,
     "chunk": 4,
     "word": "debris",
@@ -10557,7 +10557,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0584",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 584,
     "chunk": 4,
     "word": "decadence",
@@ -10575,7 +10575,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0585",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 585,
     "chunk": 4,
     "word": "decent",
@@ -10593,7 +10593,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0586",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 586,
     "chunk": 4,
     "word": "deceptive",
@@ -10611,7 +10611,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0587",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 587,
     "chunk": 4,
     "word": "decipher",
@@ -10629,7 +10629,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0588",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 588,
     "chunk": 4,
     "word": "decisive",
@@ -10647,7 +10647,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0589",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 589,
     "chunk": 4,
     "word": "decree",
@@ -10665,7 +10665,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0590",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 590,
     "chunk": 4,
     "word": "decrepit",
@@ -10683,7 +10683,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0591",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 591,
     "chunk": 4,
     "word": "defective",
@@ -10701,7 +10701,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0592",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 592,
     "chunk": 4,
     "word": "defects",
@@ -10719,7 +10719,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0593",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 593,
     "chunk": 4,
     "word": "defend",
@@ -10737,7 +10737,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0594",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 594,
     "chunk": 4,
     "word": "deference",
@@ -10755,7 +10755,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0595",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 595,
     "chunk": 4,
     "word": "deferred",
@@ -10773,7 +10773,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0596",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 596,
     "chunk": 4,
     "word": "defiant",
@@ -10791,7 +10791,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0597",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 597,
     "chunk": 4,
     "word": "deficient",
@@ -10809,7 +10809,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0598",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 598,
     "chunk": 4,
     "word": "definite",
@@ -10827,7 +10827,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0599",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 599,
     "chunk": 4,
     "word": "degraded",
@@ -10845,7 +10845,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0600",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 600,
     "chunk": 4,
     "word": "delete",
@@ -10863,7 +10863,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0601",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 601,
     "chunk": 4,
     "word": "deliberate",
@@ -10881,7 +10881,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0602",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 602,
     "chunk": 4,
     "word": "delicate",
@@ -10899,7 +10899,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0603",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 603,
     "chunk": 4,
     "word": "delineating",
@@ -10917,7 +10917,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0604",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 604,
     "chunk": 4,
     "word": "deliver",
@@ -10935,7 +10935,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0605",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 605,
     "chunk": 4,
     "word": "delivers",
@@ -10953,7 +10953,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0606",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 606,
     "chunk": 4,
     "word": "demand",
@@ -10971,7 +10971,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0607",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 607,
     "chunk": 4,
     "word": "demeanor",
@@ -10989,7 +10989,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0608",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 608,
     "chunk": 4,
     "word": "demographics",
@@ -11007,7 +11007,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0609",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 609,
     "chunk": 4,
     "word": "demoted",
@@ -11025,7 +11025,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0610",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 610,
     "chunk": 4,
     "word": "denouement",
@@ -11043,7 +11043,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0611",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 611,
     "chunk": 4,
     "word": "deny",
@@ -11061,7 +11061,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0612",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 612,
     "chunk": 4,
     "word": "depleted",
@@ -11079,7 +11079,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0613",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 613,
     "chunk": 4,
     "word": "deployed",
@@ -11097,7 +11097,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0614",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 614,
     "chunk": 4,
     "word": "deposed",
@@ -11115,7 +11115,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0615",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 615,
     "chunk": 4,
     "word": "deposit",
@@ -11133,7 +11133,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0616",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 616,
     "chunk": 4,
     "word": "depreciated",
@@ -11151,7 +11151,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0617",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 617,
     "chunk": 5,
     "word": "derivative",
@@ -11169,7 +11169,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0618",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 618,
     "chunk": 5,
     "word": "desert",
@@ -11187,7 +11187,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0619",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 619,
     "chunk": 5,
     "word": "designed",
@@ -11205,7 +11205,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0620",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 620,
     "chunk": 5,
     "word": "desperate",
@@ -11223,7 +11223,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0621",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 621,
     "chunk": 5,
     "word": "despondently",
@@ -11241,7 +11241,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0622",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 622,
     "chunk": 5,
     "word": "detachable",
@@ -11259,7 +11259,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0623",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 623,
     "chunk": 5,
     "word": "detached",
@@ -11277,7 +11277,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0624",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 624,
     "chunk": 5,
     "word": "detained",
@@ -11295,7 +11295,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0625",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 625,
     "chunk": 5,
     "word": "detested",
@@ -11313,7 +11313,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0626",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 626,
     "chunk": 5,
     "word": "detour",
@@ -11331,7 +11331,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0627",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 627,
     "chunk": 5,
     "word": "devastated",
@@ -11349,7 +11349,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0628",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 628,
     "chunk": 5,
     "word": "devastating",
@@ -11367,7 +11367,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0629",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 629,
     "chunk": 5,
     "word": "developed",
@@ -11385,7 +11385,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0630",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 630,
     "chunk": 5,
     "word": "deviating",
@@ -11403,7 +11403,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0631",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 631,
     "chunk": 5,
     "word": "devote",
@@ -11421,7 +11421,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0632",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 632,
     "chunk": 5,
     "word": "devouring",
@@ -11439,7 +11439,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0633",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 633,
     "chunk": 5,
     "word": "diagnosed",
@@ -11457,7 +11457,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0634",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 634,
     "chunk": 5,
     "word": "diaphanous",
@@ -11475,7 +11475,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0635",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 635,
     "chunk": 5,
     "word": "differed",
@@ -11493,7 +11493,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0636",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 636,
     "chunk": 5,
     "word": "differentiation",
@@ -11511,7 +11511,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0637",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 637,
     "chunk": 5,
     "word": "diffident",
@@ -11529,7 +11529,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0638",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 638,
     "chunk": 5,
     "word": "diffused",
@@ -11547,7 +11547,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0639",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 639,
     "chunk": 5,
     "word": "dignified",
@@ -11565,7 +11565,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0640",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 640,
     "chunk": 5,
     "word": "dilatory",
@@ -11583,7 +11583,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0641",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 641,
     "chunk": 5,
     "word": "dilemmas",
@@ -11601,7 +11601,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0642",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 642,
     "chunk": 5,
     "word": "disavow",
@@ -11619,7 +11619,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0643",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 643,
     "chunk": 5,
     "word": "disbanded",
@@ -11637,7 +11637,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0644",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 644,
     "chunk": 5,
     "word": "discard",
@@ -11655,7 +11655,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0645",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 645,
     "chunk": 5,
     "word": "discern",
@@ -11673,7 +11673,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0646",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 646,
     "chunk": 5,
     "word": "discharges",
@@ -11691,7 +11691,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0647",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 647,
     "chunk": 5,
     "word": "disciplines",
@@ -11709,7 +11709,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0648",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 648,
     "chunk": 5,
     "word": "disclosed",
@@ -11727,7 +11727,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0649",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 649,
     "chunk": 5,
     "word": "disconcerted",
@@ -11745,7 +11745,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0650",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 650,
     "chunk": 5,
     "word": "disconnected",
@@ -11763,7 +11763,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0651",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 651,
     "chunk": 5,
     "word": "disconsolately",
@@ -11781,7 +11781,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0652",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 652,
     "chunk": 5,
     "word": "discordant",
@@ -11799,7 +11799,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0653",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 653,
     "chunk": 5,
     "word": "discussed",
@@ -11817,7 +11817,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0654",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 654,
     "chunk": 5,
     "word": "disengagement",
@@ -11835,7 +11835,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0655",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 655,
     "chunk": 5,
     "word": "disgracing",
@@ -11853,7 +11853,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0656",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 656,
     "chunk": 5,
     "word": "dismal",
@@ -11871,7 +11871,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0657",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 657,
     "chunk": 5,
     "word": "dismisses",
@@ -11889,7 +11889,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0658",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 658,
     "chunk": 5,
     "word": "disparaging",
@@ -11907,7 +11907,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0659",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 659,
     "chunk": 5,
     "word": "dispersed",
@@ -11925,7 +11925,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0660",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 660,
     "chunk": 5,
     "word": "displace",
@@ -11943,7 +11943,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0661",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 661,
     "chunk": 5,
     "word": "displayed",
@@ -11961,7 +11961,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0662",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 662,
     "chunk": 5,
     "word": "displaying",
@@ -11979,7 +11979,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0663",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 663,
     "chunk": 5,
     "word": "displays",
@@ -11997,7 +11997,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0664",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 664,
     "chunk": 5,
     "word": "disposable",
@@ -12015,7 +12015,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0665",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 665,
     "chunk": 5,
     "word": "disproportionately",
@@ -12033,7 +12033,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0666",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 666,
     "chunk": 5,
     "word": "disproved",
@@ -12051,7 +12051,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0667",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 667,
     "chunk": 5,
     "word": "disqualifying",
@@ -12069,7 +12069,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0668",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 668,
     "chunk": 5,
     "word": "disrupted",
@@ -12087,7 +12087,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0669",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 669,
     "chunk": 5,
     "word": "dissuade",
@@ -12105,7 +12105,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0670",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 670,
     "chunk": 5,
     "word": "distinct",
@@ -12123,7 +12123,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0671",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 671,
     "chunk": 5,
     "word": "distinguishes",
@@ -12141,7 +12141,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0672",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 672,
     "chunk": 5,
     "word": "distract",
@@ -12159,7 +12159,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0673",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 673,
     "chunk": 5,
     "word": "diverge",
@@ -12177,7 +12177,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0674",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 674,
     "chunk": 5,
     "word": "divesting",
@@ -12195,7 +12195,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0675",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 675,
     "chunk": 5,
     "word": "divided",
@@ -12213,7 +12213,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0676",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 676,
     "chunk": 5,
     "word": "divulged",
@@ -12231,7 +12231,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0677",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 677,
     "chunk": 5,
     "word": "divulging",
@@ -12249,7 +12249,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0678",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 678,
     "chunk": 5,
     "word": "dodge",
@@ -12267,7 +12267,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0679",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 679,
     "chunk": 5,
     "word": "dropped",
@@ -12285,7 +12285,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0680",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 680,
     "chunk": 5,
     "word": "drudgery",
@@ -12303,7 +12303,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0681",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 681,
     "chunk": 5,
     "word": "duplicated",
@@ -12321,7 +12321,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0682",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 682,
     "chunk": 5,
     "word": "duplicitous",
@@ -12339,7 +12339,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0683",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 683,
     "chunk": 5,
     "word": "durable",
@@ -12357,7 +12357,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0684",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 684,
     "chunk": 5,
     "word": "duty",
@@ -12375,7 +12375,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0685",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 685,
     "chunk": 5,
     "word": "dwindled",
@@ -12393,7 +12393,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0686",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 686,
     "chunk": 5,
     "word": "earnest",
@@ -12411,7 +12411,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0687",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 687,
     "chunk": 5,
     "word": "ebbs and flows",
@@ -12429,7 +12429,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0688",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 688,
     "chunk": 5,
     "word": "ebullient",
@@ -12447,7 +12447,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0689",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 689,
     "chunk": 5,
     "word": "ecstatic",
@@ -12465,7 +12465,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0690",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 690,
     "chunk": 5,
     "word": "effective",
@@ -12483,7 +12483,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0691",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 691,
     "chunk": 5,
     "word": "effects",
@@ -12501,7 +12501,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0692",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 692,
     "chunk": 5,
     "word": "eliminate",
@@ -12519,7 +12519,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0693",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 693,
     "chunk": 5,
     "word": "eliminated",
@@ -12537,7 +12537,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0694",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 694,
     "chunk": 5,
     "word": "ellipsis",
@@ -12555,7 +12555,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0695",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 695,
     "chunk": 5,
     "word": "eloquent",
@@ -12573,7 +12573,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0696",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 696,
     "chunk": 5,
     "word": "elusive",
@@ -12591,7 +12591,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0697",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 697,
     "chunk": 5,
     "word": "embedded",
@@ -12609,7 +12609,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0698",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 698,
     "chunk": 5,
     "word": "embodiments",
@@ -12627,7 +12627,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0699",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 699,
     "chunk": 5,
     "word": "embrace",
@@ -12645,7 +12645,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0700",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 700,
     "chunk": 5,
     "word": "embraced",
@@ -12663,7 +12663,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0701",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 701,
     "chunk": 5,
     "word": "embraces",
@@ -12681,7 +12681,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0702",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 702,
     "chunk": 5,
     "word": "eminent",
@@ -12699,7 +12699,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0703",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 703,
     "chunk": 5,
     "word": "emission",
@@ -12717,7 +12717,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0704",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 704,
     "chunk": 5,
     "word": "encounter",
@@ -12735,7 +12735,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0705",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 705,
     "chunk": 5,
     "word": "encrypt",
@@ -12753,7 +12753,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0706",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 706,
     "chunk": 5,
     "word": "endorse",
@@ -12771,7 +12771,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0707",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 707,
     "chunk": 5,
     "word": "endorsed",
@@ -12789,7 +12789,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0708",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 708,
     "chunk": 5,
     "word": "endorses",
@@ -12807,7 +12807,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0709",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 709,
     "chunk": 5,
     "word": "endure",
@@ -12825,7 +12825,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0710",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 710,
     "chunk": 5,
     "word": "enervated",
@@ -12843,7 +12843,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0711",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 711,
     "chunk": 5,
     "word": "enforced",
@@ -12861,7 +12861,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0712",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 712,
     "chunk": 5,
     "word": "engaging",
@@ -12879,7 +12879,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0713",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 713,
     "chunk": 5,
     "word": "engrossed",
@@ -12897,7 +12897,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0714",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 714,
     "chunk": 5,
     "word": "enigmatic",
@@ -12915,7 +12915,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0715",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 715,
     "chunk": 5,
     "word": "enmeshed",
@@ -12933,7 +12933,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0716",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 716,
     "chunk": 5,
     "word": "ennui",
@@ -12951,7 +12951,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0717",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 717,
     "chunk": 5,
     "word": "enriched",
@@ -12969,7 +12969,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0718",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 718,
     "chunk": 5,
     "word": "enroll",
@@ -12987,7 +12987,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0719",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 719,
     "chunk": 5,
     "word": "enter",
@@ -13005,7 +13005,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0720",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 720,
     "chunk": 5,
     "word": "enumerated",
@@ -13023,7 +13023,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0721",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 721,
     "chunk": 5,
     "word": "envisioned",
@@ -13041,7 +13041,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0722",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 722,
     "chunk": 5,
     "word": "episode",
@@ -13059,7 +13059,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0723",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 723,
     "chunk": 5,
     "word": "equalize",
@@ -13077,7 +13077,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0724",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 724,
     "chunk": 5,
     "word": "equivalent",
@@ -13095,7 +13095,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0725",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 725,
     "chunk": 5,
     "word": "eradicable",
@@ -13113,7 +13113,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0726",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 726,
     "chunk": 5,
     "word": "eradicate",
@@ -13131,7 +13131,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0727",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 727,
     "chunk": 5,
     "word": "eradicated",
@@ -13149,7 +13149,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0728",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 728,
     "chunk": 5,
     "word": "errant",
@@ -13167,7 +13167,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0729",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 729,
     "chunk": 5,
     "word": "escape",
@@ -13185,7 +13185,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0730",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 730,
     "chunk": 5,
     "word": "escaped",
@@ -13203,7 +13203,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0731",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 731,
     "chunk": 5,
     "word": "escorted",
@@ -13221,7 +13221,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0732",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 732,
     "chunk": 5,
     "word": "essential",
@@ -13239,7 +13239,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0733",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 733,
     "chunk": 5,
     "word": "euthanasia",
@@ -13257,7 +13257,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0734",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 734,
     "chunk": 5,
     "word": "evacuate",
@@ -13275,7 +13275,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0735",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 735,
     "chunk": 5,
     "word": "evacuated",
@@ -13293,7 +13293,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0736",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 736,
     "chunk": 5,
     "word": "evaluated",
@@ -13311,7 +13311,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0737",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 737,
     "chunk": 5,
     "word": "evasive",
@@ -13329,7 +13329,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0738",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 738,
     "chunk": 5,
     "word": "evict",
@@ -13347,7 +13347,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0739",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 739,
     "chunk": 5,
     "word": "evicted",
@@ -13365,7 +13365,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0740",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 740,
     "chunk": 5,
     "word": "exacerbate",
@@ -13383,7 +13383,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0741",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 741,
     "chunk": 5,
     "word": "excavated",
@@ -13401,7 +13401,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0742",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 742,
     "chunk": 5,
     "word": "excerpt",
@@ -13419,7 +13419,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0743",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 743,
     "chunk": 5,
     "word": "exchanges",
@@ -13437,7 +13437,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0744",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 744,
     "chunk": 5,
     "word": "excluded",
@@ -13455,7 +13455,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0745",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 745,
     "chunk": 5,
     "word": "excruciating",
@@ -13473,7 +13473,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0746",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 746,
     "chunk": 5,
     "word": "exempt",
@@ -13491,7 +13491,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0747",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 747,
     "chunk": 5,
     "word": "exempted",
@@ -13509,7 +13509,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0748",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 748,
     "chunk": 5,
     "word": "exhausted",
@@ -13527,7 +13527,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0749",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 749,
     "chunk": 5,
     "word": "exhaustive",
@@ -13545,7 +13545,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0750",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 750,
     "chunk": 5,
     "word": "exhilarating",
@@ -13563,7 +13563,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0751",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 751,
     "chunk": 5,
     "word": "exile",
@@ -13581,7 +13581,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0752",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 752,
     "chunk": 5,
     "word": "exiled",
@@ -13599,7 +13599,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0753",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 753,
     "chunk": 5,
     "word": "existential",
@@ -13617,7 +13617,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0754",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 754,
     "chunk": 5,
     "word": "exonerated",
@@ -13635,7 +13635,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0755",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 755,
     "chunk": 5,
     "word": "expand",
@@ -13653,7 +13653,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0756",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 756,
     "chunk": 5,
     "word": "expanded",
@@ -13671,7 +13671,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0757",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 757,
     "chunk": 5,
     "word": "expansive",
@@ -13689,7 +13689,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0758",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 758,
     "chunk": 5,
     "word": "expect",
@@ -13707,7 +13707,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0759",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 759,
     "chunk": 5,
     "word": "expectedly",
@@ -13725,7 +13725,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0760",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 760,
     "chunk": 5,
     "word": "expedite",
@@ -13743,7 +13743,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0761",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 761,
     "chunk": 5,
     "word": "expedites",
@@ -13761,7 +13761,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0762",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 762,
     "chunk": 5,
     "word": "explicit",
@@ -13779,7 +13779,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0763",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 763,
     "chunk": 5,
     "word": "exploited",
@@ -13797,7 +13797,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0764",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 764,
     "chunk": 5,
     "word": "exposed",
@@ -13815,7 +13815,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0765",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 765,
     "chunk": 5,
     "word": "exposing",
@@ -13833,7 +13833,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0766",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 766,
     "chunk": 5,
     "word": "exposition",
@@ -13851,7 +13851,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0767",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 767,
     "chunk": 5,
     "word": "extenuated",
@@ -13869,7 +13869,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0768",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 768,
     "chunk": 5,
     "word": "extract",
@@ -13887,7 +13887,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0769",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 769,
     "chunk": 5,
     "word": "extradited",
@@ -13905,7 +13905,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0770",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 770,
     "chunk": 5,
     "word": "extravagance",
@@ -13923,7 +13923,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0771",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 771,
     "chunk": 6,
     "word": "extreme",
@@ -13941,7 +13941,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0772",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 772,
     "chunk": 6,
     "word": "extricated",
@@ -13959,7 +13959,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0773",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 773,
     "chunk": 6,
     "word": "exuberant",
@@ -13977,7 +13977,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0774",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 774,
     "chunk": 6,
     "word": "fabrication",
@@ -13995,7 +13995,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0775",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 775,
     "chunk": 6,
     "word": "facetious",
@@ -14013,7 +14013,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0776",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 776,
     "chunk": 6,
     "word": "faint",
@@ -14031,7 +14031,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0777",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 777,
     "chunk": 6,
     "word": "fallacious",
@@ -14049,7 +14049,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0778",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 778,
     "chunk": 6,
     "word": "faltering",
@@ -14067,7 +14067,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0779",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 779,
     "chunk": 6,
     "word": "familiarize",
@@ -14085,7 +14085,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0780",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 780,
     "chunk": 6,
     "word": "fanatical",
@@ -14103,7 +14103,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0781",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 781,
     "chunk": 6,
     "word": "fastidious",
@@ -14121,7 +14121,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0782",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 782,
     "chunk": 6,
     "word": "faulty",
@@ -14139,7 +14139,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0783",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 783,
     "chunk": 6,
     "word": "favors",
@@ -14157,7 +14157,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0784",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 784,
     "chunk": 6,
     "word": "fertile",
@@ -14175,7 +14175,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0785",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 785,
     "chunk": 6,
     "word": "few and far between",
@@ -14193,7 +14193,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0786",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 786,
     "chunk": 6,
     "word": "fickle",
@@ -14211,7 +14211,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0787",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 787,
     "chunk": 6,
     "word": "fiddle",
@@ -14229,7 +14229,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0788",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 788,
     "chunk": 6,
     "word": "fifth wheel",
@@ -14247,7 +14247,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0789",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 789,
     "chunk": 6,
     "word": "filial",
@@ -14265,7 +14265,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0790",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 790,
     "chunk": 6,
     "word": "filled in",
@@ -14283,7 +14283,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0791",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 791,
     "chunk": 6,
     "word": "finesse",
@@ -14301,7 +14301,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0792",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 792,
     "chunk": 6,
     "word": "finicky",
@@ -14319,7 +14319,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0793",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 793,
     "chunk": 6,
     "word": "fits",
@@ -14337,7 +14337,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0794",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 794,
     "chunk": 6,
     "word": "fitted",
@@ -14355,7 +14355,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0795",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 795,
     "chunk": 6,
     "word": "flaccid",
@@ -14373,7 +14373,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0796",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 796,
     "chunk": 6,
     "word": "flagrant",
@@ -14391,7 +14391,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0797",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 797,
     "chunk": 6,
     "word": "flailing",
@@ -14409,7 +14409,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0798",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 798,
     "chunk": 6,
     "word": "flamboyance",
@@ -14427,7 +14427,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0799",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 799,
     "chunk": 6,
     "word": "flamboyant",
@@ -14445,7 +14445,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0800",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 800,
     "chunk": 6,
     "word": "flattered",
@@ -14463,7 +14463,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0801",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 801,
     "chunk": 6,
     "word": "flatters",
@@ -14481,7 +14481,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0802",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 802,
     "chunk": 6,
     "word": "flaunted",
@@ -14499,7 +14499,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0803",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 803,
     "chunk": 6,
     "word": "flexible",
@@ -14517,7 +14517,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0804",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 804,
     "chunk": 6,
     "word": "flip",
@@ -14535,7 +14535,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0805",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 805,
     "chunk": 6,
     "word": "flogged",
@@ -14553,7 +14553,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0806",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 806,
     "chunk": 6,
     "word": "flopped",
@@ -14571,7 +14571,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0807",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 807,
     "chunk": 6,
     "word": "florid",
@@ -14589,7 +14589,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0808",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 808,
     "chunk": 6,
     "word": "flourishing",
@@ -14607,7 +14607,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0809",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 809,
     "chunk": 6,
     "word": "fluctuate",
@@ -14625,7 +14625,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0810",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 810,
     "chunk": 6,
     "word": "fluke",
@@ -14643,7 +14643,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0811",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 811,
     "chunk": 6,
     "word": "food for thought",
@@ -14661,7 +14661,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0812",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 812,
     "chunk": 6,
     "word": "foresee",
@@ -14679,7 +14679,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0813",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 813,
     "chunk": 6,
     "word": "forfeit",
@@ -14697,7 +14697,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0814",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 814,
     "chunk": 6,
     "word": "forged",
@@ -14715,7 +14715,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0815",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 815,
     "chunk": 6,
     "word": "forks",
@@ -14733,7 +14733,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0816",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 816,
     "chunk": 6,
     "word": "formation",
@@ -14751,7 +14751,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0817",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 817,
     "chunk": 6,
     "word": "formulating",
@@ -14769,7 +14769,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0818",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 818,
     "chunk": 6,
     "word": "fortitude",
@@ -14787,7 +14787,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0819",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 819,
     "chunk": 6,
     "word": "forward",
@@ -14805,7 +14805,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0820",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 820,
     "chunk": 6,
     "word": "fractious",
@@ -14823,7 +14823,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0821",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 821,
     "chunk": 6,
     "word": "fragile",
@@ -14841,7 +14841,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0822",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 822,
     "chunk": 6,
     "word": "frantic",
@@ -14859,7 +14859,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0823",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 823,
     "chunk": 6,
     "word": "frequent",
@@ -14877,7 +14877,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0824",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 824,
     "chunk": 6,
     "word": "frivolous",
@@ -14895,7 +14895,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0825",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 825,
     "chunk": 6,
     "word": "frustrating",
@@ -14913,7 +14913,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0826",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 826,
     "chunk": 6,
     "word": "fulfill",
@@ -14931,7 +14931,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0827",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 827,
     "chunk": 6,
     "word": "fundamental",
@@ -14949,7 +14949,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0828",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 828,
     "chunk": 6,
     "word": "funding",
@@ -14967,7 +14967,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0829",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 829,
     "chunk": 6,
     "word": "furious",
@@ -14985,7 +14985,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0830",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 830,
     "chunk": 6,
     "word": "furnished",
@@ -15003,7 +15003,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0831",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 831,
     "chunk": 6,
     "word": "gained",
@@ -15021,7 +15021,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0832",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 832,
     "chunk": 6,
     "word": "gaining",
@@ -15039,7 +15039,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0833",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 833,
     "chunk": 6,
     "word": "gall",
@@ -15057,7 +15057,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0834",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 834,
     "chunk": 6,
     "word": "gap",
@@ -15075,7 +15075,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0835",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 835,
     "chunk": 6,
     "word": "garner",
@@ -15093,7 +15093,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0836",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 836,
     "chunk": 6,
     "word": "garnering",
@@ -15111,7 +15111,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0837",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 837,
     "chunk": 6,
     "word": "gathered",
@@ -15129,7 +15129,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0838",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 838,
     "chunk": 6,
     "word": "gaunt",
@@ -15147,7 +15147,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0839",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 839,
     "chunk": 6,
     "word": "gentle",
@@ -15165,7 +15165,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0840",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 840,
     "chunk": 6,
     "word": "genuine",
@@ -15183,7 +15183,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0841",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 841,
     "chunk": 6,
     "word": "get across",
@@ -15201,7 +15201,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0842",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 842,
     "chunk": 6,
     "word": "get the inside track",
@@ -15219,7 +15219,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0843",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 843,
     "chunk": 6,
     "word": "get you down",
@@ -15237,7 +15237,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0844",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 844,
     "chunk": 6,
     "word": "go through the roof",
@@ -15255,7 +15255,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0845",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 845,
     "chunk": 6,
     "word": "going against the grain",
@@ -15273,7 +15273,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0846",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 846,
     "chunk": 6,
     "word": "gracious",
@@ -15291,7 +15291,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0847",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 847,
     "chunk": 6,
     "word": "graduated",
@@ -15309,7 +15309,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0848",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 848,
     "chunk": 6,
     "word": "grants",
@@ -15327,7 +15327,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0849",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 849,
     "chunk": 6,
     "word": "gratuitous",
@@ -15345,7 +15345,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0850",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 850,
     "chunk": 6,
     "word": "graze",
@@ -15363,7 +15363,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0851",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 851,
     "chunk": 6,
     "word": "grievous",
@@ -15381,7 +15381,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0852",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 852,
     "chunk": 6,
     "word": "groomed",
@@ -15399,7 +15399,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0853",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 853,
     "chunk": 6,
     "word": "grumbling",
@@ -15417,7 +15417,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0854",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 854,
     "chunk": 6,
     "word": "guaranteeing",
@@ -15435,7 +15435,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0855",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 855,
     "chunk": 6,
     "word": "guile",
@@ -15453,7 +15453,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0856",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 856,
     "chunk": 6,
     "word": "gullible",
@@ -15471,7 +15471,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0857",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 857,
     "chunk": 6,
     "word": "halts",
@@ -15489,7 +15489,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0858",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 858,
     "chunk": 6,
     "word": "hampered",
@@ -15507,7 +15507,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0859",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 859,
     "chunk": 6,
     "word": "hardiest",
@@ -15525,7 +15525,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0860",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 860,
     "chunk": 6,
     "word": "harmless",
@@ -15543,7 +15543,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0861",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 861,
     "chunk": 6,
     "word": "hasty",
@@ -15561,7 +15561,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0862",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 862,
     "chunk": 6,
     "word": "haughty",
@@ -15579,7 +15579,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0863",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 863,
     "chunk": 6,
     "word": "having",
@@ -15597,7 +15597,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0864",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 864,
     "chunk": 6,
     "word": "hectic",
@@ -15615,7 +15615,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0865",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 865,
     "chunk": 6,
     "word": "heedful",
@@ -15633,7 +15633,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0866",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 866,
     "chunk": 6,
     "word": "heinous",
@@ -15651,7 +15651,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0867",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 867,
     "chunk": 6,
     "word": "hesitate",
@@ -15669,7 +15669,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0868",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 868,
     "chunk": 6,
     "word": "hesitation",
@@ -15687,7 +15687,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0869",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 869,
     "chunk": 6,
     "word": "hired",
@@ -15705,7 +15705,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0870",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 870,
     "chunk": 6,
     "word": "hoisted",
@@ -15723,7 +15723,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0871",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 871,
     "chunk": 6,
     "word": "hold",
@@ -15741,7 +15741,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0872",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 872,
     "chunk": 6,
     "word": "hold on to",
@@ -15759,7 +15759,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0873",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 873,
     "chunk": 6,
     "word": "honor",
@@ -15777,7 +15777,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0874",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 874,
     "chunk": 6,
     "word": "horrific",
@@ -15795,7 +15795,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0875",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 875,
     "chunk": 6,
     "word": "hospitable",
@@ -15813,7 +15813,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0876",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 876,
     "chunk": 6,
     "word": "huddled",
@@ -15831,7 +15831,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0877",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 877,
     "chunk": 6,
     "word": "humble",
@@ -15849,7 +15849,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0878",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 878,
     "chunk": 6,
     "word": "hurled",
@@ -15867,7 +15867,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0879",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 879,
     "chunk": 6,
     "word": "hushed",
@@ -15885,7 +15885,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0880",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 880,
     "chunk": 6,
     "word": "hustle",
@@ -15903,7 +15903,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0881",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 881,
     "chunk": 6,
     "word": "ideal",
@@ -15921,7 +15921,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0882",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 882,
     "chunk": 6,
     "word": "identified",
@@ -15939,7 +15939,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0883",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 883,
     "chunk": 6,
     "word": "idiosyncratic",
@@ -15957,7 +15957,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0884",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 884,
     "chunk": 6,
     "word": "ignore",
@@ -15975,7 +15975,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0885",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 885,
     "chunk": 6,
     "word": "illegible",
@@ -15993,7 +15993,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0886",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 886,
     "chunk": 6,
     "word": "illnesses",
@@ -16011,7 +16011,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0887",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 887,
     "chunk": 6,
     "word": "illusory",
@@ -16029,7 +16029,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0888",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 888,
     "chunk": 6,
     "word": "illustrated",
@@ -16047,7 +16047,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0889",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 889,
     "chunk": 6,
     "word": "immature",
@@ -16065,7 +16065,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0890",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 890,
     "chunk": 6,
     "word": "immeasurably",
@@ -16083,7 +16083,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0891",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 891,
     "chunk": 6,
     "word": "immersed",
@@ -16101,7 +16101,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0892",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 892,
     "chunk": 6,
     "word": "imminence",
@@ -16119,7 +16119,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0893",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 893,
     "chunk": 6,
     "word": "imminent",
@@ -16137,7 +16137,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0894",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 894,
     "chunk": 6,
     "word": "immune",
@@ -16155,7 +16155,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0895",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 895,
     "chunk": 6,
     "word": "immured",
@@ -16173,7 +16173,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0896",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 896,
     "chunk": 6,
     "word": "impact",
@@ -16191,7 +16191,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0897",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 897,
     "chunk": 6,
     "word": "impaired",
@@ -16209,7 +16209,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0898",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 898,
     "chunk": 6,
     "word": "imparted",
@@ -16227,7 +16227,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0899",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 899,
     "chunk": 6,
     "word": "impartial",
@@ -16245,7 +16245,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0900",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 900,
     "chunk": 6,
     "word": "imperative",
@@ -16263,7 +16263,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0901",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 901,
     "chunk": 6,
     "word": "impiety",
@@ -16281,7 +16281,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0902",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 902,
     "chunk": 6,
     "word": "implanted",
@@ -16299,7 +16299,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0903",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 903,
     "chunk": 6,
     "word": "implement",
@@ -16317,7 +16317,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0904",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 904,
     "chunk": 6,
     "word": "implied",
@@ -16335,7 +16335,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0905",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 905,
     "chunk": 6,
     "word": "imported",
@@ -16353,7 +16353,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0906",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 906,
     "chunk": 6,
     "word": "imposition",
@@ -16371,7 +16371,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0907",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 907,
     "chunk": 6,
     "word": "impractical",
@@ -16389,7 +16389,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0908",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 908,
     "chunk": 6,
     "word": "impression",
@@ -16407,7 +16407,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0909",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 909,
     "chunk": 6,
     "word": "imprint",
@@ -16425,7 +16425,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0910",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 910,
     "chunk": 6,
     "word": "improvising",
@@ -16443,7 +16443,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0911",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 911,
     "chunk": 6,
     "word": "impulsive",
@@ -16461,7 +16461,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0912",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 912,
     "chunk": 6,
     "word": "impunity",
@@ -16479,7 +16479,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0913",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 913,
     "chunk": 6,
     "word": "in the hot seat",
@@ -16497,7 +16497,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0914",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 914,
     "chunk": 6,
     "word": "inaccessible",
@@ -16515,7 +16515,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0915",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 915,
     "chunk": 6,
     "word": "inaccurate",
@@ -16533,7 +16533,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0916",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 916,
     "chunk": 6,
     "word": "inactivated",
@@ -16551,7 +16551,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0917",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 917,
     "chunk": 6,
     "word": "inalterable",
@@ -16569,7 +16569,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0918",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 918,
     "chunk": 6,
     "word": "inane",
@@ -16587,7 +16587,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0919",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 919,
     "chunk": 6,
     "word": "incapable",
@@ -16605,7 +16605,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0920",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 920,
     "chunk": 6,
     "word": "incapacitate",
@@ -16623,7 +16623,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0921",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 921,
     "chunk": 6,
     "word": "incidental",
@@ -16641,7 +16641,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0922",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 922,
     "chunk": 6,
     "word": "inclined",
@@ -16659,7 +16659,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0923",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 923,
     "chunk": 6,
     "word": "incompatible",
@@ -16677,7 +16677,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0924",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 924,
     "chunk": 6,
     "word": "incompetent",
@@ -16695,7 +16695,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0925",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 925,
     "chunk": 7,
     "word": "incorrigible",
@@ -16713,7 +16713,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0926",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 926,
     "chunk": 7,
     "word": "indelible",
@@ -16731,7 +16731,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0927",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 927,
     "chunk": 7,
     "word": "indicative",
@@ -16749,7 +16749,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0928",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 928,
     "chunk": 7,
     "word": "indigenous",
@@ -16767,7 +16767,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0929",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 929,
     "chunk": 7,
     "word": "induce",
@@ -16785,7 +16785,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0930",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 930,
     "chunk": 7,
     "word": "indulged",
@@ -16803,7 +16803,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0931",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 931,
     "chunk": 7,
     "word": "inebriated",
@@ -16821,7 +16821,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0932",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 932,
     "chunk": 7,
     "word": "infectious",
@@ -16839,7 +16839,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0933",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 933,
     "chunk": 7,
     "word": "infer",
@@ -16857,7 +16857,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0934",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 934,
     "chunk": 7,
     "word": "inferiority",
@@ -16875,7 +16875,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0935",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 935,
     "chunk": 7,
     "word": "infiltrate",
@@ -16893,7 +16893,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0936",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 936,
     "chunk": 7,
     "word": "infiltration",
@@ -16911,7 +16911,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0937",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 937,
     "chunk": 7,
     "word": "infirmity",
@@ -16929,7 +16929,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0938",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 938,
     "chunk": 7,
     "word": "inflicted",
@@ -16947,7 +16947,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0939",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 939,
     "chunk": 7,
     "word": "informative",
@@ -16965,7 +16965,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0940",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 940,
     "chunk": 7,
     "word": "infused",
@@ -16983,7 +16983,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0941",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 941,
     "chunk": 7,
     "word": "ingenious",
@@ -17001,7 +17001,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0942",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 942,
     "chunk": 7,
     "word": "ingest",
@@ -17019,7 +17019,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0943",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 943,
     "chunk": 7,
     "word": "ingredient",
@@ -17037,7 +17037,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0944",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 944,
     "chunk": 7,
     "word": "inhabit",
@@ -17055,7 +17055,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0945",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 945,
     "chunk": 7,
     "word": "inhabitants",
@@ -17073,7 +17073,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0946",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 946,
     "chunk": 7,
     "word": "inherent",
@@ -17091,7 +17091,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0947",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 947,
     "chunk": 7,
     "word": "inhibiting",
@@ -17109,7 +17109,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0948",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 948,
     "chunk": 7,
     "word": "inquiry",
@@ -17127,7 +17127,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0949",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 949,
     "chunk": 7,
     "word": "insight",
@@ -17145,7 +17145,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0950",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 950,
     "chunk": 7,
     "word": "insights",
@@ -17163,7 +17163,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0951",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 951,
     "chunk": 7,
     "word": "insipid",
@@ -17181,7 +17181,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0952",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 952,
     "chunk": 7,
     "word": "inspect",
@@ -17199,7 +17199,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0953",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 953,
     "chunk": 7,
     "word": "installed",
@@ -17217,7 +17217,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0954",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 954,
     "chunk": 7,
     "word": "instigate",
@@ -17235,7 +17235,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0955",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 955,
     "chunk": 7,
     "word": "instinctive",
@@ -17253,7 +17253,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0956",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 956,
     "chunk": 7,
     "word": "instituted",
@@ -17271,7 +17271,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0957",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 957,
     "chunk": 7,
     "word": "instituting",
@@ -17289,7 +17289,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0958",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 958,
     "chunk": 7,
     "word": "institutions",
@@ -17307,7 +17307,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0959",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 959,
     "chunk": 7,
     "word": "integrate",
@@ -17325,7 +17325,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0960",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 960,
     "chunk": 7,
     "word": "interest",
@@ -17343,7 +17343,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0961",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 961,
     "chunk": 7,
     "word": "intimate",
@@ -17361,7 +17361,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0962",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 962,
     "chunk": 7,
     "word": "intricate",
@@ -17379,7 +17379,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0963",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 963,
     "chunk": 7,
     "word": "intrusive",
@@ -17397,7 +17397,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0964",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 964,
     "chunk": 7,
     "word": "inundated",
@@ -17415,7 +17415,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0965",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 965,
     "chunk": 7,
     "word": "invalidated",
@@ -17433,7 +17433,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0966",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 966,
     "chunk": 7,
     "word": "invoice",
@@ -17451,7 +17451,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0967",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 967,
     "chunk": 7,
     "word": "irate",
@@ -17469,7 +17469,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0968",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 968,
     "chunk": 7,
     "word": "irritate",
@@ -17487,7 +17487,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0969",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 969,
     "chunk": 7,
     "word": "jeopardizing",
@@ -17505,7 +17505,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0970",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 970,
     "chunk": 7,
     "word": "jocular",
@@ -17523,7 +17523,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0971",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 971,
     "chunk": 7,
     "word": "join",
@@ -17541,7 +17541,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0972",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 972,
     "chunk": 7,
     "word": "joined",
@@ -17559,7 +17559,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0973",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 973,
     "chunk": 7,
     "word": "joke",
@@ -17577,7 +17577,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0974",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 974,
     "chunk": 7,
     "word": "jostle",
@@ -17595,7 +17595,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0975",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 975,
     "chunk": 7,
     "word": "jostled",
@@ -17613,7 +17613,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0976",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 976,
     "chunk": 7,
     "word": "jovial",
@@ -17631,7 +17631,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0977",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 977,
     "chunk": 7,
     "word": "judicial",
@@ -17649,7 +17649,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0978",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 978,
     "chunk": 7,
     "word": "junk",
@@ -17667,7 +17667,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0979",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 979,
     "chunk": 7,
     "word": "keen",
@@ -17685,7 +17685,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0980",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 980,
     "chunk": 7,
     "word": "kept on about",
@@ -17703,7 +17703,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0981",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 981,
     "chunk": 7,
     "word": "kindle",
@@ -17721,7 +17721,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0982",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 982,
     "chunk": 7,
     "word": "knock off",
@@ -17739,7 +17739,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0983",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 983,
     "chunk": 7,
     "word": "labeled",
@@ -17757,7 +17757,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0984",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 984,
     "chunk": 7,
     "word": "laconic",
@@ -17775,7 +17775,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0985",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 985,
     "chunk": 7,
     "word": "lamented",
@@ -17793,7 +17793,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0986",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 986,
     "chunk": 7,
     "word": "lauded",
@@ -17811,7 +17811,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0987",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 987,
     "chunk": 7,
     "word": "leaping",
@@ -17829,7 +17829,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0988",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 988,
     "chunk": 7,
     "word": "lenient",
@@ -17847,7 +17847,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0989",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 989,
     "chunk": 7,
     "word": "license",
@@ -17865,7 +17865,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0990",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 990,
     "chunk": 7,
     "word": "listen",
@@ -17883,7 +17883,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0991",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 991,
     "chunk": 7,
     "word": "look over",
@@ -17901,7 +17901,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0992",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 992,
     "chunk": 7,
     "word": "loose cannon",
@@ -17919,7 +17919,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0993",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 993,
     "chunk": 7,
     "word": "loosen",
@@ -17937,7 +17937,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0994",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 994,
     "chunk": 7,
     "word": "lore",
@@ -17955,7 +17955,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0995",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 995,
     "chunk": 7,
     "word": "lost",
@@ -17973,7 +17973,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0996",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 996,
     "chunk": 7,
     "word": "lowwoful",
@@ -17991,7 +17991,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0997",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 997,
     "chunk": 7,
     "word": "lucrative",
@@ -18009,7 +18009,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0998",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 998,
     "chunk": 7,
     "word": "lull",
@@ -18027,7 +18027,7 @@ window.TEPS_WORDS = [
   {
     "id": "F0999",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 999,
     "chunk": 7,
     "word": "made up",
@@ -18045,7 +18045,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1000",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1000,
     "chunk": 7,
     "word": "magnanimous",
@@ -18063,7 +18063,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1001",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1001,
     "chunk": 7,
     "word": "maintained",
@@ -18081,7 +18081,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1002",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1002,
     "chunk": 7,
     "word": "make it up",
@@ -18099,7 +18099,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1003",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1003,
     "chunk": 7,
     "word": "malleable",
@@ -18117,7 +18117,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1004",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1004,
     "chunk": 7,
     "word": "managed",
@@ -18135,7 +18135,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1005",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1005,
     "chunk": 7,
     "word": "mandate",
@@ -18153,7 +18153,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1006",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1006,
     "chunk": 7,
     "word": "mandated",
@@ -18171,7 +18171,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1007",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1007,
     "chunk": 7,
     "word": "mandatory",
@@ -18189,7 +18189,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1008",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1008,
     "chunk": 7,
     "word": "mangled",
@@ -18207,7 +18207,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1009",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1009,
     "chunk": 7,
     "word": "manifold",
@@ -18225,7 +18225,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1010",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1010,
     "chunk": 7,
     "word": "manipulate",
@@ -18243,7 +18243,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1011",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1011,
     "chunk": 7,
     "word": "manipulating",
@@ -18261,7 +18261,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1012",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1012,
     "chunk": 7,
     "word": "mar",
@@ -18279,7 +18279,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1013",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1013,
     "chunk": 7,
     "word": "marginally",
@@ -18297,7 +18297,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1014",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1014,
     "chunk": 7,
     "word": "market",
@@ -18315,7 +18315,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1015",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1015,
     "chunk": 7,
     "word": "marooned",
@@ -18333,7 +18333,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1016",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1016,
     "chunk": 7,
     "word": "mass",
@@ -18351,7 +18351,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1017",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1017,
     "chunk": 7,
     "word": "match",
@@ -18369,7 +18369,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1018",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1018,
     "chunk": 7,
     "word": "meager",
@@ -18387,7 +18387,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1019",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1019,
     "chunk": 7,
     "word": "meander",
@@ -18405,7 +18405,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1020",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1020,
     "chunk": 7,
     "word": "measure",
@@ -18423,7 +18423,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1021",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1021,
     "chunk": 7,
     "word": "medium",
@@ -18441,7 +18441,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1022",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1022,
     "chunk": 7,
     "word": "memorize",
@@ -18459,7 +18459,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1023",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1023,
     "chunk": 7,
     "word": "menace",
@@ -18477,7 +18477,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1024",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1024,
     "chunk": 7,
     "word": "merit",
@@ -18495,7 +18495,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1025",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1025,
     "chunk": 7,
     "word": "meritorious",
@@ -18513,7 +18513,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1026",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1026,
     "chunk": 7,
     "word": "mesmerize",
@@ -18531,7 +18531,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1027",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1027,
     "chunk": 7,
     "word": "migrate",
@@ -18549,7 +18549,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1028",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1028,
     "chunk": 7,
     "word": "milder",
@@ -18567,7 +18567,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1029",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1029,
     "chunk": 7,
     "word": "miscreant",
@@ -18585,7 +18585,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1030",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1030,
     "chunk": 7,
     "word": "missed",
@@ -18603,7 +18603,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1031",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1031,
     "chunk": 7,
     "word": "mistreated",
@@ -18621,7 +18621,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1032",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1032,
     "chunk": 7,
     "word": "mitigating",
@@ -18639,7 +18639,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1033",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1033,
     "chunk": 7,
     "word": "modified",
@@ -18657,7 +18657,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1034",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1034,
     "chunk": 7,
     "word": "modifying",
@@ -18675,7 +18675,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1035",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1035,
     "chunk": 7,
     "word": "mortgaged",
@@ -18693,7 +18693,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1036",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1036,
     "chunk": 7,
     "word": "mortifying",
@@ -18711,7 +18711,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1037",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1037,
     "chunk": 7,
     "word": "motivated",
@@ -18729,7 +18729,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1038",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1038,
     "chunk": 7,
     "word": "mowed",
@@ -18747,7 +18747,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1039",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1039,
     "chunk": 7,
     "word": "multiplying",
@@ -18765,7 +18765,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1040",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1040,
     "chunk": 7,
     "word": "multitude",
@@ -18783,7 +18783,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1041",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1041,
     "chunk": 7,
     "word": "mundane",
@@ -18801,7 +18801,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1042",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1042,
     "chunk": 7,
     "word": "mythical",
@@ -18819,7 +18819,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1043",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1043,
     "chunk": 7,
     "word": "nab",
@@ -18837,7 +18837,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1044",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1044,
     "chunk": 7,
     "word": "nauseated",
@@ -18855,7 +18855,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1045",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1045,
     "chunk": 7,
     "word": "nebulous",
@@ -18873,7 +18873,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1046",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1046,
     "chunk": 7,
     "word": "nick",
@@ -18891,7 +18891,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1047",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1047,
     "chunk": 7,
     "word": "nimblest",
@@ -18909,7 +18909,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1048",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1048,
     "chunk": 7,
     "word": "nipped",
@@ -18927,7 +18927,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1049",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1049,
     "chunk": 7,
     "word": "nominal",
@@ -18945,7 +18945,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1050",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1050,
     "chunk": 7,
     "word": "nondescript",
@@ -18963,7 +18963,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1051",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1051,
     "chunk": 7,
     "word": "nosy",
@@ -18981,7 +18981,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1052",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1052,
     "chunk": 7,
     "word": "noticed",
@@ -18999,7 +18999,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1053",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1053,
     "chunk": 7,
     "word": "noticing",
@@ -19017,7 +19017,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1054",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1054,
     "chunk": 7,
     "word": "notify",
@@ -19035,7 +19035,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1055",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1055,
     "chunk": 7,
     "word": "nourish",
@@ -19053,7 +19053,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1056",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1056,
     "chunk": 7,
     "word": "nullifying",
@@ -19071,7 +19071,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1057",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1057,
     "chunk": 7,
     "word": "nurture",
@@ -19089,7 +19089,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1058",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1058,
     "chunk": 7,
     "word": "obedient",
@@ -19107,7 +19107,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1059",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1059,
     "chunk": 7,
     "word": "objective",
@@ -19125,7 +19125,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1060",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1060,
     "chunk": 7,
     "word": "objects",
@@ -19143,7 +19143,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1061",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1061,
     "chunk": 7,
     "word": "obligated",
@@ -19161,7 +19161,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1062",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1062,
     "chunk": 7,
     "word": "obligation",
@@ -19179,7 +19179,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1063",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1063,
     "chunk": 7,
     "word": "obliterated",
@@ -19197,7 +19197,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1064",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1064,
     "chunk": 7,
     "word": "oblivious",
@@ -19215,7 +19215,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1065",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1065,
     "chunk": 7,
     "word": "obscured",
@@ -19233,7 +19233,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1066",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1066,
     "chunk": 7,
     "word": "obsolete",
@@ -19251,7 +19251,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1067",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1067,
     "chunk": 7,
     "word": "obstinate",
@@ -19269,7 +19269,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1068",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1068,
     "chunk": 7,
     "word": "obstructive",
@@ -19287,7 +19287,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1069",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1069,
     "chunk": 7,
     "word": "obtain",
@@ -19305,7 +19305,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1070",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1070,
     "chunk": 7,
     "word": "obtuse",
@@ -19323,7 +19323,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1071",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1071,
     "chunk": 7,
     "word": "obvious",
@@ -19341,7 +19341,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1072",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1072,
     "chunk": 7,
     "word": "occasion",
@@ -19359,7 +19359,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1073",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1073,
     "chunk": 7,
     "word": "offer",
@@ -19377,7 +19377,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1074",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1074,
     "chunk": 7,
     "word": "offset",
@@ -19395,7 +19395,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1075",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1075,
     "chunk": 7,
     "word": "offspring",
@@ -19413,7 +19413,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1076",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1076,
     "chunk": 7,
     "word": "omitting",
@@ -19431,7 +19431,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1077",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1077,
     "chunk": 7,
     "word": "opinion",
@@ -19449,7 +19449,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1078",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1078,
     "chunk": 7,
     "word": "opportunity",
@@ -19467,7 +19467,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1079",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1079,
     "chunk": 8,
     "word": "oppose",
@@ -19485,7 +19485,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1080",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1080,
     "chunk": 8,
     "word": "opulent",
@@ -19503,7 +19503,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1081",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1081,
     "chunk": 8,
     "word": "order",
@@ -19521,7 +19521,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1082",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1082,
     "chunk": 8,
     "word": "ordered",
@@ -19539,7 +19539,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1083",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1083,
     "chunk": 8,
     "word": "organized",
@@ -19557,7 +19557,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1084",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1084,
     "chunk": 8,
     "word": "originated",
@@ -19575,7 +19575,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1085",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1085,
     "chunk": 8,
     "word": "ostensible",
@@ -19593,7 +19593,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1086",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1086,
     "chunk": 8,
     "word": "ostentatious",
@@ -19611,7 +19611,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1087",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1087,
     "chunk": 8,
     "word": "ostentatiously",
@@ -19629,7 +19629,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1088",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1088,
     "chunk": 8,
     "word": "ousted",
@@ -19647,7 +19647,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1089",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1089,
     "chunk": 8,
     "word": "out on a limb",
@@ -19665,7 +19665,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1090",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1090,
     "chunk": 8,
     "word": "outgoing",
@@ -19683,7 +19683,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1091",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1091,
     "chunk": 8,
     "word": "outline",
@@ -19701,7 +19701,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1092",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1092,
     "chunk": 8,
     "word": "overact",
@@ -19719,7 +19719,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1093",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1093,
     "chunk": 8,
     "word": "overcome",
@@ -19737,7 +19737,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1094",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1094,
     "chunk": 8,
     "word": "overlook",
@@ -19755,7 +19755,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1095",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1095,
     "chunk": 8,
     "word": "overpowers",
@@ -19773,7 +19773,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1096",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1096,
     "chunk": 8,
     "word": "oversee",
@@ -19791,7 +19791,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1097",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1097,
     "chunk": 8,
     "word": "overthrowing",
@@ -19809,7 +19809,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1098",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1098,
     "chunk": 8,
     "word": "pacify",
@@ -19827,7 +19827,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1099",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1099,
     "chunk": 8,
     "word": "paid off",
@@ -19845,7 +19845,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1100",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1100,
     "chunk": 8,
     "word": "painful",
@@ -19863,7 +19863,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1101",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1101,
     "chunk": 8,
     "word": "pains",
@@ -19881,7 +19881,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1102",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1102,
     "chunk": 8,
     "word": "paint the town red",
@@ -19899,7 +19899,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1103",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1103,
     "chunk": 8,
     "word": "palatable",
@@ -19917,7 +19917,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1104",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1104,
     "chunk": 8,
     "word": "pale",
@@ -19935,7 +19935,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1105",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1105,
     "chunk": 8,
     "word": "paltry",
@@ -19953,7 +19953,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1106",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1106,
     "chunk": 8,
     "word": "panacea",
@@ -19971,7 +19971,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1107",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1107,
     "chunk": 8,
     "word": "panorama",
@@ -19989,7 +19989,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1108",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1108,
     "chunk": 8,
     "word": "paper tiger",
@@ -20007,7 +20007,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1109",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1109,
     "chunk": 8,
     "word": "parallel",
@@ -20025,7 +20025,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1110",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1110,
     "chunk": 8,
     "word": "partitions",
@@ -20043,7 +20043,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1111",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1111,
     "chunk": 8,
     "word": "partnership",
@@ -20061,7 +20061,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1112",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1112,
     "chunk": 8,
     "word": "pass up",
@@ -20079,7 +20079,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1113",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1113,
     "chunk": 8,
     "word": "passed",
@@ -20097,7 +20097,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1114",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1114,
     "chunk": 8,
     "word": "passing the buck",
@@ -20115,7 +20115,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1115",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1115,
     "chunk": 8,
     "word": "pathetic",
@@ -20133,7 +20133,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1116",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1116,
     "chunk": 8,
     "word": "pejorative",
@@ -20151,7 +20151,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1117",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1117,
     "chunk": 8,
     "word": "penetrate",
@@ -20169,7 +20169,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1118",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1118,
     "chunk": 8,
     "word": "perched",
@@ -20187,7 +20187,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1119",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1119,
     "chunk": 8,
     "word": "perfunctory",
@@ -20205,7 +20205,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1120",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1120,
     "chunk": 8,
     "word": "peril",
@@ -20223,7 +20223,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1121",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1121,
     "chunk": 8,
     "word": "periphery",
@@ -20241,7 +20241,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1122",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1122,
     "chunk": 8,
     "word": "perish",
@@ -20259,7 +20259,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1123",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1123,
     "chunk": 8,
     "word": "permit",
@@ -20277,7 +20277,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1124",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1124,
     "chunk": 8,
     "word": "permits",
@@ -20295,7 +20295,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1125",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1125,
     "chunk": 8,
     "word": "perpetual",
@@ -20313,7 +20313,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1126",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1126,
     "chunk": 8,
     "word": "personas",
@@ -20331,7 +20331,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1127",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1127,
     "chunk": 8,
     "word": "perturb",
@@ -20349,7 +20349,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1128",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1128,
     "chunk": 8,
     "word": "perturbed",
@@ -20367,7 +20367,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1129",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1129,
     "chunk": 8,
     "word": "petitioned",
@@ -20385,7 +20385,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1130",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1130,
     "chunk": 8,
     "word": "petitioning",
@@ -20403,7 +20403,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1131",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1131,
     "chunk": 8,
     "word": "petrified",
@@ -20421,7 +20421,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1132",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1132,
     "chunk": 8,
     "word": "pilfered",
@@ -20439,7 +20439,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1133",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1133,
     "chunk": 8,
     "word": "pinpoint",
@@ -20457,7 +20457,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1134",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1134,
     "chunk": 8,
     "word": "pivoting",
@@ -20475,7 +20475,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1135",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1135,
     "chunk": 8,
     "word": "placate",
@@ -20493,7 +20493,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1136",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1136,
     "chunk": 8,
     "word": "placated",
@@ -20511,7 +20511,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1137",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1137,
     "chunk": 8,
     "word": "placating",
@@ -20529,7 +20529,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1138",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1138,
     "chunk": 8,
     "word": "play",
@@ -20547,7 +20547,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1139",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1139,
     "chunk": 8,
     "word": "pleaded",
@@ -20565,7 +20565,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1140",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1140,
     "chunk": 8,
     "word": "pledge",
@@ -20583,7 +20583,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1141",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1141,
     "chunk": 8,
     "word": "plummeting",
@@ -20601,7 +20601,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1142",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1142,
     "chunk": 8,
     "word": "poignant",
@@ -20619,7 +20619,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1143",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1143,
     "chunk": 8,
     "word": "poked",
@@ -20637,7 +20637,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1144",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1144,
     "chunk": 8,
     "word": "porous",
@@ -20655,7 +20655,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1145",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1145,
     "chunk": 8,
     "word": "portable",
@@ -20673,7 +20673,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1146",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1146,
     "chunk": 8,
     "word": "portentous",
@@ -20691,7 +20691,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1147",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1147,
     "chunk": 8,
     "word": "positioned",
@@ -20709,7 +20709,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1148",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1148,
     "chunk": 8,
     "word": "posits",
@@ -20727,7 +20727,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1149",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1149,
     "chunk": 8,
     "word": "possibility",
@@ -20745,7 +20745,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1150",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1150,
     "chunk": 8,
     "word": "postulates",
@@ -20763,7 +20763,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1151",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1151,
     "chunk": 8,
     "word": "potency",
@@ -20781,7 +20781,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1152",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1152,
     "chunk": 8,
     "word": "potential",
@@ -20799,7 +20799,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1153",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1153,
     "chunk": 8,
     "word": "practice",
@@ -20817,7 +20817,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1154",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1154,
     "chunk": 8,
     "word": "precedence",
@@ -20835,7 +20835,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1155",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1155,
     "chunk": 8,
     "word": "precipitate",
@@ -20853,7 +20853,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1156",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1156,
     "chunk": 8,
     "word": "precipitates",
@@ -20871,7 +20871,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1157",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1157,
     "chunk": 8,
     "word": "precocious",
@@ -20889,7 +20889,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1158",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1158,
     "chunk": 8,
     "word": "predictive",
@@ -20907,7 +20907,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1159",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1159,
     "chunk": 8,
     "word": "predispositions",
@@ -20925,7 +20925,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1160",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1160,
     "chunk": 8,
     "word": "preliminary",
@@ -20943,7 +20943,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1161",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1161,
     "chunk": 8,
     "word": "premature",
@@ -20961,7 +20961,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1162",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1162,
     "chunk": 8,
     "word": "premonitions",
@@ -20979,7 +20979,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1163",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1163,
     "chunk": 8,
     "word": "prescribed",
@@ -20997,7 +20997,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1164",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1164,
     "chunk": 8,
     "word": "pretend",
@@ -21015,7 +21015,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1165",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1165,
     "chunk": 8,
     "word": "prevalent",
@@ -21033,7 +21033,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1166",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1166,
     "chunk": 8,
     "word": "proclaimed",
@@ -21051,7 +21051,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1167",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1167,
     "chunk": 8,
     "word": "procure",
@@ -21069,7 +21069,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1168",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1168,
     "chunk": 8,
     "word": "procurement",
@@ -21087,7 +21087,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1169",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1169,
     "chunk": 8,
     "word": "profanity",
@@ -21105,7 +21105,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1170",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1170,
     "chunk": 8,
     "word": "proficiency",
@@ -21123,7 +21123,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1171",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1171,
     "chunk": 8,
     "word": "profit",
@@ -21141,7 +21141,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1172",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1172,
     "chunk": 8,
     "word": "profits",
@@ -21159,7 +21159,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1173",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1173,
     "chunk": 8,
     "word": "profound",
@@ -21177,7 +21177,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1174",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1174,
     "chunk": 8,
     "word": "prohibits",
@@ -21195,7 +21195,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1175",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1175,
     "chunk": 8,
     "word": "projected",
@@ -21213,7 +21213,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1176",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1176,
     "chunk": 8,
     "word": "proliferate",
@@ -21231,7 +21231,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1177",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1177,
     "chunk": 8,
     "word": "prolong",
@@ -21249,7 +21249,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1178",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1178,
     "chunk": 8,
     "word": "promotion",
@@ -21267,7 +21267,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1179",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1179,
     "chunk": 8,
     "word": "promulgate",
@@ -21285,7 +21285,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1180",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1180,
     "chunk": 8,
     "word": "prone",
@@ -21303,7 +21303,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1181",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1181,
     "chunk": 8,
     "word": "pronounce",
@@ -21321,7 +21321,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1182",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1182,
     "chunk": 8,
     "word": "propagated",
@@ -21339,7 +21339,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1183",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1183,
     "chunk": 8,
     "word": "propensity",
@@ -21357,7 +21357,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1184",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1184,
     "chunk": 8,
     "word": "prophetic",
@@ -21375,7 +21375,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1185",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1185,
     "chunk": 8,
     "word": "propitious",
@@ -21393,7 +21393,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1186",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1186,
     "chunk": 8,
     "word": "proprietary",
@@ -21411,7 +21411,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1187",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1187,
     "chunk": 8,
     "word": "protecting",
@@ -21429,7 +21429,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1188",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1188,
     "chunk": 8,
     "word": "protocols",
@@ -21447,7 +21447,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1189",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1189,
     "chunk": 8,
     "word": "protract",
@@ -21465,7 +21465,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1190",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1190,
     "chunk": 8,
     "word": "protrude",
@@ -21483,7 +21483,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1191",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1191,
     "chunk": 8,
     "word": "publication",
@@ -21501,7 +21501,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1192",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1192,
     "chunk": 8,
     "word": "pulverized",
@@ -21519,7 +21519,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1193",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1193,
     "chunk": 8,
     "word": "punctilious",
@@ -21537,7 +21537,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1194",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1194,
     "chunk": 8,
     "word": "punctual",
@@ -21555,7 +21555,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1195",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1195,
     "chunk": 8,
     "word": "punctured",
@@ -21573,7 +21573,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1196",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1196,
     "chunk": 8,
     "word": "purified",
@@ -21591,7 +21591,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1197",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1197,
     "chunk": 8,
     "word": "pursuit",
@@ -21609,7 +21609,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1198",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1198,
     "chunk": 8,
     "word": "pushing",
@@ -21627,7 +21627,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1199",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1199,
     "chunk": 8,
     "word": "put in for",
@@ -21645,7 +21645,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1200",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1200,
     "chunk": 8,
     "word": "put up with",
@@ -21663,7 +21663,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1201",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1201,
     "chunk": 8,
     "word": "put you up",
@@ -21681,7 +21681,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1202",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1202,
     "chunk": 8,
     "word": "putdowns",
@@ -21699,7 +21699,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1203",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1203,
     "chunk": 8,
     "word": "qualifying",
@@ -21717,7 +21717,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1204",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1204,
     "chunk": 8,
     "word": "quandary",
@@ -21735,7 +21735,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1205",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1205,
     "chunk": 8,
     "word": "quarantined",
@@ -21753,7 +21753,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1206",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1206,
     "chunk": 8,
     "word": "queasy",
@@ -21771,7 +21771,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1207",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1207,
     "chunk": 8,
     "word": "quirk",
@@ -21789,7 +21789,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1208",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1208,
     "chunk": 8,
     "word": "rake in",
@@ -21807,7 +21807,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1209",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1209,
     "chunk": 8,
     "word": "ramble",
@@ -21825,7 +21825,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1210",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1210,
     "chunk": 8,
     "word": "rammed",
@@ -21843,7 +21843,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1211",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1211,
     "chunk": 8,
     "word": "ransacked",
@@ -21861,7 +21861,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1212",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1212,
     "chunk": 8,
     "word": "rattled",
@@ -21879,7 +21879,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1213",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1213,
     "chunk": 8,
     "word": "ravaging",
@@ -21897,7 +21897,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1214",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1214,
     "chunk": 8,
     "word": "reachable",
@@ -21915,7 +21915,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1215",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1215,
     "chunk": 8,
     "word": "readership",
@@ -21933,7 +21933,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1216",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1216,
     "chunk": 8,
     "word": "realistic",
@@ -21951,7 +21951,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1217",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1217,
     "chunk": 8,
     "word": "reassuring",
@@ -21969,7 +21969,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1218",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1218,
     "chunk": 8,
     "word": "rebuff",
@@ -21987,7 +21987,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1219",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1219,
     "chunk": 8,
     "word": "rebuke",
@@ -22005,7 +22005,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1220",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1220,
     "chunk": 8,
     "word": "recall",
@@ -22023,7 +22023,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1221",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1221,
     "chunk": 8,
     "word": "recanted",
@@ -22041,7 +22041,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1222",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1222,
     "chunk": 8,
     "word": "recession",
@@ -22059,7 +22059,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1223",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1223,
     "chunk": 8,
     "word": "reciprocated",
@@ -22077,7 +22077,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1224",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1224,
     "chunk": 8,
     "word": "reckless",
@@ -22095,7 +22095,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1225",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1225,
     "chunk": 8,
     "word": "reckoned",
@@ -22113,7 +22113,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1226",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1226,
     "chunk": 8,
     "word": "recognition",
@@ -22131,7 +22131,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1227",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1227,
     "chunk": 8,
     "word": "recoil",
@@ -22149,7 +22149,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1228",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1228,
     "chunk": 8,
     "word": "recollect",
@@ -22167,7 +22167,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1229",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1229,
     "chunk": 8,
     "word": "recount",
@@ -22185,7 +22185,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1230",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1230,
     "chunk": 8,
     "word": "recouped",
@@ -22203,7 +22203,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1231",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1231,
     "chunk": 8,
     "word": "recovered",
@@ -22221,7 +22221,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1232",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1232,
     "chunk": 8,
     "word": "rectified",
@@ -22239,7 +22239,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1233",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1233,
     "chunk": 9,
     "word": "rectifies",
@@ -22257,7 +22257,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1234",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1234,
     "chunk": 9,
     "word": "refined",
@@ -22275,7 +22275,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1235",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1235,
     "chunk": 9,
     "word": "reform",
@@ -22293,7 +22293,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1236",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1236,
     "chunk": 9,
     "word": "refurbished",
@@ -22311,7 +22311,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1237",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1237,
     "chunk": 9,
     "word": "regards",
@@ -22329,7 +22329,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1238",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1238,
     "chunk": 9,
     "word": "register",
@@ -22347,7 +22347,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1239",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1239,
     "chunk": 9,
     "word": "registry",
@@ -22365,7 +22365,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1240",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1240,
     "chunk": 9,
     "word": "regret",
@@ -22383,7 +22383,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1241",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1241,
     "chunk": 9,
     "word": "regretting",
@@ -22401,7 +22401,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1242",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1242,
     "chunk": 9,
     "word": "rejected",
@@ -22419,7 +22419,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1243",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1243,
     "chunk": 9,
     "word": "relate",
@@ -22437,7 +22437,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1244",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1244,
     "chunk": 9,
     "word": "relax",
@@ -22455,7 +22455,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1245",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1245,
     "chunk": 9,
     "word": "released",
@@ -22473,7 +22473,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1246",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1246,
     "chunk": 9,
     "word": "releases",
@@ -22491,7 +22491,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1247",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1247,
     "chunk": 9,
     "word": "reliable",
@@ -22509,7 +22509,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1248",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1248,
     "chunk": 9,
     "word": "relieves",
@@ -22527,7 +22527,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1249",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1249,
     "chunk": 9,
     "word": "rely",
@@ -22545,7 +22545,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1250",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1250,
     "chunk": 9,
     "word": "remarkable",
@@ -22563,7 +22563,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1251",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1251,
     "chunk": 9,
     "word": "remedy",
@@ -22581,7 +22581,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1252",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1252,
     "chunk": 9,
     "word": "remind",
@@ -22599,7 +22599,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1253",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1253,
     "chunk": 9,
     "word": "remiss",
@@ -22617,7 +22617,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1254",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1254,
     "chunk": 9,
     "word": "renounce",
@@ -22635,7 +22635,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1255",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1255,
     "chunk": 9,
     "word": "renunciation",
@@ -22653,7 +22653,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1256",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1256,
     "chunk": 9,
     "word": "repatriated",
@@ -22671,7 +22671,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1257",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1257,
     "chunk": 9,
     "word": "repatriation",
@@ -22689,7 +22689,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1258",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1258,
     "chunk": 9,
     "word": "repealing",
@@ -22707,7 +22707,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1259",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1259,
     "chunk": 9,
     "word": "replacement",
@@ -22725,7 +22725,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1260",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1260,
     "chunk": 9,
     "word": "reprehension",
@@ -22743,7 +22743,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1261",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1261,
     "chunk": 9,
     "word": "repressed",
@@ -22761,7 +22761,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1262",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1262,
     "chunk": 9,
     "word": "repulsed",
@@ -22779,7 +22779,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1263",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1263,
     "chunk": 9,
     "word": "repulsion",
@@ -22797,7 +22797,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1264",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1264,
     "chunk": 9,
     "word": "reputability",
@@ -22815,7 +22815,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1265",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1265,
     "chunk": 9,
     "word": "reputation",
@@ -22833,7 +22833,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1266",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1266,
     "chunk": 9,
     "word": "requesting",
@@ -22851,7 +22851,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1267",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1267,
     "chunk": 9,
     "word": "rescinded",
@@ -22869,7 +22869,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1268",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1268,
     "chunk": 9,
     "word": "reserve",
@@ -22887,7 +22887,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1269",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1269,
     "chunk": 9,
     "word": "reservoir",
@@ -22905,7 +22905,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1270",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1270,
     "chunk": 9,
     "word": "resistant",
@@ -22923,7 +22923,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1271",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1271,
     "chunk": 9,
     "word": "resolve",
@@ -22941,7 +22941,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1272",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1272,
     "chunk": 9,
     "word": "response",
@@ -22959,7 +22959,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1273",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1273,
     "chunk": 9,
     "word": "responsive",
@@ -22977,7 +22977,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1274",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1274,
     "chunk": 9,
     "word": "restrained",
@@ -22995,7 +22995,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1275",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1275,
     "chunk": 9,
     "word": "reticent",
@@ -23013,7 +23013,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1276",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1276,
     "chunk": 9,
     "word": "retreated",
@@ -23031,7 +23031,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1277",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1277,
     "chunk": 9,
     "word": "revered",
@@ -23049,7 +23049,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1278",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1278,
     "chunk": 9,
     "word": "reviled",
@@ -23067,7 +23067,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1279",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1279,
     "chunk": 9,
     "word": "revise",
@@ -23085,7 +23085,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1280",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1280,
     "chunk": 9,
     "word": "revoking",
@@ -23103,7 +23103,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1281",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1281,
     "chunk": 9,
     "word": "rigged",
@@ -23121,7 +23121,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1282",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1282,
     "chunk": 9,
     "word": "rile",
@@ -23139,7 +23139,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1283",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1283,
     "chunk": 9,
     "word": "rinse",
@@ -23157,7 +23157,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1284",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1284,
     "chunk": 9,
     "word": "ripe",
@@ -23175,7 +23175,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1285",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1285,
     "chunk": 9,
     "word": "riper",
@@ -23193,7 +23193,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1286",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1286,
     "chunk": 9,
     "word": "roaring",
@@ -23211,7 +23211,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1287",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1287,
     "chunk": 9,
     "word": "robust",
@@ -23229,7 +23229,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1288",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1288,
     "chunk": 9,
     "word": "rough",
@@ -23247,7 +23247,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1289",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1289,
     "chunk": 9,
     "word": "routine",
@@ -23265,7 +23265,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1290",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1290,
     "chunk": 9,
     "word": "rubble",
@@ -23283,7 +23283,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1291",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1291,
     "chunk": 9,
     "word": "atmosphere",
@@ -23301,7 +23301,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1292",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1292,
     "chunk": 9,
     "word": "run out of",
@@ -23319,7 +23319,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1293",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1293,
     "chunk": 9,
     "word": "run up against",
@@ -23337,7 +23337,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1294",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1294,
     "chunk": 9,
     "word": "sacred",
@@ -23355,7 +23355,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1295",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1295,
     "chunk": 9,
     "word": "sagacious",
@@ -23373,7 +23373,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1296",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1296,
     "chunk": 9,
     "word": "sanctioning",
@@ -23391,7 +23391,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1297",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1297,
     "chunk": 9,
     "word": "sanguinary",
@@ -23409,7 +23409,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1298",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1298,
     "chunk": 9,
     "word": "sappy",
@@ -23427,7 +23427,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1299",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1299,
     "chunk": 9,
     "word": "satisfy",
@@ -23445,7 +23445,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1300",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1300,
     "chunk": 9,
     "word": "saturated",
@@ -23463,7 +23463,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1301",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1301,
     "chunk": 9,
     "word": "sauntered",
@@ -23481,7 +23481,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1302",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1302,
     "chunk": 9,
     "word": "savored",
@@ -23499,7 +23499,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1303",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1303,
     "chunk": 9,
     "word": "scaled",
@@ -23517,7 +23517,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1304",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1304,
     "chunk": 9,
     "word": "scarcity",
@@ -23535,7 +23535,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1305",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1305,
     "chunk": 9,
     "word": "scared",
@@ -23553,7 +23553,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1306",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1306,
     "chunk": 9,
     "word": "scattered",
@@ -23571,7 +23571,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1307",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1307,
     "chunk": 9,
     "word": "scheme",
@@ -23589,7 +23589,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1308",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1308,
     "chunk": 9,
     "word": "scour",
@@ -23607,7 +23607,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1309",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1309,
     "chunk": 9,
     "word": "scruple",
@@ -23625,7 +23625,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1310",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1310,
     "chunk": 9,
     "word": "scuffle",
@@ -23643,7 +23643,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1311",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1311,
     "chunk": 9,
     "word": "sealed",
@@ -23661,7 +23661,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1312",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1312,
     "chunk": 9,
     "word": "sections",
@@ -23679,7 +23679,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1313",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1313,
     "chunk": 9,
     "word": "sedentary",
@@ -23697,7 +23697,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1314",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1314,
     "chunk": 9,
     "word": "sediment",
@@ -23715,7 +23715,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1315",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1315,
     "chunk": 9,
     "word": "seething",
@@ -23733,7 +23733,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1316",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1316,
     "chunk": 9,
     "word": "segregation",
@@ -23751,7 +23751,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1317",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1317,
     "chunk": 9,
     "word": "seize",
@@ -23769,7 +23769,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1318",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1318,
     "chunk": 9,
     "word": "selections",
@@ -23787,7 +23787,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1319",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1319,
     "chunk": 9,
     "word": "sequester",
@@ -23805,7 +23805,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1320",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1320,
     "chunk": 9,
     "word": "serve",
@@ -23823,7 +23823,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1321",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1321,
     "chunk": 9,
     "word": "set it up",
@@ -23841,7 +23841,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1322",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1322,
     "chunk": 9,
     "word": "settled",
@@ -23859,7 +23859,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1323",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1323,
     "chunk": 9,
     "word": "shallow",
@@ -23877,7 +23877,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1324",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1324,
     "chunk": 9,
     "word": "shattered",
@@ -23895,7 +23895,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1325",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1325,
     "chunk": 9,
     "word": "shedding",
@@ -23913,7 +23913,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1326",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1326,
     "chunk": 9,
     "word": "sheen",
@@ -23931,7 +23931,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1327",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1327,
     "chunk": 9,
     "word": "shift",
@@ -23949,7 +23949,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1328",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1328,
     "chunk": 9,
     "word": "shirk",
@@ -23967,7 +23967,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1329",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1329,
     "chunk": 9,
     "word": "show you up",
@@ -23985,7 +23985,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1330",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1330,
     "chunk": 9,
     "word": "shrewd",
@@ -24003,7 +24003,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1331",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1331,
     "chunk": 9,
     "word": "shrinking violet",
@@ -24021,7 +24021,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1332",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1332,
     "chunk": 9,
     "word": "shrivel",
@@ -24039,7 +24039,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1333",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1333,
     "chunk": 9,
     "word": "sickening",
@@ -24057,7 +24057,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1334",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1334,
     "chunk": 9,
     "word": "simmering",
@@ -24075,7 +24075,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1335",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1335,
     "chunk": 9,
     "word": "sits on the fence",
@@ -24093,7 +24093,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1336",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1336,
     "chunk": 9,
     "word": "skeptical",
@@ -24111,7 +24111,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1337",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1337,
     "chunk": 9,
     "word": "skinny",
@@ -24129,7 +24129,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1338",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1338,
     "chunk": 9,
     "word": "slanted",
@@ -24147,7 +24147,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1339",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1339,
     "chunk": 9,
     "word": "sleep",
@@ -24165,7 +24165,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1340",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1340,
     "chunk": 9,
     "word": "slender",
@@ -24183,7 +24183,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1341",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1341,
     "chunk": 9,
     "word": "slick",
@@ -24201,7 +24201,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1342",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1342,
     "chunk": 9,
     "word": "sloppy",
@@ -24219,7 +24219,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1343",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1343,
     "chunk": 9,
     "word": "smacked",
@@ -24237,7 +24237,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1344",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1344,
     "chunk": 9,
     "word": "smoothed out",
@@ -24255,7 +24255,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1345",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1345,
     "chunk": 9,
     "word": "soared",
@@ -24273,7 +24273,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1346",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1346,
     "chunk": 9,
     "word": "sobering",
@@ -24291,7 +24291,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1347",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1347,
     "chunk": 9,
     "word": "softer",
@@ -24309,7 +24309,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1348",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1348,
     "chunk": 9,
     "word": "soggy",
@@ -24327,7 +24327,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1349",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1349,
     "chunk": 9,
     "word": "solicitation",
@@ -24345,7 +24345,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1350",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1350,
     "chunk": 9,
     "word": "solidarity",
@@ -24363,7 +24363,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1351",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1351,
     "chunk": 9,
     "word": "solvent",
@@ -24381,7 +24381,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1352",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1352,
     "chunk": 9,
     "word": "solves",
@@ -24399,7 +24399,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1353",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1353,
     "chunk": 9,
     "word": "soothing",
@@ -24417,7 +24417,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1354",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1354,
     "chunk": 9,
     "word": "sources",
@@ -24435,7 +24435,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1355",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1355,
     "chunk": 9,
     "word": "space",
@@ -24453,7 +24453,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1356",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1356,
     "chunk": 9,
     "word": "spacious",
@@ -24471,7 +24471,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1357",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1357,
     "chunk": 9,
     "word": "species",
@@ -24489,7 +24489,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1358",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1358,
     "chunk": 9,
     "word": "speculating",
@@ -24507,7 +24507,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1359",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1359,
     "chunk": 9,
     "word": "sprawled",
@@ -24525,7 +24525,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1360",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1360,
     "chunk": 9,
     "word": "spur",
@@ -24543,7 +24543,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1361",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1361,
     "chunk": 9,
     "word": "spurning",
@@ -24561,7 +24561,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1362",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1362,
     "chunk": 9,
     "word": "squirt",
@@ -24579,7 +24579,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1363",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1363,
     "chunk": 9,
     "word": "stale",
@@ -24597,7 +24597,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1364",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1364,
     "chunk": 9,
     "word": "stall",
@@ -24615,7 +24615,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1365",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1365,
     "chunk": 9,
     "word": "stammer",
@@ -24633,7 +24633,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1366",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1366,
     "chunk": 9,
     "word": "stamp",
@@ -24651,7 +24651,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1367",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1367,
     "chunk": 9,
     "word": "stances",
@@ -24669,7 +24669,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1368",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1368,
     "chunk": 9,
     "word": "standardize",
@@ -24687,7 +24687,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1369",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1369,
     "chunk": 9,
     "word": "standoffish",
@@ -24705,7 +24705,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1370",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1370,
     "chunk": 9,
     "word": "starved",
@@ -24723,7 +24723,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1371",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1371,
     "chunk": 9,
     "word": "stationed",
@@ -24741,7 +24741,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1372",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1372,
     "chunk": 9,
     "word": "stature",
@@ -24759,7 +24759,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1373",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1373,
     "chunk": 9,
     "word": "stay",
@@ -24777,7 +24777,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1374",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1374,
     "chunk": 9,
     "word": "sterile",
@@ -24795,7 +24795,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1375",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1375,
     "chunk": 9,
     "word": "stick to",
@@ -24813,7 +24813,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1376",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1376,
     "chunk": 9,
     "word": "stingy",
@@ -24831,7 +24831,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1377",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1377,
     "chunk": 9,
     "word": "stipulates",
@@ -24849,7 +24849,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1378",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1378,
     "chunk": 9,
     "word": "stipulations",
@@ -24867,7 +24867,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1379",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1379,
     "chunk": 9,
     "word": "stirred",
@@ -24885,7 +24885,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1380",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1380,
     "chunk": 9,
     "word": "stirring",
@@ -24903,7 +24903,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1381",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1381,
     "chunk": 9,
     "word": "stocked",
@@ -24921,7 +24921,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1382",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1382,
     "chunk": 9,
     "word": "stooped",
@@ -24939,7 +24939,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1383",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1383,
     "chunk": 9,
     "word": "stooping",
@@ -24957,7 +24957,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1384",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1384,
     "chunk": 9,
     "word": "stored",
@@ -24975,7 +24975,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1385",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1385,
     "chunk": 9,
     "word": "straddled",
@@ -24993,7 +24993,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1386",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1386,
     "chunk": 9,
     "word": "stranded",
@@ -25011,7 +25011,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1387",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1387,
     "chunk": 10,
     "word": "strict",
@@ -25029,7 +25029,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1388",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1388,
     "chunk": 10,
     "word": "strident",
@@ -25047,7 +25047,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1389",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1389,
     "chunk": 10,
     "word": "striking",
@@ -25065,7 +25065,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1390",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1390,
     "chunk": 10,
     "word": "stringent",
@@ -25083,7 +25083,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1391",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1391,
     "chunk": 10,
     "word": "strive",
@@ -25101,7 +25101,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1392",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1392,
     "chunk": 10,
     "word": "striving",
@@ -25119,7 +25119,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1393",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1393,
     "chunk": 10,
     "word": "structured",
@@ -25137,7 +25137,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1394",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1394,
     "chunk": 10,
     "word": "struggle",
@@ -25155,7 +25155,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1395",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1395,
     "chunk": 10,
     "word": "struggles",
@@ -25173,7 +25173,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1396",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1396,
     "chunk": 10,
     "word": "strut",
@@ -25191,7 +25191,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1397",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1397,
     "chunk": 10,
     "word": "stumped",
@@ -25209,7 +25209,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1398",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1398,
     "chunk": 10,
     "word": "stunt",
@@ -25227,7 +25227,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1399",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1399,
     "chunk": 10,
     "word": "subjected",
@@ -25245,7 +25245,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1400",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1400,
     "chunk": 10,
     "word": "subjugated",
@@ -25263,7 +25263,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1401",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1401,
     "chunk": 10,
     "word": "submerged",
@@ -25281,7 +25281,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1402",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1402,
     "chunk": 10,
     "word": "subsided",
@@ -25299,7 +25299,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1403",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1403,
     "chunk": 10,
     "word": "subsisterst",
@@ -25317,7 +25317,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1404",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1404,
     "chunk": 10,
     "word": "substitute",
@@ -25335,7 +25335,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1405",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1405,
     "chunk": 10,
     "word": "subtle",
@@ -25353,7 +25353,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1406",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1406,
     "chunk": 10,
     "word": "succinct",
@@ -25371,7 +25371,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1407",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1407,
     "chunk": 10,
     "word": "suits",
@@ -25389,7 +25389,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1408",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1408,
     "chunk": 10,
     "word": "summit",
@@ -25407,7 +25407,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1409",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1409,
     "chunk": 10,
     "word": "superfluous",
@@ -25425,7 +25425,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1410",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1410,
     "chunk": 10,
     "word": "supersede",
@@ -25443,7 +25443,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1411",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1411,
     "chunk": 10,
     "word": "surmise",
@@ -25461,7 +25461,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1412",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1412,
     "chunk": 10,
     "word": "surmounted",
@@ -25479,7 +25479,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1413",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1413,
     "chunk": 10,
     "word": "surrender",
@@ -25497,7 +25497,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1414",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1414,
     "chunk": 10,
     "word": "surreptitiously",
@@ -25515,7 +25515,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1415",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1415,
     "chunk": 10,
     "word": "surrounding",
@@ -25533,7 +25533,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1416",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1416,
     "chunk": 10,
     "word": "susceptible",
@@ -25551,7 +25551,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1417",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1417,
     "chunk": 10,
     "word": "suspend",
@@ -25569,7 +25569,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1418",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1418,
     "chunk": 10,
     "word": "suspended",
@@ -25587,7 +25587,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1419",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1419,
     "chunk": 10,
     "word": "sustain",
@@ -25605,7 +25605,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1420",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1420,
     "chunk": 10,
     "word": "syllabus",
@@ -25623,7 +25623,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1421",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1421,
     "chunk": 10,
     "word": "tainted",
@@ -25641,7 +25641,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1422",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1422,
     "chunk": 10,
     "word": "take after",
@@ -25659,7 +25659,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1423",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1423,
     "chunk": 10,
     "word": "taking",
@@ -25677,7 +25677,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1424",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1424,
     "chunk": 10,
     "word": "tampering",
@@ -25695,7 +25695,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1425",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1425,
     "chunk": 10,
     "word": "tang",
@@ -25713,7 +25713,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1426",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1426,
     "chunk": 10,
     "word": "tangible",
@@ -25731,7 +25731,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1427",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1427,
     "chunk": 10,
     "word": "tantalize",
@@ -25749,7 +25749,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1428",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1428,
     "chunk": 10,
     "word": "tapped",
@@ -25767,7 +25767,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1429",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1429,
     "chunk": 10,
     "word": "tardy",
@@ -25785,7 +25785,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1430",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1430,
     "chunk": 10,
     "word": "taunted",
@@ -25803,7 +25803,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1431",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1431,
     "chunk": 10,
     "word": "temperaments",
@@ -25821,7 +25821,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1432",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1432,
     "chunk": 10,
     "word": "tension",
@@ -25839,7 +25839,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1433",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1433,
     "chunk": 10,
     "word": "tentative",
@@ -25857,7 +25857,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1434",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1434,
     "chunk": 10,
     "word": "tentatively",
@@ -25875,7 +25875,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1435",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1435,
     "chunk": 10,
     "word": "tepid",
@@ -25893,7 +25893,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1436",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1436,
     "chunk": 10,
     "word": "terminate",
@@ -25911,7 +25911,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1437",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1437,
     "chunk": 10,
     "word": "terrain",
@@ -25929,7 +25929,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1438",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1438,
     "chunk": 10,
     "word": "terrestrial",
@@ -25947,7 +25947,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1439",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1439,
     "chunk": 10,
     "word": "throws a tantrum",
@@ -25965,7 +25965,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1440",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1440,
     "chunk": 10,
     "word": "thwart",
@@ -25983,7 +25983,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1441",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1441,
     "chunk": 10,
     "word": "tick",
@@ -26001,7 +26001,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1442",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1442,
     "chunk": 10,
     "word": "tilted",
@@ -26019,7 +26019,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1443",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1443,
     "chunk": 10,
     "word": "timid",
@@ -26037,7 +26037,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1444",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1444,
     "chunk": 10,
     "word": "torrential",
@@ -26055,7 +26055,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1445",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1445,
     "chunk": 10,
     "word": "total",
@@ -26073,7 +26073,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1446",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1446,
     "chunk": 10,
     "word": "trade",
@@ -26091,7 +26091,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1447",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1447,
     "chunk": 10,
     "word": "traded",
@@ -26109,7 +26109,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1448",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1448,
     "chunk": 10,
     "word": "transactions",
@@ -26127,7 +26127,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1449",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1449,
     "chunk": 10,
     "word": "transcending",
@@ -26145,7 +26145,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1450",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1450,
     "chunk": 10,
     "word": "transfers",
@@ -26163,7 +26163,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1451",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1451,
     "chunk": 10,
     "word": "transgressed",
@@ -26181,7 +26181,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1452",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1452,
     "chunk": 10,
     "word": "transmission",
@@ -26199,7 +26199,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1453",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1453,
     "chunk": 10,
     "word": "transmitted",
@@ -26217,7 +26217,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1454",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1454,
     "chunk": 10,
     "word": "transmitting",
@@ -26235,7 +26235,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1455",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1455,
     "chunk": 10,
     "word": "transport",
@@ -26253,7 +26253,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1456",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1456,
     "chunk": 10,
     "word": "transported",
@@ -26271,7 +26271,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1457",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1457,
     "chunk": 10,
     "word": "travesty",
@@ -26289,7 +26289,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1458",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1458,
     "chunk": 10,
     "word": "treacherous",
@@ -26307,7 +26307,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1459",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1459,
     "chunk": 10,
     "word": "treat",
@@ -26325,7 +26325,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1460",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1460,
     "chunk": 10,
     "word": "treaties",
@@ -26343,7 +26343,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1461",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1461,
     "chunk": 10,
     "word": "treaty",
@@ -26361,7 +26361,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1462",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1462,
     "chunk": 10,
     "word": "trial",
@@ -26379,7 +26379,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1463",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1463,
     "chunk": 10,
     "word": "triggered",
@@ -26397,7 +26397,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1464",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1464,
     "chunk": 10,
     "word": "truculent",
@@ -26415,7 +26415,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1465",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1465,
     "chunk": 10,
     "word": "turn on",
@@ -26433,7 +26433,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1466",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1466,
     "chunk": 10,
     "word": "turn you in",
@@ -26451,7 +26451,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1467",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1467,
     "chunk": 10,
     "word": "turnover",
@@ -26469,7 +26469,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1468",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1468,
     "chunk": 10,
     "word": "typically",
@@ -26487,7 +26487,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1469",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1469,
     "chunk": 10,
     "word": "unavailable",
@@ -26505,7 +26505,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1470",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1470,
     "chunk": 10,
     "word": "unconscious",
@@ -26523,7 +26523,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1471",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1471,
     "chunk": 10,
     "word": "underlie",
@@ -26541,7 +26541,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1472",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1472,
     "chunk": 10,
     "word": "undermine",
@@ -26559,7 +26559,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1473",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1473,
     "chunk": 10,
     "word": "undermines",
@@ -26577,7 +26577,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1474",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1474,
     "chunk": 10,
     "word": "underscore",
@@ -26595,7 +26595,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1475",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1475,
     "chunk": 10,
     "word": "undetected",
@@ -26613,7 +26613,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1476",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1476,
     "chunk": 10,
     "word": "undulated",
@@ -26631,7 +26631,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1477",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1477,
     "chunk": 10,
     "word": "unfathomable",
@@ -26649,7 +26649,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1478",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1478,
     "chunk": 10,
     "word": "unfolded",
@@ -26667,7 +26667,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1479",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1479,
     "chunk": 10,
     "word": "unimpeded",
@@ -26685,7 +26685,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1480",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1480,
     "chunk": 10,
     "word": "unleash",
@@ -26703,7 +26703,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1481",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1481,
     "chunk": 10,
     "word": "unruly",
@@ -26721,7 +26721,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1482",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1482,
     "chunk": 10,
     "word": "unwilling",
@@ -26739,7 +26739,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1483",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1483,
     "chunk": 10,
     "word": "upbraid",
@@ -26757,7 +26757,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1484",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1484,
     "chunk": 10,
     "word": "upgraded",
@@ -26775,7 +26775,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1485",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1485,
     "chunk": 10,
     "word": "usable",
@@ -26793,7 +26793,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1486",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1486,
     "chunk": 10,
     "word": "vacate",
@@ -26811,7 +26811,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1487",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1487,
     "chunk": 10,
     "word": "validate",
@@ -26829,7 +26829,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1488",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1488,
     "chunk": 10,
     "word": "vandalized",
@@ -26847,7 +26847,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1489",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1489,
     "chunk": 10,
     "word": "vanguard",
@@ -26865,7 +26865,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1490",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1490,
     "chunk": 10,
     "word": "vanquished",
@@ -26883,7 +26883,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1491",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1491,
     "chunk": 10,
     "word": "variable",
@@ -26901,7 +26901,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1492",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1492,
     "chunk": 10,
     "word": "variety",
@@ -26919,7 +26919,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1493",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1493,
     "chunk": 10,
     "word": "veering",
@@ -26937,7 +26937,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1494",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1494,
     "chunk": 10,
     "word": "veers",
@@ -26955,7 +26955,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1495",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1495,
     "chunk": 10,
     "word": "venerable",
@@ -26973,7 +26973,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1496",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1496,
     "chunk": 10,
     "word": "venerate",
@@ -26991,7 +26991,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1497",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1497,
     "chunk": 10,
     "word": "ventilated",
@@ -27009,7 +27009,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1498",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1498,
     "chunk": 10,
     "word": "venture",
@@ -27027,7 +27027,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1499",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1499,
     "chunk": 10,
     "word": "verbose",
@@ -27045,7 +27045,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1500",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1500,
     "chunk": 10,
     "word": "verdict",
@@ -27063,7 +27063,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1501",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1501,
     "chunk": 10,
     "word": "verifiable",
@@ -27081,7 +27081,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1502",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1502,
     "chunk": 10,
     "word": "verifying",
@@ -27099,7 +27099,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1503",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1503,
     "chunk": 10,
     "word": "vernacular",
@@ -27117,7 +27117,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1504",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1504,
     "chunk": 10,
     "word": "verve",
@@ -27135,7 +27135,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1505",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1505,
     "chunk": 10,
     "word": "veto",
@@ -27153,7 +27153,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1506",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1506,
     "chunk": 10,
     "word": "vigilant",
@@ -27171,7 +27171,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1507",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1507,
     "chunk": 10,
     "word": "vigorous",
@@ -27189,7 +27189,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1508",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1508,
     "chunk": 10,
     "word": "vindictive",
@@ -27207,7 +27207,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1509",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1509,
     "chunk": 10,
     "word": "virtually",
@@ -27225,7 +27225,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1510",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1510,
     "chunk": 10,
     "word": "visit",
@@ -27243,7 +27243,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1511",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1511,
     "chunk": 10,
     "word": "vitiated",
@@ -27261,7 +27261,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1512",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1512,
     "chunk": 10,
     "word": "vivacious",
@@ -27279,7 +27279,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1513",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1513,
     "chunk": 10,
     "word": "voice",
@@ -27297,7 +27297,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1514",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1514,
     "chunk": 10,
     "word": "volume",
@@ -27315,7 +27315,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1515",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1515,
     "chunk": 10,
     "word": "vowed",
@@ -27333,7 +27333,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1516",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1516,
     "chunk": 10,
     "word": "vulnerable",
@@ -27351,7 +27351,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1517",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1517,
     "chunk": 10,
     "word": "wagered",
@@ -27369,7 +27369,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1518",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1518,
     "chunk": 10,
     "word": "waived",
@@ -27387,7 +27387,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1519",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1519,
     "chunk": 10,
     "word": "warn",
@@ -27405,7 +27405,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1520",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1520,
     "chunk": 10,
     "word": "warrant",
@@ -27423,7 +27423,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1521",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1521,
     "chunk": 10,
     "word": "wasted",
@@ -27441,7 +27441,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1522",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1522,
     "chunk": 10,
     "word": "watch",
@@ -27459,7 +27459,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1523",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1523,
     "chunk": 10,
     "word": "welcome",
@@ -27477,7 +27477,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1524",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1524,
     "chunk": 10,
     "word": "whimper",
@@ -27495,7 +27495,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1525",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1525,
     "chunk": 10,
     "word": "wilt",
@@ -27513,7 +27513,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1526",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1526,
     "chunk": 10,
     "word": "withdraw",
@@ -27531,7 +27531,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1527",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1527,
     "chunk": 10,
     "word": "withdraws",
@@ -27549,7 +27549,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1528",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1528,
     "chunk": 10,
     "word": "withstand",
@@ -27567,7 +27567,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1529",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1529,
     "chunk": 10,
     "word": "work up",
@@ -27585,7 +27585,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1530",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1530,
     "chunk": 10,
     "word": "yielded",
@@ -27603,7 +27603,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1531",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1531,
     "chunk": 10,
     "word": "You can say that again",
@@ -27621,7 +27621,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1532",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1532,
     "chunk": 10,
     "word": "You make me laugh",
@@ -27639,7 +27639,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1533",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1533,
     "chunk": 10,
     "word": "You reap what you sow",
@@ -27657,7 +27657,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1534",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1534,
     "chunk": 10,
     "word": "You're pulling my leg",
@@ -27675,7 +27675,7 @@ window.TEPS_WORDS = [
   {
     "id": "F1535",
     "source": "frequent",
-    "sourceLabel": "빈출",
+    "sourceLabel": "TEPS 어휘빈출",
     "rank": 1535,
     "chunk": 10,
     "word": "zest",
@@ -65636,7 +65636,7 @@ window.TEPS_WORDS = [
   {
     "id": "A001",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 1,
     "chunk": 1,
     "word": "analyse",
@@ -65671,7 +65671,7 @@ window.TEPS_WORDS = [
   {
     "id": "A002",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 2,
     "chunk": 1,
     "word": "approach",
@@ -65696,7 +65696,7 @@ window.TEPS_WORDS = [
   {
     "id": "A003",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 3,
     "chunk": 1,
     "word": "area",
@@ -65717,7 +65717,7 @@ window.TEPS_WORDS = [
   {
     "id": "A004",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 4,
     "chunk": 1,
     "word": "assess",
@@ -65748,7 +65748,7 @@ window.TEPS_WORDS = [
   {
     "id": "A005",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 5,
     "chunk": 1,
     "word": "assume",
@@ -65773,7 +65773,7 @@ window.TEPS_WORDS = [
   {
     "id": "A006",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 6,
     "chunk": 1,
     "word": "authority",
@@ -65795,7 +65795,7 @@ window.TEPS_WORDS = [
   {
     "id": "A007",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 7,
     "chunk": 1,
     "word": "available",
@@ -65817,7 +65817,7 @@ window.TEPS_WORDS = [
   {
     "id": "A008",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 8,
     "chunk": 1,
     "word": "benefit",
@@ -65843,7 +65843,7 @@ window.TEPS_WORDS = [
   {
     "id": "A009",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 9,
     "chunk": 1,
     "word": "concept",
@@ -65872,7 +65872,7 @@ window.TEPS_WORDS = [
   {
     "id": "A010",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 10,
     "chunk": 1,
     "word": "consist",
@@ -65901,7 +65901,7 @@ window.TEPS_WORDS = [
   {
     "id": "A011",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 11,
     "chunk": 1,
     "word": "constitute",
@@ -65934,7 +65934,7 @@ window.TEPS_WORDS = [
   {
     "id": "A012",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 12,
     "chunk": 1,
     "word": "context",
@@ -65964,7 +65964,7 @@ window.TEPS_WORDS = [
   {
     "id": "A013",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 13,
     "chunk": 1,
     "word": "contract",
@@ -65989,7 +65989,7 @@ window.TEPS_WORDS = [
   {
     "id": "A014",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 14,
     "chunk": 1,
     "word": "create",
@@ -66023,7 +66023,7 @@ window.TEPS_WORDS = [
   {
     "id": "A015",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 15,
     "chunk": 1,
     "word": "data",
@@ -66042,7 +66042,7 @@ window.TEPS_WORDS = [
   {
     "id": "A016",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 16,
     "chunk": 1,
     "word": "define",
@@ -66073,7 +66073,7 @@ window.TEPS_WORDS = [
   {
     "id": "A017",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 17,
     "chunk": 1,
     "word": "derive",
@@ -66100,7 +66100,7 @@ window.TEPS_WORDS = [
   {
     "id": "A018",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 18,
     "chunk": 1,
     "word": "distribute",
@@ -66133,7 +66133,7 @@ window.TEPS_WORDS = [
   {
     "id": "A019",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 19,
     "chunk": 1,
     "word": "economy",
@@ -66161,7 +66161,7 @@ window.TEPS_WORDS = [
   {
     "id": "A020",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 20,
     "chunk": 1,
     "word": "environment",
@@ -66186,7 +66186,7 @@ window.TEPS_WORDS = [
   {
     "id": "A021",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 21,
     "chunk": 1,
     "word": "establish",
@@ -66216,7 +66216,7 @@ window.TEPS_WORDS = [
   {
     "id": "A022",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 22,
     "chunk": 1,
     "word": "estimate",
@@ -66250,7 +66250,7 @@ window.TEPS_WORDS = [
   {
     "id": "A023",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 23,
     "chunk": 1,
     "word": "evident",
@@ -66274,7 +66274,7 @@ window.TEPS_WORDS = [
   {
     "id": "A024",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 24,
     "chunk": 1,
     "word": "export",
@@ -66299,7 +66299,7 @@ window.TEPS_WORDS = [
   {
     "id": "A025",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 25,
     "chunk": 1,
     "word": "factor",
@@ -66322,7 +66322,7 @@ window.TEPS_WORDS = [
   {
     "id": "A026",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 26,
     "chunk": 1,
     "word": "finance",
@@ -66349,7 +66349,7 @@ window.TEPS_WORDS = [
   {
     "id": "A027",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 27,
     "chunk": 1,
     "word": "formula",
@@ -66381,7 +66381,7 @@ window.TEPS_WORDS = [
   {
     "id": "A028",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 28,
     "chunk": 1,
     "word": "function",
@@ -66406,7 +66406,7 @@ window.TEPS_WORDS = [
   {
     "id": "A029",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 29,
     "chunk": 1,
     "word": "identify",
@@ -66434,7 +66434,7 @@ window.TEPS_WORDS = [
   {
     "id": "A030",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 30,
     "chunk": 1,
     "word": "income",
@@ -66455,7 +66455,7 @@ window.TEPS_WORDS = [
   {
     "id": "A031",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 31,
     "chunk": 1,
     "word": "indicate",
@@ -66483,7 +66483,7 @@ window.TEPS_WORDS = [
   {
     "id": "A032",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 32,
     "chunk": 1,
     "word": "individual",
@@ -66511,7 +66511,7 @@ window.TEPS_WORDS = [
   {
     "id": "A033",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 33,
     "chunk": 1,
     "word": "interpret",
@@ -66550,7 +66550,7 @@ window.TEPS_WORDS = [
   {
     "id": "A034",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 34,
     "chunk": 1,
     "word": "involve",
@@ -66575,7 +66575,7 @@ window.TEPS_WORDS = [
   {
     "id": "A035",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 35,
     "chunk": 1,
     "word": "issue",
@@ -66598,7 +66598,7 @@ window.TEPS_WORDS = [
   {
     "id": "A036",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 36,
     "chunk": 1,
     "word": "labour",
@@ -66624,7 +66624,7 @@ window.TEPS_WORDS = [
   {
     "id": "A037",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 37,
     "chunk": 1,
     "word": "legal",
@@ -66649,7 +66649,7 @@ window.TEPS_WORDS = [
   {
     "id": "A038",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 38,
     "chunk": 1,
     "word": "legislate",
@@ -66677,7 +66677,7 @@ window.TEPS_WORDS = [
   {
     "id": "A039",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 39,
     "chunk": 1,
     "word": "major",
@@ -66699,7 +66699,7 @@ window.TEPS_WORDS = [
   {
     "id": "A040",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 40,
     "chunk": 1,
     "word": "method",
@@ -66724,7 +66724,7 @@ window.TEPS_WORDS = [
   {
     "id": "A041",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 41,
     "chunk": 1,
     "word": "occur",
@@ -66753,7 +66753,7 @@ window.TEPS_WORDS = [
   {
     "id": "A042",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 42,
     "chunk": 1,
     "word": "percent",
@@ -66775,7 +66775,7 @@ window.TEPS_WORDS = [
   {
     "id": "A043",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 43,
     "chunk": 1,
     "word": "period",
@@ -66800,7 +66800,7 @@ window.TEPS_WORDS = [
   {
     "id": "A044",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 44,
     "chunk": 1,
     "word": "policy",
@@ -66821,7 +66821,7 @@ window.TEPS_WORDS = [
   {
     "id": "A045",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 45,
     "chunk": 1,
     "word": "principle",
@@ -66844,7 +66844,7 @@ window.TEPS_WORDS = [
   {
     "id": "A046",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 46,
     "chunk": 1,
     "word": "proceed",
@@ -66871,7 +66871,7 @@ window.TEPS_WORDS = [
   {
     "id": "A047",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 47,
     "chunk": 1,
     "word": "process",
@@ -66894,7 +66894,7 @@ window.TEPS_WORDS = [
   {
     "id": "A048",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 48,
     "chunk": 1,
     "word": "require",
@@ -66919,7 +66919,7 @@ window.TEPS_WORDS = [
   {
     "id": "A049",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 49,
     "chunk": 1,
     "word": "research",
@@ -66944,7 +66944,7 @@ window.TEPS_WORDS = [
   {
     "id": "A050",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 50,
     "chunk": 1,
     "word": "respond",
@@ -66974,7 +66974,7 @@ window.TEPS_WORDS = [
   {
     "id": "A051",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 51,
     "chunk": 1,
     "word": "role",
@@ -66995,7 +66995,7 @@ window.TEPS_WORDS = [
   {
     "id": "A052",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 52,
     "chunk": 1,
     "word": "section",
@@ -67018,7 +67018,7 @@ window.TEPS_WORDS = [
   {
     "id": "A053",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 53,
     "chunk": 1,
     "word": "sector",
@@ -67039,7 +67039,7 @@ window.TEPS_WORDS = [
   {
     "id": "A054",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 54,
     "chunk": 1,
     "word": "significant",
@@ -67067,7 +67067,7 @@ window.TEPS_WORDS = [
   {
     "id": "A055",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 55,
     "chunk": 1,
     "word": "similar",
@@ -67091,7 +67091,7 @@ window.TEPS_WORDS = [
   {
     "id": "A056",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 56,
     "chunk": 1,
     "word": "source",
@@ -67114,7 +67114,7 @@ window.TEPS_WORDS = [
   {
     "id": "A057",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 57,
     "chunk": 1,
     "word": "specific",
@@ -67139,7 +67139,7 @@ window.TEPS_WORDS = [
   {
     "id": "A058",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 58,
     "chunk": 2,
     "word": "structure",
@@ -67169,7 +67169,7 @@ window.TEPS_WORDS = [
   {
     "id": "A059",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 59,
     "chunk": 2,
     "word": "theory",
@@ -67194,7 +67194,7 @@ window.TEPS_WORDS = [
   {
     "id": "A060",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 60,
     "chunk": 2,
     "word": "vary",
@@ -67228,7 +67228,7 @@ window.TEPS_WORDS = [
   {
     "id": "A061",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 61,
     "chunk": 2,
     "word": "achieve",
@@ -67254,7 +67254,7 @@ window.TEPS_WORDS = [
   {
     "id": "A062",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 62,
     "chunk": 2,
     "word": "acquire",
@@ -67279,7 +67279,7 @@ window.TEPS_WORDS = [
   {
     "id": "A063",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 63,
     "chunk": 2,
     "word": "administrate",
@@ -67306,7 +67306,7 @@ window.TEPS_WORDS = [
   {
     "id": "A064",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 64,
     "chunk": 2,
     "word": "affect",
@@ -67332,7 +67332,7 @@ window.TEPS_WORDS = [
   {
     "id": "A065",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 65,
     "chunk": 2,
     "word": "appropriate",
@@ -67358,7 +67358,7 @@ window.TEPS_WORDS = [
   {
     "id": "A066",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 66,
     "chunk": 2,
     "word": "aspect",
@@ -67379,7 +67379,7 @@ window.TEPS_WORDS = [
   {
     "id": "A067",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 67,
     "chunk": 2,
     "word": "assist",
@@ -67406,7 +67406,7 @@ window.TEPS_WORDS = [
   {
     "id": "A068",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 68,
     "chunk": 2,
     "word": "category",
@@ -67436,7 +67436,7 @@ window.TEPS_WORDS = [
   {
     "id": "A069",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 69,
     "chunk": 2,
     "word": "chapter",
@@ -67457,7 +67457,7 @@ window.TEPS_WORDS = [
   {
     "id": "A070",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 70,
     "chunk": 2,
     "word": "commission",
@@ -67482,7 +67482,7 @@ window.TEPS_WORDS = [
   {
     "id": "A071",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 71,
     "chunk": 2,
     "word": "community",
@@ -67503,7 +67503,7 @@ window.TEPS_WORDS = [
   {
     "id": "A072",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 72,
     "chunk": 2,
     "word": "complex",
@@ -67525,7 +67525,7 @@ window.TEPS_WORDS = [
   {
     "id": "A073",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 73,
     "chunk": 2,
     "word": "compute",
@@ -67554,7 +67554,7 @@ window.TEPS_WORDS = [
   {
     "id": "A074",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 74,
     "chunk": 2,
     "word": "conclude",
@@ -67583,7 +67583,7 @@ window.TEPS_WORDS = [
   {
     "id": "A075",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 75,
     "chunk": 2,
     "word": "conduct",
@@ -67606,7 +67606,7 @@ window.TEPS_WORDS = [
   {
     "id": "A076",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 76,
     "chunk": 2,
     "word": "consequent",
@@ -67629,7 +67629,7 @@ window.TEPS_WORDS = [
   {
     "id": "A077",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 77,
     "chunk": 2,
     "word": "construct",
@@ -67660,7 +67660,7 @@ window.TEPS_WORDS = [
   {
     "id": "A078",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 78,
     "chunk": 2,
     "word": "consume",
@@ -67686,7 +67686,7 @@ window.TEPS_WORDS = [
   {
     "id": "A079",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 79,
     "chunk": 2,
     "word": "credit",
@@ -67711,7 +67711,7 @@ window.TEPS_WORDS = [
   {
     "id": "A080",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 80,
     "chunk": 2,
     "word": "culture",
@@ -67736,7 +67736,7 @@ window.TEPS_WORDS = [
   {
     "id": "A081",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 81,
     "chunk": 2,
     "word": "design",
@@ -67761,7 +67761,7 @@ window.TEPS_WORDS = [
   {
     "id": "A082",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 82,
     "chunk": 2,
     "word": "distinct",
@@ -67788,7 +67788,7 @@ window.TEPS_WORDS = [
   {
     "id": "A083",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 83,
     "chunk": 2,
     "word": "element",
@@ -67809,7 +67809,7 @@ window.TEPS_WORDS = [
   {
     "id": "A084",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 84,
     "chunk": 2,
     "word": "equate",
@@ -67834,7 +67834,7 @@ window.TEPS_WORDS = [
   {
     "id": "A085",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 85,
     "chunk": 2,
     "word": "evaluate",
@@ -67865,7 +67865,7 @@ window.TEPS_WORDS = [
   {
     "id": "A086",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 86,
     "chunk": 2,
     "word": "feature",
@@ -67888,7 +67888,7 @@ window.TEPS_WORDS = [
   {
     "id": "A087",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 87,
     "chunk": 2,
     "word": "final",
@@ -67919,7 +67919,7 @@ window.TEPS_WORDS = [
   {
     "id": "A088",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 88,
     "chunk": 2,
     "word": "focus",
@@ -67951,7 +67951,7 @@ window.TEPS_WORDS = [
   {
     "id": "A089",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 89,
     "chunk": 2,
     "word": "impact",
@@ -67974,7 +67974,7 @@ window.TEPS_WORDS = [
   {
     "id": "A090",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 90,
     "chunk": 2,
     "word": "injure",
@@ -68000,7 +68000,7 @@ window.TEPS_WORDS = [
   {
     "id": "A091",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 91,
     "chunk": 2,
     "word": "institute",
@@ -68034,7 +68034,7 @@ window.TEPS_WORDS = [
   {
     "id": "A092",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 92,
     "chunk": 2,
     "word": "invest",
@@ -68066,7 +68066,7 @@ window.TEPS_WORDS = [
   {
     "id": "A093",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 93,
     "chunk": 2,
     "word": "item",
@@ -68092,7 +68092,7 @@ window.TEPS_WORDS = [
   {
     "id": "A094",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 94,
     "chunk": 2,
     "word": "journal",
@@ -68113,7 +68113,7 @@ window.TEPS_WORDS = [
   {
     "id": "A095",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 95,
     "chunk": 2,
     "word": "maintain",
@@ -68137,7 +68137,7 @@ window.TEPS_WORDS = [
   {
     "id": "A096",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 96,
     "chunk": 2,
     "word": "normal",
@@ -68171,7 +68171,7 @@ window.TEPS_WORDS = [
   {
     "id": "A097",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 97,
     "chunk": 2,
     "word": "obtain",
@@ -68196,7 +68196,7 @@ window.TEPS_WORDS = [
   {
     "id": "A098",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 98,
     "chunk": 2,
     "word": "participate",
@@ -68223,7 +68223,7 @@ window.TEPS_WORDS = [
   {
     "id": "A099",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 99,
     "chunk": 2,
     "word": "perceive",
@@ -68248,7 +68248,7 @@ window.TEPS_WORDS = [
   {
     "id": "A100",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 100,
     "chunk": 2,
     "word": "positive",
@@ -68269,7 +68269,7 @@ window.TEPS_WORDS = [
   {
     "id": "A101",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 101,
     "chunk": 2,
     "word": "potential",
@@ -68290,7 +68290,7 @@ window.TEPS_WORDS = [
   {
     "id": "A102",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 102,
     "chunk": 2,
     "word": "previous",
@@ -68311,7 +68311,7 @@ window.TEPS_WORDS = [
   {
     "id": "A103",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 103,
     "chunk": 2,
     "word": "primary",
@@ -68332,7 +68332,7 @@ window.TEPS_WORDS = [
   {
     "id": "A104",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 104,
     "chunk": 2,
     "word": "purchase",
@@ -68357,7 +68357,7 @@ window.TEPS_WORDS = [
   {
     "id": "A105",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 105,
     "chunk": 2,
     "word": "range",
@@ -68380,7 +68380,7 @@ window.TEPS_WORDS = [
   {
     "id": "A106",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 106,
     "chunk": 2,
     "word": "region",
@@ -68403,7 +68403,7 @@ window.TEPS_WORDS = [
   {
     "id": "A107",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 107,
     "chunk": 2,
     "word": "regulate",
@@ -68436,7 +68436,7 @@ window.TEPS_WORDS = [
   {
     "id": "A108",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 108,
     "chunk": 2,
     "word": "relevant",
@@ -68459,7 +68459,7 @@ window.TEPS_WORDS = [
   {
     "id": "A109",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 109,
     "chunk": 2,
     "word": "reside",
@@ -68486,7 +68486,7 @@ window.TEPS_WORDS = [
   {
     "id": "A110",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 110,
     "chunk": 2,
     "word": "resource",
@@ -68512,7 +68512,7 @@ window.TEPS_WORDS = [
   {
     "id": "A111",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 111,
     "chunk": 2,
     "word": "restrict",
@@ -68541,7 +68541,7 @@ window.TEPS_WORDS = [
   {
     "id": "A112",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 112,
     "chunk": 2,
     "word": "secure",
@@ -68570,7 +68570,7 @@ window.TEPS_WORDS = [
   {
     "id": "A113",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 113,
     "chunk": 2,
     "word": "seek",
@@ -68593,7 +68593,7 @@ window.TEPS_WORDS = [
   {
     "id": "A114",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 114,
     "chunk": 2,
     "word": "select",
@@ -68622,7 +68622,7 @@ window.TEPS_WORDS = [
   {
     "id": "A115",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 115,
     "chunk": 3,
     "word": "site",
@@ -68643,7 +68643,7 @@ window.TEPS_WORDS = [
   {
     "id": "A116",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 116,
     "chunk": 3,
     "word": "strategy",
@@ -68668,7 +68668,7 @@ window.TEPS_WORDS = [
   {
     "id": "A117",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 117,
     "chunk": 3,
     "word": "survey",
@@ -68691,7 +68691,7 @@ window.TEPS_WORDS = [
   {
     "id": "A118",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 118,
     "chunk": 3,
     "word": "text",
@@ -68713,7 +68713,7 @@ window.TEPS_WORDS = [
   {
     "id": "A119",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 119,
     "chunk": 3,
     "word": "tradition",
@@ -68738,7 +68738,7 @@ window.TEPS_WORDS = [
   {
     "id": "A120",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 120,
     "chunk": 3,
     "word": "transfer",
@@ -68763,7 +68763,7 @@ window.TEPS_WORDS = [
   {
     "id": "A121",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 121,
     "chunk": 3,
     "word": "alternative",
@@ -68785,7 +68785,7 @@ window.TEPS_WORDS = [
   {
     "id": "A122",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 122,
     "chunk": 3,
     "word": "circumstance",
@@ -68806,7 +68806,7 @@ window.TEPS_WORDS = [
   {
     "id": "A123",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 123,
     "chunk": 3,
     "word": "comment",
@@ -68833,7 +68833,7 @@ window.TEPS_WORDS = [
   {
     "id": "A124",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 124,
     "chunk": 3,
     "word": "compensate",
@@ -68859,7 +68859,7 @@ window.TEPS_WORDS = [
   {
     "id": "A125",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 125,
     "chunk": 3,
     "word": "component",
@@ -68881,7 +68881,7 @@ window.TEPS_WORDS = [
   {
     "id": "A126",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 126,
     "chunk": 3,
     "word": "consent",
@@ -68905,7 +68905,7 @@ window.TEPS_WORDS = [
   {
     "id": "A127",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 127,
     "chunk": 3,
     "word": "considerable",
@@ -68926,7 +68926,7 @@ window.TEPS_WORDS = [
   {
     "id": "A128",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 128,
     "chunk": 3,
     "word": "constant",
@@ -68951,7 +68951,7 @@ window.TEPS_WORDS = [
   {
     "id": "A129",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 129,
     "chunk": 3,
     "word": "constrain",
@@ -68977,7 +68977,7 @@ window.TEPS_WORDS = [
   {
     "id": "A130",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 130,
     "chunk": 3,
     "word": "contribute",
@@ -69004,7 +69004,7 @@ window.TEPS_WORDS = [
   {
     "id": "A131",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 131,
     "chunk": 3,
     "word": "convene",
@@ -69032,7 +69032,7 @@ window.TEPS_WORDS = [
   {
     "id": "A132",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 132,
     "chunk": 3,
     "word": "coordinate",
@@ -69065,7 +69065,7 @@ window.TEPS_WORDS = [
   {
     "id": "A133",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 133,
     "chunk": 3,
     "word": "core",
@@ -69088,7 +69088,7 @@ window.TEPS_WORDS = [
   {
     "id": "A134",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 134,
     "chunk": 3,
     "word": "corporate",
@@ -69111,7 +69111,7 @@ window.TEPS_WORDS = [
   {
     "id": "A135",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 135,
     "chunk": 3,
     "word": "correspond",
@@ -69136,7 +69136,7 @@ window.TEPS_WORDS = [
   {
     "id": "A136",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 136,
     "chunk": 3,
     "word": "criteria",
@@ -69157,7 +69157,7 @@ window.TEPS_WORDS = [
   {
     "id": "A137",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 137,
     "chunk": 3,
     "word": "deduce",
@@ -69182,7 +69182,7 @@ window.TEPS_WORDS = [
   {
     "id": "A138",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 138,
     "chunk": 3,
     "word": "demonstrate",
@@ -69213,7 +69213,7 @@ window.TEPS_WORDS = [
   {
     "id": "A139",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 139,
     "chunk": 3,
     "word": "document",
@@ -69237,7 +69237,7 @@ window.TEPS_WORDS = [
   {
     "id": "A140",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 140,
     "chunk": 3,
     "word": "dominate",
@@ -69263,7 +69263,7 @@ window.TEPS_WORDS = [
   {
     "id": "A141",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 141,
     "chunk": 3,
     "word": "emphasis",
@@ -69292,7 +69292,7 @@ window.TEPS_WORDS = [
   {
     "id": "A142",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 142,
     "chunk": 3,
     "word": "ensure",
@@ -69315,7 +69315,7 @@ window.TEPS_WORDS = [
   {
     "id": "A143",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 143,
     "chunk": 3,
     "word": "exclude",
@@ -69344,7 +69344,7 @@ window.TEPS_WORDS = [
   {
     "id": "A144",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 144,
     "chunk": 3,
     "word": "framework",
@@ -69365,7 +69365,7 @@ window.TEPS_WORDS = [
   {
     "id": "A145",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 145,
     "chunk": 3,
     "word": "fund",
@@ -69390,7 +69390,7 @@ window.TEPS_WORDS = [
   {
     "id": "A146",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 146,
     "chunk": 3,
     "word": "illustrate",
@@ -69416,7 +69416,7 @@ window.TEPS_WORDS = [
   {
     "id": "A147",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 147,
     "chunk": 3,
     "word": "immigrate",
@@ -69442,7 +69442,7 @@ window.TEPS_WORDS = [
   {
     "id": "A148",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 148,
     "chunk": 3,
     "word": "imply",
@@ -69465,7 +69465,7 @@ window.TEPS_WORDS = [
   {
     "id": "A149",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 149,
     "chunk": 3,
     "word": "initial",
@@ -69486,7 +69486,7 @@ window.TEPS_WORDS = [
   {
     "id": "A150",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 150,
     "chunk": 3,
     "word": "instance",
@@ -69507,7 +69507,7 @@ window.TEPS_WORDS = [
   {
     "id": "A151",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 151,
     "chunk": 3,
     "word": "interact",
@@ -69534,7 +69534,7 @@ window.TEPS_WORDS = [
   {
     "id": "A152",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 152,
     "chunk": 3,
     "word": "justify",
@@ -69562,7 +69562,7 @@ window.TEPS_WORDS = [
   {
     "id": "A153",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 153,
     "chunk": 3,
     "word": "layer",
@@ -69585,7 +69585,7 @@ window.TEPS_WORDS = [
   {
     "id": "A154",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 154,
     "chunk": 3,
     "word": "link",
@@ -69610,7 +69610,7 @@ window.TEPS_WORDS = [
   {
     "id": "A155",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 155,
     "chunk": 3,
     "word": "locate",
@@ -69639,7 +69639,7 @@ window.TEPS_WORDS = [
   {
     "id": "A156",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 156,
     "chunk": 3,
     "word": "maximise",
@@ -69670,7 +69670,7 @@ window.TEPS_WORDS = [
   {
     "id": "A157",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 157,
     "chunk": 3,
     "word": "minor",
@@ -69693,7 +69693,7 @@ window.TEPS_WORDS = [
   {
     "id": "A158",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 158,
     "chunk": 3,
     "word": "negate",
@@ -69719,7 +69719,7 @@ window.TEPS_WORDS = [
   {
     "id": "A159",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 159,
     "chunk": 3,
     "word": "outcome",
@@ -69740,7 +69740,7 @@ window.TEPS_WORDS = [
   {
     "id": "A160",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 160,
     "chunk": 3,
     "word": "partner",
@@ -69763,7 +69763,7 @@ window.TEPS_WORDS = [
   {
     "id": "A161",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 161,
     "chunk": 3,
     "word": "philosophy",
@@ -69796,7 +69796,7 @@ window.TEPS_WORDS = [
   {
     "id": "A162",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 162,
     "chunk": 3,
     "word": "physical",
@@ -69817,7 +69817,7 @@ window.TEPS_WORDS = [
   {
     "id": "A163",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 163,
     "chunk": 3,
     "word": "proportion",
@@ -69845,7 +69845,7 @@ window.TEPS_WORDS = [
   {
     "id": "A164",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 164,
     "chunk": 3,
     "word": "publish",
@@ -69871,7 +69871,7 @@ window.TEPS_WORDS = [
   {
     "id": "A165",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 165,
     "chunk": 3,
     "word": "react",
@@ -69903,7 +69903,7 @@ window.TEPS_WORDS = [
   {
     "id": "A166",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 166,
     "chunk": 3,
     "word": "register",
@@ -69932,7 +69932,7 @@ window.TEPS_WORDS = [
   {
     "id": "A167",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 167,
     "chunk": 3,
     "word": "rely",
@@ -69961,7 +69961,7 @@ window.TEPS_WORDS = [
   {
     "id": "A168",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 168,
     "chunk": 3,
     "word": "remove",
@@ -69987,7 +69987,7 @@ window.TEPS_WORDS = [
   {
     "id": "A169",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 169,
     "chunk": 3,
     "word": "scheme",
@@ -70012,7 +70012,7 @@ window.TEPS_WORDS = [
   {
     "id": "A170",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 170,
     "chunk": 3,
     "word": "sequence",
@@ -70037,7 +70037,7 @@ window.TEPS_WORDS = [
   {
     "id": "A171",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 171,
     "chunk": 3,
     "word": "sex",
@@ -70062,7 +70062,7 @@ window.TEPS_WORDS = [
   {
     "id": "A172",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 172,
     "chunk": 4,
     "word": "shift",
@@ -70085,7 +70085,7 @@ window.TEPS_WORDS = [
   {
     "id": "A173",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 173,
     "chunk": 4,
     "word": "specify",
@@ -70110,7 +70110,7 @@ window.TEPS_WORDS = [
   {
     "id": "A174",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 174,
     "chunk": 4,
     "word": "sufficient",
@@ -70134,7 +70134,7 @@ window.TEPS_WORDS = [
   {
     "id": "A175",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 175,
     "chunk": 4,
     "word": "task",
@@ -70155,7 +70155,7 @@ window.TEPS_WORDS = [
   {
     "id": "A176",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 176,
     "chunk": 4,
     "word": "technical",
@@ -70176,7 +70176,7 @@ window.TEPS_WORDS = [
   {
     "id": "A177",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 177,
     "chunk": 4,
     "word": "technique",
@@ -70197,7 +70197,7 @@ window.TEPS_WORDS = [
   {
     "id": "A178",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 178,
     "chunk": 4,
     "word": "technology",
@@ -70219,7 +70219,7 @@ window.TEPS_WORDS = [
   {
     "id": "A179",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 179,
     "chunk": 4,
     "word": "valid",
@@ -70247,7 +70247,7 @@ window.TEPS_WORDS = [
   {
     "id": "A180",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 180,
     "chunk": 4,
     "word": "volume",
@@ -70268,7 +70268,7 @@ window.TEPS_WORDS = [
   {
     "id": "A181",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 181,
     "chunk": 4,
     "word": "access",
@@ -70294,7 +70294,7 @@ window.TEPS_WORDS = [
   {
     "id": "A182",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 182,
     "chunk": 4,
     "word": "adequate",
@@ -70320,7 +70320,7 @@ window.TEPS_WORDS = [
   {
     "id": "A183",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 183,
     "chunk": 4,
     "word": "annual",
@@ -70341,7 +70341,7 @@ window.TEPS_WORDS = [
   {
     "id": "A184",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 184,
     "chunk": 4,
     "word": "apparent",
@@ -70362,7 +70362,7 @@ window.TEPS_WORDS = [
   {
     "id": "A185",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 185,
     "chunk": 4,
     "word": "approximate",
@@ -70388,7 +70388,7 @@ window.TEPS_WORDS = [
   {
     "id": "A186",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 186,
     "chunk": 4,
     "word": "attitude",
@@ -70409,7 +70409,7 @@ window.TEPS_WORDS = [
   {
     "id": "A187",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 187,
     "chunk": 4,
     "word": "attribute",
@@ -70434,7 +70434,7 @@ window.TEPS_WORDS = [
   {
     "id": "A188",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 188,
     "chunk": 4,
     "word": "civil",
@@ -70453,7 +70453,7 @@ window.TEPS_WORDS = [
   {
     "id": "A189",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 189,
     "chunk": 4,
     "word": "code",
@@ -70476,7 +70476,7 @@ window.TEPS_WORDS = [
   {
     "id": "A190",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 190,
     "chunk": 4,
     "word": "commit",
@@ -70501,7 +70501,7 @@ window.TEPS_WORDS = [
   {
     "id": "A191",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 191,
     "chunk": 4,
     "word": "communicate",
@@ -70530,7 +70530,7 @@ window.TEPS_WORDS = [
   {
     "id": "A192",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 192,
     "chunk": 4,
     "word": "concentrate",
@@ -70554,7 +70554,7 @@ window.TEPS_WORDS = [
   {
     "id": "A193",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 193,
     "chunk": 4,
     "word": "confer",
@@ -70579,7 +70579,7 @@ window.TEPS_WORDS = [
   {
     "id": "A194",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 194,
     "chunk": 4,
     "word": "contrast",
@@ -70603,7 +70603,7 @@ window.TEPS_WORDS = [
   {
     "id": "A195",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 195,
     "chunk": 4,
     "word": "cycle",
@@ -70628,7 +70628,7 @@ window.TEPS_WORDS = [
   {
     "id": "A196",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 196,
     "chunk": 4,
     "word": "debate",
@@ -70652,7 +70652,7 @@ window.TEPS_WORDS = [
   {
     "id": "A197",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 197,
     "chunk": 4,
     "word": "despite",
@@ -70671,7 +70671,7 @@ window.TEPS_WORDS = [
   {
     "id": "A198",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 198,
     "chunk": 4,
     "word": "dimension",
@@ -70694,7 +70694,7 @@ window.TEPS_WORDS = [
   {
     "id": "A199",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 199,
     "chunk": 4,
     "word": "domestic",
@@ -70719,7 +70719,7 @@ window.TEPS_WORDS = [
   {
     "id": "A200",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 200,
     "chunk": 4,
     "word": "emerge",
@@ -70744,7 +70744,7 @@ window.TEPS_WORDS = [
   {
     "id": "A201",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 201,
     "chunk": 4,
     "word": "error",
@@ -70767,7 +70767,7 @@ window.TEPS_WORDS = [
   {
     "id": "A202",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 202,
     "chunk": 4,
     "word": "ethnic",
@@ -70788,7 +70788,7 @@ window.TEPS_WORDS = [
   {
     "id": "A203",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 203,
     "chunk": 4,
     "word": "goal",
@@ -70809,7 +70809,7 @@ window.TEPS_WORDS = [
   {
     "id": "A204",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 204,
     "chunk": 4,
     "word": "grant",
@@ -70832,7 +70832,7 @@ window.TEPS_WORDS = [
   {
     "id": "A205",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 205,
     "chunk": 4,
     "word": "hence",
@@ -70851,7 +70851,7 @@ window.TEPS_WORDS = [
   {
     "id": "A206",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 206,
     "chunk": 4,
     "word": "hypothesis",
@@ -70882,7 +70882,7 @@ window.TEPS_WORDS = [
   {
     "id": "A207",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 207,
     "chunk": 4,
     "word": "implement",
@@ -70906,7 +70906,7 @@ window.TEPS_WORDS = [
   {
     "id": "A208",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 208,
     "chunk": 4,
     "word": "implicate",
@@ -70931,7 +70931,7 @@ window.TEPS_WORDS = [
   {
     "id": "A209",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 209,
     "chunk": 4,
     "word": "impose",
@@ -70955,7 +70955,7 @@ window.TEPS_WORDS = [
   {
     "id": "A210",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 210,
     "chunk": 4,
     "word": "integrate",
@@ -70979,7 +70979,7 @@ window.TEPS_WORDS = [
   {
     "id": "A211",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 211,
     "chunk": 4,
     "word": "internal",
@@ -71008,7 +71008,7 @@ window.TEPS_WORDS = [
   {
     "id": "A212",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 212,
     "chunk": 4,
     "word": "investigate",
@@ -71036,7 +71036,7 @@ window.TEPS_WORDS = [
   {
     "id": "A213",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 213,
     "chunk": 4,
     "word": "job",
@@ -71057,7 +71057,7 @@ window.TEPS_WORDS = [
   {
     "id": "A214",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 214,
     "chunk": 4,
     "word": "label",
@@ -71082,7 +71082,7 @@ window.TEPS_WORDS = [
   {
     "id": "A215",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 215,
     "chunk": 4,
     "word": "mechanism",
@@ -71103,7 +71103,7 @@ window.TEPS_WORDS = [
   {
     "id": "A216",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 216,
     "chunk": 4,
     "word": "obvious",
@@ -71124,7 +71124,7 @@ window.TEPS_WORDS = [
   {
     "id": "A217",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 217,
     "chunk": 4,
     "word": "occupy",
@@ -71155,7 +71155,7 @@ window.TEPS_WORDS = [
   {
     "id": "A218",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 218,
     "chunk": 4,
     "word": "option",
@@ -71177,7 +71177,7 @@ window.TEPS_WORDS = [
   {
     "id": "A219",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 219,
     "chunk": 4,
     "word": "output",
@@ -71198,7 +71198,7 @@ window.TEPS_WORDS = [
   {
     "id": "A220",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 220,
     "chunk": 4,
     "word": "overall",
@@ -71217,7 +71217,7 @@ window.TEPS_WORDS = [
   {
     "id": "A221",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 221,
     "chunk": 4,
     "word": "parallel",
@@ -71242,7 +71242,7 @@ window.TEPS_WORDS = [
   {
     "id": "A222",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 222,
     "chunk": 4,
     "word": "parameter",
@@ -71263,7 +71263,7 @@ window.TEPS_WORDS = [
   {
     "id": "A223",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 223,
     "chunk": 4,
     "word": "phase",
@@ -71286,7 +71286,7 @@ window.TEPS_WORDS = [
   {
     "id": "A224",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 224,
     "chunk": 4,
     "word": "predict",
@@ -71316,7 +71316,7 @@ window.TEPS_WORDS = [
   {
     "id": "A225",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 225,
     "chunk": 4,
     "word": "principal",
@@ -71337,7 +71337,7 @@ window.TEPS_WORDS = [
   {
     "id": "A226",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 226,
     "chunk": 4,
     "word": "prior",
@@ -71356,7 +71356,7 @@ window.TEPS_WORDS = [
   {
     "id": "A227",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 227,
     "chunk": 4,
     "word": "professional",
@@ -71379,7 +71379,7 @@ window.TEPS_WORDS = [
   {
     "id": "A228",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 228,
     "chunk": 4,
     "word": "project",
@@ -71404,7 +71404,7 @@ window.TEPS_WORDS = [
   {
     "id": "A229",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 229,
     "chunk": 5,
     "word": "promote",
@@ -71431,7 +71431,7 @@ window.TEPS_WORDS = [
   {
     "id": "A230",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 230,
     "chunk": 5,
     "word": "regime",
@@ -71452,7 +71452,7 @@ window.TEPS_WORDS = [
   {
     "id": "A231",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 231,
     "chunk": 5,
     "word": "resolve",
@@ -71477,7 +71477,7 @@ window.TEPS_WORDS = [
   {
     "id": "A232",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 232,
     "chunk": 5,
     "word": "retain",
@@ -71504,7 +71504,7 @@ window.TEPS_WORDS = [
   {
     "id": "A233",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 233,
     "chunk": 5,
     "word": "series",
@@ -71523,7 +71523,7 @@ window.TEPS_WORDS = [
   {
     "id": "A234",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 234,
     "chunk": 5,
     "word": "statistic",
@@ -71548,7 +71548,7 @@ window.TEPS_WORDS = [
   {
     "id": "A235",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 235,
     "chunk": 5,
     "word": "status",
@@ -71567,7 +71567,7 @@ window.TEPS_WORDS = [
   {
     "id": "A236",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 236,
     "chunk": 5,
     "word": "stress",
@@ -71592,7 +71592,7 @@ window.TEPS_WORDS = [
   {
     "id": "A237",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 237,
     "chunk": 5,
     "word": "subsequent",
@@ -71613,7 +71613,7 @@ window.TEPS_WORDS = [
   {
     "id": "A238",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 238,
     "chunk": 5,
     "word": "sum",
@@ -71637,7 +71637,7 @@ window.TEPS_WORDS = [
   {
     "id": "A239",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 239,
     "chunk": 5,
     "word": "summary",
@@ -71670,7 +71670,7 @@ window.TEPS_WORDS = [
   {
     "id": "A240",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 240,
     "chunk": 5,
     "word": "undertake",
@@ -71694,7 +71694,7 @@ window.TEPS_WORDS = [
   {
     "id": "A241",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 241,
     "chunk": 5,
     "word": "academy",
@@ -71719,7 +71719,7 @@ window.TEPS_WORDS = [
   {
     "id": "A242",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 242,
     "chunk": 5,
     "word": "adjust",
@@ -71750,7 +71750,7 @@ window.TEPS_WORDS = [
   {
     "id": "A243",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 243,
     "chunk": 5,
     "word": "alter",
@@ -71780,7 +71780,7 @@ window.TEPS_WORDS = [
   {
     "id": "A244",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 244,
     "chunk": 5,
     "word": "amend",
@@ -71805,7 +71805,7 @@ window.TEPS_WORDS = [
   {
     "id": "A245",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 245,
     "chunk": 5,
     "word": "aware",
@@ -71827,7 +71827,7 @@ window.TEPS_WORDS = [
   {
     "id": "A246",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 246,
     "chunk": 5,
     "word": "capacity",
@@ -71850,7 +71850,7 @@ window.TEPS_WORDS = [
   {
     "id": "A247",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 247,
     "chunk": 5,
     "word": "challenge",
@@ -71875,7 +71875,7 @@ window.TEPS_WORDS = [
   {
     "id": "A248",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 248,
     "chunk": 5,
     "word": "clause",
@@ -71896,7 +71896,7 @@ window.TEPS_WORDS = [
   {
     "id": "A249",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 249,
     "chunk": 5,
     "word": "compound",
@@ -71919,7 +71919,7 @@ window.TEPS_WORDS = [
   {
     "id": "A250",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 250,
     "chunk": 5,
     "word": "conflict",
@@ -71942,7 +71942,7 @@ window.TEPS_WORDS = [
   {
     "id": "A251",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 251,
     "chunk": 5,
     "word": "consult",
@@ -71971,7 +71971,7 @@ window.TEPS_WORDS = [
   {
     "id": "A252",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 252,
     "chunk": 5,
     "word": "contact",
@@ -71995,7 +71995,7 @@ window.TEPS_WORDS = [
   {
     "id": "A253",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 253,
     "chunk": 5,
     "word": "decline",
@@ -72018,7 +72018,7 @@ window.TEPS_WORDS = [
   {
     "id": "A254",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 254,
     "chunk": 5,
     "word": "discrete",
@@ -72043,7 +72043,7 @@ window.TEPS_WORDS = [
   {
     "id": "A255",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 255,
     "chunk": 5,
     "word": "draft",
@@ -72070,7 +72070,7 @@ window.TEPS_WORDS = [
   {
     "id": "A256",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 256,
     "chunk": 5,
     "word": "enable",
@@ -72093,7 +72093,7 @@ window.TEPS_WORDS = [
   {
     "id": "A257",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 257,
     "chunk": 5,
     "word": "energy",
@@ -72116,7 +72116,7 @@ window.TEPS_WORDS = [
   {
     "id": "A258",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 258,
     "chunk": 5,
     "word": "enforce",
@@ -72140,7 +72140,7 @@ window.TEPS_WORDS = [
   {
     "id": "A259",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 259,
     "chunk": 5,
     "word": "entity",
@@ -72161,7 +72161,7 @@ window.TEPS_WORDS = [
   {
     "id": "A260",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 260,
     "chunk": 5,
     "word": "equivalent",
@@ -72182,7 +72182,7 @@ window.TEPS_WORDS = [
   {
     "id": "A261",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 261,
     "chunk": 5,
     "word": "evolve",
@@ -72209,7 +72209,7 @@ window.TEPS_WORDS = [
   {
     "id": "A262",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 262,
     "chunk": 5,
     "word": "expand",
@@ -72235,7 +72235,7 @@ window.TEPS_WORDS = [
   {
     "id": "A263",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 263,
     "chunk": 5,
     "word": "expose",
@@ -72260,7 +72260,7 @@ window.TEPS_WORDS = [
   {
     "id": "A264",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 264,
     "chunk": 5,
     "word": "external",
@@ -72292,7 +72292,7 @@ window.TEPS_WORDS = [
   {
     "id": "A265",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 265,
     "chunk": 5,
     "word": "facilitate",
@@ -72320,7 +72320,7 @@ window.TEPS_WORDS = [
   {
     "id": "A266",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 266,
     "chunk": 5,
     "word": "fundamental",
@@ -72341,7 +72341,7 @@ window.TEPS_WORDS = [
   {
     "id": "A267",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 267,
     "chunk": 5,
     "word": "generate",
@@ -72364,7 +72364,7 @@ window.TEPS_WORDS = [
   {
     "id": "A268",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 268,
     "chunk": 5,
     "word": "generation",
@@ -72385,7 +72385,7 @@ window.TEPS_WORDS = [
   {
     "id": "A269",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 269,
     "chunk": 5,
     "word": "image",
@@ -72407,7 +72407,7 @@ window.TEPS_WORDS = [
   {
     "id": "A270",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 270,
     "chunk": 5,
     "word": "liberal",
@@ -72447,7 +72447,7 @@ window.TEPS_WORDS = [
   {
     "id": "A271",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 271,
     "chunk": 5,
     "word": "licence",
@@ -72473,7 +72473,7 @@ window.TEPS_WORDS = [
   {
     "id": "A272",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 272,
     "chunk": 5,
     "word": "logic",
@@ -72499,7 +72499,7 @@ window.TEPS_WORDS = [
   {
     "id": "A273",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 273,
     "chunk": 5,
     "word": "margin",
@@ -72522,7 +72522,7 @@ window.TEPS_WORDS = [
   {
     "id": "A274",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 274,
     "chunk": 5,
     "word": "medical",
@@ -72543,7 +72543,7 @@ window.TEPS_WORDS = [
   {
     "id": "A275",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 275,
     "chunk": 5,
     "word": "mental",
@@ -72565,7 +72565,7 @@ window.TEPS_WORDS = [
   {
     "id": "A276",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 276,
     "chunk": 5,
     "word": "modify",
@@ -72591,7 +72591,7 @@ window.TEPS_WORDS = [
   {
     "id": "A277",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 277,
     "chunk": 5,
     "word": "monitor",
@@ -72615,7 +72615,7 @@ window.TEPS_WORDS = [
   {
     "id": "A278",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 278,
     "chunk": 5,
     "word": "network",
@@ -72638,7 +72638,7 @@ window.TEPS_WORDS = [
   {
     "id": "A279",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 279,
     "chunk": 5,
     "word": "notion",
@@ -72659,7 +72659,7 @@ window.TEPS_WORDS = [
   {
     "id": "A280",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 280,
     "chunk": 5,
     "word": "objective",
@@ -72681,7 +72681,7 @@ window.TEPS_WORDS = [
   {
     "id": "A281",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 281,
     "chunk": 5,
     "word": "orient",
@@ -72711,7 +72711,7 @@ window.TEPS_WORDS = [
   {
     "id": "A282",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 282,
     "chunk": 5,
     "word": "perspective",
@@ -72732,7 +72732,7 @@ window.TEPS_WORDS = [
   {
     "id": "A283",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 283,
     "chunk": 5,
     "word": "precise",
@@ -72755,7 +72755,7 @@ window.TEPS_WORDS = [
   {
     "id": "A284",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 284,
     "chunk": 5,
     "word": "prime",
@@ -72776,7 +72776,7 @@ window.TEPS_WORDS = [
   {
     "id": "A285",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 285,
     "chunk": 5,
     "word": "psychology",
@@ -72800,7 +72800,7 @@ window.TEPS_WORDS = [
   {
     "id": "A286",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 286,
     "chunk": 6,
     "word": "pursue",
@@ -72825,7 +72825,7 @@ window.TEPS_WORDS = [
   {
     "id": "A287",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 287,
     "chunk": 6,
     "word": "ratio",
@@ -72846,7 +72846,7 @@ window.TEPS_WORDS = [
   {
     "id": "A288",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 288,
     "chunk": 6,
     "word": "reject",
@@ -72871,7 +72871,7 @@ window.TEPS_WORDS = [
   {
     "id": "A289",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 289,
     "chunk": 6,
     "word": "revenue",
@@ -72892,7 +72892,7 @@ window.TEPS_WORDS = [
   {
     "id": "A290",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 290,
     "chunk": 6,
     "word": "stable",
@@ -72925,7 +72925,7 @@ window.TEPS_WORDS = [
   {
     "id": "A291",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 291,
     "chunk": 6,
     "word": "style",
@@ -72957,7 +72957,7 @@ window.TEPS_WORDS = [
   {
     "id": "A292",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 292,
     "chunk": 6,
     "word": "substitute",
@@ -72981,7 +72981,7 @@ window.TEPS_WORDS = [
   {
     "id": "A293",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 293,
     "chunk": 6,
     "word": "sustain",
@@ -73008,7 +73008,7 @@ window.TEPS_WORDS = [
   {
     "id": "A294",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 294,
     "chunk": 6,
     "word": "symbol",
@@ -73040,7 +73040,7 @@ window.TEPS_WORDS = [
   {
     "id": "A295",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 295,
     "chunk": 6,
     "word": "target",
@@ -73063,7 +73063,7 @@ window.TEPS_WORDS = [
   {
     "id": "A296",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 296,
     "chunk": 6,
     "word": "transit",
@@ -73090,7 +73090,7 @@ window.TEPS_WORDS = [
   {
     "id": "A297",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 297,
     "chunk": 6,
     "word": "trend",
@@ -73111,7 +73111,7 @@ window.TEPS_WORDS = [
   {
     "id": "A298",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 298,
     "chunk": 6,
     "word": "version",
@@ -73132,7 +73132,7 @@ window.TEPS_WORDS = [
   {
     "id": "A299",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 299,
     "chunk": 6,
     "word": "welfare",
@@ -73151,7 +73151,7 @@ window.TEPS_WORDS = [
   {
     "id": "A300",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 300,
     "chunk": 6,
     "word": "whereas",
@@ -73170,7 +73170,7 @@ window.TEPS_WORDS = [
   {
     "id": "A301",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 301,
     "chunk": 6,
     "word": "abstract",
@@ -73194,7 +73194,7 @@ window.TEPS_WORDS = [
   {
     "id": "A302",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 302,
     "chunk": 6,
     "word": "accurate",
@@ -73219,7 +73219,7 @@ window.TEPS_WORDS = [
   {
     "id": "A303",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 303,
     "chunk": 6,
     "word": "acknowledge",
@@ -73244,7 +73244,7 @@ window.TEPS_WORDS = [
   {
     "id": "A304",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 304,
     "chunk": 6,
     "word": "aggregate",
@@ -73268,7 +73268,7 @@ window.TEPS_WORDS = [
   {
     "id": "A305",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 305,
     "chunk": 6,
     "word": "allocate",
@@ -73293,7 +73293,7 @@ window.TEPS_WORDS = [
   {
     "id": "A306",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 306,
     "chunk": 6,
     "word": "assign",
@@ -73323,7 +73323,7 @@ window.TEPS_WORDS = [
   {
     "id": "A307",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 307,
     "chunk": 6,
     "word": "attach",
@@ -73349,7 +73349,7 @@ window.TEPS_WORDS = [
   {
     "id": "A308",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 308,
     "chunk": 6,
     "word": "author",
@@ -73373,7 +73373,7 @@ window.TEPS_WORDS = [
   {
     "id": "A309",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 309,
     "chunk": 6,
     "word": "bond",
@@ -73396,7 +73396,7 @@ window.TEPS_WORDS = [
   {
     "id": "A310",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 310,
     "chunk": 6,
     "word": "brief",
@@ -73421,7 +73421,7 @@ window.TEPS_WORDS = [
   {
     "id": "A311",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 311,
     "chunk": 6,
     "word": "capable",
@@ -73444,7 +73444,7 @@ window.TEPS_WORDS = [
   {
     "id": "A312",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 312,
     "chunk": 6,
     "word": "cite",
@@ -73469,7 +73469,7 @@ window.TEPS_WORDS = [
   {
     "id": "A313",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 313,
     "chunk": 6,
     "word": "cooperate",
@@ -73501,7 +73501,7 @@ window.TEPS_WORDS = [
   {
     "id": "A314",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 314,
     "chunk": 6,
     "word": "discriminate",
@@ -73525,7 +73525,7 @@ window.TEPS_WORDS = [
   {
     "id": "A315",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 315,
     "chunk": 6,
     "word": "display",
@@ -73548,7 +73548,7 @@ window.TEPS_WORDS = [
   {
     "id": "A316",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 316,
     "chunk": 6,
     "word": "diverse",
@@ -73575,7 +73575,7 @@ window.TEPS_WORDS = [
   {
     "id": "A317",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 317,
     "chunk": 6,
     "word": "domain",
@@ -73596,7 +73596,7 @@ window.TEPS_WORDS = [
   {
     "id": "A318",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 318,
     "chunk": 6,
     "word": "edit",
@@ -73625,7 +73625,7 @@ window.TEPS_WORDS = [
   {
     "id": "A319",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 319,
     "chunk": 6,
     "word": "enhance",
@@ -73649,7 +73649,7 @@ window.TEPS_WORDS = [
   {
     "id": "A320",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 320,
     "chunk": 6,
     "word": "estate",
@@ -73670,7 +73670,7 @@ window.TEPS_WORDS = [
   {
     "id": "A321",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 321,
     "chunk": 6,
     "word": "exceed",
@@ -73693,7 +73693,7 @@ window.TEPS_WORDS = [
   {
     "id": "A322",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 322,
     "chunk": 6,
     "word": "expert",
@@ -73716,7 +73716,7 @@ window.TEPS_WORDS = [
   {
     "id": "A323",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 323,
     "chunk": 6,
     "word": "explicit",
@@ -73737,7 +73737,7 @@ window.TEPS_WORDS = [
   {
     "id": "A324",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 324,
     "chunk": 6,
     "word": "federal",
@@ -73759,7 +73759,7 @@ window.TEPS_WORDS = [
   {
     "id": "A325",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 325,
     "chunk": 6,
     "word": "fee",
@@ -73780,7 +73780,7 @@ window.TEPS_WORDS = [
   {
     "id": "A326",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 326,
     "chunk": 6,
     "word": "flexible",
@@ -73803,7 +73803,7 @@ window.TEPS_WORDS = [
   {
     "id": "A327",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 327,
     "chunk": 6,
     "word": "furthermore",
@@ -73822,7 +73822,7 @@ window.TEPS_WORDS = [
   {
     "id": "A328",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 328,
     "chunk": 6,
     "word": "gender",
@@ -73843,7 +73843,7 @@ window.TEPS_WORDS = [
   {
     "id": "A329",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 329,
     "chunk": 6,
     "word": "ignorant",
@@ -73868,7 +73868,7 @@ window.TEPS_WORDS = [
   {
     "id": "A330",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 330,
     "chunk": 6,
     "word": "incentive",
@@ -73889,7 +73889,7 @@ window.TEPS_WORDS = [
   {
     "id": "A331",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 331,
     "chunk": 6,
     "word": "incidence",
@@ -73912,7 +73912,7 @@ window.TEPS_WORDS = [
   {
     "id": "A332",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 332,
     "chunk": 6,
     "word": "incorporate",
@@ -73936,7 +73936,7 @@ window.TEPS_WORDS = [
   {
     "id": "A333",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 333,
     "chunk": 6,
     "word": "index",
@@ -73959,7 +73959,7 @@ window.TEPS_WORDS = [
   {
     "id": "A334",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 334,
     "chunk": 6,
     "word": "inhibit",
@@ -73984,7 +73984,7 @@ window.TEPS_WORDS = [
   {
     "id": "A335",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 335,
     "chunk": 6,
     "word": "initiate",
@@ -74013,7 +74013,7 @@ window.TEPS_WORDS = [
   {
     "id": "A336",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 336,
     "chunk": 6,
     "word": "input",
@@ -74034,7 +74034,7 @@ window.TEPS_WORDS = [
   {
     "id": "A337",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 337,
     "chunk": 6,
     "word": "instruct",
@@ -74062,7 +74062,7 @@ window.TEPS_WORDS = [
   {
     "id": "A338",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 338,
     "chunk": 6,
     "word": "intelligent",
@@ -74085,7 +74085,7 @@ window.TEPS_WORDS = [
   {
     "id": "A339",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 339,
     "chunk": 6,
     "word": "interval",
@@ -74106,7 +74106,7 @@ window.TEPS_WORDS = [
   {
     "id": "A340",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 340,
     "chunk": 6,
     "word": "lecture",
@@ -74131,7 +74131,7 @@ window.TEPS_WORDS = [
   {
     "id": "A341",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 341,
     "chunk": 6,
     "word": "migrate",
@@ -74159,7 +74159,7 @@ window.TEPS_WORDS = [
   {
     "id": "A342",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 342,
     "chunk": 6,
     "word": "minimum",
@@ -74178,7 +74178,7 @@ window.TEPS_WORDS = [
   {
     "id": "A343",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 343,
     "chunk": 7,
     "word": "ministry",
@@ -74202,7 +74202,7 @@ window.TEPS_WORDS = [
   {
     "id": "A344",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 344,
     "chunk": 7,
     "word": "motive",
@@ -74230,7 +74230,7 @@ window.TEPS_WORDS = [
   {
     "id": "A345",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 345,
     "chunk": 7,
     "word": "neutral",
@@ -74261,7 +74261,7 @@ window.TEPS_WORDS = [
   {
     "id": "A346",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 346,
     "chunk": 7,
     "word": "nevertheless",
@@ -74280,7 +74280,7 @@ window.TEPS_WORDS = [
   {
     "id": "A347",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 347,
     "chunk": 7,
     "word": "overseas",
@@ -74299,7 +74299,7 @@ window.TEPS_WORDS = [
   {
     "id": "A348",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 348,
     "chunk": 7,
     "word": "precede",
@@ -74325,7 +74325,7 @@ window.TEPS_WORDS = [
   {
     "id": "A349",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 349,
     "chunk": 7,
     "word": "presume",
@@ -74352,7 +74352,7 @@ window.TEPS_WORDS = [
   {
     "id": "A350",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 350,
     "chunk": 7,
     "word": "rational",
@@ -74387,7 +74387,7 @@ window.TEPS_WORDS = [
   {
     "id": "A351",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 351,
     "chunk": 7,
     "word": "recover",
@@ -74412,7 +74412,7 @@ window.TEPS_WORDS = [
   {
     "id": "A352",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 352,
     "chunk": 7,
     "word": "reveal",
@@ -74437,7 +74437,7 @@ window.TEPS_WORDS = [
   {
     "id": "A353",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 353,
     "chunk": 7,
     "word": "scope",
@@ -74456,7 +74456,7 @@ window.TEPS_WORDS = [
   {
     "id": "A354",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 354,
     "chunk": 7,
     "word": "subsidy",
@@ -74486,7 +74486,7 @@ window.TEPS_WORDS = [
   {
     "id": "A355",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 355,
     "chunk": 7,
     "word": "tape",
@@ -74509,7 +74509,7 @@ window.TEPS_WORDS = [
   {
     "id": "A356",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 356,
     "chunk": 7,
     "word": "trace",
@@ -74533,7 +74533,7 @@ window.TEPS_WORDS = [
   {
     "id": "A357",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 357,
     "chunk": 7,
     "word": "transform",
@@ -74558,7 +74558,7 @@ window.TEPS_WORDS = [
   {
     "id": "A358",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 358,
     "chunk": 7,
     "word": "transport",
@@ -74584,7 +74584,7 @@ window.TEPS_WORDS = [
   {
     "id": "A359",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 359,
     "chunk": 7,
     "word": "underlie",
@@ -74607,7 +74607,7 @@ window.TEPS_WORDS = [
   {
     "id": "A360",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 360,
     "chunk": 7,
     "word": "utilise",
@@ -74640,7 +74640,7 @@ window.TEPS_WORDS = [
   {
     "id": "A361",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 361,
     "chunk": 7,
     "word": "adapt",
@@ -74668,7 +74668,7 @@ window.TEPS_WORDS = [
   {
     "id": "A362",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 362,
     "chunk": 7,
     "word": "adult",
@@ -74690,7 +74690,7 @@ window.TEPS_WORDS = [
   {
     "id": "A363",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 363,
     "chunk": 7,
     "word": "advocate",
@@ -74714,7 +74714,7 @@ window.TEPS_WORDS = [
   {
     "id": "A364",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 364,
     "chunk": 7,
     "word": "aid",
@@ -74738,7 +74738,7 @@ window.TEPS_WORDS = [
   {
     "id": "A365",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 365,
     "chunk": 7,
     "word": "channel",
@@ -74761,7 +74761,7 @@ window.TEPS_WORDS = [
   {
     "id": "A366",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 366,
     "chunk": 7,
     "word": "chemical",
@@ -74783,7 +74783,7 @@ window.TEPS_WORDS = [
   {
     "id": "A367",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 367,
     "chunk": 7,
     "word": "classic",
@@ -74805,7 +74805,7 @@ window.TEPS_WORDS = [
   {
     "id": "A368",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 368,
     "chunk": 7,
     "word": "comprehensive",
@@ -74826,7 +74826,7 @@ window.TEPS_WORDS = [
   {
     "id": "A369",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 369,
     "chunk": 7,
     "word": "comprise",
@@ -74849,7 +74849,7 @@ window.TEPS_WORDS = [
   {
     "id": "A370",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 370,
     "chunk": 7,
     "word": "confirm",
@@ -74873,7 +74873,7 @@ window.TEPS_WORDS = [
   {
     "id": "A371",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 371,
     "chunk": 7,
     "word": "contrary",
@@ -74894,7 +74894,7 @@ window.TEPS_WORDS = [
   {
     "id": "A372",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 372,
     "chunk": 7,
     "word": "convert",
@@ -74920,7 +74920,7 @@ window.TEPS_WORDS = [
   {
     "id": "A373",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 373,
     "chunk": 7,
     "word": "couple",
@@ -74943,7 +74943,7 @@ window.TEPS_WORDS = [
   {
     "id": "A374",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 374,
     "chunk": 7,
     "word": "decade",
@@ -74964,7 +74964,7 @@ window.TEPS_WORDS = [
   {
     "id": "A375",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 375,
     "chunk": 7,
     "word": "definite",
@@ -74988,7 +74988,7 @@ window.TEPS_WORDS = [
   {
     "id": "A376",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 376,
     "chunk": 7,
     "word": "deny",
@@ -75015,7 +75015,7 @@ window.TEPS_WORDS = [
   {
     "id": "A377",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 377,
     "chunk": 7,
     "word": "differentiate",
@@ -75039,7 +75039,7 @@ window.TEPS_WORDS = [
   {
     "id": "A378",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 378,
     "chunk": 7,
     "word": "dispose",
@@ -75064,7 +75064,7 @@ window.TEPS_WORDS = [
   {
     "id": "A379",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 379,
     "chunk": 7,
     "word": "dynamic",
@@ -75086,7 +75086,7 @@ window.TEPS_WORDS = [
   {
     "id": "A380",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 380,
     "chunk": 7,
     "word": "eliminate",
@@ -75110,7 +75110,7 @@ window.TEPS_WORDS = [
   {
     "id": "A381",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 381,
     "chunk": 7,
     "word": "empirical",
@@ -75132,7 +75132,7 @@ window.TEPS_WORDS = [
   {
     "id": "A382",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 382,
     "chunk": 7,
     "word": "equip",
@@ -75156,7 +75156,7 @@ window.TEPS_WORDS = [
   {
     "id": "A383",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 383,
     "chunk": 7,
     "word": "extract",
@@ -75180,7 +75180,7 @@ window.TEPS_WORDS = [
   {
     "id": "A384",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 384,
     "chunk": 7,
     "word": "file",
@@ -75203,7 +75203,7 @@ window.TEPS_WORDS = [
   {
     "id": "A385",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 385,
     "chunk": 7,
     "word": "finite",
@@ -75225,7 +75225,7 @@ window.TEPS_WORDS = [
   {
     "id": "A386",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 386,
     "chunk": 7,
     "word": "foundation",
@@ -75246,7 +75246,7 @@ window.TEPS_WORDS = [
   {
     "id": "A387",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 387,
     "chunk": 7,
     "word": "globe",
@@ -75270,7 +75270,7 @@ window.TEPS_WORDS = [
   {
     "id": "A388",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 388,
     "chunk": 7,
     "word": "grade",
@@ -75293,7 +75293,7 @@ window.TEPS_WORDS = [
   {
     "id": "A389",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 389,
     "chunk": 7,
     "word": "guarantee",
@@ -75316,7 +75316,7 @@ window.TEPS_WORDS = [
   {
     "id": "A390",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 390,
     "chunk": 7,
     "word": "hierarchy",
@@ -75338,7 +75338,7 @@ window.TEPS_WORDS = [
   {
     "id": "A391",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 391,
     "chunk": 7,
     "word": "identical",
@@ -75359,7 +75359,7 @@ window.TEPS_WORDS = [
   {
     "id": "A392",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 392,
     "chunk": 7,
     "word": "ideology",
@@ -75382,7 +75382,7 @@ window.TEPS_WORDS = [
   {
     "id": "A393",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 393,
     "chunk": 7,
     "word": "infer",
@@ -75407,7 +75407,7 @@ window.TEPS_WORDS = [
   {
     "id": "A394",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 394,
     "chunk": 7,
     "word": "innovate",
@@ -75435,7 +75435,7 @@ window.TEPS_WORDS = [
   {
     "id": "A395",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 395,
     "chunk": 7,
     "word": "insert",
@@ -75459,7 +75459,7 @@ window.TEPS_WORDS = [
   {
     "id": "A396",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 396,
     "chunk": 7,
     "word": "intervene",
@@ -75484,7 +75484,7 @@ window.TEPS_WORDS = [
   {
     "id": "A397",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 397,
     "chunk": 7,
     "word": "isolate",
@@ -75509,7 +75509,7 @@ window.TEPS_WORDS = [
   {
     "id": "A398",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 398,
     "chunk": 7,
     "word": "media",
@@ -75528,7 +75528,7 @@ window.TEPS_WORDS = [
   {
     "id": "A399",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 399,
     "chunk": 7,
     "word": "mode",
@@ -75549,7 +75549,7 @@ window.TEPS_WORDS = [
   {
     "id": "A400",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 400,
     "chunk": 8,
     "word": "paradigm",
@@ -75570,7 +75570,7 @@ window.TEPS_WORDS = [
   {
     "id": "A401",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 401,
     "chunk": 8,
     "word": "phenomenon",
@@ -75592,7 +75592,7 @@ window.TEPS_WORDS = [
   {
     "id": "A402",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 402,
     "chunk": 8,
     "word": "priority",
@@ -75623,7 +75623,7 @@ window.TEPS_WORDS = [
   {
     "id": "A403",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 403,
     "chunk": 8,
     "word": "prohibit",
@@ -75649,7 +75649,7 @@ window.TEPS_WORDS = [
   {
     "id": "A404",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 404,
     "chunk": 8,
     "word": "publication",
@@ -75670,7 +75670,7 @@ window.TEPS_WORDS = [
   {
     "id": "A405",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 405,
     "chunk": 8,
     "word": "quote",
@@ -75695,7 +75695,7 @@ window.TEPS_WORDS = [
   {
     "id": "A406",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 406,
     "chunk": 8,
     "word": "release",
@@ -75718,7 +75718,7 @@ window.TEPS_WORDS = [
   {
     "id": "A407",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 407,
     "chunk": 8,
     "word": "reverse",
@@ -75745,7 +75745,7 @@ window.TEPS_WORDS = [
   {
     "id": "A408",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 408,
     "chunk": 8,
     "word": "simulate",
@@ -75769,7 +75769,7 @@ window.TEPS_WORDS = [
   {
     "id": "A409",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 409,
     "chunk": 8,
     "word": "sole",
@@ -75790,7 +75790,7 @@ window.TEPS_WORDS = [
   {
     "id": "A410",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 410,
     "chunk": 8,
     "word": "somewhat",
@@ -75809,7 +75809,7 @@ window.TEPS_WORDS = [
   {
     "id": "A411",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 411,
     "chunk": 8,
     "word": "submit",
@@ -75834,7 +75834,7 @@ window.TEPS_WORDS = [
   {
     "id": "A412",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 412,
     "chunk": 8,
     "word": "successor",
@@ -75859,7 +75859,7 @@ window.TEPS_WORDS = [
   {
     "id": "A413",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 413,
     "chunk": 8,
     "word": "survive",
@@ -75885,7 +75885,7 @@ window.TEPS_WORDS = [
   {
     "id": "A414",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 414,
     "chunk": 8,
     "word": "thesis",
@@ -75906,7 +75906,7 @@ window.TEPS_WORDS = [
   {
     "id": "A415",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 415,
     "chunk": 8,
     "word": "topic",
@@ -75928,7 +75928,7 @@ window.TEPS_WORDS = [
   {
     "id": "A416",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 416,
     "chunk": 8,
     "word": "transmit",
@@ -75953,7 +75953,7 @@ window.TEPS_WORDS = [
   {
     "id": "A417",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 417,
     "chunk": 8,
     "word": "ultimate",
@@ -75974,7 +75974,7 @@ window.TEPS_WORDS = [
   {
     "id": "A418",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 418,
     "chunk": 8,
     "word": "unique",
@@ -75996,7 +75996,7 @@ window.TEPS_WORDS = [
   {
     "id": "A419",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 419,
     "chunk": 8,
     "word": "visible",
@@ -76020,7 +76020,7 @@ window.TEPS_WORDS = [
   {
     "id": "A420",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 420,
     "chunk": 8,
     "word": "voluntary",
@@ -76045,7 +76045,7 @@ window.TEPS_WORDS = [
   {
     "id": "A421",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 421,
     "chunk": 8,
     "word": "abandon",
@@ -76069,7 +76069,7 @@ window.TEPS_WORDS = [
   {
     "id": "A422",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 422,
     "chunk": 8,
     "word": "accompany",
@@ -76094,7 +76094,7 @@ window.TEPS_WORDS = [
   {
     "id": "A423",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 423,
     "chunk": 8,
     "word": "accumulate",
@@ -76118,7 +76118,7 @@ window.TEPS_WORDS = [
   {
     "id": "A424",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 424,
     "chunk": 8,
     "word": "ambiguous",
@@ -76142,7 +76142,7 @@ window.TEPS_WORDS = [
   {
     "id": "A425",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 425,
     "chunk": 8,
     "word": "append",
@@ -76168,7 +76168,7 @@ window.TEPS_WORDS = [
   {
     "id": "A426",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 426,
     "chunk": 8,
     "word": "appreciate",
@@ -76195,7 +76195,7 @@ window.TEPS_WORDS = [
   {
     "id": "A427",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 427,
     "chunk": 8,
     "word": "arbitrary",
@@ -76217,7 +76217,7 @@ window.TEPS_WORDS = [
   {
     "id": "A428",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 428,
     "chunk": 8,
     "word": "automate",
@@ -76243,7 +76243,7 @@ window.TEPS_WORDS = [
   {
     "id": "A429",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 429,
     "chunk": 8,
     "word": "bias",
@@ -76267,7 +76267,7 @@ window.TEPS_WORDS = [
   {
     "id": "A430",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 430,
     "chunk": 8,
     "word": "chart",
@@ -76291,7 +76291,7 @@ window.TEPS_WORDS = [
   {
     "id": "A431",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 431,
     "chunk": 8,
     "word": "clarify",
@@ -76316,7 +76316,7 @@ window.TEPS_WORDS = [
   {
     "id": "A432",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 432,
     "chunk": 8,
     "word": "commodity",
@@ -76337,7 +76337,7 @@ window.TEPS_WORDS = [
   {
     "id": "A433",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 433,
     "chunk": 8,
     "word": "complement",
@@ -76361,7 +76361,7 @@ window.TEPS_WORDS = [
   {
     "id": "A434",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 434,
     "chunk": 8,
     "word": "conform",
@@ -76397,7 +76397,7 @@ window.TEPS_WORDS = [
   {
     "id": "A435",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 435,
     "chunk": 8,
     "word": "contemporary",
@@ -76418,7 +76418,7 @@ window.TEPS_WORDS = [
   {
     "id": "A436",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 436,
     "chunk": 8,
     "word": "contradict",
@@ -76444,7 +76444,7 @@ window.TEPS_WORDS = [
   {
     "id": "A437",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 437,
     "chunk": 8,
     "word": "crucial",
@@ -76465,7 +76465,7 @@ window.TEPS_WORDS = [
   {
     "id": "A438",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 438,
     "chunk": 8,
     "word": "currency",
@@ -76486,7 +76486,7 @@ window.TEPS_WORDS = [
   {
     "id": "A439",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 439,
     "chunk": 8,
     "word": "denote",
@@ -76511,7 +76511,7 @@ window.TEPS_WORDS = [
   {
     "id": "A440",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 440,
     "chunk": 8,
     "word": "detect",
@@ -76540,7 +76540,7 @@ window.TEPS_WORDS = [
   {
     "id": "A441",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 441,
     "chunk": 8,
     "word": "deviate",
@@ -76565,7 +76565,7 @@ window.TEPS_WORDS = [
   {
     "id": "A442",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 442,
     "chunk": 8,
     "word": "displace",
@@ -76589,7 +76589,7 @@ window.TEPS_WORDS = [
   {
     "id": "A443",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 443,
     "chunk": 8,
     "word": "drama",
@@ -76626,7 +76626,7 @@ window.TEPS_WORDS = [
   {
     "id": "A444",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 444,
     "chunk": 8,
     "word": "eventual",
@@ -76648,7 +76648,7 @@ window.TEPS_WORDS = [
   {
     "id": "A445",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 445,
     "chunk": 8,
     "word": "exhibit",
@@ -76673,7 +76673,7 @@ window.TEPS_WORDS = [
   {
     "id": "A446",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 446,
     "chunk": 8,
     "word": "exploit",
@@ -76697,7 +76697,7 @@ window.TEPS_WORDS = [
   {
     "id": "A447",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 447,
     "chunk": 8,
     "word": "fluctuate",
@@ -76722,7 +76722,7 @@ window.TEPS_WORDS = [
   {
     "id": "A448",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 448,
     "chunk": 8,
     "word": "guideline",
@@ -76743,7 +76743,7 @@ window.TEPS_WORDS = [
   {
     "id": "A449",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 449,
     "chunk": 8,
     "word": "highlight",
@@ -76766,7 +76766,7 @@ window.TEPS_WORDS = [
   {
     "id": "A450",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 450,
     "chunk": 8,
     "word": "implicit",
@@ -76787,7 +76787,7 @@ window.TEPS_WORDS = [
   {
     "id": "A451",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 451,
     "chunk": 8,
     "word": "induce",
@@ -76811,7 +76811,7 @@ window.TEPS_WORDS = [
   {
     "id": "A452",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 452,
     "chunk": 8,
     "word": "inevitable",
@@ -76833,7 +76833,7 @@ window.TEPS_WORDS = [
   {
     "id": "A453",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 453,
     "chunk": 8,
     "word": "infrastructure",
@@ -76854,7 +76854,7 @@ window.TEPS_WORDS = [
   {
     "id": "A454",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 454,
     "chunk": 8,
     "word": "inspect",
@@ -76881,7 +76881,7 @@ window.TEPS_WORDS = [
   {
     "id": "A455",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 455,
     "chunk": 8,
     "word": "intense",
@@ -76912,7 +76912,7 @@ window.TEPS_WORDS = [
   {
     "id": "A456",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 456,
     "chunk": 8,
     "word": "manipulate",
@@ -76938,7 +76938,7 @@ window.TEPS_WORDS = [
   {
     "id": "A457",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 457,
     "chunk": 9,
     "word": "minimise",
@@ -76965,7 +76965,7 @@ window.TEPS_WORDS = [
   {
     "id": "A458",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 458,
     "chunk": 9,
     "word": "nuclear",
@@ -76984,7 +76984,7 @@ window.TEPS_WORDS = [
   {
     "id": "A459",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 459,
     "chunk": 9,
     "word": "offset",
@@ -77006,7 +77006,7 @@ window.TEPS_WORDS = [
   {
     "id": "A460",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 460,
     "chunk": 9,
     "word": "paragraph",
@@ -77028,7 +77028,7 @@ window.TEPS_WORDS = [
   {
     "id": "A461",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 461,
     "chunk": 9,
     "word": "plus",
@@ -77049,7 +77049,7 @@ window.TEPS_WORDS = [
   {
     "id": "A462",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 462,
     "chunk": 9,
     "word": "practitioner",
@@ -77070,7 +77070,7 @@ window.TEPS_WORDS = [
   {
     "id": "A463",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 463,
     "chunk": 9,
     "word": "predominant",
@@ -77096,7 +77096,7 @@ window.TEPS_WORDS = [
   {
     "id": "A464",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 464,
     "chunk": 9,
     "word": "prospect",
@@ -77118,7 +77118,7 @@ window.TEPS_WORDS = [
   {
     "id": "A465",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 465,
     "chunk": 9,
     "word": "radical",
@@ -77140,7 +77140,7 @@ window.TEPS_WORDS = [
   {
     "id": "A466",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 466,
     "chunk": 9,
     "word": "random",
@@ -77162,7 +77162,7 @@ window.TEPS_WORDS = [
   {
     "id": "A467",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 467,
     "chunk": 9,
     "word": "reinforce",
@@ -77187,7 +77187,7 @@ window.TEPS_WORDS = [
   {
     "id": "A468",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 468,
     "chunk": 9,
     "word": "restore",
@@ -77211,7 +77211,7 @@ window.TEPS_WORDS = [
   {
     "id": "A469",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 469,
     "chunk": 9,
     "word": "revise",
@@ -77236,7 +77236,7 @@ window.TEPS_WORDS = [
   {
     "id": "A470",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 470,
     "chunk": 9,
     "word": "schedule",
@@ -77264,7 +77264,7 @@ window.TEPS_WORDS = [
   {
     "id": "A471",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 471,
     "chunk": 9,
     "word": "tense",
@@ -77289,7 +77289,7 @@ window.TEPS_WORDS = [
   {
     "id": "A472",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 472,
     "chunk": 9,
     "word": "terminate",
@@ -77316,7 +77316,7 @@ window.TEPS_WORDS = [
   {
     "id": "A473",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 473,
     "chunk": 9,
     "word": "theme",
@@ -77339,7 +77339,7 @@ window.TEPS_WORDS = [
   {
     "id": "A474",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 474,
     "chunk": 9,
     "word": "thereby",
@@ -77358,7 +77358,7 @@ window.TEPS_WORDS = [
   {
     "id": "A475",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 475,
     "chunk": 9,
     "word": "uniform",
@@ -77380,7 +77380,7 @@ window.TEPS_WORDS = [
   {
     "id": "A476",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 476,
     "chunk": 9,
     "word": "vehicle",
@@ -77401,7 +77401,7 @@ window.TEPS_WORDS = [
   {
     "id": "A477",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 477,
     "chunk": 9,
     "word": "via",
@@ -77420,7 +77420,7 @@ window.TEPS_WORDS = [
   {
     "id": "A478",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 478,
     "chunk": 9,
     "word": "virtual",
@@ -77441,7 +77441,7 @@ window.TEPS_WORDS = [
   {
     "id": "A479",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 479,
     "chunk": 9,
     "word": "visual",
@@ -77470,7 +77470,7 @@ window.TEPS_WORDS = [
   {
     "id": "A480",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 480,
     "chunk": 9,
     "word": "widespread",
@@ -77489,7 +77489,7 @@ window.TEPS_WORDS = [
   {
     "id": "A481",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 481,
     "chunk": 9,
     "word": "accommodate",
@@ -77513,7 +77513,7 @@ window.TEPS_WORDS = [
   {
     "id": "A482",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 482,
     "chunk": 9,
     "word": "analogy",
@@ -77535,7 +77535,7 @@ window.TEPS_WORDS = [
   {
     "id": "A483",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 483,
     "chunk": 9,
     "word": "anticipate",
@@ -77560,7 +77560,7 @@ window.TEPS_WORDS = [
   {
     "id": "A484",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 484,
     "chunk": 9,
     "word": "assure",
@@ -77586,7 +77586,7 @@ window.TEPS_WORDS = [
   {
     "id": "A485",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 485,
     "chunk": 9,
     "word": "attain",
@@ -77613,7 +77613,7 @@ window.TEPS_WORDS = [
   {
     "id": "A486",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 486,
     "chunk": 9,
     "word": "behalf",
@@ -77632,7 +77632,7 @@ window.TEPS_WORDS = [
   {
     "id": "A487",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 487,
     "chunk": 9,
     "word": "bulk",
@@ -77653,7 +77653,7 @@ window.TEPS_WORDS = [
   {
     "id": "A488",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 488,
     "chunk": 9,
     "word": "cease",
@@ -77677,7 +77677,7 @@ window.TEPS_WORDS = [
   {
     "id": "A489",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 489,
     "chunk": 9,
     "word": "coherent",
@@ -77701,7 +77701,7 @@ window.TEPS_WORDS = [
   {
     "id": "A490",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 490,
     "chunk": 9,
     "word": "coincide",
@@ -77728,7 +77728,7 @@ window.TEPS_WORDS = [
   {
     "id": "A491",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 491,
     "chunk": 9,
     "word": "commence",
@@ -77755,7 +77755,7 @@ window.TEPS_WORDS = [
   {
     "id": "A492",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 492,
     "chunk": 9,
     "word": "compatible",
@@ -77778,7 +77778,7 @@ window.TEPS_WORDS = [
   {
     "id": "A493",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 493,
     "chunk": 9,
     "word": "concurrent",
@@ -77799,7 +77799,7 @@ window.TEPS_WORDS = [
   {
     "id": "A494",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 494,
     "chunk": 9,
     "word": "confine",
@@ -77823,7 +77823,7 @@ window.TEPS_WORDS = [
   {
     "id": "A495",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 495,
     "chunk": 9,
     "word": "controversy",
@@ -77847,7 +77847,7 @@ window.TEPS_WORDS = [
   {
     "id": "A496",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 496,
     "chunk": 9,
     "word": "converse",
@@ -77868,7 +77868,7 @@ window.TEPS_WORDS = [
   {
     "id": "A497",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 497,
     "chunk": 9,
     "word": "device",
@@ -77889,7 +77889,7 @@ window.TEPS_WORDS = [
   {
     "id": "A498",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 498,
     "chunk": 9,
     "word": "devote",
@@ -77915,7 +77915,7 @@ window.TEPS_WORDS = [
   {
     "id": "A499",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 499,
     "chunk": 9,
     "word": "diminish",
@@ -77940,7 +77940,7 @@ window.TEPS_WORDS = [
   {
     "id": "A500",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 500,
     "chunk": 9,
     "word": "distort",
@@ -77965,7 +77965,7 @@ window.TEPS_WORDS = [
   {
     "id": "A501",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 501,
     "chunk": 9,
     "word": "duration",
@@ -77984,7 +77984,7 @@ window.TEPS_WORDS = [
   {
     "id": "A502",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 502,
     "chunk": 9,
     "word": "erode",
@@ -78008,7 +78008,7 @@ window.TEPS_WORDS = [
   {
     "id": "A503",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 503,
     "chunk": 9,
     "word": "ethic",
@@ -78032,7 +78032,7 @@ window.TEPS_WORDS = [
   {
     "id": "A504",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 504,
     "chunk": 9,
     "word": "format",
@@ -78055,7 +78055,7 @@ window.TEPS_WORDS = [
   {
     "id": "A505",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 505,
     "chunk": 9,
     "word": "found",
@@ -78080,7 +78080,7 @@ window.TEPS_WORDS = [
   {
     "id": "A506",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 506,
     "chunk": 9,
     "word": "inherent",
@@ -78101,7 +78101,7 @@ window.TEPS_WORDS = [
   {
     "id": "A507",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 507,
     "chunk": 9,
     "word": "insight",
@@ -78123,7 +78123,7 @@ window.TEPS_WORDS = [
   {
     "id": "A508",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 508,
     "chunk": 9,
     "word": "integral",
@@ -78142,7 +78142,7 @@ window.TEPS_WORDS = [
   {
     "id": "A509",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 509,
     "chunk": 9,
     "word": "intermediate",
@@ -78161,7 +78161,7 @@ window.TEPS_WORDS = [
   {
     "id": "A510",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 510,
     "chunk": 9,
     "word": "manual",
@@ -78183,7 +78183,7 @@ window.TEPS_WORDS = [
   {
     "id": "A511",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 511,
     "chunk": 9,
     "word": "mature",
@@ -78211,7 +78211,7 @@ window.TEPS_WORDS = [
   {
     "id": "A512",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 512,
     "chunk": 9,
     "word": "mediate",
@@ -78235,7 +78235,7 @@ window.TEPS_WORDS = [
   {
     "id": "A513",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 513,
     "chunk": 9,
     "word": "medium",
@@ -78254,7 +78254,7 @@ window.TEPS_WORDS = [
   {
     "id": "A514",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 514,
     "chunk": 10,
     "word": "military",
@@ -78273,7 +78273,7 @@ window.TEPS_WORDS = [
   {
     "id": "A515",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 515,
     "chunk": 10,
     "word": "minimal",
@@ -78307,7 +78307,7 @@ window.TEPS_WORDS = [
   {
     "id": "A516",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 516,
     "chunk": 10,
     "word": "mutual",
@@ -78328,7 +78328,7 @@ window.TEPS_WORDS = [
   {
     "id": "A517",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 517,
     "chunk": 10,
     "word": "norm",
@@ -78349,7 +78349,7 @@ window.TEPS_WORDS = [
   {
     "id": "A518",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 518,
     "chunk": 10,
     "word": "overlap",
@@ -78372,7 +78372,7 @@ window.TEPS_WORDS = [
   {
     "id": "A519",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 519,
     "chunk": 10,
     "word": "passive",
@@ -78394,7 +78394,7 @@ window.TEPS_WORDS = [
   {
     "id": "A520",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 520,
     "chunk": 10,
     "word": "portion",
@@ -78415,7 +78415,7 @@ window.TEPS_WORDS = [
   {
     "id": "A521",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 521,
     "chunk": 10,
     "word": "preliminary",
@@ -78436,7 +78436,7 @@ window.TEPS_WORDS = [
   {
     "id": "A522",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 522,
     "chunk": 10,
     "word": "protocol",
@@ -78457,7 +78457,7 @@ window.TEPS_WORDS = [
   {
     "id": "A523",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 523,
     "chunk": 10,
     "word": "qualitative",
@@ -78478,7 +78478,7 @@ window.TEPS_WORDS = [
   {
     "id": "A524",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 524,
     "chunk": 10,
     "word": "refine",
@@ -78503,7 +78503,7 @@ window.TEPS_WORDS = [
   {
     "id": "A525",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 525,
     "chunk": 10,
     "word": "relax",
@@ -78527,7 +78527,7 @@ window.TEPS_WORDS = [
   {
     "id": "A526",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 526,
     "chunk": 10,
     "word": "restrain",
@@ -78553,7 +78553,7 @@ window.TEPS_WORDS = [
   {
     "id": "A527",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 527,
     "chunk": 10,
     "word": "revolution",
@@ -78586,7 +78586,7 @@ window.TEPS_WORDS = [
   {
     "id": "A528",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 528,
     "chunk": 10,
     "word": "rigid",
@@ -78609,7 +78609,7 @@ window.TEPS_WORDS = [
   {
     "id": "A529",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 529,
     "chunk": 10,
     "word": "route",
@@ -78632,7 +78632,7 @@ window.TEPS_WORDS = [
   {
     "id": "A530",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 530,
     "chunk": 10,
     "word": "scenario",
@@ -78653,7 +78653,7 @@ window.TEPS_WORDS = [
   {
     "id": "A531",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 531,
     "chunk": 10,
     "word": "sphere",
@@ -78676,7 +78676,7 @@ window.TEPS_WORDS = [
   {
     "id": "A532",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 532,
     "chunk": 10,
     "word": "subordinate",
@@ -78698,7 +78698,7 @@ window.TEPS_WORDS = [
   {
     "id": "A533",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 533,
     "chunk": 10,
     "word": "supplement",
@@ -78722,7 +78722,7 @@ window.TEPS_WORDS = [
   {
     "id": "A534",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 534,
     "chunk": 10,
     "word": "suspend",
@@ -78746,7 +78746,7 @@ window.TEPS_WORDS = [
   {
     "id": "A535",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 535,
     "chunk": 10,
     "word": "team",
@@ -78769,7 +78769,7 @@ window.TEPS_WORDS = [
   {
     "id": "A536",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 536,
     "chunk": 10,
     "word": "temporary",
@@ -78790,7 +78790,7 @@ window.TEPS_WORDS = [
   {
     "id": "A537",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 537,
     "chunk": 10,
     "word": "trigger",
@@ -78813,7 +78813,7 @@ window.TEPS_WORDS = [
   {
     "id": "A538",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 538,
     "chunk": 10,
     "word": "unify",
@@ -78837,7 +78837,7 @@ window.TEPS_WORDS = [
   {
     "id": "A539",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 539,
     "chunk": 10,
     "word": "violate",
@@ -78862,7 +78862,7 @@ window.TEPS_WORDS = [
   {
     "id": "A540",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 540,
     "chunk": 10,
     "word": "vision",
@@ -78883,7 +78883,7 @@ window.TEPS_WORDS = [
   {
     "id": "A541",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 541,
     "chunk": 10,
     "word": "adjacent",
@@ -78902,7 +78902,7 @@ window.TEPS_WORDS = [
   {
     "id": "A542",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 542,
     "chunk": 10,
     "word": "albeit",
@@ -78921,7 +78921,7 @@ window.TEPS_WORDS = [
   {
     "id": "A543",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 543,
     "chunk": 10,
     "word": "assemble",
@@ -78946,7 +78946,7 @@ window.TEPS_WORDS = [
   {
     "id": "A544",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 544,
     "chunk": 10,
     "word": "collapse",
@@ -78970,7 +78970,7 @@ window.TEPS_WORDS = [
   {
     "id": "A545",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 545,
     "chunk": 10,
     "word": "colleague",
@@ -78991,7 +78991,7 @@ window.TEPS_WORDS = [
   {
     "id": "A546",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 546,
     "chunk": 10,
     "word": "compile",
@@ -79016,7 +79016,7 @@ window.TEPS_WORDS = [
   {
     "id": "A547",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 547,
     "chunk": 10,
     "word": "conceive",
@@ -79043,7 +79043,7 @@ window.TEPS_WORDS = [
   {
     "id": "A548",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 548,
     "chunk": 10,
     "word": "convince",
@@ -79068,7 +79068,7 @@ window.TEPS_WORDS = [
   {
     "id": "A549",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 549,
     "chunk": 10,
     "word": "depress",
@@ -79092,7 +79092,7 @@ window.TEPS_WORDS = [
   {
     "id": "A550",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 550,
     "chunk": 10,
     "word": "encounter",
@@ -79115,7 +79115,7 @@ window.TEPS_WORDS = [
   {
     "id": "A551",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 551,
     "chunk": 10,
     "word": "enormous",
@@ -79137,7 +79137,7 @@ window.TEPS_WORDS = [
   {
     "id": "A552",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 552,
     "chunk": 10,
     "word": "forthcoming",
@@ -79156,7 +79156,7 @@ window.TEPS_WORDS = [
   {
     "id": "A553",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 553,
     "chunk": 10,
     "word": "incline",
@@ -79181,7 +79181,7 @@ window.TEPS_WORDS = [
   {
     "id": "A554",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 554,
     "chunk": 10,
     "word": "integrity",
@@ -79200,7 +79200,7 @@ window.TEPS_WORDS = [
   {
     "id": "A555",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 555,
     "chunk": 10,
     "word": "intrinsic",
@@ -79221,7 +79221,7 @@ window.TEPS_WORDS = [
   {
     "id": "A556",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 556,
     "chunk": 10,
     "word": "invoke",
@@ -79244,7 +79244,7 @@ window.TEPS_WORDS = [
   {
     "id": "A557",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 557,
     "chunk": 10,
     "word": "levy",
@@ -79265,7 +79265,7 @@ window.TEPS_WORDS = [
   {
     "id": "A558",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 558,
     "chunk": 10,
     "word": "likewise",
@@ -79284,7 +79284,7 @@ window.TEPS_WORDS = [
   {
     "id": "A559",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 559,
     "chunk": 10,
     "word": "nonetheless",
@@ -79303,7 +79303,7 @@ window.TEPS_WORDS = [
   {
     "id": "A560",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 560,
     "chunk": 10,
     "word": "notwithstanding",
@@ -79322,7 +79322,7 @@ window.TEPS_WORDS = [
   {
     "id": "A561",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 561,
     "chunk": 10,
     "word": "odd",
@@ -79343,7 +79343,7 @@ window.TEPS_WORDS = [
   {
     "id": "A562",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 562,
     "chunk": 10,
     "word": "ongoing",
@@ -79362,7 +79362,7 @@ window.TEPS_WORDS = [
   {
     "id": "A563",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 563,
     "chunk": 10,
     "word": "panel",
@@ -79385,7 +79385,7 @@ window.TEPS_WORDS = [
   {
     "id": "A564",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 564,
     "chunk": 10,
     "word": "persist",
@@ -79411,7 +79411,7 @@ window.TEPS_WORDS = [
   {
     "id": "A565",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 565,
     "chunk": 10,
     "word": "pose",
@@ -79434,7 +79434,7 @@ window.TEPS_WORDS = [
   {
     "id": "A566",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 566,
     "chunk": 10,
     "word": "reluctance",
@@ -79456,7 +79456,7 @@ window.TEPS_WORDS = [
   {
     "id": "A567",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 567,
     "chunk": 10,
     "word": "so-called",
@@ -79475,7 +79475,7 @@ window.TEPS_WORDS = [
   {
     "id": "A568",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 568,
     "chunk": 10,
     "word": "straightforward",
@@ -79494,7 +79494,7 @@ window.TEPS_WORDS = [
   {
     "id": "A569",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 569,
     "chunk": 10,
     "word": "undergo",
@@ -79518,7 +79518,7 @@ window.TEPS_WORDS = [
   {
     "id": "A570",
     "source": "awl",
-    "sourceLabel": "AWL 570",
+    "sourceLabel": "AWL570",
     "rank": 570,
     "chunk": 10,
     "word": "whereby",
