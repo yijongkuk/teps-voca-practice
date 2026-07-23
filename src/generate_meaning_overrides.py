@@ -35,15 +35,53 @@ NOISE_PATTERNS = [
 
 MANUAL_MEANING_OVERRIDES = {
     "accreted": "축적된, 누적된",
+    "acquitted": "무죄를 선고받은",
+    "adhere": "고수하다, 준수하다, 들러붙다",
+    "adjourned": "연기된, 휴회한",
+    "advised": "조언한, 권고한",
+    "affirmed": "확인한, 단언한, 인정한",
+    "braced": "대비한, 버틴, 지탱한",
+    "broached": "화제를 꺼낸, 문제를 제기한",
     "calorie-dense": "칼로리가 높은, 열량이 높은",
+    "calibrating": "보정하는, 조정하는",
+    "captured": "포착된, 붙잡힌, 촬영된",
+    "clogged": "막힌, 막아 버린",
+    "composed": "구성된, 작곡한, 침착한",
     "configurated": "구성된, 설정된",
+    "converting": "전환하는, 변환하는",
+    "corroborate": "입증하다, 뒷받침하다",
+    "crooned": "감미롭게 노래한, 낮은 목소리로 노래한",
+    "delineated": "윤곽을 그린, 명확히 기술한",
+    "deluged": "물에 잠긴, 쇄도에 시달린",
+    "digesting": "소화하는, 이해하는",
+    "discharged": "퇴원한, 해고된, 석방된, 방출된",
+    "dismissed": "해고된, 해임된, 묵살된, 기각된",
+    "dissipated": "흩어진, 소멸한, 낭비한",
+    "elaborating": "자세히 설명하는, 정교하게 만드는",
+    "embarking": "착수하는, 승선하는",
+    "eradicated": "근절된, 완전히 없어진",
+    "evacuated": "대피한, 대피시킨, 비운",
+    "evaluated": "평가된, 평가한",
+    "exasperated": "몹시 화가 난, 격분한",
+    "extruded": "압출된, 밀려 나온",
+    "granted": "승인된, 주어진, 인정된",
+    "inspired": "영감을 받은, 영감을 준",
+    "inaugurated": "취임한, 개시한",
+    "included": "포함된",
+    "lugged": "힘겹게 나른, 질질 끌고 간",
+    "obstructed": "막힌, 방해받은",
     "overhead compartment": "머리 위 짐칸, 기내 선반",
     "practice": "연습, 실천, 관행",
     "prevent a from -ing": "A가 ~하는 것을 막다, A가 ~하는 것을 방지하다",
+    "prevent": "막다, 방지하다",
+    "professed": "공언한, 자칭하는",
     "publicity stunt": "홍보용 술책, 관심 끌기용 행동",
+    "secluded": "외딴, 한적한",
     "squeezed": "압착된, 짜낸, 꽉 끼인",
     "superstitions": "미신, 미신적 믿음",
+    "tactless": "요령 없는, 경솔한",
     "tang": "톡 쏘는 맛, 톡 쏘는 냄새",
+    "tempting": "솔깃한, 유혹적인",
 }
 
 
@@ -362,6 +400,8 @@ def build_overrides(
 ) -> dict:
     cache = load_json(cache_path, {})
     translation_cache = load_json(translation_cache_path, {})
+    saved_cache_size = len(cache)
+    saved_translation_cache_size = len(translation_cache)
     words = generate_words_data.build_words()
     entries: dict[str, str] = {}
     missing: list[str] = []
@@ -425,12 +465,18 @@ def build_overrides(
             missing.append(term)
 
         if index % 50 == 0:
-            save_json(cache_path, cache)
-            save_json(translation_cache_path, translation_cache)
+            if len(cache) != saved_cache_size:
+                save_json(cache_path, cache)
+                saved_cache_size = len(cache)
+            if len(translation_cache) != saved_translation_cache_size:
+                save_json(translation_cache_path, translation_cache)
+                saved_translation_cache_size = len(translation_cache)
             print(f"Processed {index}/{len(unique_terms)}")
 
-    save_json(cache_path, cache)
-    save_json(translation_cache_path, translation_cache)
+    if len(cache) != saved_cache_size:
+        save_json(cache_path, cache)
+    if len(translation_cache) != saved_translation_cache_size:
+        save_json(translation_cache_path, translation_cache)
     for term, meaning in MANUAL_MEANING_OVERRIDES.items():
         entries[generate_words_data.normalize_key(term)] = meaning
         if term in missing:
