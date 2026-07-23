@@ -14,6 +14,8 @@ WORKBOOK_PATH = ROOT / "TEPS_Voca(통합).xlsx"
 PRONUNCIATION_PATH = ROOT / "pronunciations.json"
 MEANING_OVERRIDE_PATH = ROOT / "meaning_overrides.json"
 EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
+EXTERNAL_LIST_PATH = ROOT / "external_word_lists.json"
+EXTERNAL_DETAIL_PATH = ROOT / "external_word_details.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
 FREQUENT_SHEET = "어휘단어장(통합)"
@@ -83,6 +85,13 @@ def load_example_overrides() -> dict[str, dict[str, str]]:
     return entries
 
 
+def load_external_payload(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload if isinstance(payload, dict) else {}
+
+
 def get_example_override(
     overrides: dict[str, dict[str, str]],
     word_id: str,
@@ -105,6 +114,20 @@ def find_cloze_target(term: str, sentence: str) -> tuple[str, int, int] | None:
     exact = re.search(exact_pattern, sentence, flags=re.IGNORECASE)
     if exact:
         return exact.group(0), exact.start(), exact.end()
+
+    if re.fullmatch(r"[A-Za-z]+", term):
+        inflections = [rf"{re.escape(term)}(?:s|es|ed|ing)?"]
+        if term.lower().endswith("e") and len(term) > 2:
+            inflections.append(rf"{re.escape(term[:-1])}(?:ed|ing)")
+        if term.lower().endswith("y") and len(term) > 2:
+            inflections.append(rf"{re.escape(term[:-1])}(?:ies|ied)")
+        inflected = re.search(
+            rf"\b(?:{'|'.join(inflections)})\b",
+            sentence,
+            flags=re.IGNORECASE,
+        )
+        if inflected:
+            return inflected.group(0), inflected.start(), inflected.end()
 
     tokens = re.findall(r"[A-Za-z][A-Za-z'-]{2,}", term)
     matches = []
@@ -139,7 +162,7 @@ def assign_routine_chunks(words: list[dict]) -> None:
         word["chunk"] = min(ROUTINE_CHUNK_COUNT, chunk)
 
 
-def build_words() -> list[dict]:
+def build_frequent_words() -> list[dict]:
     workbook = load_workbook(WORKBOOK_PATH, read_only=True, data_only=True)
     sheet = workbook[FREQUENT_SHEET]
 
@@ -196,11 +219,122 @@ def build_words() -> list[dict]:
     return words
 
 
+def build_external_words() -> list[dict]:
+    list_payload = load_external_payload(EXTERNAL_LIST_PATH)
+    detail_payload = load_external_payload(EXTERNAL_DETAIL_PATH)
+    detail_entries = detail_payload.get("entries", {})
+    if not isinstance(detail_entries, dict):
+        detail_entries = {}
+
+    pronunciation_lookup = load_pronunciations()
+    meaning_overrides = load_meaning_overrides()
+
+    def make_card(
+        *,
+        word_id: str,
+        source: str,
+        source_label: str,
+        rank: int,
+        word: str,
+        group: str,
+        search_terms: list[str] | None = None,
+    ) -> dict:
+        key = normalize_key(word)
+        detail = detail_entries.get(key, {})
+        if not isinstance(detail, dict):
+            detail = {}
+        meaning = meaning_overrides.get(key) or clean(detail.get("meaning"))
+        pronunciation = (
+            pronunciation_lookup.get(key) or clean(detail.get("pronunciation"))
+        )
+        example_en = clean(detail.get("exampleEn"))
+        example_ko = clean(detail.get("exampleKo"))
+        cloze, cloze_answer = (
+            make_cloze(word, example_en) if example_en else ("", "")
+        )
+        return {
+            "id": word_id,
+            "source": source,
+            "sourceLabel": source_label,
+            "rank": rank,
+            "chunk": 0,
+            "word": word,
+            "meaning": meaning,
+            "pronunciation": pronunciation,
+            "group": group,
+            "exampleEn": example_en,
+            "exampleKo": example_ko,
+            "clozeExample": cloze,
+            "clozeAnswer": cloze_answer,
+            "expression": "",
+            "searchTerms": search_terms or [],
+            "duplicateFileCount": 0,
+            "appearanceCount": 0,
+        }
+
+    oxford_words: list[dict] = []
+    for rank, entry in enumerate(list_payload.get("oxford5000", []), start=1):
+        word = clean(entry.get("word"))
+        if not word:
+            continue
+        levels = "/".join(clean(level) for level in entry.get("levels", []) if clean(level))
+        parts = ", ".join(
+            clean(part) for part in entry.get("partsOfSpeech", []) if clean(part)
+        )
+        group = " · ".join(part for part in (levels, parts) if part)
+        oxford_words.append(
+            make_card(
+                word_id=f"O{rank:04d}",
+                source="oxford5000",
+                source_label="Oxford 5000",
+                rank=rank,
+                word=word,
+                group=group,
+            )
+        )
+
+    awl_words: list[dict] = []
+    for rank, entry in enumerate(list_payload.get("awl", []), start=1):
+        word = clean(entry.get("word"))
+        if not word:
+            continue
+        related_forms = [
+            clean(form) for form in entry.get("relatedForms", []) if clean(form)
+        ]
+        awl_words.append(
+            make_card(
+                word_id=f"A{rank:03d}",
+                source="awl",
+                source_label="AWL 570",
+                rank=rank,
+                word=word,
+                group=f"Sublist {int(entry.get('sublist') or 0)}",
+                search_terms=related_forms,
+            )
+        )
+
+    assign_routine_chunks(oxford_words)
+    assign_routine_chunks(awl_words)
+    return [*oxford_words, *awl_words]
+
+
+def build_words() -> list[dict]:
+    return [*build_frequent_words(), *build_external_words()]
+
+
 def main() -> None:
     words = build_words()
+    sources = ("frequent", "oxford5000", "awl")
     chunk_counts = {
-        str(chunk): sum(1 for word in words if word["chunk"] == chunk)
-        for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
+        source: {
+            str(chunk): sum(
+                1
+                for word in words
+                if word["source"] == source and word["chunk"] == chunk
+            )
+            for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
+        }
+        for source in sources
     }
     meaning_coverage = sum(1 for word in words if word["meaning"])
     pronunciation_coverage = sum(1 for word in words if word["pronunciation"])
@@ -208,10 +342,15 @@ def main() -> None:
     meta = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
         "sourceFile": "src/TEPS_Voca(통합).xlsx",
-        "sourceFiles": ["src/TEPS_Voca(통합).xlsx"],
+        "sourceFiles": [
+            "src/TEPS_Voca(통합).xlsx",
+            "src/external_word_lists.json",
+            "src/external_word_details.json",
+        ],
         "total": len(words),
         "counts": {
-            "frequent": len(words),
+            source: sum(1 for word in words if word["source"] == source)
+            for source in sources
         },
         "coverage": {
             "meaning": meaning_coverage,
@@ -219,12 +358,16 @@ def main() -> None:
         },
         "chunkCounts": chunk_counts,
         "chunkRule": {
-            "routine": f"split the frequent-word list evenly across a {ROUTINE_CHUNK_COUNT}-day cycle",
+            "routine": (
+                "split each source list independently and evenly across a "
+                f"{ROUTINE_CHUNK_COUNT}-day cycle"
+            ),
         },
     }
 
     js = (
-        "// Generated from src/TEPS_Voca(통합).xlsx by src/generate_words_data.py\n"
+        "// Generated from the TEPS workbook and external word-list data "
+        "by src/generate_words_data.py\n"
         f"window.TEPS_META = {json.dumps(meta, ensure_ascii=False, indent=2)};\n"
         f"window.TEPS_WORDS = {json.dumps(words, ensure_ascii=False, indent=2)};\n"
     )

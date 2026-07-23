@@ -193,6 +193,9 @@
       if (settings.mode === "typing" && !word.meaning) {
         return false;
       }
+      if (settings.mode === "cloze" && !String(word.clozeExample || "").includes("____")) {
+        return false;
+      }
       if (settings.status !== "all" && getStatus(word) !== settings.status) {
         return false;
       }
@@ -201,6 +204,7 @@
           word.word,
           word.meaning,
           word.expression,
+          ...(Array.isArray(word.searchTerms) ? word.searchTerms : []),
           word.exampleEn,
           word.exampleKo,
         ]
@@ -260,7 +264,7 @@
   }
 
   function sourceOrder(word) {
-    const order = { vocab: 0, reading: 1, frequent: 2 };
+    const order = { frequent: 0, oxford5000: 1, awl: 2, vocab: 3, reading: 4 };
     return order[word.source] ?? 99;
   }
 

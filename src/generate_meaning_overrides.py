@@ -409,6 +409,10 @@ def build_overrides(
     unique_terms: list[str] = []
     seen_terms: set[str] = set()
     for word in words:
+        # External lists have their own compact detail generator. Keep this
+        # legacy override file scoped to the original TEPS workbook.
+        if word.get("source") != "frequent":
+            continue
         key = generate_words_data.normalize_key(word["word"])
         if key in seen_terms:
             continue
