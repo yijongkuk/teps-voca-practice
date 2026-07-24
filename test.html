@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단어 테스트 | 단어 반복 연습장</title>
+    <link rel="stylesheet" href="src/styles.css?v=20260724-vocab-test">
+    <link rel="stylesheet" href="src/test.css?v=20260724-vocab-test">
+  </head>
+  <body>
+    <div class="shell test-shell">
+      <header class="topbar test-topbar">
+        <div>
+          <p class="eyebrow">Vocabulary self-check</p>
+          <h1>단어 테스트</h1>
+          <p class="test-intro">
+            먼저 단어만 보고 떠올린 뒤, 필요한 뜻이나 예문 셀을 눌러 답을 확인하세요.
+          </p>
+        </div>
+        <div class="top-actions">
+          <a class="ghost-button page-link" href="index.html">학습장으로</a>
+        </div>
+      </header>
+
+      <section class="test-controls" aria-label="테스트 설정">
+        <label>
+          <span class="field-label">단어장</span>
+          <select id="testSourceSelect">
+            <option value="all">전체</option>
+            <option value="frequent">TEPS 어휘빈출</option>
+            <option value="connectors">TEPS 접속사</option>
+            <option value="oxford5000">Oxford 5000</option>
+            <option value="awl">AWL570</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">출제 범위</span>
+          <select id="testScopeSelect">
+            <option value="studied">학습 기록 있는 단어</option>
+            <option value="all">전체 단어</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">출제 개수</span>
+          <select id="testCountSelect">
+            <option value="100">100개</option>
+            <option value="150">150개</option>
+            <option value="200">200개</option>
+          </select>
+        </label>
+        <button type="button" class="primary-button" id="newTestBtn">새 테스트 만들기</button>
+      </section>
+
+      <section class="test-summary" aria-label="테스트 현황" aria-live="polite">
+        <div class="test-metric">
+          <span>출제 단어</span>
+          <strong id="testTotal">0</strong>
+        </div>
+        <div class="test-metric is-known">
+          <span>안다</span>
+          <strong id="knownCount">0</strong>
+        </div>
+        <div class="test-metric is-unknown">
+          <span>모른다</span>
+          <strong id="unknownCount">0</strong>
+        </div>
+        <div class="test-progress" aria-hidden="true">
+          <span id="knownProgress"></span>
+        </div>
+      </section>
+
+      <section class="test-table-card" aria-labelledby="testTableTitle">
+        <div class="test-table-toolbar">
+          <div>
+            <p class="field-label" id="testTableTitle">현재 테스트</p>
+            <p class="test-notice" id="testNotice"></p>
+          </div>
+          <button type="button" class="ghost-button" id="resetKnownBtn" disabled>
+            안다 체크 모두 해제
+          </button>
+        </div>
+
+        <div class="test-table-scroll">
+          <table class="test-table">
+            <thead>
+              <tr>
+                <th scope="col" class="test-known-heading">안다</th>
+                <th scope="col">단어</th>
+                <th scope="col">
+                  <button
+                    type="button"
+                    class="test-column-toggle"
+                    id="toggleAllMeanings"
+                    aria-pressed="false"
+                    aria-label="뜻 전체 표시"
+                  >
+                    뜻 전체 보기
+                  </button>
+                </th>
+                <th scope="col">
+                  <button
+                    type="button"
+                    class="test-column-toggle"
+                    id="toggleAllExamples"
+                    aria-pressed="false"
+                    aria-label="예문 전체 표시"
+                  >
+                    예문 전체 보기
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="testRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="test-help">
+        체크하면 <strong>안다</strong>, 체크하지 않으면 <strong>모른다</strong>로
+        집계됩니다. 현재 테스트와 체크 결과는 새로고침해도 유지됩니다.
+      </p>
+    </div>
+
+    <script src="src/words-data.js?v=20260724-vocab-test"></script>
+    <script src="src/test.js?v=20260724-vocab-test"></script>
+  </body>
+</html>

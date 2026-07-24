@@ -109,6 +109,13 @@ button:disabled {
   background: var(--accent-strong);
 }
 
+.page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .danger-button {
   border-color: #f0c6c1;
   background: #fff4f2;
