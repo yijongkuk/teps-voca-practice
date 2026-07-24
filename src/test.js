@@ -383,32 +383,34 @@
               >
             </td>
             <th scope="row" class="test-word-cell">
-              <button
-                type="button"
-                class="test-word-speak"
-                data-word-id="${escapeHtml(wordId)}"
-                aria-label="${escapeHtml(word.word)} 발음 듣기${
-                  retryStage ? `, 테스트 ${retryStage}차 단어` : ""
-                }"
-                title="발음 듣기"
-              >
-                <span class="test-word-text" lang="en">${escapeHtml(word.word)}</span>
-                ${
-                  word.pronunciation
-                    ? `<span class="test-word-pronunciation" aria-hidden="true">[${escapeHtml(
-                        word.pronunciation,
-                      )}]</span>`
-                    : ""
-                }
-                ${
-                  retryStage
-                    ? `<span class="retry-stage-pill ${retryStageClass(
-                        retryStage,
-                      )} test-retry-stage" title="테스트에서 ${retryStage}차까지 모르는 단어로 남음" aria-hidden="true">${retryStage}차</span>`
-                    : ""
-                }
-                <span class="test-word-audio-icon" aria-hidden="true">🔊</span>
-              </button>
+              <div class="test-word-line">
+                <div class="test-word-details">
+                  <span class="test-word-text" lang="en">${escapeHtml(word.word)}</span>
+                  ${
+                    word.pronunciation
+                      ? `<span class="test-word-pronunciation" aria-hidden="true">[${escapeHtml(
+                          word.pronunciation,
+                        )}]</span>`
+                      : ""
+                  }
+                  ${
+                    retryStage
+                      ? `<span class="retry-stage-pill ${retryStageClass(
+                          retryStage,
+                        )} test-retry-stage" title="테스트에서 ${retryStage}차까지 모르는 단어로 남음" aria-hidden="true">${retryStage}차</span>`
+                      : ""
+                  }
+                </div>
+                <button
+                  type="button"
+                  class="test-word-speak"
+                  data-word-id="${escapeHtml(wordId)}"
+                  aria-label="${escapeHtml(word.word)} 발음 듣기"
+                  title="발음 듣기"
+                >
+                  <span class="test-word-audio-icon" aria-hidden="true">🔊</span>
+                </button>
+              </div>
               <small>${index + 1}. ${escapeHtml(word.sourceLabel)} · Chunk ${word.chunk}</small>
             </th>
             <td class="test-answer-cell">
