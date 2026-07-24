@@ -6,6 +6,7 @@
   const progressKey = "teps-voca-progress-v1";
   const settingsKey = "teps-voca-settings-v1";
   const testSessionKey = "teps-voca-test-session-v1";
+  const savedWordsKey = "teps-voca-saved-example-words-v1";
   const validSources = new Set(["all", "frequent", "connectors", "oxford5000", "awl"]);
   const validScopes = new Set(["all", "studied"]);
   const validCounts = new Set([100, 150, 200]);
@@ -35,6 +36,28 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function normalizeSavedWords(value) {
+    if (!Array.isArray(value)) {
+      return [];
+    }
+    return value
+      .filter((item) => item && typeof item === "object" && String(item.text || "").trim())
+      .map((item, index) => ({
+        id: String(item.id || `saved-${Date.now()}-${index}`),
+        text: String(item.text || "").trim(),
+        note: String(item.note || ""),
+        sourceWordId: String(item.sourceWordId || ""),
+        sourceWord: String(item.sourceWord || ""),
+        exampleEn: String(item.exampleEn || ""),
+        exampleKo: String(item.exampleKo || ""),
+        createdAt: String(item.createdAt || new Date().toISOString()),
+      }));
+  }
+
+  function readStoredSavedWords() {
+    return normalizeSavedWords(loadJson(savedWordsKey, []));
   }
 
   function normalizeIdList(value, allowedIds) {
@@ -98,6 +121,11 @@
   let progressStorageAvailable = true;
   let activeSpeechButton = null;
   let speechToken = 0;
+  let pendingExampleSelection = null;
+  let selectionCaptureTimer = null;
+  let selectionResultTimer = null;
+  let selectionResultVisible = false;
+  let selectionPopoverInteracting = false;
 
   function speechIsSupported() {
     return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -144,6 +172,168 @@
     utterance.onend = finishSpeech;
     utterance.onerror = finishSpeech;
     window.speechSynthesis.speak(utterance);
+  }
+
+  function selectionNodeElement(node) {
+    return node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+  }
+
+  function selectedExampleSource(selection = window.getSelection()) {
+    if (!selection || selection.rangeCount === 0 || selection.isCollapsed) {
+      return null;
+    }
+    const anchorElement = selectionNodeElement(selection.anchorNode);
+    const focusElement = selectionNodeElement(selection.focusNode);
+    const source = anchorElement?.closest(".test-example-save-source");
+    return source && source.contains(focusElement) ? source : null;
+  }
+
+  function normalizedSelectionText(selection) {
+    return selection
+      .toString()
+      .replace(/\s+/g, " ")
+      .replace(/^[\s.,!?;:'"()[\]{}]+|[\s.,!?;:'"()[\]{}]+$/g, "")
+      .trim();
+  }
+
+  function announceSelectionStatus(message) {
+    const status = $("#testSelectionStatus");
+    status.textContent = "";
+    window.requestAnimationFrame(() => {
+      status.textContent = message;
+    });
+  }
+
+  function hideSelectionPopover(clearSelection = false) {
+    window.clearTimeout(selectionCaptureTimer);
+    window.clearTimeout(selectionResultTimer);
+    selectionCaptureTimer = null;
+    selectionResultTimer = null;
+    selectionResultVisible = false;
+    selectionPopoverInteracting = false;
+    pendingExampleSelection = null;
+
+    const popover = $("#selectionSavePopover");
+    popover.hidden = true;
+    popover.textContent = "선택 저장";
+    popover.setAttribute("aria-label", "선택한 예문 표현 저장");
+    popover.removeAttribute("aria-disabled");
+    popover.classList.remove("is-saved", "is-duplicate", "is-error");
+    if (clearSelection) {
+      window.getSelection()?.removeAllRanges();
+    }
+  }
+
+  function scheduleSelectionCapture(delay = 0) {
+    if (selectionResultVisible || selectionPopoverInteracting) {
+      return;
+    }
+    window.clearTimeout(selectionCaptureTimer);
+    selectionCaptureTimer = window.setTimeout(captureExampleSelection, delay);
+  }
+
+  function captureExampleSelection() {
+    selectionCaptureTimer = null;
+    const selection = window.getSelection();
+    const source = selectedExampleSource(selection);
+    if (!source) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const text = normalizedSelectionText(selection);
+    if (!text || text.length > 80) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const sourceWord = wordById.get(String(source.dataset.wordId || ""));
+    if (!sourceWord) {
+      hideSelectionPopover();
+      return;
+    }
+
+    const rect = selection.getRangeAt(0).getBoundingClientRect();
+    const popover = $("#selectionSavePopover");
+    const popoverWidth = 104;
+    const belowSelection = rect.bottom + 8;
+    const top =
+      belowSelection + 46 <= window.innerHeight
+        ? belowSelection
+        : Math.max(8, rect.top - 46);
+
+    pendingExampleSelection = { text, sourceWord };
+    selectionResultVisible = false;
+    window.clearTimeout(selectionResultTimer);
+    popover.textContent = "선택 저장";
+    popover.setAttribute("aria-label", `${text} 저장`);
+    popover.removeAttribute("aria-disabled");
+    popover.classList.remove("is-saved", "is-duplicate", "is-error");
+    popover.style.left = `${Math.max(
+      8,
+      Math.min(window.innerWidth - popoverWidth - 8, rect.left + rect.width / 2 - popoverWidth / 2),
+    )}px`;
+    popover.style.top = `${top}px`;
+    popover.hidden = false;
+    announceSelectionStatus("선택 저장 버튼이 나타났습니다.");
+  }
+
+  function showSelectionSaveResult(message, className) {
+    const popover = $("#selectionSavePopover");
+    selectionResultVisible = true;
+    pendingExampleSelection = null;
+    window.clearTimeout(selectionCaptureTimer);
+    window.clearTimeout(selectionResultTimer);
+    selectionCaptureTimer = null;
+    popover.textContent = message;
+    popover.setAttribute("aria-label", message);
+    popover.setAttribute("aria-disabled", "true");
+    popover.classList.remove("is-saved", "is-duplicate", "is-error");
+    popover.classList.add(className);
+    popover.hidden = false;
+    window.getSelection()?.removeAllRanges();
+    announceSelectionStatus(message);
+    selectionResultTimer = window.setTimeout(() => hideSelectionPopover(), 1200);
+  }
+
+  function savePendingExampleSelection() {
+    if (!pendingExampleSelection) {
+      return;
+    }
+    const { text, sourceWord } = pendingExampleSelection;
+    const savedWords = readStoredSavedWords();
+    const duplicate = savedWords.some(
+      (item) =>
+        item.sourceWordId === String(sourceWord.id) &&
+        item.text.toLocaleLowerCase() === text.toLocaleLowerCase(),
+    );
+
+    if (duplicate) {
+      showSelectionSaveResult("이미 저장됨", "is-duplicate");
+      return;
+    }
+
+    savedWords.unshift({
+      id: `saved-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      text,
+      note: "",
+      sourceWordId: String(sourceWord.id),
+      sourceWord: sourceWord.word,
+      exampleEn: sourceWord.exampleEn || "",
+      exampleKo: sourceWord.exampleKo || "",
+      createdAt: new Date().toISOString(),
+    });
+    try {
+      localStorage.setItem(savedWordsKey, JSON.stringify(savedWords));
+      showSelectionSaveResult("저장 완료", "is-saved");
+    } catch {
+      showSelectionSaveResult("저장 실패", "is-error");
+    }
+  }
+
+  function hasSelectedExampleInside(element) {
+    const source = selectedExampleSource();
+    return Boolean(source && element.contains(source));
   }
 
   function saveSession() {
@@ -331,7 +521,12 @@
       return `<span class="test-answer-empty">등록된 예문 없음</span>`;
     }
     return `
-      <span class="test-answer-primary">${escapeHtml(word.exampleEn)}</span>
+      <span
+        class="test-answer-primary test-example-save-source save-source"
+        data-word-id="${escapeHtml(word.id)}"
+        lang="en"
+        title="저장할 단어나 구문을 드래그하세요"
+      >${escapeHtml(word.exampleEn)}</span>
       ${
         word.exampleKo
           ? `<span class="test-answer-secondary">${escapeHtml(word.exampleKo)}</span>`
@@ -349,6 +544,7 @@
   }
 
   function renderRows() {
+    hideSelectionPopover(true);
     const currentWords = selectedWords();
     const knownIds = sessionSet("knownIds");
 
@@ -552,6 +748,7 @@
       return;
     }
 
+    hideSelectionPopover(true);
     const defaultKey = `${field}DefaultVisible`;
     const exceptionsKey = `${field}Exceptions`;
     const exceptions = sessionSet(exceptionsKey);
@@ -570,6 +767,7 @@
   }
 
   function toggleColumn(field) {
+    hideSelectionPopover(true);
     const shouldShowAll = !columnIsFullyVisible(field);
     session[`${field}DefaultVisible`] = shouldShowAll;
     session[`${field}Exceptions`] = [];
@@ -682,6 +880,15 @@
       }
       const button = event.target.closest(".test-cell-toggle");
       if (button) {
+        if (
+          button.dataset.field === "example" &&
+          button.classList.contains("is-revealed") &&
+          hasSelectedExampleInside(button)
+        ) {
+          event.preventDefault();
+          captureExampleSelection();
+          return;
+        }
         toggleCell(button);
       }
     });
@@ -690,6 +897,55 @@
         updateKnown(event.target);
       }
     });
+
+    const selectionPopover = $("#selectionSavePopover");
+    selectionPopover.addEventListener("mousedown", (event) => event.preventDefault());
+    selectionPopover.addEventListener("pointerdown", () => {
+      if (selectionResultVisible) {
+        return;
+      }
+      selectionPopoverInteracting = true;
+      window.clearTimeout(selectionCaptureTimer);
+    });
+    selectionPopover.addEventListener("pointerup", () => {
+      savePendingExampleSelection();
+      selectionPopoverInteracting = false;
+    });
+    selectionPopover.addEventListener("pointercancel", () => {
+      selectionPopoverInteracting = false;
+    });
+    selectionPopover.addEventListener("click", savePendingExampleSelection);
+    document.addEventListener("pointerup", () => {
+      selectionPopoverInteracting = false;
+    });
+    document.addEventListener("pointercancel", () => {
+      selectionPopoverInteracting = false;
+    });
+    document.addEventListener("mouseup", (event) => {
+      const clickedPopover =
+        event.target instanceof Element && event.target.closest("#selectionSavePopover");
+      if (!clickedPopover) {
+        scheduleSelectionCapture();
+      }
+    });
+    document.addEventListener(
+      "touchend",
+      (event) => {
+        const touchedPopover =
+          event.target instanceof Element && event.target.closest("#selectionSavePopover");
+        if (!touchedPopover) {
+          scheduleSelectionCapture(80);
+        }
+      },
+      { passive: true },
+    );
+    document.addEventListener("selectionchange", () => scheduleSelectionCapture(140));
+    $(".test-table-scroll").addEventListener(
+      "scroll",
+      () => hideSelectionPopover(),
+      { passive: true },
+    );
+    window.addEventListener("resize", () => hideSelectionPopover());
   }
 
   bindControls();

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단어 테스트 | 단어 반복 연습장</title>
-    <link rel="stylesheet" href="src/styles.css?v=20260724-speaker-button">
-    <link rel="stylesheet" href="src/test.css?v=20260724-speaker-button">
+    <link rel="stylesheet" href="src/styles.css?v=20260724-test-example-save">
+    <link rel="stylesheet" href="src/test.css?v=20260724-test-example-save">
   </head>
   <body>
     <div class="shell test-shell">
@@ -127,11 +127,29 @@
         상태와 체크 결과는 새로고침해도 유지됩니다. 등록된 발음기호는 단어 오른쪽에
         표시되며, 단어 오른쪽의 스피커 버튼을 누르면 영어 발음을 들을 수 있습니다.
         모르는 단어로 반복될 때마다 <strong>1차, 2차, 3차</strong> 기록이 남아 일반
-        단어장에도 표시됩니다.
+        단어장에도 표시됩니다. 공개된 영어 예문에서 저장할 단어나 구문을 드래그하면
+        일반 단어장의 <strong>저장 단어</strong>에 추가할 수 있습니다.
       </p>
     </div>
 
-    <script src="src/words-data.js?v=20260724-speaker-button"></script>
-    <script src="src/test.js?v=20260724-speaker-button"></script>
+    <button
+      type="button"
+      class="selection-save-popover"
+      id="selectionSavePopover"
+      aria-label="선택한 예문 표현 저장"
+      hidden
+    >
+      선택 저장
+    </button>
+    <div
+      class="test-selection-status"
+      id="testSelectionStatus"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+
+    <script src="src/words-data.js?v=20260724-test-example-save"></script>
+    <script src="src/test.js?v=20260724-test-example-save"></script>
   </body>
 </html>

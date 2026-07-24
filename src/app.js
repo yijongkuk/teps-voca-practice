@@ -108,6 +108,15 @@
       }));
   }
 
+  function readStoredSavedWords() {
+    return normalizeSavedWords(loadJson(savedWordsKey, []));
+  }
+
+  function refreshSavedWordsFromStorage() {
+    savedWords = readStoredSavedWords();
+    renderQueue();
+  }
+
   function saveProgress({ mergeRetryStages = true } = {}) {
     if (mergeRetryStages) {
       syncLatestRetryStages();
@@ -749,6 +758,7 @@
       return;
     }
     const { text, sourceWord } = pendingExampleSelection;
+    savedWords = readStoredSavedWords();
     const duplicate = savedWords.find(
       (item) =>
         item.sourceWordId === sourceWord.id &&
@@ -773,6 +783,7 @@
   }
 
   function updateSavedWordNote(id, note) {
+    savedWords = readStoredSavedWords();
     const item = savedWords.find((saved) => saved.id === id);
     if (!item) {
       return;
@@ -782,12 +793,14 @@
   }
 
   function deleteSavedWord(id) {
+    savedWords = readStoredSavedWords();
     savedWords = savedWords.filter((item) => item.id !== id);
     saveSavedWords();
     renderQueue();
   }
 
   function openSavedWordSource(id) {
+    savedWords = readStoredSavedWords();
     const item = savedWords.find((saved) => saved.id === id);
     if (!item) {
       return;
@@ -805,6 +818,9 @@
 
   function setSidePanelView(view) {
     sidePanelView = view === "saved" ? "saved" : "queue";
+    if (sidePanelView === "saved") {
+      savedWords = readStoredSavedWords();
+    }
     hideSelectionPopover(true);
     renderQueue();
   }
@@ -1206,6 +1222,7 @@
 
   function exportProgress() {
     syncLatestRetryStages();
+    savedWords = readStoredSavedWords();
     const payload = {
       version: 3,
       exportedAt: new Date().toISOString(),
@@ -1354,10 +1371,13 @@
     window.addEventListener("storage", (event) => {
       if (event.key === progressKey) {
         refreshProgressFromStorage();
+      } else if (event.key === savedWordsKey) {
+        refreshSavedWordsFromStorage();
       }
     });
     window.addEventListener("pageshow", (event) => {
       if (event.persisted) {
+        savedWords = readStoredSavedWords();
         refreshProgressFromStorage();
       }
     });

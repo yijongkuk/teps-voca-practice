@@ -365,6 +365,36 @@
   background: #f5fbf8;
 }
 
+.test-cell-toggle.is-revealed[data-field="example"] {
+  cursor: default;
+}
+
+.test-example-save-source {
+  -webkit-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+.selection-save-popover.is-saved,
+.selection-save-popover.is-duplicate {
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+}
+
+.selection-save-popover.is-error {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.test-selection-status {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .test-hidden-prompt {
   display: inline-flex;
   align-items: center;
