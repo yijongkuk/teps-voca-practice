@@ -235,16 +235,69 @@
   text-align: left;
 }
 
-.test-word-cell strong,
+.test-word-cell .test-word-text,
 .test-word-cell small {
   display: block;
   overflow-wrap: anywhere;
 }
 
-.test-word-cell strong {
+.test-word-speak {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 3px 7px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.test-word-speak:hover .test-word-text,
+.test-word-speak:focus-visible .test-word-text,
+.test-word-speak.is-speaking .test-word-text {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.test-word-speak:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.test-word-cell .test-word-text {
   color: var(--ink);
   font-size: 18px;
+  font-weight: 900;
   line-height: 1.3;
+}
+
+.test-word-pronunciation {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.test-word-audio-icon {
+  color: var(--accent-strong);
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.62;
+}
+
+.test-word-speak:hover .test-word-audio-icon,
+.test-word-speak:focus-visible .test-word-audio-icon,
+.test-word-speak.is-speaking .test-word-audio-icon {
+  opacity: 1;
 }
 
 .test-word-cell small {

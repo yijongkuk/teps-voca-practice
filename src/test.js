@@ -84,6 +84,55 @@
   const studySettings = loadJson(settingsKey, {});
   let session = normalizeSession(loadJson(testSessionKey, null));
   let sessionStorageAvailable = true;
+  let activeSpeechButton = null;
+  let speechToken = 0;
+
+  function speechIsSupported() {
+    return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+  }
+
+  function clearSpeechHighlight() {
+    activeSpeechButton?.classList.remove("is-speaking");
+    activeSpeechButton = null;
+  }
+
+  function stopSpeech() {
+    speechToken += 1;
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    clearSpeechHighlight();
+  }
+
+  function speakWord(button) {
+    const wordId = String(button.dataset.wordId || "");
+    const word = wordById.get(wordId);
+    if (!word?.word) {
+      return;
+    }
+    if (!speechIsSupported()) {
+      window.alert("이 브라우저에서는 단어 음성 재생을 사용할 수 없습니다.");
+      return;
+    }
+
+    stopSpeech();
+    const token = speechToken;
+    const utterance = new SpeechSynthesisUtterance(word.word);
+    utterance.lang = "en-US";
+    utterance.rate = 0.88;
+    utterance.pitch = 1;
+    activeSpeechButton = button;
+    button.classList.add("is-speaking");
+
+    const finishSpeech = () => {
+      if (token === speechToken && activeSpeechButton === button) {
+        clearSpeechHighlight();
+      }
+    };
+    utterance.onend = finishSpeech;
+    utterance.onerror = finishSpeech;
+    window.speechSynthesis.speak(utterance);
+  }
 
   function saveSession() {
     try {
@@ -160,6 +209,7 @@
       return;
     }
 
+    stopSpeech();
     const source = validSources.has($("#testSourceSelect").value)
       ? $("#testSourceSelect").value
       : "all";
@@ -262,7 +312,23 @@
               >
             </td>
             <th scope="row" class="test-word-cell">
-              <strong>${escapeHtml(word.word)}</strong>
+              <button
+                type="button"
+                class="test-word-speak"
+                data-word-id="${escapeHtml(wordId)}"
+                aria-label="${escapeHtml(word.word)} 발음 듣기"
+                title="발음 듣기"
+              >
+                <span class="test-word-text" lang="en">${escapeHtml(word.word)}</span>
+                ${
+                  word.pronunciation
+                    ? `<span class="test-word-pronunciation" aria-hidden="true">[${escapeHtml(
+                        word.pronunciation,
+                      )}]</span>`
+                    : ""
+                }
+                <span class="test-word-audio-icon" aria-hidden="true">🔊</span>
+              </button>
               <small>${index + 1}. ${escapeHtml(word.sourceLabel)} · Chunk ${word.chunk}</small>
             </th>
             <td class="test-answer-cell">
@@ -461,6 +527,7 @@
       return;
     }
 
+    stopSpeech();
     session.wordIds = shuffled(unknownIds);
     session.knownIds = [];
     session.meaningDefaultVisible = false;
@@ -521,6 +588,11 @@
     $("#toggleAllMeanings").addEventListener("click", () => toggleColumn("meaning"));
     $("#toggleAllExamples").addEventListener("click", () => toggleColumn("example"));
     $("#testRows").addEventListener("click", (event) => {
+      const speechButton = event.target.closest(".test-word-speak");
+      if (speechButton) {
+        speakWord(speechButton);
+        return;
+      }
       const button = event.target.closest(".test-cell-toggle");
       if (button) {
         toggleCell(button);
