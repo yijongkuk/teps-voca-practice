@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단어 테스트 | 단어 반복 연습장</title>
-    <link rel="stylesheet" href="src/styles.css?v=20260724-test-example-save">
-    <link rel="stylesheet" href="src/test.css?v=20260724-test-example-save">
+    <link rel="stylesheet" href="src/styles.css?v=20260724-test-new-only">
+    <link rel="stylesheet" href="src/test.css?v=20260724-test-new-only">
   </head>
   <body>
     <div class="shell test-shell">
@@ -38,6 +38,13 @@
           <select id="testScopeSelect">
             <option value="studied">학습 기록 있는 단어</option>
             <option value="all">전체 단어</option>
+          </select>
+        </label>
+        <label>
+          <span class="field-label">이미 출제한 단어</span>
+          <select id="testNoveltySelect">
+            <option value="new">새 단어만</option>
+            <option value="all">포함해서 랜덤</option>
           </select>
         </label>
         <label>
@@ -149,7 +156,7 @@
       aria-atomic="true"
     ></div>
 
-    <script src="src/words-data.js?v=20260724-test-example-save"></script>
-    <script src="src/test.js?v=20260724-test-example-save"></script>
+    <script src="src/words-data.js?v=20260724-test-new-only"></script>
+    <script src="src/test.js?v=20260724-test-new-only"></script>
   </body>
 </html>

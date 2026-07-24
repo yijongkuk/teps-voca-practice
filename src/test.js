@@ -7,8 +7,10 @@
   const settingsKey = "teps-voca-settings-v1";
   const testSessionKey = "teps-voca-test-session-v1";
   const savedWordsKey = "teps-voca-saved-example-words-v1";
+  const testedWordsKey = "teps-voca-tested-words-v1";
   const validSources = new Set(["all", "frequent", "connectors", "oxford5000", "awl"]);
   const validScopes = new Set(["all", "studied"]);
+  const validNovelty = new Set(["new", "all"]);
   const validCounts = new Set([100, 150, 200]);
   const sourceLabels = {
     all: "전체 단어장",
@@ -60,6 +62,19 @@
     return normalizeSavedWords(loadJson(savedWordsKey, []));
   }
 
+  function normalizeTestedIds(value) {
+    const set = new Set();
+    if (Array.isArray(value)) {
+      value.forEach((id) => {
+        const key = String(id);
+        if (wordById.has(key)) {
+          set.add(key);
+        }
+      });
+    }
+    return set;
+  }
+
   function normalizeIdList(value, allowedIds) {
     if (!Array.isArray(value)) {
       return [];
@@ -99,6 +114,7 @@
       version: 4,
       source: validSources.has(value.source) ? value.source : "all",
       scope: validScopes.has(value.scope) ? value.scope : "all",
+      novelty: validNovelty.has(value.novelty) ? value.novelty : "all",
       requestedCount: validCounts.has(requestedCount) ? requestedCount : 100,
       poolSize: Math.max(wordIds.length, Number(value.poolSize) || 0),
       repeatCount,
@@ -117,6 +133,7 @@
   let progress = loadJson(progressKey, {});
   const studySettings = loadJson(settingsKey, {});
   let session = normalizeSession(loadJson(testSessionKey, null));
+  let testedWordIds = normalizeTestedIds(loadJson(testedWordsKey, []));
   let sessionStorageAvailable = true;
   let progressStorageAvailable = true;
   let activeSpeechButton = null;
@@ -418,12 +435,43 @@
     );
   }
 
-  function getCandidates(source, scope) {
+  function hasTestRecord(word) {
+    return testedWordIds.has(String(word.id)) || getRetryStage(word) > 0;
+  }
+
+  function markWordsTested(wordIds) {
+    if (!wordIds.length) {
+      return;
+    }
+    const stored = normalizeTestedIds(loadJson(testedWordsKey, []));
+    let changed = false;
+    wordIds.forEach((id) => {
+      const key = String(id);
+      if (wordById.has(key) && !stored.has(key)) {
+        stored.add(key);
+        changed = true;
+      }
+    });
+    testedWordIds = stored;
+    if (!changed) {
+      return;
+    }
+    try {
+      localStorage.setItem(testedWordsKey, JSON.stringify([...stored]));
+    } catch {
+      // 출제 기록 저장은 실패해도 테스트 진행에는 영향을 주지 않습니다.
+    }
+  }
+
+  function getCandidates(source, scope, novelty = "all") {
     return words.filter((word) => {
       if (source !== "all" && word.source !== source) {
         return false;
       }
       if (scope === "studied" && !hasStudyRecord(word)) {
+        return false;
+      }
+      if (novelty === "new" && hasTestRecord(word)) {
         return false;
       }
       return true;
@@ -475,15 +523,19 @@
     const scope = validScopes.has($("#testScopeSelect").value)
       ? $("#testScopeSelect").value
       : "all";
+    const novelty = validNovelty.has($("#testNoveltySelect").value)
+      ? $("#testNoveltySelect").value
+      : "new";
     const requestedCount = Number($("#testCountSelect").value);
     const safeCount = validCounts.has(requestedCount) ? requestedCount : 100;
-    const candidates = getCandidates(source, scope);
+    const candidates = getCandidates(source, scope, novelty);
     const selected = shuffled(candidates).slice(0, safeCount);
 
     session = {
       version: 4,
       source,
       scope,
+      novelty,
       requestedCount: safeCount,
       poolSize: candidates.length,
       repeatCount: 0,
@@ -498,6 +550,7 @@
       createdAt: new Date().toISOString(),
     };
     saveSession();
+    markWordsTested(session.wordIds);
     renderAll();
   }
 
@@ -552,8 +605,8 @@
       $("#testRows").innerHTML = `
         <tr>
           <td class="test-table-empty" colspan="4">
-            선택한 범위에 출제할 단어가 없습니다. 출제 범위를
-            <strong>전체 단어</strong>로 바꿔보세요.
+            선택한 조건에 출제할 단어가 없습니다.
+            <strong>출제 범위</strong>나 <strong>이미 출제한 단어</strong> 설정을 바꿔보세요.
           </td>
         </tr>
       `;
@@ -642,9 +695,15 @@
   function renderNotice(currentWords = selectedWords(), counts = sessionCounts(currentWords)) {
     const { total, unknownCount, masteredCount } = counts;
     const scopeLabel = session.scope === "studied" ? "학습 기록 있는 단어" : "전체 단어";
+    const isNewOnly = session.novelty === "new";
+    const rangeLabel = `${sourceLabels[session.source]} · ${scopeLabel}`;
     let notice;
     if (!total) {
-      notice = `${sourceLabels[session.source]} · ${scopeLabel}에서 출제할 단어를 찾지 못했습니다.`;
+      notice = `${rangeLabel}에서 출제할 단어를 찾지 못했습니다.`;
+      if (isNewOnly) {
+        notice +=
+          " 새로 출제할 단어가 없다면 '이미 출제한 단어'를 '포함해서 랜덤'으로 바꿔보세요.";
+      }
     } else if (unknownCount === 0) {
       notice = `오늘 테스트 완료 · 처음 출제한 ${session.initialCount.toLocaleString(
         "ko-KR",
@@ -658,11 +717,13 @@
         "ko-KR",
       )}개가 남았습니다.`;
     } else if (total < session.requestedCount) {
-      notice = `${sourceLabels[session.source]} · ${scopeLabel}에 ${session.poolSize.toLocaleString(
+      const poolLabel = isNewOnly ? "아직 출제하지 않은 단어" : rangeLabel;
+      notice = `${poolLabel}가 ${session.poolSize.toLocaleString(
         "ko-KR",
-      )}개만 있어 전부 출제했습니다.`;
+      )}개뿐이라 전부 출제했습니다.`;
     } else {
-      notice = `${sourceLabels[session.source]} · ${scopeLabel}에서 무작위로 ${total.toLocaleString(
+      const pickLabel = isNewOnly ? "아직 출제하지 않은 단어 중 무작위로" : "무작위로";
+      notice = `${rangeLabel}에서 ${pickLabel} ${total.toLocaleString(
         "ko-KR",
       )}개를 출제했습니다.`;
     }
@@ -855,6 +916,7 @@
   function syncControls() {
     $("#testSourceSelect").value = session.source;
     $("#testScopeSelect").value = session.scope;
+    $("#testNoveltySelect").value = session.novelty;
     $("#testCountSelect").value = String(session.requestedCount);
   }
 
@@ -863,6 +925,7 @@
     const hasStudiedWords = getCandidates(preferredSource, "studied").length > 0;
     $("#testSourceSelect").value = preferredSource;
     $("#testScopeSelect").value = hasStudiedWords ? "studied" : "all";
+    $("#testNoveltySelect").value = "new";
     $("#testCountSelect").value = "100";
   }
 
