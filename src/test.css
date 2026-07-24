@@ -287,6 +287,12 @@
   overflow-wrap: anywhere;
 }
 
+.test-retry-stage {
+  min-height: 22px;
+  padding: 3px 7px;
+  font-size: 11px;
+}
+
 .test-word-audio-icon {
   color: var(--accent-strong);
   font-size: 12px;

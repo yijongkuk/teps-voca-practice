@@ -7,20 +7,12 @@
   const settingsKey = "teps-voca-settings-v1";
   const savedWordsKey = "teps-voca-saved-example-words-v1";
 
-  const statusConfig = {
-    New: { label: "미학습", className: "status-new", weight: 3 },
-    Easy: { label: "Easy", className: "status-easy", weight: 5 },
-    Familiar: { label: "Familiar", className: "status-familiar", weight: 4 },
-    Hard: { label: "Hard", className: "status-hard", weight: 1 },
-    Critical: { label: "Critical", className: "status-critical", weight: 0 },
-  };
-
   const modeLabels = {
     cards: "카드 훑기",
     meaning: "뜻 가리기",
     cloze: "예문 빈칸",
     typing: "한글 뜻 → 영어",
-    hard: "Hard 압축",
+    retry: "재시험 단어 집중",
   };
 
   const routineChunkCount = 10;
@@ -33,13 +25,13 @@
     mode: "cards",
     source: "all",
     chunk: "today",
-    status: "all",
+    retryStage: "all",
     order: "schedule",
     limit: "50",
     search: "",
   };
 
-  let progress = loadJson(progressKey, {});
+  let progress = normalizeProgress(loadJson(progressKey, {}));
   let settings = normalizeSettings({ ...defaultSettings, ...loadJson(settingsKey, {}) });
   let savedWords = normalizeSavedWords(loadJson(savedWordsKey, []));
   let sidePanelView = "queue";
@@ -65,8 +57,32 @@
     }
   }
 
+  function normalizeProgress(value) {
+    return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+  }
+
+  function readStoredProgress() {
+    return normalizeProgress(loadJson(progressKey, {}));
+  }
+
   function normalizeSettings(value) {
     const next = { ...defaultSettings, ...value };
+    if (next.mode === "hard") {
+      next.mode = "cards";
+    }
+    if (!["cards", "meaning", "cloze", "typing", "retry"].includes(next.mode)) {
+      next.mode = "cards";
+    }
+    if (next.order === "hard") {
+      next.order = "schedule";
+    }
+    if (!["schedule", "rank", "retry"].includes(next.order)) {
+      next.order = "schedule";
+    }
+    next.retryStage = ["all", "1", "2", "3"].includes(String(next.retryStage))
+      ? String(next.retryStage)
+      : "all";
+    delete next.status;
     const selectedChunk = Number(next.chunk);
     if (/^\d+$/.test(String(next.chunk)) && (selectedChunk < 1 || selectedChunk > routineChunkCount)) {
       next.chunk = "today";
@@ -92,7 +108,10 @@
       }));
   }
 
-  function saveProgress() {
+  function saveProgress({ mergeRetryStages = true } = {}) {
+    if (mergeRetryStages) {
+      syncLatestRetryStages();
+    }
     localStorage.setItem(progressKey, JSON.stringify(progress));
   }
 
@@ -135,13 +154,13 @@
   }
 
   function getProgress(word) {
-    return progress[word.id] || {};
+    const item = progress[word.id];
+    return isProgressItem(item) ? item : {};
   }
 
   function ensureProgress(word) {
-    if (!progress[word.id]) {
+    if (!isProgressItem(progress[word.id])) {
       progress[word.id] = {
-        status: "New",
         seen: 0,
         correct: 0,
         wrong: 0,
@@ -151,19 +170,90 @@
     return progress[word.id];
   }
 
-  function getStatus(word) {
-    return getProgress(word).status || "New";
+  function normalizeRetryStage(value) {
+    const stage = Number(value);
+    return Number.isFinite(stage) ? Math.max(0, Math.floor(stage)) : 0;
   }
 
-  function statusPill(status) {
-    const config = statusConfig[status] || statusConfig.New;
-    return `<span class="status-pill ${config.className}">${config.label}</span>`;
+  function isProgressItem(value) {
+    return value && typeof value === "object" && !Array.isArray(value);
   }
 
-  function isHardWord(word) {
-    const itemProgress = getProgress(word);
-    const status = getStatus(word);
-    return status === "Hard" || status === "Critical" || Number(itemProgress.wrong || 0) > 0;
+  function hasProgressBesidesRetryStage(item) {
+    return Object.keys(item).some((key) => {
+      if (["testRetryStage", "testRetryUpdatedAt", "createdAt"].includes(key)) {
+        return false;
+      }
+      return key !== "status" || item[key] !== "New";
+    });
+  }
+
+  function syncLatestRetryStages() {
+    const latestProgress = readStoredProgress();
+    const wordIds = new Set([...Object.keys(progress), ...Object.keys(latestProgress)]);
+
+    wordIds.forEach((wordId) => {
+      const latestItem = isProgressItem(latestProgress[wordId]) ? latestProgress[wordId] : {};
+      const localItem = isProgressItem(progress[wordId])
+        ? { ...progress[wordId] }
+        : { ...latestItem };
+      const localStage = normalizeRetryStage(localItem.testRetryStage);
+      const latestStage = normalizeRetryStage(latestItem.testRetryStage);
+
+      if (latestStage > 0) {
+        localItem.testRetryStage = latestStage;
+        if (latestItem.testRetryUpdatedAt) {
+          localItem.testRetryUpdatedAt = latestItem.testRetryUpdatedAt;
+        } else {
+          delete localItem.testRetryUpdatedAt;
+        }
+        if (!localItem.createdAt && latestItem.createdAt) {
+          localItem.createdAt = latestItem.createdAt;
+        }
+        progress[wordId] = localItem;
+        return;
+      }
+
+      if (localStage > 0) {
+        delete localItem.testRetryStage;
+        delete localItem.testRetryUpdatedAt;
+        if (hasProgressBesidesRetryStage(localItem)) {
+          progress[wordId] = localItem;
+        } else {
+          delete progress[wordId];
+        }
+      }
+    });
+  }
+
+  function refreshProgressFromStorage() {
+    const currentWordId = queue[currentIndex]?.id;
+    progress = readStoredProgress();
+    rebuildAndRender(currentWordId);
+  }
+
+  function getRetryStage(word) {
+    return normalizeRetryStage(getProgress(word).testRetryStage);
+  }
+
+  function retryStageClass(stage) {
+    return `retry-stage-${Math.min(3, normalizeRetryStage(stage))}`;
+  }
+
+  function retryStagePill(stage, compact = false) {
+    const safeStage = normalizeRetryStage(stage);
+    if (!safeStage) {
+      return "";
+    }
+    const label = compact ? `${safeStage}차` : `테스트 ${safeStage}차`;
+    const compactClass = compact ? " queue-retry-stage" : "";
+    return `<span class="retry-stage-pill ${retryStageClass(
+      safeStage,
+    )}${compactClass}" title="테스트에서 ${safeStage}차까지 모르는 단어로 남음">${label}</span>`;
+  }
+
+  function isRetryWord(word) {
+    return getRetryStage(word) > 0;
   }
 
   function buildQueue() {
@@ -187,7 +277,7 @@
       if (settings.source !== "all" && word.source !== settings.source) {
         return false;
       }
-      if (settings.mode === "hard" && !isHardWord(word)) {
+      if (settings.mode === "retry" && !isRetryWord(word)) {
         return false;
       }
       if (settings.mode === "typing" && !word.meaning) {
@@ -196,7 +286,10 @@
       if (settings.mode === "cloze" && !String(word.clozeExample || "").includes("____")) {
         return false;
       }
-      if (settings.status !== "all" && getStatus(word) !== settings.status) {
+      if (
+        settings.retryStage !== "all" &&
+        getRetryStage(word) < Number(settings.retryStage)
+      ) {
         return false;
       }
       if (query) {
@@ -243,10 +336,9 @@
       if (settings.order === "rank") {
         return sourceOrder(a) - sourceOrder(b) || a.rank - b.rank;
       }
-      if (settings.order === "hard") {
+      if (settings.order === "retry") {
         return (
-          statusWeight(a) - statusWeight(b) ||
-          Number(getProgress(b).wrong || 0) - Number(getProgress(a).wrong || 0) ||
+          getRetryStage(b) - getRetryStage(a) ||
           sourceOrder(a) - sourceOrder(b) ||
           a.rank - b.rank
         );
@@ -286,7 +378,13 @@
 
   function isConfirmedWord(word) {
     const itemProgress = getProgress(word);
-    return getStatus(word) !== "New" || Number(itemProgress.seen || 0) > 0 || itemProgress.viewed;
+    return Boolean(
+      itemProgress.viewed ||
+        Number(itemProgress.seen || 0) > 0 ||
+        Number(itemProgress.correct || 0) > 0 ||
+        Number(itemProgress.wrong || 0) > 0 ||
+        getRetryStage(word) > 0,
+    );
   }
 
   function firstUnconfirmedItemIndex(items) {
@@ -307,10 +405,6 @@
     const contextCount = Math.min(5, Math.floor(safeLimit / 4));
     const start = Math.max(0, Math.min(anchor - contextCount, items.length - safeLimit));
     return items.slice(start, start + safeLimit);
-  }
-
-  function statusWeight(word) {
-    return (statusConfig[getStatus(word)] || statusConfig.New).weight;
   }
 
   function rebuildAndRender(targetId) {
@@ -342,14 +436,12 @@
       const itemProgress = getProgress(word);
       return itemProgress.lastSeen === today || itemProgress.lastViewed === today;
     }).length;
-    const hardWords = dashboardWords.filter((word) =>
-      ["Hard", "Critical"].includes(getStatus(word)),
-    ).length;
+    const retryWords = dashboardWords.filter(isRetryWord).length;
 
     $("#totalWords").textContent = dashboardWords.length.toLocaleString("ko-KR");
     $("#activeWords").textContent = activeWords.toLocaleString("ko-KR");
     $("#seenToday").textContent = seenToday.toLocaleString("ko-KR");
-    $("#hardWords").textContent = hardWords.toLocaleString("ko-KR");
+    $("#retryWords").textContent = retryWords.toLocaleString("ko-KR");
 
     $("#chunkStrip").innerHTML = dayOrder
       .map((chunk, index) => {
@@ -379,11 +471,10 @@
       $("#cardBody").innerHTML = `
         <div class="empty-state">
           <h3>조건에 맞는 단어가 없습니다</h3>
-          <p>청크, 상태, 검색어를 조금 넓히면 다시 목록이 만들어집니다.</p>
+          <p>청크, 테스트 반복, 검색어를 조금 넓히면 다시 목록이 만들어집니다.</p>
         </div>
       `;
       setNavigationDisabled(true);
-      setStatusButtonState();
       return;
     }
 
@@ -393,7 +484,7 @@
       <span class="badge">Chunk ${word.chunk}</span>
       <span class="badge">No. ${word.rank}</span>
       ${word.group ? `<span class="badge">${escapeHtml(word.group)}</span>` : ""}
-      ${statusPill(getStatus(word))}
+      ${retryStagePill(getRetryStage(word))}
       <span class="muted">확인 ${Number(itemProgress.seen || 0)} · 정답 ${Number(
         itemProgress.correct || 0,
       )} · 오답 ${Number(itemProgress.wrong || 0)}</span>
@@ -402,7 +493,6 @@
     $("#cardBody").innerHTML = renderCardBody(word);
     bindCardEvents(word);
     setNavigationDisabled(false);
-    setStatusButtonState(word);
   }
 
   function renderCardBody(word) {
@@ -412,7 +502,7 @@
     if (settings.mode === "typing") {
       return renderTypingMode(word);
     }
-    if (settings.mode === "meaning" || settings.mode === "hard") {
+    if (settings.mode === "meaning" || settings.mode === "retry") {
       return renderMeaningMode(word);
     }
     return renderCardsMode(word);
@@ -705,7 +795,7 @@
     sidePanelView = "queue";
     settings.mode = "cards";
     settings.source = "all";
-    settings.status = "all";
+    settings.retryStage = "all";
     settings.search = item.sourceWord;
     saveSettings();
     revealed = false;
@@ -809,15 +899,16 @@
       visible
         .map((word, visibleIndex) => {
           const index = visibleStart + visibleIndex;
-          const status = getStatus(word);
+          const retryStage = getRetryStage(word);
           const active = index === currentIndex ? "is-active" : "";
           return `
             <button type="button" class="queue-item ${active}" data-index="${index}">
-              <span>${index + 1}</span>
+              <span class="queue-index">${index + 1}</span>
               <strong>${escapeHtml(word.word)}</strong>
-              <small>${escapeHtml(word.sourceLabel)} · C${word.chunk} · ${
-                statusConfig[status].label
-              }</small>
+              <span class="queue-meta-row">
+                <small>${escapeHtml(word.sourceLabel)} · C${word.chunk}</small>
+                ${retryStagePill(retryStage, true)}
+              </span>
             </button>
           `;
         })
@@ -845,43 +936,15 @@
     syncPlaybackControls();
   }
 
-  function setStatusButtonState(word) {
-    document.querySelectorAll(".status-buttons button").forEach((button) => {
-      button.disabled = !word || autoPlay.active;
-      button.classList.toggle("is-active", Boolean(word) && button.dataset.status === getStatus(word));
-    });
-  }
-
   function syncControls() {
     $("#dayInput").value = settings.day;
     $("#modeSelect").value = settings.mode;
     $("#sourceSelect").value = settings.source;
     $("#chunkSelect").value = settings.chunk;
-    $("#statusSelect").value = settings.status;
+    $("#retryStageSelect").value = settings.retryStage;
     $("#orderSelect").value = settings.order;
     $("#limitSelect").value = settings.limit;
     $("#searchInput").value = settings.search;
-  }
-
-  function markStatus(status) {
-    stopAutoPlay();
-    const word = queue[currentIndex];
-    if (!word) {
-      return;
-    }
-    const itemProgress = ensureProgress(word);
-    const nextStatus = getStatus(word) === status ? "New" : status;
-    itemProgress.viewed = true;
-    itemProgress.lastViewed = todayKey();
-    itemProgress.status = nextStatus;
-    itemProgress.seen = Number(itemProgress.seen || 0) + 1;
-    itemProgress.lastSeen = todayKey();
-    itemProgress.updatedAt = new Date().toISOString();
-    saveProgress();
-
-    renderDashboard();
-    setStatusButtonState(word);
-    renderQueue();
   }
 
   function checkAnswer(word, rawAnswer) {
@@ -905,13 +968,9 @@
 
     if (correct) {
       itemProgress.correct = Number(itemProgress.correct || 0) + 1;
-      if (!itemProgress.status || itemProgress.status === "New" || itemProgress.status === "Hard") {
-        itemProgress.status = "Familiar";
-      }
       feedback = { correct: true, message: `${word.word} · ${word.meaning || "뜻 정보 없음"}` };
     } else {
       itemProgress.wrong = Number(itemProgress.wrong || 0) + 1;
-      itemProgress.status = itemProgress.wrong >= 3 ? "Critical" : "Hard";
       feedback = {
         correct: false,
         message: `정답: ${word.word} / 입력: ${answer}`,
@@ -1142,13 +1201,13 @@
     const token = autoPlay.token;
     window.speechSynthesis.cancel();
     syncPlaybackControls();
-    setStatusButtonState(queue[currentIndex]);
     runAutoPlay(token);
   }
 
   function exportProgress() {
+    syncLatestRetryStages();
     const payload = {
-      version: 2,
+      version: 3,
       exportedAt: new Date().toISOString(),
       source: meta.sourceFile || "TEPS_VOCA.xlsx",
       settings,
@@ -1175,7 +1234,7 @@
     reader.onload = () => {
       try {
         const payload = JSON.parse(String(reader.result || "{}"));
-        if (!payload.progress || typeof payload.progress !== "object") {
+        if (!payload.progress || typeof payload.progress !== "object" || Array.isArray(payload.progress)) {
           throw new Error("No progress object");
         }
         const confirmed = confirm(
@@ -1184,13 +1243,13 @@
         if (!confirmed) {
           return;
         }
-        progress = payload.progress;
+        progress = normalizeProgress(payload.progress);
         settings = normalizeSettings({ ...settings, ...(payload.settings || {}) });
         if (Array.isArray(payload.savedWords)) {
           savedWords = normalizeSavedWords(payload.savedWords);
           saveSavedWords();
         }
-        saveProgress();
+        saveProgress({ mergeRetryStages: false });
         saveSettings();
         currentIndex = 0;
         revealed = false;
@@ -1205,13 +1264,15 @@
 
   function resetProgress() {
     stopAutoPlay();
-    const confirmed = confirm("저장된 상태, 정답/오답 기록, 저장 단어를 모두 지울까요?");
+    const confirmed = confirm(
+      "저장된 테스트 반복 차수, 정답/오답 기록, 저장 단어를 모두 지울까요?",
+    );
     if (!confirmed) {
       return;
     }
     progress = {};
     savedWords = [];
-    saveProgress();
+    saveProgress({ mergeRetryStages: false });
     saveSavedWords();
     sidePanelView = "queue";
     currentIndex = 0;
@@ -1227,7 +1288,9 @@
     $("#modeSelect").addEventListener("change", (event) => updateSetting("mode", event.target.value));
     $("#sourceSelect").addEventListener("change", (event) => updateSetting("source", event.target.value));
     $("#chunkSelect").addEventListener("change", (event) => updateSetting("chunk", event.target.value));
-    $("#statusSelect").addEventListener("change", (event) => updateSetting("status", event.target.value));
+    $("#retryStageSelect").addEventListener("change", (event) =>
+      updateSetting("retryStage", event.target.value),
+    );
     $("#orderSelect").addEventListener("change", (event) => updateSetting("order", event.target.value));
     $("#limitSelect").addEventListener("change", (event) => updateSetting("limit", event.target.value));
     $("#searchInput").addEventListener("input", (event) => updateSetting("search", event.target.value));
@@ -1265,10 +1328,6 @@
     $("#importFile").addEventListener("change", (event) => importProgress(event.target.files[0]));
     $("#resetBtn").addEventListener("click", resetProgress);
 
-    document.querySelectorAll(".status-buttons button").forEach((button) => {
-      button.addEventListener("click", () => markStatus(button.dataset.status));
-    });
-
     document.addEventListener("keydown", (event) => {
       if (event.target.matches("input, select, textarea")) {
         return;
@@ -1290,9 +1349,16 @@
         revealed = true;
         renderTrainer();
       }
-      if (["1", "2", "3", "4"].includes(event.key)) {
-        const statuses = ["Easy", "Familiar", "Hard", "Critical"];
-        markStatus(statuses[Number(event.key) - 1]);
+    });
+
+    window.addEventListener("storage", (event) => {
+      if (event.key === progressKey) {
+        refreshProgressFromStorage();
+      }
+    });
+    window.addEventListener("pageshow", (event) => {
+      if (event.persisted) {
+        refreshProgressFromStorage();
       }
     });
   }

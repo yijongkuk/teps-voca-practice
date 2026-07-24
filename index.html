@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단어 반복 연습장</title>
-    <link rel="stylesheet" href="src/styles.css?v=20260724-vocab-test">
+    <link rel="stylesheet" href="src/styles.css?v=20260724-test-retry-stage">
   </head>
   <body>
     <div class="shell">
@@ -46,8 +46,8 @@
           <strong id="seenToday">0</strong>
         </div>
         <div class="metric">
-          <span>Hard/Critical</span>
-          <strong id="hardWords">0</strong>
+          <span>재시험 단어</span>
+          <strong id="retryWords">0</strong>
         </div>
       </section>
 
@@ -67,7 +67,7 @@
             <option value="meaning">뜻 가리기</option>
             <option value="cloze">예문 빈칸</option>
             <option value="typing">한글 뜻 → 영어</option>
-            <option value="hard">Hard 압축</option>
+            <option value="retry">재시험 단어 집중</option>
           </select>
         </label>
         <label>
@@ -99,14 +99,12 @@
           </select>
         </label>
         <label>
-          <span class="field-label">상태</span>
-          <select id="statusSelect">
+          <span class="field-label">테스트 반복</span>
+          <select id="retryStageSelect">
             <option value="all">전체</option>
-            <option value="New">미학습</option>
-            <option value="Easy">Easy</option>
-            <option value="Familiar">Familiar</option>
-            <option value="Hard">Hard</option>
-            <option value="Critical">Critical</option>
+            <option value="1">1차 이상</option>
+            <option value="2">2차 이상</option>
+            <option value="3">3차 이상</option>
           </select>
         </label>
         <label>
@@ -114,7 +112,7 @@
           <select id="orderSelect">
             <option value="schedule">청크 순서</option>
             <option value="rank">원본 순서</option>
-            <option value="hard">어려운 단어 먼저</option>
+            <option value="retry">높은 차수 먼저</option>
           </select>
         </label>
         <label>
@@ -150,13 +148,6 @@
           <div class="card-meta" id="cardMeta"></div>
           <div class="card-body" id="cardBody"></div>
 
-          <div class="status-buttons" aria-label="단어 상태 표시">
-            <button type="button" data-status="Easy">Easy</button>
-            <button type="button" data-status="Familiar">Familiar</button>
-            <button type="button" data-status="Hard">Hard</button>
-            <button type="button" data-status="Critical">Critical</button>
-          </div>
-
           <div class="nav-row">
             <button type="button" class="ghost-button" id="prevBtn">이전</button>
             <button type="button" class="primary-button" id="nextBtn">다음</button>
@@ -188,7 +179,7 @@
       선택 저장
     </button>
 
-    <script src="src/words-data.js?v=20260724-vocab-test"></script>
-    <script src="src/app.js?v=20260724-vocab-test"></script>
+    <script src="src/words-data.js?v=20260724-test-retry-stage"></script>
+    <script src="src/app.js?v=20260724-test-retry-stage"></script>
   </body>
 </html>

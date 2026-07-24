@@ -57,18 +57,29 @@
       0,
       Math.floor(Number(value.repeatCount) || legacyRound - 1),
     );
+    const retryStagesRecordedThrough =
+      Number(value.version) >= 4
+        ? Math.max(
+            0,
+            Math.min(
+              repeatCount,
+              Math.floor(Number(value.retryStagesRecordedThrough) || 0),
+            ),
+          )
+        : 0;
     const initialCount = Math.max(
       wordIds.length,
       Math.floor(Number(value.initialCount) || wordIds.length),
     );
 
     return {
-      version: 3,
+      version: 4,
       source: validSources.has(value.source) ? value.source : "all",
       scope: validScopes.has(value.scope) ? value.scope : "all",
       requestedCount: validCounts.has(requestedCount) ? requestedCount : 100,
       poolSize: Math.max(wordIds.length, Number(value.poolSize) || 0),
       repeatCount,
+      retryStagesRecordedThrough,
       initialCount,
       wordIds,
       knownIds: normalizeIdList(value.knownIds, allowedIds),
@@ -80,10 +91,11 @@
     };
   }
 
-  const progress = loadJson(progressKey, {});
+  let progress = loadJson(progressKey, {});
   const studySettings = loadJson(settingsKey, {});
   let session = normalizeSession(loadJson(testSessionKey, null));
   let sessionStorageAvailable = true;
+  let progressStorageAvailable = true;
   let activeSpeechButton = null;
   let speechToken = 0;
 
@@ -145,6 +157,62 @@
     }
   }
 
+  function normalizeRetryStage(value) {
+    const stage = Number(value);
+    return Number.isFinite(stage) ? Math.max(0, Math.floor(stage)) : 0;
+  }
+
+  function getRetryStage(word) {
+    return normalizeRetryStage(progress[word.id]?.testRetryStage);
+  }
+
+  function retryStageClass(stage) {
+    return `retry-stage-${Math.min(3, normalizeRetryStage(stage))}`;
+  }
+
+  function saveRetryStages(wordIds, stage) {
+    const safeStage = normalizeRetryStage(stage);
+    if (!safeStage || !wordIds.length) {
+      return true;
+    }
+
+    const latestValue = loadJson(progressKey, {});
+    const latest =
+      latestValue && typeof latestValue === "object" && !Array.isArray(latestValue)
+        ? latestValue
+        : {};
+    const updatedAt = new Date().toISOString();
+    let changed = false;
+
+    wordIds.forEach((wordId) => {
+      const current =
+        latest[wordId] && typeof latest[wordId] === "object" ? latest[wordId] : {};
+      if (normalizeRetryStage(current.testRetryStage) >= safeStage) {
+        return;
+      }
+      latest[wordId] = {
+        ...current,
+        testRetryStage: safeStage,
+        testRetryUpdatedAt: updatedAt,
+        createdAt: String(current.createdAt || updatedAt),
+      };
+      changed = true;
+    });
+
+    progress = latest;
+    if (!changed) {
+      return true;
+    }
+    try {
+      localStorage.setItem(progressKey, JSON.stringify(progress));
+      progressStorageAvailable = true;
+      return true;
+    } catch {
+      progressStorageAvailable = false;
+      return false;
+    }
+  }
+
   function hasStudyRecord(word) {
     const item = progress[word.id];
     if (!item || typeof item !== "object") {
@@ -155,6 +223,7 @@
         item.lastViewed ||
         item.lastSeen ||
         Number(item.seen || 0) > 0 ||
+        normalizeRetryStage(item.testRetryStage) > 0 ||
         (item.status && item.status !== "New"),
     );
   }
@@ -222,12 +291,13 @@
     const selected = shuffled(candidates).slice(0, safeCount);
 
     session = {
-      version: 3,
+      version: 4,
       source,
       scope,
       requestedCount: safeCount,
       poolSize: candidates.length,
       repeatCount: 0,
+      retryStagesRecordedThrough: 0,
       initialCount: selected.length,
       wordIds: selected.map((word) => String(word.id)),
       knownIds: [],
@@ -300,6 +370,7 @@
         const isKnown = knownIds.has(wordId);
         const meaningVisible = isCellVisible("meaning", wordId);
         const exampleVisible = isCellVisible("example", wordId);
+        const retryStage = getRetryStage(word);
         return `
           <tr data-word-id="${escapeHtml(wordId)}" class="${isKnown ? "is-known" : ""}">
             <td class="test-known-cell">
@@ -316,7 +387,9 @@
                 type="button"
                 class="test-word-speak"
                 data-word-id="${escapeHtml(wordId)}"
-                aria-label="${escapeHtml(word.word)} 발음 듣기"
+                aria-label="${escapeHtml(word.word)} 발음 듣기${
+                  retryStage ? `, 테스트 ${retryStage}차 단어` : ""
+                }"
                 title="발음 듣기"
               >
                 <span class="test-word-text" lang="en">${escapeHtml(word.word)}</span>
@@ -325,6 +398,13 @@
                     ? `<span class="test-word-pronunciation" aria-hidden="true">[${escapeHtml(
                         word.pronunciation,
                       )}]</span>`
+                    : ""
+                }
+                ${
+                  retryStage
+                    ? `<span class="retry-stage-pill ${retryStageClass(
+                        retryStage,
+                      )} test-retry-stage" title="테스트에서 ${retryStage}차까지 모르는 단어로 남음" aria-hidden="true">${retryStage}차</span>`
                     : ""
                 }
                 <span class="test-word-audio-icon" aria-hidden="true">🔊</span>
@@ -388,7 +468,7 @@
         "ko-KR",
       )}개를 출제했습니다.`;
     }
-    if (!sessionStorageAvailable) {
+    if (!sessionStorageAvailable || !progressStorageAvailable) {
       notice += " 브라우저 저장이 차단되어 현재 화면에서만 유지됩니다.";
     }
     $("#testNotice").textContent = notice;
@@ -528,13 +608,18 @@
     }
 
     stopSpeech();
+    const nextRetryStage = session.repeatCount + 1;
+    const retryStagesSaved = saveRetryStages(unknownIds, nextRetryStage);
     session.wordIds = shuffled(unknownIds);
     session.knownIds = [];
     session.meaningDefaultVisible = false;
     session.meaningExceptions = [];
     session.exampleDefaultVisible = false;
     session.exampleExceptions = [];
-    session.repeatCount += 1;
+    session.repeatCount = nextRetryStage;
+    if (retryStagesSaved) {
+      session.retryStagesRecordedThrough = nextRetryStage;
+    }
     session.updatedAt = new Date().toISOString();
     saveSession();
     renderAll();
@@ -607,6 +692,13 @@
 
   bindControls();
   if (session) {
+    if (session.repeatCount > session.retryStagesRecordedThrough) {
+      const retryStagesSaved = saveRetryStages(session.wordIds, session.repeatCount);
+      if (retryStagesSaved) {
+        session.retryStagesRecordedThrough = session.repeatCount;
+        saveSession();
+      }
+    }
     syncControls();
     renderAll();
   } else {
