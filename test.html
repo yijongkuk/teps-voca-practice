@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단어 테스트 | 단어 반복 연습장</title>
-    <link rel="stylesheet" href="src/styles.css?v=20260724-repeat-unknown">
-    <link rel="stylesheet" href="src/test.css?v=20260724-repeat-unknown">
+    <link rel="stylesheet" href="src/styles.css?v=20260724-same-test-repeat">
+    <link rel="stylesheet" href="src/test.css?v=20260724-same-test-repeat">
   </head>
   <body>
     <div class="shell test-shell">
@@ -75,9 +75,9 @@
             <p class="field-label" id="testTableTitle">현재 테스트</p>
             <p class="test-notice" id="testNotice"></p>
           </div>
-          <div class="test-round-actions">
+          <div class="test-repeat-actions">
             <button type="button" class="primary-button" id="retryUnknownBtn" disabled>
-              모르는 단어 다시 테스트
+              모르는 단어만 반복
             </button>
             <button type="button" class="ghost-button" id="resetKnownBtn" disabled>
               안다 체크 모두 해제
@@ -122,12 +122,13 @@
 
       <p class="test-help">
         체크하면 <strong>안다</strong>, 체크하지 않으면 <strong>모른다</strong>로
-        집계됩니다. 회차가 끝나면 모르는 단어만 다시 테스트해 모두 알 때까지 반복할 수
-        있습니다. 현재 회차와 체크 결과는 새로고침해도 유지됩니다.
+        집계됩니다. <strong>새 테스트를 만들기 전까지 최초 단어 묶음은 바뀌지 않으며</strong>,
+        모르는 단어만 같은 테스트 안에서 모두 외울 때까지 반복할 수 있습니다. 반복
+        상태와 체크 결과는 새로고침해도 유지됩니다.
       </p>
     </div>
 
-    <script src="src/words-data.js?v=20260724-repeat-unknown"></script>
-    <script src="src/test.js?v=20260724-repeat-unknown"></script>
+    <script src="src/words-data.js?v=20260724-same-test-repeat"></script>
+    <script src="src/test.js?v=20260724-same-test-repeat"></script>
   </body>
 </html>

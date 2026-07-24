@@ -52,19 +52,23 @@
     const wordIds = [...new Set(value.wordIds.map(String))].filter((id) => wordById.has(id));
     const allowedIds = new Set(wordIds);
     const requestedCount = Number(value.requestedCount);
-    const round = Math.max(1, Math.floor(Number(value.round) || 1));
+    const legacyRound = Math.max(1, Math.floor(Number(value.round) || 1));
+    const repeatCount = Math.max(
+      0,
+      Math.floor(Number(value.repeatCount) || legacyRound - 1),
+    );
     const initialCount = Math.max(
       wordIds.length,
       Math.floor(Number(value.initialCount) || wordIds.length),
     );
 
     return {
-      version: 2,
+      version: 3,
       source: validSources.has(value.source) ? value.source : "all",
       scope: validScopes.has(value.scope) ? value.scope : "all",
       requestedCount: validCounts.has(requestedCount) ? requestedCount : 100,
       poolSize: Math.max(wordIds.length, Number(value.poolSize) || 0),
-      round,
+      repeatCount,
       initialCount,
       wordIds,
       knownIds: normalizeIdList(value.knownIds, allowedIds),
@@ -168,12 +172,12 @@
     const selected = shuffled(candidates).slice(0, safeCount);
 
     session = {
-      version: 2,
+      version: 3,
       source,
       scope,
       requestedCount: safeCount,
       poolSize: candidates.length,
-      round: 1,
+      repeatCount: 0,
       initialCount: selected.length,
       wordIds: selected.map((word) => String(word.id)),
       knownIds: [],
@@ -298,13 +302,15 @@
     if (!total) {
       notice = `${sourceLabels[session.source]} · ${scopeLabel}에서 출제할 단어를 찾지 못했습니다.`;
     } else if (unknownCount === 0) {
-      notice = `${session.round}회차 완료 · 처음 출제한 ${session.initialCount.toLocaleString(
+      notice = `오늘 테스트 완료 · 처음 출제한 ${session.initialCount.toLocaleString(
         "ko-KR",
       )}개 단어를 모두 알게 됐습니다!`;
-    } else if (session.round > 1) {
-      notice = `${session.round}회차 · 처음 ${session.initialCount.toLocaleString(
+    } else if (session.repeatCount > 0) {
+      notice = `같은 테스트 반복 ${session.repeatCount.toLocaleString(
         "ko-KR",
-      )}개 중 ${masteredCount.toLocaleString("ko-KR")}개를 익혔고 ${unknownCount.toLocaleString(
+      )}번 · 처음 ${session.initialCount.toLocaleString(
+        "ko-KR",
+      )}개 중 ${masteredCount.toLocaleString("ko-KR")}개를 외웠고 ${unknownCount.toLocaleString(
         "ko-KR",
       )}개가 남았습니다.`;
     } else if (total < session.requestedCount) {
@@ -335,20 +341,22 @@
     $("#knownProgress").style.width = `${percent}%`;
     $("#resetKnownBtn").disabled = knownCount === 0;
     $("#testTableTitle").textContent =
-      session.round > 1 ? `현재 테스트 · ${session.round}회차` : "현재 테스트";
+      session.repeatCount > 0
+        ? `현재 테스트 · 같은 묶음 반복 ${session.repeatCount.toLocaleString("ko-KR")}번`
+        : "현재 테스트";
     $(".test-summary").classList.toggle("is-complete", total > 0 && unknownCount === 0);
 
     if (!total) {
       retryButton.disabled = true;
-      retryButton.textContent = "모르는 단어 다시 테스트";
+      retryButton.textContent = "모르는 단어만 반복";
     } else if (unknownCount === 0) {
       retryButton.disabled = true;
-      retryButton.textContent = "모든 단어를 알게 됐어요";
+      retryButton.textContent = "오늘 테스트 단어를 모두 외웠어요";
     } else {
       retryButton.disabled = false;
       retryButton.textContent = `모르는 단어 ${unknownCount.toLocaleString(
         "ko-KR",
-      )}개 다시 테스트`;
+      )}개만 반복`;
     }
 
     renderNotice(currentWords, counts);
@@ -459,7 +467,7 @@
     session.meaningExceptions = [];
     session.exampleDefaultVisible = false;
     session.exampleExceptions = [];
-    session.round += 1;
+    session.repeatCount += 1;
     session.updatedAt = new Date().toISOString();
     saveSession();
     renderAll();
