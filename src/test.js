@@ -52,13 +52,20 @@
     const wordIds = [...new Set(value.wordIds.map(String))].filter((id) => wordById.has(id));
     const allowedIds = new Set(wordIds);
     const requestedCount = Number(value.requestedCount);
+    const round = Math.max(1, Math.floor(Number(value.round) || 1));
+    const initialCount = Math.max(
+      wordIds.length,
+      Math.floor(Number(value.initialCount) || wordIds.length),
+    );
 
     return {
-      version: 1,
+      version: 2,
       source: validSources.has(value.source) ? value.source : "all",
       scope: validScopes.has(value.scope) ? value.scope : "all",
       requestedCount: validCounts.has(requestedCount) ? requestedCount : 100,
       poolSize: Math.max(wordIds.length, Number(value.poolSize) || 0),
+      round,
+      initialCount,
       wordIds,
       knownIds: normalizeIdList(value.knownIds, allowedIds),
       meaningDefaultVisible: Boolean(value.meaningDefaultVisible),
@@ -124,13 +131,26 @@
     return session.wordIds.map((id) => wordById.get(id)).filter(Boolean);
   }
 
+  function sessionCounts(currentWords = selectedWords()) {
+    const activeIds = new Set(currentWords.map((word) => String(word.id)));
+    const knownCount = session.knownIds.filter((id) => activeIds.has(id)).length;
+    const total = currentWords.length;
+    const unknownCount = Math.max(0, total - knownCount);
+    const masteredCount = Math.max(
+      0,
+      Math.min(session.initialCount, session.initialCount - total + knownCount),
+    );
+    return { total, knownCount, unknownCount, masteredCount };
+  }
+
   function createTestSession() {
+    const currentCounts = session ? sessionCounts() : null;
     if (
-      session?.knownIds.length &&
+      currentCounts?.masteredCount > 0 &&
       !window.confirm(
-        `현재 테스트에서 '안다'로 체크한 ${session.knownIds.length.toLocaleString(
+        `현재 반복 테스트에서 익힌 ${currentCounts.masteredCount.toLocaleString(
           "ko-KR",
-        )}개 결과가 사라집니다. 새 테스트를 만들까요?`,
+        )}개 기록이 사라집니다. 새 테스트를 만들까요?`,
       )
     ) {
       return;
@@ -148,11 +168,13 @@
     const selected = shuffled(candidates).slice(0, safeCount);
 
     session = {
-      version: 1,
+      version: 2,
       source,
       scope,
       requestedCount: safeCount,
       poolSize: candidates.length,
+      round: 1,
+      initialCount: selected.length,
       wordIds: selected.map((word) => String(word.id)),
       knownIds: [],
       meaningDefaultVisible: false,
@@ -269,12 +291,22 @@
       .join("");
   }
 
-  function renderNotice(currentWords = selectedWords()) {
-    const total = currentWords.length;
+  function renderNotice(currentWords = selectedWords(), counts = sessionCounts(currentWords)) {
+    const { total, unknownCount, masteredCount } = counts;
     const scopeLabel = session.scope === "studied" ? "학습 기록 있는 단어" : "전체 단어";
     let notice;
     if (!total) {
       notice = `${sourceLabels[session.source]} · ${scopeLabel}에서 출제할 단어를 찾지 못했습니다.`;
+    } else if (unknownCount === 0) {
+      notice = `${session.round}회차 완료 · 처음 출제한 ${session.initialCount.toLocaleString(
+        "ko-KR",
+      )}개 단어를 모두 알게 됐습니다!`;
+    } else if (session.round > 1) {
+      notice = `${session.round}회차 · 처음 ${session.initialCount.toLocaleString(
+        "ko-KR",
+      )}개 중 ${masteredCount.toLocaleString("ko-KR")}개를 익혔고 ${unknownCount.toLocaleString(
+        "ko-KR",
+      )}개가 남았습니다.`;
     } else if (total < session.requestedCount) {
       notice = `${sourceLabels[session.source]} · ${scopeLabel}에 ${session.poolSize.toLocaleString(
         "ko-KR",
@@ -292,18 +324,34 @@
 
   function renderSummary() {
     const currentWords = selectedWords();
-    const activeIds = new Set(currentWords.map((word) => String(word.id)));
-    const knownCount = session.knownIds.filter((id) => activeIds.has(id)).length;
-    const total = currentWords.length;
-    const unknownCount = Math.max(0, total - knownCount);
+    const counts = sessionCounts(currentWords);
+    const { total, knownCount, unknownCount } = counts;
     const percent = total ? (knownCount / total) * 100 : 0;
+    const retryButton = $("#retryUnknownBtn");
 
     $("#testTotal").textContent = total.toLocaleString("ko-KR");
     $("#knownCount").textContent = knownCount.toLocaleString("ko-KR");
     $("#unknownCount").textContent = unknownCount.toLocaleString("ko-KR");
     $("#knownProgress").style.width = `${percent}%`;
     $("#resetKnownBtn").disabled = knownCount === 0;
-    renderNotice(currentWords);
+    $("#testTableTitle").textContent =
+      session.round > 1 ? `현재 테스트 · ${session.round}회차` : "현재 테스트";
+    $(".test-summary").classList.toggle("is-complete", total > 0 && unknownCount === 0);
+
+    if (!total) {
+      retryButton.disabled = true;
+      retryButton.textContent = "모르는 단어 다시 테스트";
+    } else if (unknownCount === 0) {
+      retryButton.disabled = true;
+      retryButton.textContent = "모든 단어를 알게 됐어요";
+    } else {
+      retryButton.disabled = false;
+      retryButton.textContent = `모르는 단어 ${unknownCount.toLocaleString(
+        "ko-KR",
+      )}개 다시 테스트`;
+    }
+
+    renderNotice(currentWords, counts);
   }
 
   function columnIsFullyVisible(field) {
@@ -398,6 +446,29 @@
     renderSummary();
   }
 
+  function repeatUnknownWords() {
+    const knownIds = sessionSet("knownIds");
+    const unknownIds = session.wordIds.filter((id) => !knownIds.has(id));
+    if (!unknownIds.length) {
+      return;
+    }
+
+    session.wordIds = shuffled(unknownIds);
+    session.knownIds = [];
+    session.meaningDefaultVisible = false;
+    session.meaningExceptions = [];
+    session.exampleDefaultVisible = false;
+    session.exampleExceptions = [];
+    session.round += 1;
+    session.updatedAt = new Date().toISOString();
+    saveSession();
+    renderAll();
+
+    const tableScroll = $(".test-table-scroll");
+    tableScroll.scrollTop = 0;
+    tableScroll.scrollLeft = 0;
+  }
+
   function resetKnown() {
     if (!session.knownIds.length) {
       return;
@@ -437,6 +508,7 @@
 
   function bindControls() {
     $("#newTestBtn").addEventListener("click", createTestSession);
+    $("#retryUnknownBtn").addEventListener("click", repeatUnknownWords);
     $("#resetKnownBtn").addEventListener("click", resetKnown);
     $("#toggleAllMeanings").addEventListener("click", () => toggleColumn("meaning"));
     $("#toggleAllExamples").addEventListener("click", () => toggleColumn("example"));

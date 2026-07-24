@@ -101,6 +101,14 @@
   transition: width 160ms ease;
 }
 
+.test-summary.is-complete .test-progress {
+  background: var(--accent-soft);
+}
+
+.test-summary.is-complete .test-metric.is-unknown strong {
+  color: var(--accent-strong);
+}
+
 .test-table-card {
   overflow: hidden;
 }
@@ -112,6 +120,18 @@
   gap: 16px;
   padding: 14px 16px;
   border-bottom: 1px solid var(--line);
+}
+
+.test-round-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.test-round-actions button {
+  white-space: nowrap;
 }
 
 .test-notice {
@@ -356,6 +376,16 @@
   .test-table-toolbar {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .test-round-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .test-round-actions button {
+    width: 100%;
   }
 
   .test-table-scroll {
