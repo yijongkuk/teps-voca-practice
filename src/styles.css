@@ -444,6 +444,29 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 
+.definition-box {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  background: var(--surface-soft);
+}
+
+.definition-box span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.definition-box strong {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
 .thesaurus-box {
   display: grid;
   gap: 10px;

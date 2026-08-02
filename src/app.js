@@ -19,7 +19,7 @@
   // TOEFLVOCA condenses the book's 60 days into 15 chunks, so it rolls over a
   // longer cycle than the shared 10-chunk lists.
   const sourceChunkCounts = Object.assign(
-    { toefl: 15 },
+    { toefl: 15, supervoca: 15 },
     meta.chunkCountsBySource && typeof meta.chunkCountsBySource === "object"
       ? meta.chunkCountsBySource
       : {},
@@ -413,8 +413,9 @@
       oxford5000: 2,
       awl: 3,
       toefl: 4,
-      vocab: 5,
-      reading: 6,
+      supervoca: 5,
+      vocab: 6,
+      reading: 7,
     };
     return order[word.source] ?? 99;
   }
@@ -603,6 +604,7 @@
         ${renderWordHeading(word)}
         <p>${renderMeaningText(word)}</p>
       </div>
+      ${renderDefinition(word)}
       ${renderExample(word, true)}
       ${renderThesaurus(word)}
       ${renderUsageNote(word)}
@@ -620,7 +622,7 @@
           ? `<div class="answer-panel"><strong>${renderMeaningText(word)}</strong></div>${renderExample(
             word,
               true,
-            )}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
+            )}${renderDefinition(word)}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
           : `<div class="hidden-panel">뜻 가림</div><button type="button" class="primary-button" id="revealBtn">뜻 보기</button>`
       }
       ${renderFeedback()}
@@ -642,7 +644,7 @@
         revealed
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong><span>${escapeHtml(
               word.meaning || "뜻 정보 없음",
-            )}</span></div>${renderExample(word, true)}${renderThesaurus(word)}${renderUsageNote(word)}`
+            )}</span></div>${renderExample(word, true)}${renderDefinition(word)}${renderThesaurus(word)}${renderUsageNote(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -664,7 +666,7 @@
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong></div>${renderExample(
             word,
               true,
-            )}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
+            )}${renderDefinition(word)}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -694,6 +696,15 @@
     `;
   }
 
+  function renderDefinition(word) {
+    if (!word.definitionEn) {
+      return "";
+    }
+    return `<div class="definition-box"><span>영영 뜻</span><strong>${escapeHtml(
+      word.definitionEn,
+    )}</strong></div>`;
+  }
+
   function renderThesaurus(word) {
     const senses = Array.isArray(word.senses) ? word.senses : [];
     const synonymRows = senses
@@ -710,7 +721,25 @@
         `;
       });
     const antonyms = Array.isArray(word.antonyms) ? word.antonyms : [];
-    if (!synonymRows.length && !antonyms.length) {
+    // SUPERVOCA pairs each headword with related words under the book's own
+    // relationship labels (반의어, 정도, 기능 ...), so group them by label.
+    const relationGroups = new Map();
+    (Array.isArray(word.relations) ? word.relations : []).forEach((relation) => {
+      const label = relation.label || "관계";
+      if (!relationGroups.has(label)) {
+        relationGroups.set(label, []);
+      }
+      relationGroups.get(label).push(relation.word);
+    });
+    const relationRows = [...relationGroups.entries()].map(
+      ([label, items]) => `
+        <div class="thesaurus-group">
+          <span>${escapeHtml(label)}</span>
+          <strong>${escapeHtml(items.join(", "))}</strong>
+        </div>
+      `,
+    );
+    if (!synonymRows.length && !antonyms.length && !relationRows.length) {
       return "";
     }
     return `
@@ -727,6 +756,7 @@
               )}</strong></div>`
             : ""
         }
+        ${relationRows.join("")}
       </div>
     `;
   }

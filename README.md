@@ -1,6 +1,6 @@
 # 단어 반복 연습장
 
-TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어장 `src/TEPS_Reading_9-10_Connectors.xlsx`, Oxford 5000 추가 목록, AWL570, Hackers TOEFL Vocabulary 스캔본에서 뽑아낸 TOEFLVOCA를 바탕으로 만든 웹용 단어 반복 학습장입니다.
+TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어장 `src/TEPS_Reading_9-10_Connectors.xlsx`, Oxford 5000 추가 목록, AWL570, Hackers TOEFL Vocabulary 스캔본에서 뽑아낸 TOEFLVOCA, Hackers Super Vocabulary 스캔본에서 뽑아낸 SUPERVOCA를 바탕으로 만든 웹용 단어 반복 학습장입니다.
 
 ## 기능
 
@@ -16,8 +16,9 @@ TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어�
 - 최초 테스트 묶음을 유지한 채 체크하지 않은 단어만 반복하는 끝장 복습
 - CMUdict 기반 발음기호 표시와 독립 스피커 버튼 음성 재생
 - 테스트 반복 단어 집중 복습과 차수 높은 순 정렬
-- TEPS 어휘빈출 / TEPS 접속사 / Oxford 5000 / AWL570 / TOEFLVOCA 단어장별 필터와 독립 청크
+- TEPS 어휘빈출 / TEPS 접속사 / Oxford 5000 / AWL570 / TOEFLVOCA / SUPERVOCA 단어장별 필터와 독립 청크
 - TOEFLVOCA 카드의 뜻별 동의어와 반의어 표시
+- SUPERVOCA 카드의 영영 뜻과 책의 13가지 관계(반의어·정도·기능 등)별 연관 단어 표시
 - 표제어, 뜻, 예문, AWL 관련 어형 통합 검색
 - 브라우저 TTS 기반 단어/예문 듣기
 - 브라우저 localStorage 진도 저장
@@ -56,7 +57,7 @@ TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어�
 
 각 단어장을 원본 순서대로 10개 청크에 독립적으로 균등 분배합니다. 하루치 단어는 이후 4일간 더 복습 대상에 포함되어 총 5일에 걸쳐 반복됩니다.
 
-TOEFLVOCA만 예외로 15개 청크를 씁니다. 원본 책이 60일 구성이라 4일치를 한 청크로 묶어 15일 완성으로 회전합니다. 즉 Chunk 1은 책의 DAY 01-04, Chunk 15는 DAY 57-60입니다. 회전 주기가 다른 단어장은 대시보드에서 각각 별도 줄로 표시됩니다.
+TOEFLVOCA와 SUPERVOCA만 예외로 15개 청크를 씁니다. TOEFLVOCA는 60일 구성이라 4일치를, SUPERVOCA는 30일 구성이라 2일치를 한 청크로 묶어 둘 다 15일 완성으로 회전합니다. 즉 TOEFLVOCA Chunk 1은 책의 DAY 01-04, SUPERVOCA Chunk 1은 DAY 01-02입니다. 회전 주기가 다른 단어장은 대시보드에서 각각 별도 줄로 표시됩니다.
 
 정답·오답을 확인했거나 카드에서 `다음`, `이전`, 세션 목록 이동으로 지나간 단어는 본 단어로 저장됩니다. 같은 조건으로 다시 열면 목록은 유지하되 첫 미확인 단어 위치에서 시작합니다.
 
@@ -109,3 +110,21 @@ python src\generate_example_translations.py --only-suspect
 
 - 원본: Hackers TOEFL Vocabulary (60일 구성, 약 2,300 표제어)
 - `--cmudict <경로>`로 CMUdict를 넘기면 철자 복구용 사전이 넓어집니다.
+
+## SUPERVOCA 원본 갱신
+
+`src/02 SUPERVOCA.pdf`도 같은 종류의 스캔본입니다. 다만 지면 구성이 달라
+`src/generate_super_word_list.py`가 따로 처리합니다. 표제어와 발음기호는 좁은 왼쪽 열에,
+영영 뜻·예문·관계 쌍(`ANT curt : wordy`)은 오른쪽에 있습니다. 이 책은 예문 안의 표제어를
+이탤릭으로 찍는데 스캔이 그 글자들을 자주 뭉개거나 통째로 빠뜨려서, 이탤릭 구간과 지나치게
+넓은 낱말 간격을 찾아 표제어로 되살립니다.
+
+```powershell
+python src\generate_super_word_list.py
+python src\generate_external_word_details.py
+python src\generate_words_data.py
+python src\generate_example_translations.py --only-suspect
+```
+
+- 원본: Hackers Super Vocabulary (30일 구성, 약 1,800 표제어)
+- 결과는 `src/super_word_list.json`에 저장되고 `_meta`에 복구 통계가 남습니다.

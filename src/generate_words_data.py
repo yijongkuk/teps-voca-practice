@@ -18,6 +18,7 @@ EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
 EXTERNAL_LIST_PATH = ROOT / "external_word_lists.json"
 EXTERNAL_DETAIL_PATH = ROOT / "external_word_details.json"
 TOEFL_LIST_PATH = ROOT / "toefl_word_list.json"
+SUPER_LIST_PATH = ROOT / "super_word_list.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
 FREQUENT_SHEET = "어휘단어장(통합)"
@@ -27,7 +28,11 @@ ROUTINE_CHUNK_COUNT = 10
 # list rolls over a 15-day cycle instead of the shared 10-day one.
 TOEFL_BOOK_DAYS_PER_CHUNK = 4
 TOEFL_CHUNK_COUNT = 15
-SOURCE_CHUNK_COUNTS = {"toefl": TOEFL_CHUNK_COUNT}
+# Super Vocabulary is a 30-day book with a 15-day plan of its own, so two book
+# days make one chunk and it shares the TOEFL list's 15-day cycle.
+SUPER_BOOK_DAYS_PER_CHUNK = 2
+SUPER_CHUNK_COUNT = 15
+SOURCE_CHUNK_COUNTS = {"toefl": TOEFL_CHUNK_COUNT, "supervoca": SUPER_CHUNK_COUNT}
 CLOZE_TOKEN_OVERRIDES = {
     "cloak a in the guise of b": "cloak",
     "give ~ a shot": "give",
@@ -416,6 +421,85 @@ def build_toefl_words() -> list[dict]:
     return words
 
 
+def build_super_words() -> list[dict]:
+    payload = load_external_payload(SUPER_LIST_PATH)
+    entries = payload.get("entries", [])
+    if not isinstance(entries, list):
+        return []
+
+    detail_entries = load_external_payload(EXTERNAL_DETAIL_PATH).get("entries", {})
+    if not isinstance(detail_entries, dict):
+        detail_entries = {}
+    pronunciation_lookup = load_pronunciations()
+    meaning_overrides = load_meaning_overrides()
+    example_overrides = load_example_overrides()
+
+    words: list[dict] = []
+    for rank, entry in enumerate(entries, start=1):
+        word = clean(entry.get("word"))
+        if not word:
+            continue
+
+        word_id = f"S{rank:04d}"
+        key = normalize_key(word)
+        detail = detail_entries.get(key, {})
+        if not isinstance(detail, dict):
+            detail = {}
+
+        relations = []
+        for relation in entry.get("relations", []):
+            if not isinstance(relation, dict):
+                continue
+            related = clean(relation.get("word"))
+            if related:
+                relations.append(
+                    {
+                        "code": clean(relation.get("code")),
+                        "label": clean(relation.get("label")),
+                        "word": related,
+                    }
+                )
+
+        override = get_example_override(example_overrides, word_id, word)
+        example_en = override.get("exampleEn") or clean(entry.get("exampleEn")) or clean(
+            detail.get("exampleEn")
+        )
+        example_ko = override.get("exampleKo") or ""
+        cloze, cloze_answer = make_cloze(word, example_en) if example_en else ("", "")
+        book_day = int(entry.get("day") or 1)
+
+        words.append(
+            {
+                "id": word_id,
+                "source": "supervoca",
+                "sourceLabel": "SUPERVOCA",
+                "rank": rank,
+                "chunk": (book_day - 1) // SUPER_BOOK_DAYS_PER_CHUNK + 1,
+                "bookDay": book_day,
+                "word": word,
+                "meaning": meaning_overrides.get(key) or clean(detail.get("meaning")),
+                "pronunciation": (
+                    pronunciation_lookup.get(key) or clean(detail.get("pronunciation"))
+                ),
+                "group": " · ".join(
+                    part for part in (f"DAY {book_day:02d}", clean(entry.get("pos"))) if part
+                ),
+                "definitionEn": clean(entry.get("definitionEn")),
+                "exampleEn": example_en,
+                "exampleKo": example_ko,
+                "clozeExample": cloze,
+                "clozeAnswer": cloze_answer,
+                "expression": "",
+                "relations": relations,
+                "searchTerms": [relation["word"] for relation in relations],
+                "duplicateFileCount": 0,
+                "appearanceCount": 0,
+            }
+        )
+
+    return words
+
+
 def build_connector_words() -> list[dict]:
     if not CONNECTOR_WORKBOOK_PATH.exists():
         return []
@@ -483,12 +567,13 @@ def build_words() -> list[dict]:
         *build_connector_words(),
         *build_external_words(),
         *build_toefl_words(),
+        *build_super_words(),
     ]
 
 
 def main() -> None:
     words = build_words()
-    sources = ("frequent", "connectors", "oxford5000", "awl", "toefl")
+    sources = ("frequent", "connectors", "oxford5000", "awl", "toefl", "supervoca")
     chunk_counts = {
         source: {
             str(chunk): sum(
@@ -514,6 +599,7 @@ def main() -> None:
             "src/external_word_lists.json",
             "src/external_word_details.json",
             "src/toefl_word_list.json",
+            "src/super_word_list.json",
         ],
         "total": len(words),
         "counts": {
@@ -537,6 +623,10 @@ def main() -> None:
             "toefl": (
                 f"group {TOEFL_BOOK_DAYS_PER_CHUNK} book days into one chunk for a "
                 f"{TOEFL_CHUNK_COUNT}-day cycle"
+            ),
+            "supervoca": (
+                f"group {SUPER_BOOK_DAYS_PER_CHUNK} book days into one chunk for a "
+                f"{SUPER_CHUNK_COUNT}-day cycle"
             ),
         },
     }
