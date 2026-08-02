@@ -17,6 +17,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 LIST_PATH = ROOT / "external_word_lists.json"
+TOEFL_LIST_PATH = ROOT / "toefl_word_list.json"
 OUTPUT_PATH = ROOT / "external_word_details.json"
 NAVER_CACHE_PATH = ROOT / "naver_meaning_cache.json"
 _thread_state = threading.local()
@@ -224,6 +225,7 @@ def main() -> None:
         description="Generate meanings, examples, and pronunciations for external lists."
     )
     parser.add_argument("--lists", type=Path, default=LIST_PATH)
+    parser.add_argument("--toefl-list", type=Path, default=TOEFL_LIST_PATH)
     parser.add_argument("--output", type=Path, default=OUTPUT_PATH)
     parser.add_argument("--cache", type=Path, default=NAVER_CACHE_PATH)
     parser.add_argument("--skip-cache", action="store_true")
@@ -237,9 +239,11 @@ def main() -> None:
     args = parser.parse_args()
 
     list_payload = load_json(args.lists, {})
+    toefl_payload = load_json(args.toefl_list, {})
     source_entries = [
         *list_payload.get("oxford5000", []),
         *list_payload.get("awl", []),
+        *toefl_payload.get("entries", []),
     ]
     terms: dict[str, str] = {}
     for entry in source_entries:

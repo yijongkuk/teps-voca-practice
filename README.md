@@ -1,6 +1,6 @@
 # 단어 반복 연습장
 
-TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어장 `src/TEPS_Reading_9-10_Connectors.xlsx`, Oxford 5000 추가 목록, AWL570을 바탕으로 만든 웹용 단어 반복 학습장입니다.
+TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어장 `src/TEPS_Reading_9-10_Connectors.xlsx`, Oxford 5000 추가 목록, AWL570, Hackers TOEFL Vocabulary 스캔본에서 뽑아낸 TOEFLVOCA를 바탕으로 만든 웹용 단어 반복 학습장입니다.
 
 ## 기능
 
@@ -16,7 +16,8 @@ TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어�
 - 최초 테스트 묶음을 유지한 채 체크하지 않은 단어만 반복하는 끝장 복습
 - CMUdict 기반 발음기호 표시와 독립 스피커 버튼 음성 재생
 - 테스트 반복 단어 집중 복습과 차수 높은 순 정렬
-- TEPS 어휘빈출 / TEPS 접속사 / Oxford 5000 / AWL570 단어장별 필터와 독립 청크
+- TEPS 어휘빈출 / TEPS 접속사 / Oxford 5000 / AWL570 / TOEFLVOCA 단어장별 필터와 독립 청크
+- TOEFLVOCA 카드의 뜻별 동의어와 반의어 표시
 - 표제어, 뜻, 예문, AWL 관련 어형 통합 검색
 - 브라우저 TTS 기반 단어/예문 듣기
 - 브라우저 localStorage 진도 저장
@@ -55,6 +56,8 @@ TEPS 어휘빈출 단어장 `src/TEPS_Voca(통합).xlsx`, TEPS 접속사 단어�
 
 각 단어장을 원본 순서대로 10개 청크에 독립적으로 균등 분배합니다. 하루치 단어는 이후 4일간 더 복습 대상에 포함되어 총 5일에 걸쳐 반복됩니다.
 
+TOEFLVOCA만 예외로 15개 청크를 씁니다. 원본 책이 60일 구성이라 4일치를 한 청크로 묶어 15일 완성으로 회전합니다. 즉 Chunk 1은 책의 DAY 01-04, Chunk 15는 DAY 57-60입니다. 회전 주기가 다른 단어장은 대시보드에서 각각 별도 줄로 표시됩니다.
+
 정답·오답을 확인했거나 카드에서 `다음`, `이전`, 세션 목록 이동으로 지나간 단어는 본 단어로 저장됩니다. 같은 조건으로 다시 열면 목록은 유지하되 첫 미확인 단어 위치에서 시작합니다.
 
 ## 데이터 다시 생성
@@ -87,3 +90,22 @@ python src\generate_words_data.py
 
 - Oxford source: https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_5000.pdf
 - AWL source: https://www.eapfoundation.com/vocab/academic/awllists/
+
+## TOEFLVOCA 원본 갱신
+
+`src/03 TOEFLVOCA.pdf`는 OCR 텍스트 레이어가 붙은 스캔본이라 글자가 깨진 곳이 많습니다.
+`src/generate_toefl_word_list.py`는 글자 대신 지면 배치를 읽어 표제어(왼쪽 열에서 가장 큰
+글씨), 발음기호, 반의어, 품사별 동의어, 예문을 분리하고, 깨진 철자는 책 색인 페이지와 예문에서
+만든 어휘 목록으로 복구합니다. PDF는 용량이 커서 저장소에 넣지 않으므로 `src/` 아래에 직접
+두고 실행하세요. 결과는 `src/toefl_word_list.json`에 저장되고 `_meta`에 복구 통계와 끝내 복구하지
+못한 항목이 남습니다.
+
+```powershell
+python src\generate_toefl_word_list.py
+python src\generate_external_word_details.py
+python src\generate_words_data.py
+python src\generate_example_translations.py --only-suspect
+```
+
+- 원본: Hackers TOEFL Vocabulary (60일 구성, 약 2,300 표제어)
+- `--cmudict <경로>`로 CMUdict를 넘기면 철자 복구용 사전이 넓어집니다.

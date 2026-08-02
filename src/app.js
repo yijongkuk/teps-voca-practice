@@ -16,6 +16,18 @@
   };
 
   const routineChunkCount = 10;
+  // TOEFLVOCA condenses the book's 60 days into 15 chunks, so it rolls over a
+  // longer cycle than the shared 10-chunk lists.
+  const sourceChunkCounts = Object.assign(
+    { toefl: 15 },
+    meta.chunkCountsBySource && typeof meta.chunkCountsBySource === "object"
+      ? meta.chunkCountsBySource
+      : {},
+  );
+  const maxChunkCount = Math.max(
+    routineChunkCount,
+    ...Object.values(sourceChunkCounts).map((value) => Number(value) || 0),
+  );
   const reviewWindowDays = 5;
   const autoPlayPauseMs = 450;
   const wordSpeechDelayMs = 1000;
@@ -84,7 +96,7 @@
       : "all";
     delete next.status;
     const selectedChunk = Number(next.chunk);
-    if (/^\d+$/.test(String(next.chunk)) && (selectedChunk < 1 || selectedChunk > routineChunkCount)) {
+    if (/^\d+$/.test(String(next.chunk)) && (selectedChunk < 1 || selectedChunk > maxChunkCount)) {
       next.chunk = "today";
     }
     return next;
@@ -149,17 +161,41 @@
       .replace(/'/g, "&#039;");
   }
 
-  function focusChunkForDay(day) {
-    const safeDay = Math.max(1, Number(day) || 1);
-    return ((safeDay - 1) % routineChunkCount) + 1;
+  function chunkCountForSource(source) {
+    const count = Number(sourceChunkCounts[source]);
+    return Number.isFinite(count) && count > 0 ? count : routineChunkCount;
   }
 
-  function chunkOrderForDay(day) {
+  function focusChunkForDay(day, chunkCount = routineChunkCount) {
+    const safeDay = Math.max(1, Number(day) || 1);
+    return ((safeDay - 1) % chunkCount) + 1;
+  }
+
+  function chunkOrderForDay(day, chunkCount = routineChunkCount) {
     const safeDay = Math.max(1, Number(day) || 1);
     const reviewWindowSize = Math.min(reviewWindowDays, safeDay);
     return Array.from({ length: reviewWindowSize }, (_, index) =>
-      focusChunkForDay(safeDay - reviewWindowSize + index + 1),
+      focusChunkForDay(safeDay - reviewWindowSize + index + 1, chunkCount),
     );
+  }
+
+  function routineForSource(day, source) {
+    const chunkCount = chunkCountForSource(source);
+    return {
+      chunkCount,
+      focusChunk: focusChunkForDay(day, chunkCount),
+      dayOrder: chunkOrderForDay(day, chunkCount),
+    };
+  }
+
+  function routinesBySource(day) {
+    const routines = new Map();
+    words.forEach((word) => {
+      if (!routines.has(word.source)) {
+        routines.set(word.source, routineForSource(day, word.source));
+      }
+    });
+    return routines;
   }
 
   function getProgress(word) {
@@ -266,18 +302,23 @@
   }
 
   function buildQueue() {
-    const dayOrder = chunkOrderForDay(settings.day);
-    const dayOrderIndex = new Map(dayOrder.map((chunk, index) => [chunk, index]));
-    const focusChunk = focusChunkForDay(settings.day);
+    const routines = routinesBySource(settings.day);
+    const fallbackRoutine = routineForSource(settings.day, "");
+    const routineFor = (word) => routines.get(word.source) || fallbackRoutine;
+    const orderIndexFor = (word) => {
+      const position = routineFor(word).dayOrder.indexOf(word.chunk);
+      return position >= 0 ? position : reviewWindowDays + word.chunk;
+    };
     const query = settings.search.trim().toLowerCase();
 
     let result = words.filter((word) => {
+      const routine = routineFor(word);
       // A search is a global lookup. Applying the current study chunk first can
       // hide the requested headword and leave an unrelated example-text match.
-      if (!query && settings.chunk === "today" && !dayOrder.includes(word.chunk)) {
+      if (!query && settings.chunk === "today" && !routine.dayOrder.includes(word.chunk)) {
         return false;
       }
-      if (!query && settings.chunk === "focus" && word.chunk !== focusChunk) {
+      if (!query && settings.chunk === "focus" && word.chunk !== routine.focusChunk) {
         return false;
       }
       if (!query && /^\d+$/.test(settings.chunk) && word.chunk !== Number(settings.chunk)) {
@@ -353,8 +394,7 @@
         );
       }
       return (
-        (dayOrderIndex.get(a.chunk) ?? a.chunk + 10) -
-          (dayOrderIndex.get(b.chunk) ?? b.chunk + 10) ||
+        orderIndexFor(a) - orderIndexFor(b) ||
         sourceOrder(a) - sourceOrder(b) ||
         a.rank - b.rank
       );
@@ -372,8 +412,9 @@
       connectors: 1,
       oxford5000: 2,
       awl: 3,
-      vocab: 4,
-      reading: 5,
+      toefl: 4,
+      vocab: 5,
+      reading: 6,
     };
     return order[word.source] ?? 99;
   }
@@ -436,10 +477,12 @@
   }
 
   function renderDashboard() {
-    const dayOrder = chunkOrderForDay(settings.day);
-    const focusChunk = focusChunkForDay(settings.day);
+    const routines = routinesBySource(settings.day);
+    const fallbackRoutine = routineForSource(settings.day, "");
     const dashboardWords = wordsForSelectedSource();
-    const activeWords = dashboardWords.filter((word) => dayOrder.includes(word.chunk)).length;
+    const activeWords = dashboardWords.filter((word) =>
+      (routines.get(word.source) || fallbackRoutine).dayOrder.includes(word.chunk),
+    ).length;
     const today = todayKey();
     const seenToday = dashboardWords.filter((word) => {
       const itemProgress = getProgress(word);
@@ -452,21 +495,58 @@
     $("#seenToday").textContent = seenToday.toLocaleString("ko-KR");
     $("#retryWords").textContent = retryWords.toLocaleString("ko-KR");
 
-    $("#chunkStrip").innerHTML = dayOrder
-      .map((chunk, index) => {
-        const count = dashboardWords.filter((word) => word.chunk === chunk).length;
-        const label = chunk === focusChunk ? "오늘 추가" : `${reviewWindowDays}일 복습`;
-        return `
-          <span class="chunk-chip ${chunk === focusChunk ? "is-focus" : ""}">
-            Chunk ${chunk}
-            <small>${label} · ${count.toLocaleString("ko-KR")}개</small>
-          </span>
-        `;
+    // Lists with different cycle lengths get their own strip so a 15-chunk
+    // TOEFLVOCA day is never shown under the shared 10-chunk order.
+    const cycles = new Map();
+    dashboardWords.forEach((word) => {
+      const routine = routines.get(word.source) || fallbackRoutine;
+      const cycle = cycles.get(routine.chunkCount) || {
+        routine,
+        labels: [],
+        words: [],
+      };
+      if (!cycle.labels.includes(word.sourceLabel)) {
+        cycle.labels.push(word.sourceLabel);
+      }
+      cycle.words.push(word);
+      cycles.set(routine.chunkCount, cycle);
+    });
+
+    const cycleList = [...cycles.values()].sort(
+      (a, b) => a.routine.chunkCount - b.routine.chunkCount,
+    );
+    $("#chunkStrip").innerHTML = cycleList
+      .map(({ routine, labels, words: cycleWords }) => {
+        const chips = routine.dayOrder
+          .map((chunk) => {
+            const count = cycleWords.filter((word) => word.chunk === chunk).length;
+            const label =
+              chunk === routine.focusChunk ? "오늘 추가" : `${reviewWindowDays}일 복습`;
+            return `
+              <span class="chunk-chip ${chunk === routine.focusChunk ? "is-focus" : ""}">
+                Chunk ${chunk}
+                <small>${label} · ${count.toLocaleString("ko-KR")}개</small>
+              </span>
+            `;
+          })
+          .join("");
+        const heading =
+          cycleList.length > 1
+            ? `<span class="chunk-cycle-label">${escapeHtml(
+                labels.join(" · "),
+              )} · ${routine.chunkCount}일 회전</span>`
+            : "";
+        return `<div class="chunk-cycle">${heading}${chips}</div>`;
       })
       .join("");
 
-    const orderText = dayOrder.map((chunk) => `Chunk ${chunk}`).join(" → ");
-    $("#planSummary").textContent = `Day ${settings.day}: ${orderText}. 최근 ${reviewWindowDays}개 Chunk까지만 묶어서 반복 학습합니다.`;
+    const planText = cycleList
+      .map(({ routine, labels }) => {
+        const orderText = routine.dayOrder.map((chunk) => `Chunk ${chunk}`).join(" → ");
+        return cycleList.length > 1 ? `${labels.join(" · ")} ${orderText}` : orderText;
+      })
+      .join(" / ");
+    $("#planSummary").textContent = `Day ${settings.day}: ${planText}. 최근 ${reviewWindowDays}개 Chunk까지만 묶어서 반복 학습합니다.`;
   }
 
   function renderTrainer() {
@@ -524,6 +604,7 @@
         <p>${renderMeaningText(word)}</p>
       </div>
       ${renderExample(word, true)}
+      ${renderThesaurus(word)}
       ${renderUsageNote(word)}
       ${renderExpression(word)}
     `;
@@ -539,7 +620,7 @@
           ? `<div class="answer-panel"><strong>${renderMeaningText(word)}</strong></div>${renderExample(
             word,
               true,
-            )}${renderUsageNote(word)}${renderExpression(word)}`
+            )}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
           : `<div class="hidden-panel">뜻 가림</div><button type="button" class="primary-button" id="revealBtn">뜻 보기</button>`
       }
       ${renderFeedback()}
@@ -561,7 +642,7 @@
         revealed
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong><span>${escapeHtml(
               word.meaning || "뜻 정보 없음",
-            )}</span></div>${renderExample(word, true)}${renderUsageNote(word)}`
+            )}</span></div>${renderExample(word, true)}${renderThesaurus(word)}${renderUsageNote(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -583,7 +664,7 @@
           ? `<div class="answer-panel"><strong class="answer-word">${renderWordText(word)}</strong></div>${renderExample(
             word,
               true,
-            )}${renderUsageNote(word)}${renderExpression(word)}`
+            )}${renderThesaurus(word)}${renderUsageNote(word)}${renderExpression(word)}`
           : ""
       }
       ${renderFeedback()}
@@ -607,6 +688,43 @@
         ${
           word.exampleEn
             ? `<p class="selection-hint">저장할 단어나 구문을 드래그하면 저장 버튼이 나타납니다.</p>`
+            : ""
+        }
+      </div>
+    `;
+  }
+
+  function renderThesaurus(word) {
+    const senses = Array.isArray(word.senses) ? word.senses : [];
+    const synonymRows = senses
+      .filter((sense) => Array.isArray(sense.synonyms) && sense.synonyms.length)
+      .map((sense, index) => {
+        const label = [sense.pos, senses.length > 1 ? `${index + 1}` : ""]
+          .filter(Boolean)
+          .join(" ");
+        return `
+          <li>
+            ${label ? `<span class="thesaurus-pos">${escapeHtml(label)}</span>` : ""}
+            <span>${escapeHtml(sense.synonyms.join(", "))}</span>
+          </li>
+        `;
+      });
+    const antonyms = Array.isArray(word.antonyms) ? word.antonyms : [];
+    if (!synonymRows.length && !antonyms.length) {
+      return "";
+    }
+    return `
+      <div class="thesaurus-box">
+        ${
+          synonymRows.length
+            ? `<div class="thesaurus-group"><span>동의어</span><ul>${synonymRows.join("")}</ul></div>`
+            : ""
+        }
+        ${
+          antonyms.length
+            ? `<div class="thesaurus-group"><span>반의어</span><strong>${escapeHtml(
+                antonyms.join(", "),
+              )}</strong></div>`
             : ""
         }
       </div>

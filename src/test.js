@@ -8,7 +8,7 @@
   const testSessionKey = "teps-voca-test-session-v1";
   const savedWordsKey = "teps-voca-saved-example-words-v1";
   const testedWordsKey = "teps-voca-tested-words-v1";
-  const validSources = new Set(["all", "frequent", "connectors", "oxford5000", "awl"]);
+  const validSources = new Set(["all", "frequent", "connectors", "oxford5000", "awl", "toefl"]);
   const validScopes = new Set(["all", "studied"]);
   const validNovelty = new Set(["new", "all"]);
   const validCounts = new Set([100, 150, 200]);
@@ -18,6 +18,7 @@
     connectors: "TEPS 접속사",
     oxford5000: "Oxford 5000",
     awl: "AWL570",
+    toefl: "TOEFLVOCA",
   };
 
   const $ = (selector) => document.querySelector(selector);

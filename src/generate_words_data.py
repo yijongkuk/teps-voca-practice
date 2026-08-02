@@ -17,11 +17,17 @@ MEANING_OVERRIDE_PATH = ROOT / "meaning_overrides.json"
 EXAMPLE_OVERRIDE_PATH = ROOT / "example_overrides.json"
 EXTERNAL_LIST_PATH = ROOT / "external_word_lists.json"
 EXTERNAL_DETAIL_PATH = ROOT / "external_word_details.json"
+TOEFL_LIST_PATH = ROOT / "toefl_word_list.json"
 OUTPUT_PATH = ROOT / "words-data.js"
 
 FREQUENT_SHEET = "어휘단어장(통합)"
 CONNECTOR_SHEET = "접속사 통합"
 ROUTINE_CHUNK_COUNT = 10
+# The TOEFL book is a 60-day course; four book days make one study chunk, so the
+# list rolls over a 15-day cycle instead of the shared 10-day one.
+TOEFL_BOOK_DAYS_PER_CHUNK = 4
+TOEFL_CHUNK_COUNT = 15
+SOURCE_CHUNK_COUNTS = {"toefl": TOEFL_CHUNK_COUNT}
 CLOZE_TOKEN_OVERRIDES = {
     "cloak a in the guise of b": "cloak",
     "give ~ a shot": "give",
@@ -320,6 +326,96 @@ def build_external_words() -> list[dict]:
     return [*oxford_words, *awl_words]
 
 
+def build_toefl_words() -> list[dict]:
+    payload = load_external_payload(TOEFL_LIST_PATH)
+    entries = payload.get("entries", [])
+    if not isinstance(entries, list):
+        return []
+
+    detail_entries = load_external_payload(EXTERNAL_DETAIL_PATH).get("entries", {})
+    if not isinstance(detail_entries, dict):
+        detail_entries = {}
+    pronunciation_lookup = load_pronunciations()
+    meaning_overrides = load_meaning_overrides()
+    example_overrides = load_example_overrides()
+
+    words: list[dict] = []
+    for rank, entry in enumerate(entries, start=1):
+        word = clean(entry.get("word"))
+        if not word:
+            continue
+
+        word_id = f"T{rank:04d}"
+        key = normalize_key(word)
+        detail = detail_entries.get(key, {})
+        if not isinstance(detail, dict):
+            detail = {}
+
+        senses: list[dict] = []
+        for sense in entry.get("senses", []):
+            if not isinstance(sense, dict):
+                continue
+            senses.append(
+                {
+                    "pos": clean(sense.get("pos")),
+                    "synonyms": [clean(item) for item in sense.get("synonyms", []) if clean(item)],
+                    "exampleEn": clean(sense.get("exampleEn")),
+                }
+            )
+        antonyms = [clean(item) for item in entry.get("antonyms", []) if clean(item)]
+        synonyms = []
+        for sense in senses:
+            for item in sense["synonyms"]:
+                if item not in synonyms:
+                    synonyms.append(item)
+
+        override = get_example_override(example_overrides, word_id, word)
+        example_en = override.get("exampleEn") or next(
+            (sense["exampleEn"] for sense in senses if sense["exampleEn"]),
+            clean(detail.get("exampleEn")),
+        )
+        example_ko = override.get("exampleKo") or ""
+        cloze, cloze_answer = make_cloze(word, example_en) if example_en else ("", "")
+
+        parts_of_speech = []
+        for sense in senses:
+            if sense["pos"] and sense["pos"] not in parts_of_speech:
+                parts_of_speech.append(sense["pos"])
+        book_day = int(entry.get("day") or 1)
+
+        words.append(
+            {
+                "id": word_id,
+                "source": "toefl",
+                "sourceLabel": "TOEFLVOCA",
+                "rank": rank,
+                "chunk": (book_day - 1) // TOEFL_BOOK_DAYS_PER_CHUNK + 1,
+                "bookDay": book_day,
+                "word": word,
+                "meaning": meaning_overrides.get(key) or clean(detail.get("meaning")),
+                "pronunciation": (
+                    pronunciation_lookup.get(key) or clean(detail.get("pronunciation"))
+                ),
+                "group": " · ".join(
+                    part for part in (f"DAY {book_day:02d}", ", ".join(parts_of_speech)) if part
+                ),
+                "exampleEn": example_en,
+                "exampleKo": example_ko,
+                "clozeExample": cloze,
+                "clozeAnswer": cloze_answer,
+                "expression": "",
+                "senses": senses,
+                "synonyms": synonyms,
+                "antonyms": antonyms,
+                "searchTerms": [*synonyms, *antonyms],
+                "duplicateFileCount": 0,
+                "appearanceCount": 0,
+            }
+        )
+
+    return words
+
+
 def build_connector_words() -> list[dict]:
     if not CONNECTOR_WORKBOOK_PATH.exists():
         return []
@@ -386,12 +482,13 @@ def build_words() -> list[dict]:
         *build_frequent_words(),
         *build_connector_words(),
         *build_external_words(),
+        *build_toefl_words(),
     ]
 
 
 def main() -> None:
     words = build_words()
-    sources = ("frequent", "connectors", "oxford5000", "awl")
+    sources = ("frequent", "connectors", "oxford5000", "awl", "toefl")
     chunk_counts = {
         source: {
             str(chunk): sum(
@@ -399,7 +496,9 @@ def main() -> None:
                 for word in words
                 if word["source"] == source and word["chunk"] == chunk
             )
-            for chunk in range(1, ROUTINE_CHUNK_COUNT + 1)
+            for chunk in range(
+                1, SOURCE_CHUNK_COUNTS.get(source, ROUTINE_CHUNK_COUNT) + 1
+            )
         }
         for source in sources
     }
@@ -414,6 +513,7 @@ def main() -> None:
             "src/TEPS_Reading_9-10_Connectors.xlsx",
             "src/external_word_lists.json",
             "src/external_word_details.json",
+            "src/toefl_word_list.json",
         ],
         "total": len(words),
         "counts": {
@@ -425,10 +525,18 @@ def main() -> None:
             "pronunciation": pronunciation_coverage,
         },
         "chunkCounts": chunk_counts,
+        "chunkCountsBySource": {
+            source: SOURCE_CHUNK_COUNTS.get(source, ROUTINE_CHUNK_COUNT)
+            for source in sources
+        },
         "chunkRule": {
             "routine": (
                 "split each source list independently and evenly across a "
                 f"{ROUTINE_CHUNK_COUNT}-day cycle"
+            ),
+            "toefl": (
+                f"group {TOEFL_BOOK_DAYS_PER_CHUNK} book days into one chunk for a "
+                f"{TOEFL_CHUNK_COUNT}-day cycle"
             ),
         },
     }
